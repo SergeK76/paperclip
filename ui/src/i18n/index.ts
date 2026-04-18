@@ -8,6 +8,12 @@ import enChat from "./locales/en/chat.json";
 import enSettings from "./locales/en/settings.json";
 import enErrors from "./locales/en/errors.json";
 import enOnboarding from "./locales/en/onboarding.json";
+import enIssues from "./locales/en/issues.json";
+import enGoals from "./locales/en/goals.json";
+import enProjects from "./locales/en/projects.json";
+import enOrg from "./locales/en/org.json";
+import enApprovals from "./locales/en/approvals.json";
+import enActivity from "./locales/en/activity.json";
 
 import ruCommon from "./locales/ru/common.json";
 import ruAgents from "./locales/ru/agents.json";
@@ -15,6 +21,12 @@ import ruChat from "./locales/ru/chat.json";
 import ruSettings from "./locales/ru/settings.json";
 import ruErrors from "./locales/ru/errors.json";
 import ruOnboarding from "./locales/ru/onboarding.json";
+import ruIssues from "./locales/ru/issues.json";
+import ruGoals from "./locales/ru/goals.json";
+import ruProjects from "./locales/ru/projects.json";
+import ruOrg from "./locales/ru/org.json";
+import ruApprovals from "./locales/ru/approvals.json";
+import ruActivity from "./locales/ru/activity.json";
 
 export const SUPPORTED_LANGUAGES = ["en", "ru"] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
@@ -30,6 +42,12 @@ export const resources = {
     settings: enSettings,
     errors: enErrors,
     onboarding: enOnboarding,
+    issues: enIssues,
+    goals: enGoals,
+    projects: enProjects,
+    org: enOrg,
+    approvals: enApprovals,
+    activity: enActivity,
   },
   ru: {
     common: ruCommon,
@@ -38,6 +56,12 @@ export const resources = {
     settings: ruSettings,
     errors: ruErrors,
     onboarding: ruOnboarding,
+    issues: ruIssues,
+    goals: ruGoals,
+    projects: ruProjects,
+    org: ruOrg,
+    approvals: ruApprovals,
+    activity: ruActivity,
   },
 } as const;
 
@@ -48,6 +72,12 @@ export const namespaces = [
   "settings",
   "errors",
   "onboarding",
+  "issues",
+  "goals",
+  "projects",
+  "org",
+  "approvals",
+  "activity",
 ] as const;
 
 void i18n

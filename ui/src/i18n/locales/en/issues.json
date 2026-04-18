@@ -1,0 +1,10 @@
+{
+  "list": {
+    "selectCompany": "Select a company to view issues."
+  },
+  "myIssues": {
+    "breadcrumb": "My Issues",
+    "selectCompany": "Select a company to view your issues.",
+    "noIssues": "No issues assigned to you."
+  }
+}
