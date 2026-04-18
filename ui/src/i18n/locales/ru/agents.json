@@ -1,1 +1,248 @@
-{}
+{
+  "list": {
+    "selectCompany": "Выберите компанию для просмотра агентов.",
+    "tabs": {
+      "all": "Все",
+      "active": "Активные",
+      "paused": "На паузе",
+      "error": "Ошибка"
+    },
+    "filters": {
+      "button": "Фильтры",
+      "showTerminated": "Показать завершённых"
+    },
+    "newAgent": "Новый агент",
+    "count_one": "{{count}} агент",
+    "count_few": "{{count}} агента",
+    "count_many": "{{count}} агентов",
+    "count_other": "{{count}} агента",
+    "emptyFirst": "Создайте первого агента, чтобы начать работу.",
+    "noMatch": "Нет агентов, соответствующих выбранному фильтру.",
+    "noHierarchy": "Организационная иерархия не определена.",
+    "liveNow": "Live",
+    "liveCount": "Live ({{count}})"
+  },
+  "new": {
+    "title": "Новый агент",
+    "subtitle": "Расширенная настройка агента",
+    "namePlaceholder": "Имя агента",
+    "titlePlaceholder": "Должность (например, VP Engineering)",
+    "skillsTitle": "Навыки компании",
+    "skillsDesc": "Дополнительные навыки из библиотеки компании. Встроенные навыки Paperclip добавляются автоматически.",
+    "noSkills": "Дополнительные навыки компании ещё не установлены.",
+    "ceoNote": "Это будет CEO",
+    "creating": "Создание…",
+    "create": "Создать агента",
+    "errorCreate": "Не удалось создать агента"
+  },
+  "actions": {
+    "runNow": "Запустить",
+    "resume": "Возобновить",
+    "pause": "Пауза",
+    "assignTask": "Назначить задачу",
+    "runHeartbeat": "Запустить хартбит",
+    "copyId": "Скопировать ID агента",
+    "resetSessions": "Сбросить сессии",
+    "terminate": "Завершить",
+    "restore": "Восстановить"
+  },
+  "properties": {
+    "status": "Статус",
+    "role": "Роль",
+    "title": "Должность",
+    "adapter": "Адаптер",
+    "session": "Сессия",
+    "lastError": "Последняя ошибка",
+    "lastHeartbeat": "Последний хартбит",
+    "reportsTo": "Подчиняется",
+    "created": "Создан"
+  },
+  "iconPicker": {
+    "searchPlaceholder": "Поиск иконок...",
+    "noMatch": "Иконки не найдены"
+  },
+  "dialog": {
+    "header": "Добавить нового агента",
+    "recommendation": "Рекомендуем поручить настройку агента вашему CEO — он знает структуру организации и может настроить подчинённость, разрешения и адаптеры.",
+    "askCeo": "Попросить CEO создать нового агента",
+    "advancedLink": "Хочу настроить вручную",
+    "back": "Назад",
+    "chooseAdapter": "Выберите тип адаптера для расширенной настройки.",
+    "recommended": "Рекомендовано"
+  },
+  "panel": {
+    "heading": "Агенты",
+    "noRuns": "Недавних запусков агентов нет.",
+    "liveNow": "Сейчас работает",
+    "finished": "Завершён {{time}}",
+    "started": "Начат {{time}}"
+  },
+  "choosePath": {
+    "button": "Выбрать",
+    "title": "Укажите путь вручную",
+    "description": "Браузер не позволяет приложениям читать полные локальные пути через выборщик файлов. Скопируйте абсолютный путь и вставьте его в поле.",
+    "macos": "macOS (Finder)",
+    "windows": "Windows (Проводник)",
+    "terminal": "Терминал (macOS/Linux)",
+    "ok": "OK"
+  },
+  "reportsToPicker": {
+    "unknownManager": "Неизвестный менеджер (устаревший ID)",
+    "reportTo": "Подчиняется {{name}}",
+    "reportToTerminated": "Подчиняется {{name}} (завершён)",
+    "noManager": "Без менеджера",
+    "currentTerminated": "Текущий: {{name}} (завершён)",
+    "missingManager": "Сохранённый менеджер не найден в компании. Выберите нового или очистите."
+  },
+  "config": {
+    "unsavedChanges": "Несохранённые изменения",
+    "testing": "Тестирование...",
+    "testEnvironment": "Тест окружения",
+    "envPassed": "Пройдено",
+    "envWarnings": "Предупреждения",
+    "envFailed": "Ошибка",
+    "sections": {
+      "identity": "Личность",
+      "adapter": "Адаптер",
+      "permissions": "Разрешения и конфигурация",
+      "runPolicy": "Политика запуска",
+      "advancedRunPolicy": "Расширенная политика запуска"
+    },
+    "comingSoon": "Скоро",
+    "modelDefault": "По умолчанию",
+    "modelManual": "Указать модель вручную",
+    "saving": "Сохранение..."
+  },
+  "detail": {
+    "tabs": {
+      "dashboard": "Обзор",
+      "instructions": "Инструкции",
+      "skills": "Навыки",
+      "configuration": "Конфигурация",
+      "runs": "Запуски",
+      "budget": "Бюджет"
+    },
+    "pendingApproval": "Этот агент ожидает одобрения совета директоров и пока не может быть вызван.",
+    "sources": {
+      "timer": "Таймер",
+      "assignment": "Назначение",
+      "onDemand": "По запросу",
+      "automation": "Автоматически"
+    },
+    "liveRun": "Активный запуск",
+    "latestRun": "Последний запуск",
+    "viewDetails": "Подробнее →",
+    "charts": {
+      "runActivity": "Активность запусков",
+      "issuesByPriority": "Задачи по приоритету",
+      "issuesByStatus": "Задачи по статусу",
+      "successRate": "Успешность",
+      "last14Days": "За 14 дней"
+    },
+    "recentIssues": "Недавние задачи",
+    "seeAll": "Все →",
+    "noRecentIssues": "Нет недавних задач.",
+    "moreIssues": "+{{count}} ещё",
+    "costs": {
+      "title": "Расходы",
+      "inputTokens": "Входящие токены",
+      "outputTokens": "Исходящие токены",
+      "cachedTokens": "Кешированные токены",
+      "totalCost": "Итоговая стоимость",
+      "date": "Дата",
+      "run": "Запуск",
+      "input": "Вход",
+      "output": "Выход",
+      "cost": "Стоимость"
+    },
+    "apiKeys": "API-ключи",
+    "configRevisions": "Ревизии конфигурации",
+    "noConfigRevisions": "Ревизий конфигурации ещё нет.",
+    "changedKeys": "Изменено:",
+    "noChanges": "нет отслеживаемых изменений",
+    "permissions": {
+      "title": "Разрешения",
+      "canCreateAgents": "Может создавать агентов",
+      "canCreateAgentsDesc": "Позволяет этому агенту создавать или нанимать агентов и неявно назначать задачи.",
+      "canAssignTasks": "Может назначать задачи"
+    },
+    "instructions": {
+      "notLocal": "Пакеты инструкций доступны только для локальных адаптеров.",
+      "filesTitle": "Файлы",
+      "advanced": "Дополнительно",
+      "mode": "Режим",
+      "rootPath": "Корневой путь",
+      "entryFile": "Входной файл",
+      "managed": "Управляемый",
+      "external": "Внешний",
+      "create": "Создать",
+      "delete": "Удалить",
+      "deprecated": "Устаревший виртуальный файл",
+      "newFile": "Новый файл в пакете"
+    },
+    "skills": {
+      "viewLibrary": "Просмотр библиотеки навыков компании",
+      "saving": "Сохранение изменений...",
+      "savingSoon": "Скоро сохранится...",
+      "skillLocation": "Расположение: {{location}}",
+      "importFirst": "Сначала импортируйте навыки в библиотеку компании, затем прикрепите их здесь.",
+      "requiredByPaperclip": "Обязательные навыки Paperclip",
+      "userInstalled": "({{count}}) Навыки пользователя, не управляемые Paperclip",
+      "skillsApplied": "Навыки применяются",
+      "selectedSkills": "Выбранные навыки",
+      "missingSkills": "Запрошенные навыки отсутствуют в библиотеке компании",
+      "failedToUpdate": "Не удалось обновить навыки"
+    },
+    "invocation": {
+      "title": "Вызов",
+      "adapter": "Адаптер:",
+      "workingDir": "Рабочая директория:",
+      "details": "Подробности",
+      "command": "Команда:",
+      "commandNotes": "Заметки команды",
+      "prompt": "Промпт",
+      "context": "Контекст",
+      "environment": "Окружение",
+      "showLog": "Показать полный лог",
+      "hideLog": "Скрыть полный лог",
+      "loadingLog": "Загрузка лога...",
+      "noLog": "Нет сохранённых строк лога.",
+      "failedToLoad": "Не удалось загрузить лог операции воркспейса"
+    },
+    "workspace": {
+      "title": "Воркспейс ({{count}})",
+      "phases": {
+        "worktreePrepare": "Настройка воркдерева",
+        "workspaceProvision": "Подготовка",
+        "workspaceTeardown": "Завершение",
+        "worktreeCleanup": "Очистка воркдерева"
+      },
+      "branch": "Ветка:",
+      "baseRef": "Базовый ref:",
+      "worktree": "Воркдерево:",
+      "repoRoot": "Корень репозитория:",
+      "cleanup": "Очистка:",
+      "createdByRun": "Создан этим запуском",
+      "reusedWorkspace": "Переиспользован существующий воркспейс",
+      "stderr": "фрагмент stderr",
+      "stdout": "фрагмент stdout"
+    },
+    "runs": {
+      "noRuns": "Запусков пока нет.",
+      "backToRuns": "Назад к запускам",
+      "cancelRun": "Отменить",
+      "cancelling": "Отмена…",
+      "resume": "Возобновить",
+      "resuming": "Возобновление…",
+      "retry": "Повторить",
+      "retrying": "Повтор…",
+      "session": "Сессия",
+      "sessionChanged": "(изменена)",
+      "duration": "Длительность:",
+      "exitCode": "Код выхода {{code}}",
+      "loginClaude": "Войти в Claude Code",
+      "loggingIn": "Выполняется claude login...",
+      "loginUrl": "URL для входа:"
+    }
+  }
+}
