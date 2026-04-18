@@ -1,0 +1,29 @@
+{
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "retry": "Retry",
+    "copy": "Copy",
+    "refresh": "Refresh",
+    "search": "Search",
+    "loading": "Loading..."
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "empty": {
+    "noResults": "No results",
+    "noData": "No data"
+  }
+}
