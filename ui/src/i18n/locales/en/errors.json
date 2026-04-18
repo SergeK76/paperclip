@@ -1,1 +1,59 @@
-{}
+{
+  "auth": {
+    "failed": "Authentication failed"
+  },
+  "invite": {
+    "notFound": "Invite not found",
+    "checkingAccess": "Checking your company access. Try again in a moment.",
+    "alreadyMember": "This account already belongs to the company.",
+    "acceptFailed": "Failed to accept invite",
+    "invalidToken": "Invalid invite token.",
+    "notAvailable": "Invite not available",
+    "expiredOrUsed": "This invite may be expired, revoked, or already used.",
+    "rejected": "This join request was not approved.",
+    "alreadyUsed": "This invite has already been used."
+  },
+  "notFound": {
+    "breadcrumb": "Not Found",
+    "pageTitle": "Page not found",
+    "pageDescription": "This route does not exist.",
+    "companyTitle": "Company not found",
+    "companyDescription": "No company matches prefix \"{{prefix}}\".",
+    "unknown": "unknown",
+    "requestedPath": "Requested path:",
+    "openDashboard": "Open dashboard",
+    "goHome": "Go home"
+  },
+  "cliAuth": {
+    "invalidUrl": "Invalid CLI auth URL.",
+    "unavailable": "CLI auth challenge unavailable",
+    "expired": "Challenge is invalid or expired.",
+    "updateFailed": "Failed to update CLI auth challenge",
+    "needsInstanceAdmin": "This challenge requires instance-admin access. Sign in with an instance admin account to approve it."
+  },
+  "boardClaim": {
+    "invalidUrl": "Invalid board claim URL.",
+    "unavailable": "Claim challenge unavailable",
+    "expired": "Challenge is invalid or expired.",
+    "claimFailed": "Failed to claim board ownership"
+  },
+  "onboarding": {
+    "wizard": {
+      "selectCompanyFirst": "Create or select a company before testing adapter environment.",
+      "envTestFailed": "Adapter environment test failed",
+      "createCompanyFailed": "Failed to create company",
+      "openCodeNeedsModel": "OpenCode requires an explicit model in provider/model format.",
+      "openCodeLoadModelsFailed": "Failed to load OpenCode models.",
+      "openCodeModelsLoading": "OpenCode models are still loading. Please wait and try again.",
+      "openCodeNoModels": "No OpenCode models discovered. Run `opencode models` and authenticate providers.",
+      "openCodeModelUnavailable": "Configured OpenCode model is unavailable: {{model}}",
+      "createAgentFailed": "Failed to create agent",
+      "unsetAnthropicStillFailing": "Retried with ANTHROPIC_API_KEY unset in adapter config, but the environment test is still failing.",
+      "unsetAnthropicFailed": "Failed to unset ANTHROPIC_API_KEY and retry.",
+      "createTaskFailed": "Failed to create task"
+    }
+  },
+  "cloudGate": {
+    "loadFailed": "Failed to load app state"
+  }
+}

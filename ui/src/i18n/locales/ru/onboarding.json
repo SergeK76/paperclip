@@ -1,1 +1,254 @@
-{}
+{
+  "invite": {
+    "thisCompany": "эта компания Paperclip",
+    "thisAccount": "эта учётка",
+    "loading": "Загрузка приглашения…",
+    "checkingAccess": "Проверка доступа…",
+    "openingCompany": "Открываем компанию…",
+    "bootstrapComplete": "Bootstrap завершён",
+    "joined": "Ты в компании",
+    "messageFromInviter": "Сообщение от пригласившего",
+    "signedInAs": "Вошёл как",
+    "buttons": {
+      "continue": "Продолжить",
+      "accept": "Принять приглашение",
+      "submitRequest": "Отправить заявку",
+      "working": "Выполняется…"
+    },
+    "header": {
+      "kicker": "Тебя пригласили в Paperclip",
+      "setupTitle": "Настроить Paperclip",
+      "joinTitle": "Присоединиться к {{company}}",
+      "agentDescription": "Посмотри детали приглашения, затем заполни информацию об агенте чтобы отправить заявку.",
+      "requiresAccountDescription": "Сначала создай аккаунт Paperclip. Если он у тебя уже есть — переключись на вход и продолжи с тем же email.",
+      "readyDescription": "Учётка готова. Проверь детали приглашения и прими его чтобы продолжить."
+    },
+    "details": {
+      "company": "Компания",
+      "invitedBy": "Пригласил",
+      "paperclipBoard": "Paperclip board",
+      "requestedAccess": "Запрашиваемый доступ",
+      "agentJoinRequest": "Заявка на добавление агента",
+      "companyAccess": "Доступ к компании",
+      "expires": "Срок приглашения"
+    },
+    "pending": {
+      "title": "Заявка на вступление в {{company}}",
+      "waiting": "Твоя заявка ждёт одобрения. {{approver}} должен её одобрить.",
+      "defaultApprover": "Админ компании",
+      "approvalPage": "Страница одобрения",
+      "approvalLinkLabel": "Настройки компании → Доступ",
+      "askAdminPrefix": "Попроси его зайти в",
+      "askAdminSuffix": "чтобы одобрить заявку.",
+      "refreshHint": "Обнови страницу после одобрения — тебя автоматически перенаправит.",
+      "claimSecret": "Секрет для подтверждения",
+      "onboardingLabel": "Онбординг:"
+    },
+    "agentForm": {
+      "title": "Укажи данные агента",
+      "description": "Это приглашение создаст заявку на добавление нового агента в {{company}}.",
+      "agentName": "Имя агента",
+      "adapterType": "Тип адаптера",
+      "capabilities": "Возможности",
+      "comingSoon": "Скоро"
+    },
+    "auth": {
+      "createTitle": "Создай аккаунт",
+      "signInTitle": "Войди чтобы продолжить",
+      "createDescription": "Начни с создания аккаунта Paperclip. После этого вернёшься сюда чтобы принять приглашение для {{company}}.",
+      "signInDescription": "Используй аккаунт Paperclip который совпадает с email приглашения. Если его ещё нет — вернись к созданию аккаунта.",
+      "thatEmail": "этот email",
+      "existsSignIn": "Аккаунт для {{email}} уже существует. Войди ниже чтобы продолжить.",
+      "invalidCredentials": "Email и пароль не совпали с существующим аккаунтом Paperclip. Проверь поля или создай аккаунт если ты новый пользователь.",
+      "maybeExists": "Возможно аккаунт для {{email}} уже существует. Попробуй войти.",
+      "tabs": {
+        "create": "Создать аккаунт",
+        "existing": "У меня уже есть аккаунт"
+      },
+      "buttons": {
+        "signInContinue": "Войти и продолжить",
+        "createContinue": "Создать аккаунт и продолжить"
+      },
+      "hint": {
+        "alreadyRegistered": "Уже регистрировался? Переключись на вход чтобы приглашение сработало для правильного аккаунта.",
+        "noAccount": "Ещё нет аккаунта? Переключись на создание аккаунта чтобы принять приглашение с новым логином."
+      }
+    },
+    "accept": {
+      "submittingTitle": "Отправка заявки",
+      "bootstrapTitle": "Принять bootstrap-приглашение",
+      "companyTitle": "Принять приглашение в компанию",
+      "submittingDescription": "Отправляется заявка на вступление в {{company}}.",
+      "alreadyMemberDescription": "Эта учётка уже состоит в {{company}}.",
+      "bootstrapDescription": "Это завершит настройку Paperclip.",
+      "companyDescription": "Это отправит или завершит твою заявку на вступление в {{company}}.",
+      "submittingRequest": "Отправка…",
+      "finishingSignIn": "Завершение входа…"
+    }
+  },
+  "wizard": {
+    "close": "Закрыть",
+    "steps": {
+      "company": "Компания",
+      "agent": "Агент",
+      "task": "Задача",
+      "launch": "Запуск"
+    },
+    "step1": {
+      "title": "Назови свою компанию",
+      "description": "Это организация, на которую будут работать твои агенты.",
+      "companyName": "Название компании",
+      "companyNamePlaceholder": "Acme Corp",
+      "mission": "Миссия / цель (необязательно)",
+      "missionPlaceholder": "Чего пытается добиться эта компания?"
+    },
+    "step2": {
+      "title": "Создай первого агента",
+      "description": "Выбери как этот агент будет выполнять задачи.",
+      "agentName": "Имя агента",
+      "agentNamePlaceholder": "CEO",
+      "adapterType": "Тип адаптера",
+      "recommended": "Рекомендуется",
+      "moreAdapters": "Ещё типы адаптеров",
+      "model": "Модель",
+      "modelRequired": "Выбери модель (обязательно)",
+      "modelDefault": "По умолчанию",
+      "modelSearchPlaceholder": "Поиск моделей…",
+      "noModels": "Модели не найдены.",
+      "gatewayUrl": "URL шлюза",
+      "webhookUrl": "URL вебхука",
+      "envCheck": {
+        "title": "Проверка окружения адаптера",
+        "description": "Живой тест — просит CLI адаптера ответить «hello».",
+        "testNow": "Проверить",
+        "testing": "Проверка…",
+        "passed": "Пройдено",
+        "unsetAnthropicPrefix": "Claude упал пока",
+        "unsetAnthropicSuffix": "установлен. Можешь очистить его в конфиге CEO-адаптера и повторить проверку.",
+        "unsetAnthropic": "Очистить ANTHROPIC_API_KEY",
+        "unsetAnthropicRetrying": "Повтор…",
+        "manualDebug": "Ручная отладка",
+        "promptLabel": "Промпт:",
+        "promptValue": "Respond with hello.",
+        "authHintPrefix": "Если авторизация не работает — установи",
+        "authHintInfix": "в env или запусти",
+        "loginHintPrefix": "Если нужен вход — запусти",
+        "loginHintSuffix": "и попробуй снова."
+      }
+    },
+    "step3": {
+      "title": "Дай ему что-нибудь сделать",
+      "description": "Дай агенту небольшую задачу для старта — фикс бага, исследование, написать скрипт.",
+      "taskTitle": "Название задачи",
+      "taskTitlePlaceholder": "напр. Изучить цены конкурентов",
+      "taskDescription": "Описание (необязательно)",
+      "taskDescriptionPlaceholder": "Добавь больше деталей о том, что должен сделать агент…",
+      "defaultTaskTitle": "Найми первого инженера и составь план найма",
+      "defaultTaskDescription": "Ты CEO. Ты задаёшь направление компании.\n\n- найми основателя-инженера\n- составь план найма\n- разбей roadmap на конкретные задачи и начни их делегировать"
+    },
+    "step4": {
+      "title": "Готово к запуску",
+      "description": "Всё настроено. Запуск создаст стартовую задачу, разбудит агента и откроет задачу.",
+      "labelCompany": "Компания",
+      "labelTask": "Задача"
+    },
+    "buttons": {
+      "back": "Назад",
+      "next": "Далее",
+      "creating": "Создание…",
+      "createAndOpenIssue": "Создать и открыть задачу"
+    },
+    "envResult": {
+      "passed": "Пройдено",
+      "warnings": "Предупреждения",
+      "failed": "Не пройдено",
+      "hintLabel": "Подсказка:"
+    }
+  },
+  "access": {
+    "loading": "Загрузка…",
+    "bootstrap": {
+      "title": "Требуется настройка инсталляции",
+      "descriptionWithInvite": "Админа инсталляции ещё нет. Bootstrap-приглашение уже активно. Проверь логи запуска Paperclip — там будет URL первого админ-приглашения, или запусти команду чтобы пересоздать его:",
+      "descriptionNoInvite": "Админа инсталляции ещё нет. Запусти эту команду в окружении Paperclip чтобы получить URL первого админ-приглашения:"
+    },
+    "noBoard": {
+      "title": "Нет доступа к компании",
+      "description1": "Эта учётка вошла, но у неё нет активного членства в компании и нет прав админа инсталляции.",
+      "description2": "Используй приглашение в компанию или войди под учёткой, которая уже состоит в этой организации."
+    }
+  },
+  "cliAuth": {
+    "loading": "Загрузка запроса авторизации CLI…",
+    "title": "Одобрить доступ Paperclip CLI",
+    "description": "Локальный процесс Paperclip CLI запрашивает доступ к этой инсталляции.",
+    "approvedTitle": "Доступ CLI одобрен",
+    "approvedDescription": "Paperclip CLI может завершить авторизацию на запрашивающей машине.",
+    "commandLabel": "Команда:",
+    "expiredTitle": "Срок запроса авторизации CLI истёк",
+    "cancelledTitle": "Запрос авторизации CLI отменён",
+    "restartHint": "Запусти CLI-авторизацию ещё раз из терминала чтобы получить новый запрос.",
+    "signInRequiredTitle": "Требуется вход",
+    "signInRequiredDescription": "Войди или создай аккаунт, затем вернись на эту страницу чтобы одобрить запрос CLI.",
+    "signInOrCreate": "Войти / Создать аккаунт",
+    "labels": {
+      "command": "Команда",
+      "client": "Клиент",
+      "requestedAccess": "Запрашиваемый доступ",
+      "requestedCompany": "Запрашиваемая компания"
+    },
+    "access": {
+      "instanceAdmin": "Админ инсталляции",
+      "board": "Board"
+    },
+    "buttons": {
+      "approve": "Одобрить доступ CLI",
+      "approving": "Одобрение…",
+      "cancel": "Отменить",
+      "cancelling": "Отмена…"
+    }
+  },
+  "boardClaim": {
+    "loading": "Загрузка запроса на владение…",
+    "title": "Получить права владельца Board",
+    "description": "Твоя учётка станет админом этой инсталляции, а владение компаниями перейдёт из режима local trusted к тебе.",
+    "claimButton": "Получить владение",
+    "claiming": "Выполняется…",
+    "claimedTitle": "Владение Board получено",
+    "claimedDescription": "Эта инсталляция теперь связана с твоей учётной записью.",
+    "openBoard": "Открыть Board",
+    "signInRequiredTitle": "Требуется вход",
+    "signInRequiredDescription": "Войди или создай аккаунт, затем вернись на эту страницу чтобы получить владение Board.",
+    "signInOrCreate": "Войти / Создать аккаунт"
+  },
+  "auth": {
+    "loading": "Загрузка…",
+    "signIn": {
+      "title": "Вход в Paperclip",
+      "subtitle": "Используй email и пароль для доступа к этой инсталляции."
+    },
+    "signUp": {
+      "title": "Создание учётной записи Paperclip",
+      "subtitle": "Создай аккаунт для этой инсталляции. Подтверждение email в v1 не требуется."
+    },
+    "fields": {
+      "name": "Имя",
+      "email": "Email",
+      "password": "Пароль"
+    },
+    "submit": {
+      "working": "Выполняется…",
+      "signIn": "Войти",
+      "signUp": "Создать аккаунт"
+    },
+    "toggle": {
+      "needAccount": "Нет учётной записи?",
+      "haveAccount": "Уже есть учётная запись?",
+      "createOne": "Создать",
+      "signIn": "Войти"
+    },
+    "validation": {
+      "required": "Заполни все обязательные поля."
+    }
+  }
+}

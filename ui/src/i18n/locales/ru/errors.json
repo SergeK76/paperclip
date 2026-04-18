@@ -1,1 +1,59 @@
-{}
+{
+  "auth": {
+    "failed": "Ошибка авторизации"
+  },
+  "invite": {
+    "notFound": "Приглашение не найдено",
+    "checkingAccess": "Проверяется доступ к компании. Попробуй ещё раз через секунду.",
+    "alreadyMember": "Эта учётка уже состоит в компании.",
+    "acceptFailed": "Не удалось принять приглашение",
+    "invalidToken": "Некорректный токен приглашения.",
+    "notAvailable": "Приглашение недоступно",
+    "expiredOrUsed": "Приглашение могло истечь, быть отозвано или уже использовано.",
+    "rejected": "Заявка на вступление не была одобрена.",
+    "alreadyUsed": "Это приглашение уже использовано."
+  },
+  "notFound": {
+    "breadcrumb": "Не найдено",
+    "pageTitle": "Страница не найдена",
+    "pageDescription": "Такого маршрута не существует.",
+    "companyTitle": "Компания не найдена",
+    "companyDescription": "Нет компании с префиксом «{{prefix}}».",
+    "unknown": "неизвестный",
+    "requestedPath": "Запрошенный путь:",
+    "openDashboard": "Открыть дашборд",
+    "goHome": "На главную"
+  },
+  "cliAuth": {
+    "invalidUrl": "Некорректная ссылка CLI-авторизации.",
+    "unavailable": "Запрос CLI-авторизации недоступен",
+    "expired": "Запрос некорректен или истёк.",
+    "updateFailed": "Не удалось обновить запрос CLI-авторизации",
+    "needsInstanceAdmin": "Для этого запроса нужны права админа инсталляции. Войди под админом и попробуй снова."
+  },
+  "boardClaim": {
+    "invalidUrl": "Некорректная ссылка для получения владения Board.",
+    "unavailable": "Запрос на владение недоступен",
+    "expired": "Запрос некорректен или истёк.",
+    "claimFailed": "Не удалось получить владение Board"
+  },
+  "onboarding": {
+    "wizard": {
+      "selectCompanyFirst": "Сначала создай или выбери компанию перед проверкой окружения адаптера.",
+      "envTestFailed": "Проверка окружения адаптера не прошла",
+      "createCompanyFailed": "Не удалось создать компанию",
+      "openCodeNeedsModel": "OpenCode требует явную модель в формате provider/model.",
+      "openCodeLoadModelsFailed": "Не удалось загрузить модели OpenCode.",
+      "openCodeModelsLoading": "Модели OpenCode ещё загружаются. Подожди и попробуй снова.",
+      "openCodeNoModels": "Модели OpenCode не найдены. Запусти `opencode models` и авторизуй провайдеров.",
+      "openCodeModelUnavailable": "Настроенная модель OpenCode недоступна: {{model}}",
+      "createAgentFailed": "Не удалось создать агента",
+      "unsetAnthropicStillFailing": "Повторили с очищенным ANTHROPIC_API_KEY в конфиге адаптера, но проверка окружения всё ещё не проходит.",
+      "unsetAnthropicFailed": "Не удалось очистить ANTHROPIC_API_KEY и повторить.",
+      "createTaskFailed": "Не удалось создать задачу"
+    }
+  },
+  "cloudGate": {
+    "loadFailed": "Не удалось загрузить состояние приложения"
+  }
+}
