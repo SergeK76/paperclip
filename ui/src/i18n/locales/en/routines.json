@@ -1,0 +1,189 @@
+{
+  "list": {
+    "breadcrumb": "Routines",
+    "title": "Routines",
+    "description": "Recurring work definitions that materialize into auditable execution issues.",
+    "createButton": "Create routine",
+    "selectCompany": "Select a company to view routines.",
+    "count_one": "{{count}} routine",
+    "count_other": "{{count}} routines",
+    "failedToLoad": "Failed to load routines",
+    "noRoutines": "No routines yet. Use Create routine to define the first recurring workflow.",
+    "tabs": {
+      "routines": "Routines",
+      "runs": "Recent Runs"
+    },
+    "groupButton": "Group",
+    "groupBy": {
+      "project": "Project",
+      "agent": "Agent",
+      "none": "None"
+    },
+    "groupLabels": {
+      "noProject": "No project",
+      "unknownProject": "Unknown project",
+      "unassigned": "Unassigned",
+      "unknownAgent": "Unknown agent"
+    }
+  },
+  "row": {
+    "neverRun": "Never",
+    "statusArchived": "archived",
+    "statusDraft": "draft",
+    "statusPaused": "paused",
+    "labelOn": "On",
+    "labelOff": "Off",
+    "labelArchived": "Archived",
+    "labelDraft": "Draft",
+    "toggleEnable": "Enable {{title}}",
+    "toggleDisable": "Disable {{title}}",
+    "moreActions": "More actions for {{title}}",
+    "edit": "Edit",
+    "runNow": "Run now",
+    "running": "Running...",
+    "pause": "Pause",
+    "enable": "Enable",
+    "archive": "Archive",
+    "restore": "Restore",
+    "noProject": "No project",
+    "unknownProject": "Unknown project",
+    "noAgent": "No default agent",
+    "unknownAgent": "Unknown agent"
+  },
+  "composer": {
+    "heading": "New routine",
+    "description": "Define the recurring work first. Default project and agent are optional for draft routines.",
+    "cancel": "Cancel",
+    "titlePlaceholder": "Routine title",
+    "assigneePlaceholder": "Assignee",
+    "assigneeNone": "No assignee",
+    "assigneeSearch": "Search assignees...",
+    "assigneeEmpty": "No assignees found.",
+    "assigneeFor": "For",
+    "projectPlaceholder": "Project",
+    "projectNone": "No project",
+    "projectSearch": "Search projects...",
+    "projectEmpty": "No projects found.",
+    "projectIn": "in",
+    "instructionsPlaceholder": "Add instructions...",
+    "advanced": {
+      "title": "Advanced delivery settings",
+      "description": "Keep policy controls secondary to the work definition.",
+      "concurrency": "Concurrency",
+      "catchUp": "Catch-up"
+    },
+    "footer": "After creation, Paperclip takes you straight to trigger setup. Draft routines stay paused until you add a default agent.",
+    "creating": "Creating...",
+    "create": "Create routine",
+    "failedToCreate": "Failed to create routine"
+  },
+  "concurrencyPolicies": {
+    "coalesce_if_active": "If a run is already active, keep just one follow-up run queued.",
+    "always_enqueue": "Queue every trigger occurrence, even if the routine is already running.",
+    "skip_if_active": "Drop new trigger occurrences while a run is still active."
+  },
+  "catchUpPolicies": {
+    "skip_missed": "Ignore windows that were missed while the scheduler or routine was paused.",
+    "enqueue_missed_with_cap": "Catch up missed schedule windows in capped batches after recovery."
+  },
+  "toasts": {
+    "created": "Routine created",
+    "createdBodyWithAgent": "Add the first trigger to turn it into a live workflow.",
+    "createdBodyDraft": "Draft saved. Add a default agent before enabling automation.",
+    "updateFailed": "Failed to update routine",
+    "updateFailedBody": "Paperclip could not update the routine.",
+    "runFailed": "Routine run failed",
+    "runFailedBody": "Paperclip could not start the routine run.",
+    "agentRequired": "Default agent required",
+    "agentRequiredBody": "Set a default agent before enabling routine automation."
+  },
+  "detail": {
+    "notFound": "Routine not found",
+    "automationLabel": {
+      "archived": "Archived",
+      "draft": "Draft",
+      "active": "Active",
+      "paused": "Paused"
+    },
+    "togglePause": "Pause automatic triggers",
+    "toggleEnable": "Enable automatic triggers",
+    "secretBanner": {
+      "saveNote": "Save this now. Paperclip will not show the secret value again.",
+      "webhookUrlLabel": "Webhook URL",
+      "webhookSecretLabel": "Webhook secret",
+      "copyUrl": "URL",
+      "copySecret": "Secret"
+    },
+    "draftWarning": "Default agent required. This routine can stay as a draft and still run manually, but automation stays paused until you assign a default agent.",
+    "unsavedChanges": "Unsaved changes",
+    "saveButton": "Save routine",
+    "tabs": {
+      "triggers": "Triggers",
+      "runs": "Runs",
+      "activity": "Activity"
+    },
+    "triggerEditor": {
+      "nextRun": "Next: {{time}}",
+      "kindWebhook": "Webhook",
+      "kindApi": "API",
+      "labelField": "Label",
+      "scheduleField": "Schedule",
+      "signingModeField": "Signing mode",
+      "replayWindowField": "Replay window (seconds)",
+      "lastResult": "Last: {{result}}",
+      "rotateSecret": "Rotate secret",
+      "saveTrigger": "Save trigger"
+    },
+    "addTrigger": {
+      "title": "Add trigger",
+      "kindField": "Kind",
+      "comingSoon": " — COMING SOON",
+      "adding": "Adding...",
+      "add": "Add trigger",
+      "noTriggers": "No triggers configured yet."
+    },
+    "noRuns": "No runs yet.",
+    "noActivity": "No activity yet.",
+    "concurrencyPolicies": {
+      "coalesce_if_active": "Keep one follow-up run queued while an active run is still working.",
+      "always_enqueue": "Queue every trigger occurrence, even if several runs stack up.",
+      "skip_if_active": "Drop overlapping trigger occurrences while the routine is already active."
+    },
+    "catchUpPolicies": {
+      "skip_missed": "Ignore schedule windows that were missed while the routine or scheduler was paused.",
+      "enqueue_missed_with_cap": "Catch up missed schedule windows in capped batches after recovery."
+    },
+    "signingModes": {
+      "bearer": "Expect a shared bearer token in the Authorization header.",
+      "hmac_sha256": "Expect an HMAC SHA-256 signature over the request using the shared secret.",
+      "github_hmac": "Accept GitHub-style X-Hub-Signature-256 header (HMAC over raw body, no timestamp).",
+      "none": "No authentication — the webhook URL itself acts as a shared secret."
+    },
+    "toasts": {
+      "saveFailed": "Failed to save routine",
+      "saveFailedBody": "Paperclip could not save the routine.",
+      "runStarted": "Routine run started",
+      "routineSaved": "Routine saved",
+      "automationPaused": "Automation paused.",
+      "automationEnabled": "Automation enabled.",
+      "webhookTriggerCreated": "Webhook trigger created",
+      "triggerAdded": "Trigger added",
+      "triggerAddedBody": "The routine schedule was saved.",
+      "triggerAddFailed": "Failed to add trigger",
+      "triggerAddFailedBody": "Paperclip could not create the trigger.",
+      "triggerSaved": "Trigger saved",
+      "triggerSavedBody": "The routine cadence update was saved.",
+      "triggerUpdateFailed": "Failed to update trigger",
+      "triggerUpdateFailedBody": "Paperclip could not update the trigger.",
+      "triggerDeleted": "Trigger deleted",
+      "triggerDeleteFailed": "Failed to delete trigger",
+      "triggerDeleteFailedBody": "Paperclip could not delete the trigger.",
+      "webhookSecretRotated": "Webhook secret rotated",
+      "rotateFailed": "Failed to rotate webhook secret",
+      "rotateFailedBody": "Paperclip could not rotate the webhook secret.",
+      "clipboardDenied": "Clipboard access was denied.",
+      "copied": "{{label}} copied",
+      "copyFailed": "Failed to copy {{label}}"
+    }
+  }
+}

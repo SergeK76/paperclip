@@ -1,0 +1,191 @@
+{
+  "list": {
+    "breadcrumb": "Рутины",
+    "title": "Рутины",
+    "description": "Повторяющиеся задачи, которые превращаются в отслеживаемые задачи выполнения.",
+    "createButton": "Создать рутину",
+    "selectCompany": "Выберите компанию для просмотра рутин.",
+    "count_one": "{{count}} рутина",
+    "count_few": "{{count}} рутины",
+    "count_many": "{{count}} рутин",
+    "count_other": "{{count}} рутины",
+    "failedToLoad": "Не удалось загрузить рутины",
+    "noRoutines": "Рутин пока нет. Используйте «Создать рутину» для первого повторяющегося процесса.",
+    "tabs": {
+      "routines": "Рутины",
+      "runs": "Последние запуски"
+    },
+    "groupButton": "Группа",
+    "groupBy": {
+      "project": "Проект",
+      "agent": "Агент",
+      "none": "Без группировки"
+    },
+    "groupLabels": {
+      "noProject": "Без проекта",
+      "unknownProject": "Неизвестный проект",
+      "unassigned": "Без назначения",
+      "unknownAgent": "Неизвестный агент"
+    }
+  },
+  "row": {
+    "neverRun": "Никогда",
+    "statusArchived": "архивная",
+    "statusDraft": "черновик",
+    "statusPaused": "на паузе",
+    "labelOn": "Вкл",
+    "labelOff": "Выкл",
+    "labelArchived": "Архивная",
+    "labelDraft": "Черновик",
+    "toggleEnable": "Включить {{title}}",
+    "toggleDisable": "Отключить {{title}}",
+    "moreActions": "Действия для {{title}}",
+    "edit": "Изменить",
+    "runNow": "Запустить",
+    "running": "Запускается...",
+    "pause": "Пауза",
+    "enable": "Включить",
+    "archive": "Архивировать",
+    "restore": "Восстановить",
+    "noProject": "Без проекта",
+    "unknownProject": "Неизвестный проект",
+    "noAgent": "Нет агента по умолчанию",
+    "unknownAgent": "Неизвестный агент"
+  },
+  "composer": {
+    "heading": "Новая рутина",
+    "description": "Сначала опишите повторяющуюся работу. Проект и агент по умолчанию необязательны для черновиков.",
+    "cancel": "Отмена",
+    "titlePlaceholder": "Название рутины",
+    "assigneePlaceholder": "Исполнитель",
+    "assigneeNone": "Нет исполнителя",
+    "assigneeSearch": "Поиск исполнителей...",
+    "assigneeEmpty": "Исполнители не найдены.",
+    "assigneeFor": "Для",
+    "projectPlaceholder": "Проект",
+    "projectNone": "Без проекта",
+    "projectSearch": "Поиск проектов...",
+    "projectEmpty": "Проекты не найдены.",
+    "projectIn": "в",
+    "instructionsPlaceholder": "Добавить инструкции...",
+    "advanced": {
+      "title": "Расширенные настройки доставки",
+      "description": "Управление политиками — второстепенно по отношению к описанию работы.",
+      "concurrency": "Параллелизм",
+      "catchUp": "Наверстывание"
+    },
+    "footer": "После создания Paperclip переведёт вас к настройке триггеров. Черновые рутины остаются на паузе, пока не будет добавлен агент по умолчанию.",
+    "creating": "Создание...",
+    "create": "Создать рутину",
+    "failedToCreate": "Не удалось создать рутину"
+  },
+  "concurrencyPolicies": {
+    "coalesce_if_active": "Если запуск уже активен, оставить в очереди только один следующий.",
+    "always_enqueue": "Ставить в очередь каждое событие триггера, даже если рутина уже выполняется.",
+    "skip_if_active": "Игнорировать новые события триггера, пока активен текущий запуск."
+  },
+  "catchUpPolicies": {
+    "skip_missed": "Игнорировать пропущенные окна при паузе планировщика или рутины.",
+    "enqueue_missed_with_cap": "Наверстать пропущенные окна расписания ограниченными порциями после восстановления."
+  },
+  "toasts": {
+    "created": "Рутина создана",
+    "createdBodyWithAgent": "Добавьте первый триггер, чтобы запустить автоматизацию.",
+    "createdBodyDraft": "Черновик сохранён. Добавьте агента по умолчанию перед включением автоматизации.",
+    "updateFailed": "Не удалось обновить рутину",
+    "updateFailedBody": "Paperclip не смог обновить рутину.",
+    "runFailed": "Ошибка запуска рутины",
+    "runFailedBody": "Paperclip не смог запустить рутину.",
+    "agentRequired": "Требуется агент по умолчанию",
+    "agentRequiredBody": "Установите агента по умолчанию перед включением автоматизации."
+  },
+  "detail": {
+    "notFound": "Рутина не найдена",
+    "automationLabel": {
+      "archived": "Архивная",
+      "draft": "Черновик",
+      "active": "Активна",
+      "paused": "На паузе"
+    },
+    "togglePause": "Приостановить автозапуски",
+    "toggleEnable": "Включить автозапуски",
+    "secretBanner": {
+      "saveNote": "Сохраните сейчас. Paperclip больше не покажет секрет.",
+      "webhookUrlLabel": "URL вебхука",
+      "webhookSecretLabel": "Секрет вебхука",
+      "copyUrl": "URL",
+      "copySecret": "Секрет"
+    },
+    "draftWarning": "Требуется агент по умолчанию. Рутина остаётся черновиком и может запускаться вручную, но автоматизация отключена до назначения агента.",
+    "unsavedChanges": "Несохранённые изменения",
+    "saveButton": "Сохранить рутину",
+    "tabs": {
+      "triggers": "Триггеры",
+      "runs": "Запуски",
+      "activity": "Активность"
+    },
+    "triggerEditor": {
+      "nextRun": "Следующий: {{time}}",
+      "kindWebhook": "Вебхук",
+      "kindApi": "API",
+      "labelField": "Название",
+      "scheduleField": "Расписание",
+      "signingModeField": "Режим подписи",
+      "replayWindowField": "Окно повтора (секунды)",
+      "lastResult": "Последний: {{result}}",
+      "rotateSecret": "Сменить секрет",
+      "saveTrigger": "Сохранить триггер"
+    },
+    "addTrigger": {
+      "title": "Добавить триггер",
+      "kindField": "Тип",
+      "comingSoon": " — СКОРО",
+      "adding": "Добавление...",
+      "add": "Добавить триггер",
+      "noTriggers": "Триггеры ещё не настроены."
+    },
+    "noRuns": "Запусков пока нет.",
+    "noActivity": "Активности пока нет.",
+    "concurrencyPolicies": {
+      "coalesce_if_active": "Держать в очереди один следующий запуск, пока активный ещё работает.",
+      "always_enqueue": "Ставить в очередь каждое событие триггера, даже если запусков накапливается несколько.",
+      "skip_if_active": "Игнорировать перекрывающиеся события триггера, пока рутина уже активна."
+    },
+    "catchUpPolicies": {
+      "skip_missed": "Игнорировать окна расписания, пропущенные во время паузы рутины или планировщика.",
+      "enqueue_missed_with_cap": "Наверстать пропущенные окна расписания ограниченными порциями после восстановления."
+    },
+    "signingModes": {
+      "bearer": "Ожидать общий bearer-токен в заголовке Authorization.",
+      "hmac_sha256": "Ожидать подпись HMAC SHA-256 запроса с общим секретом.",
+      "github_hmac": "Принимать заголовок X-Hub-Signature-256 в стиле GitHub (HMAC по телу, без временной метки).",
+      "none": "Без аутентификации — URL вебхука сам является общим секретом."
+    },
+    "toasts": {
+      "saveFailed": "Не удалось сохранить рутину",
+      "saveFailedBody": "Paperclip не смог сохранить рутину.",
+      "runStarted": "Запуск рутины начат",
+      "routineSaved": "Рутина сохранена",
+      "automationPaused": "Автоматизация остановлена.",
+      "automationEnabled": "Автоматизация включена.",
+      "webhookTriggerCreated": "Триггер-вебхук создан",
+      "triggerAdded": "Триггер добавлен",
+      "triggerAddedBody": "Расписание рутины сохранено.",
+      "triggerAddFailed": "Не удалось добавить триггер",
+      "triggerAddFailedBody": "Paperclip не смог создать триггер.",
+      "triggerSaved": "Триггер сохранён",
+      "triggerSavedBody": "Изменения расписания рутины сохранены.",
+      "triggerUpdateFailed": "Не удалось обновить триггер",
+      "triggerUpdateFailedBody": "Paperclip не смог обновить триггер.",
+      "triggerDeleted": "Триггер удалён",
+      "triggerDeleteFailed": "Не удалось удалить триггер",
+      "triggerDeleteFailedBody": "Paperclip не смог удалить триггер.",
+      "webhookSecretRotated": "Секрет вебхука сменён",
+      "rotateFailed": "Не удалось сменить секрет вебхука",
+      "rotateFailedBody": "Paperclip не смог сменить секрет вебхука.",
+      "clipboardDenied": "Доступ к буферу обмена запрещён.",
+      "copied": "{{label}} скопирован",
+      "copyFailed": "Не удалось скопировать {{label}}"
+    }
+  }
+}

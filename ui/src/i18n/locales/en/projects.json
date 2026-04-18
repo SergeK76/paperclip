@@ -2,6 +2,33 @@
   "list": {
     "selectCompany": "Select a company to view projects.",
     "noProjects": "No projects yet.",
-    "addProject": "Add Project"
+    "addProject": "Add Project",
+    "fallback": "Project"
+  },
+  "detail": {
+    "descriptionPlaceholder": "Add a description...",
+    "overview": {
+      "status": "Status",
+      "targetDate": "Target Date"
+    },
+    "colorPicker": {
+      "changeColor": "Change project color",
+      "selectColor": "Select color {{color}}"
+    },
+    "tabs": {
+      "issues": "Issues",
+      "overview": "Overview",
+      "workspaces": "Workspaces",
+      "configuration": "Configuration",
+      "budget": "Budget"
+    },
+    "pausedByBudget": "Paused by budget hard stop",
+    "loadingWorkspaces": "Loading workspaces...",
+    "noWorkspaceActivity": "No non-default workspace activity yet.",
+    "cleanupNeeded": "Cleanup attention needed",
+    "archived": "\"{{name}}\" has been archived",
+    "unarchived": "\"{{name}}\" has been unarchived",
+    "failedToArchive": "Failed to archive project",
+    "failedToUnarchive": "Failed to unarchive project"
   }
 }

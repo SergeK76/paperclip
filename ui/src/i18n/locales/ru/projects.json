@@ -2,6 +2,33 @@
   "list": {
     "selectCompany": "Выберите компанию для просмотра проектов.",
     "noProjects": "Проектов пока нет.",
-    "addProject": "Добавить проект"
+    "addProject": "Добавить проект",
+    "fallback": "Проект"
+  },
+  "detail": {
+    "descriptionPlaceholder": "Добавить описание...",
+    "overview": {
+      "status": "Статус",
+      "targetDate": "Целевая дата"
+    },
+    "colorPicker": {
+      "changeColor": "Изменить цвет проекта",
+      "selectColor": "Выбрать цвет {{color}}"
+    },
+    "tabs": {
+      "issues": "Задачи",
+      "overview": "Обзор",
+      "workspaces": "Воркспейсы",
+      "configuration": "Конфигурация",
+      "budget": "Бюджет"
+    },
+    "pausedByBudget": "Остановлен бюджетным лимитом",
+    "loadingWorkspaces": "Загрузка воркспейсов...",
+    "noWorkspaceActivity": "Активности воркспейсов пока нет.",
+    "cleanupNeeded": "Требуется очистка",
+    "archived": "«{{name}}» заархивирован",
+    "unarchived": "«{{name}}» разархивирован",
+    "failedToArchive": "Не удалось заархивировать проект",
+    "failedToUnarchive": "Не удалось разархивировать проект"
   }
 }

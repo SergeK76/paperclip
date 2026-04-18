@@ -14,6 +14,8 @@ import enProjects from "./locales/en/projects.json";
 import enOrg from "./locales/en/org.json";
 import enApprovals from "./locales/en/approvals.json";
 import enActivity from "./locales/en/activity.json";
+import enRoutines from "./locales/en/routines.json";
+import enCosts from "./locales/en/costs.json";
 
 import ruCommon from "./locales/ru/common.json";
 import ruAgents from "./locales/ru/agents.json";
@@ -27,6 +29,8 @@ import ruProjects from "./locales/ru/projects.json";
 import ruOrg from "./locales/ru/org.json";
 import ruApprovals from "./locales/ru/approvals.json";
 import ruActivity from "./locales/ru/activity.json";
+import ruRoutines from "./locales/ru/routines.json";
+import ruCosts from "./locales/ru/costs.json";
 
 export const SUPPORTED_LANGUAGES = ["en", "ru"] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
@@ -48,6 +52,8 @@ export const resources = {
     org: enOrg,
     approvals: enApprovals,
     activity: enActivity,
+    routines: enRoutines,
+    costs: enCosts,
   },
   ru: {
     common: ruCommon,
@@ -62,6 +68,8 @@ export const resources = {
     org: ruOrg,
     approvals: ruApprovals,
     activity: ruActivity,
+    routines: ruRoutines,
+    costs: ruCosts,
   },
 } as const;
 
@@ -78,6 +86,8 @@ export const namespaces = [
   "org",
   "approvals",
   "activity",
+  "routines",
+  "costs",
 ] as const;
 
 void i18n
