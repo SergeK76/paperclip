@@ -62,7 +62,7 @@
     "openMenu": "Открыть меню аккаунта",
     "displayNameFallback": "Борд",
     "localWorkspace": "Локальный воркспейс борда",
-    "signedIn": "Войти",
+    "signedIn": "Авторизован",
     "accountBadge": "Аккаунт",
     "localBadge": "Локально",
     "version": "Paperclip v{{version}}",
@@ -157,7 +157,8 @@
   },
   "shortcuts": {
     "title": "Горячие клавиши",
-    "closeHint": "Нажми Esc для закрытия · Шорткаты отключены в текстовых полях",
+    "closePre": "Нажми",
+    "closePost": "для закрытия · Шорткаты отключены в текстовых полях",
     "then": "затем",
     "inbox": {
       "title": "Входящие",

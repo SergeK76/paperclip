@@ -151,7 +151,8 @@
   },
   "shortcuts": {
     "title": "Keyboard shortcuts",
-    "closeHint": "Press Esc to close · Shortcuts are disabled in text fields",
+    "closePre": "Press",
+    "closePost": "to close · Shortcuts are disabled in text fields",
     "then": "then",
     "inbox": {
       "title": "Inbox",
