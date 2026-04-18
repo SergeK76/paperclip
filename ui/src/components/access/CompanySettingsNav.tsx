@@ -9,7 +9,7 @@ const itemRoutes = [
   { value: "invites", href: "/company/settings/invites" },
 ] as const;
 
-type CompanySettingsTab = (typeof items)[number]["value"];
+type CompanySettingsTab = (typeof itemRoutes)[number]["value"];
 
 export function getCompanySettingsTab(pathname: string): CompanySettingsTab {
   if (pathname.includes("/company/settings/access")) {
