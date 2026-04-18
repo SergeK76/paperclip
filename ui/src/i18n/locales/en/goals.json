@@ -4,5 +4,17 @@
     "noGoals": "No goals yet.",
     "addGoal": "Add Goal",
     "newGoal": "New Goal"
+  },
+  "detail": {
+    "fallback": "Goal",
+    "showProperties": "Show properties",
+    "descriptionPlaceholder": "Add a description...",
+    "tabs": {
+      "subGoals": "Sub-Goals ({{count}})",
+      "projects": "Projects ({{count}})"
+    },
+    "addSubGoal": "Sub Goal",
+    "noSubGoals": "No sub-goals.",
+    "noLinkedProjects": "No linked projects."
   }
 }

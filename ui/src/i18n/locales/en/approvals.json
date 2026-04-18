@@ -10,5 +10,75 @@
     "noApprovals": "No approvals yet.",
     "failedToApprove": "Failed to approve",
     "failedToReject": "Failed to reject"
+  },
+  "detail": {
+    "fallback": "Approval",
+    "notFound": "Approval not found.",
+    "cta": {
+      "reviewLinkedIssues": "Review linked issues",
+      "reviewLinkedIssue": "Review linked issue",
+      "openHiredAgent": "Open hired agent",
+      "backToApprovals": "Back to approvals"
+    },
+    "approvedBanner": {
+      "title": "Approval confirmed",
+      "description": "Requesting agent was notified to review this approval and linked issues."
+    },
+    "requestedBy": "Requested by",
+    "seeFullRequest": "See full request",
+    "decisionNote": "Decision note: {{note}}",
+    "linkedIssues": "Linked Issues",
+    "linkedIssuesNote": "Linked issues remain open until the requesting agent follows up and closes them.",
+    "approve": "Approve",
+    "reject": "Reject",
+    "budgetStop": "Resolve this budget stop from the budget controls on",
+    "requestRevision": "Request revision",
+    "markResubmitted": "Mark resubmitted",
+    "deleteDisapproved": "Delete disapproved agent",
+    "deleteDisapprovedConfirm": "Delete this disapproved agent? This cannot be undone.",
+    "errors": {
+      "approveFailed": "Approve failed",
+      "rejectFailed": "Reject failed",
+      "revisionFailed": "Revision request failed",
+      "resubmitFailed": "Resubmit failed",
+      "commentFailed": "Comment failed",
+      "deleteFailed": "Delete failed"
+    },
+    "comments": "Comments ({{count}})",
+    "commentBoard": "Board",
+    "commentPlaceholder": "Add a comment...",
+    "posting": "Posting…",
+    "postComment": "Post comment"
+  },
+  "joinRequests": {
+    "breadcrumb": "Join Requests",
+    "selectCompany": "Select a company to review join requests.",
+    "loading": "Loading join requests…",
+    "noPermission": "You do not have permission to review join requests for this company.",
+    "failedToLoad": "Failed to load join requests.",
+    "title": "Join Request Queue",
+    "description": "Review human and agent join requests outside the mixed inbox feed. This queue uses the same approval mutations as the inline inbox cards.",
+    "statusLabel": "Status",
+    "requestTypeLabel": "Request type",
+    "statusOptions": {
+      "pendingApproval": "Pending approval",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "typeOptions": {
+      "all": "All",
+      "human": "Human",
+      "agent": "Agent"
+    },
+    "noRequests": "No join requests match the current filters.",
+    "approved": "Join request approved",
+    "rejected": "Join request rejected",
+    "inviteContext": "Invite context",
+    "requestDetails": "Request details",
+    "reject": "Reject",
+    "approve": "Approve",
+    "submitted": "Submitted {{date}}",
+    "sourceIp": "Source IP {{ip}}",
+    "inviteMetaUnavailable": "Invite metadata unavailable"
   }
 }

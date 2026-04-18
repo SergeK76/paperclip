@@ -4,5 +4,17 @@
     "noGoals": "Целей пока нет.",
     "addGoal": "Добавить цель",
     "newGoal": "Новая цель"
+  },
+  "detail": {
+    "fallback": "Цель",
+    "showProperties": "Показать свойства",
+    "descriptionPlaceholder": "Добавить описание...",
+    "tabs": {
+      "subGoals": "Подцели ({{count}})",
+      "projects": "Проекты ({{count}})"
+    },
+    "addSubGoal": "Подцель",
+    "noSubGoals": "Подцелей нет.",
+    "noLinkedProjects": "Связанных проектов нет."
   }
 }
