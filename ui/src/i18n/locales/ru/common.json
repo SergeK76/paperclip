@@ -25,5 +25,254 @@
   "empty": {
     "noResults": "Нет результатов",
     "noData": "Нет данных"
+  },
+  "nav": {
+    "dashboard": "Дашборд",
+    "inbox": "Входящие",
+    "issues": "Задачи",
+    "routines": "Рутины",
+    "goals": "Цели",
+    "projects": "Проекты",
+    "agents": "Агенты",
+    "org": "Орг",
+    "skills": "Навыки",
+    "costs": "Расходы",
+    "activity": "Активность",
+    "settings": "Настройки",
+    "work": "Работа",
+    "company": "Компания",
+    "home": "Главная",
+    "create": "Создать",
+    "newIssue": "Новая задача",
+    "liveCount": "{{count}} активно"
+  },
+  "sidebar": {
+    "newAgent": "Новый агент",
+    "newProject": "Новый проект",
+    "selectCompany": "Выбери компанию",
+    "openCompanyMenu": "Открыть меню {{name}}",
+    "openCompanyMenuDefault": "Открыть меню компании",
+    "invitePeople": "Пригласить в {{name}}",
+    "invitePeopleDefault": "Пригласить людей",
+    "companySettings": "Настройки компании",
+    "signingOut": "Выхожу...",
+    "signOut": "Выйти"
+  },
+  "account": {
+    "openMenu": "Открыть меню аккаунта",
+    "displayNameFallback": "Борд",
+    "localWorkspace": "Локальный воркспейс борда",
+    "signedIn": "Войти",
+    "accountBadge": "Аккаунт",
+    "localBadge": "Локально",
+    "version": "Paperclip v{{version}}",
+    "editProfile": "Изменить профиль",
+    "editProfileDesc": "Обнови отображаемое имя и аватар.",
+    "instanceSettings": "Настройки инстанса",
+    "instanceSettingsDesc": "Перейти к последней открытой странице настроек.",
+    "documentation": "Документация",
+    "documentationDesc": "Открыть документацию Paperclip в новой вкладке.",
+    "switchToLight": "Светлая тема",
+    "switchToDark": "Тёмная тема",
+    "toggleThemeDesc": "Переключить оформление приложения.",
+    "signingOut": "Выхожу...",
+    "signOut": "Выйти",
+    "signOutDesc": "Завершить эту сессию браузера."
+  },
+  "companyRail": {
+    "addCompany": "Добавить компанию"
+  },
+  "companySwitcher": {
+    "selectCompany": "Выбери компанию",
+    "companies": "Компании",
+    "noCompanies": "Нет компаний",
+    "companySettings": "Настройки компании",
+    "manageCompanies": "Управление компаниями"
+  },
+  "dashboard": {
+    "breadcrumb": "Дашборд",
+    "welcomeMessage": "Добро пожаловать в Paperclip. Создай первую компанию и агента, чтобы начать.",
+    "welcomeAction": "Начать",
+    "selectCompany": "Создай или выбери компанию для просмотра дашборда.",
+    "noAgents": "У тебя нет агентов.",
+    "createAgent": "Создай здесь",
+    "budgetIncidents_one": "{{count}} активный бюджетный инцидент",
+    "budgetIncidents_few": "{{count}} активных бюджетных инцидента",
+    "budgetIncidents_many": "{{count}} активных бюджетных инцидентов",
+    "budgetIncidents_other": "{{count}} активных бюджетных инцидента",
+    "budgetDetails": "{{pausedAgents}} агентов приостановлено · {{pausedProjects}} проектов приостановлено · {{pendingApprovals}} ожидают одобрения бюджета",
+    "openBudgets": "Открыть бюджеты",
+    "agentsEnabled": "Активных агентов",
+    "agentsDesc": "{{running}} запущено, {{paused}} приостановлено, {{errors}} ошибок",
+    "tasksInProgress": "Задач в работе",
+    "tasksDesc": "{{open}} открытых, {{blocked}} заблокированных",
+    "monthSpend": "Расходы за месяц",
+    "budgetUsed": "{{pct}}% от {{budget}} бюджета",
+    "unlimitedBudget": "Без ограничений",
+    "pendingApprovals": "Ожидают одобрения",
+    "budgetOverrides": "{{count}} превышений бюджета ожидают одобрения борда",
+    "awaitingReview": "Ожидают проверки борда",
+    "charts": {
+      "runActivity": "Активность запусков",
+      "issuesByPriority": "Задачи по приоритету",
+      "issuesByStatus": "Задачи по статусу",
+      "successRate": "Успешность",
+      "last14Days": "Последние 14 дней"
+    },
+    "recentActivity": "Последняя активность",
+    "recentTasks": "Последние задачи",
+    "noTasks": "Задач пока нет."
+  },
+  "companies": {
+    "breadcrumb": "Компании",
+    "newCompany": "Новая компания",
+    "loading": "Загрузка компаний...",
+    "rename": "Переименовать",
+    "deleteCompany": "Удалить компанию",
+    "agentCount_one": "{{count}} агент",
+    "agentCount_few": "{{count}} агента",
+    "agentCount_many": "{{count}} агентов",
+    "agentCount_other": "{{count}} агента",
+    "issueCount_one": "{{count}} задача",
+    "issueCount_few": "{{count}} задачи",
+    "issueCount_many": "{{count}} задач",
+    "issueCount_other": "{{count}} задачи",
+    "unlimitedBudget": "Без ограничений",
+    "created": "Создано {{time}}",
+    "deleteConfirm": "Удалить эту компанию и все её данные? Это действие необратимо.",
+    "deleting": "Удаляю…",
+    "delete": "Удалить"
+  },
+  "commandPalette": {
+    "placeholder": "Поиск задач, агентов, проектов...",
+    "noResults": "Ничего не найдено.",
+    "actionsGroup": "Действия",
+    "createIssue": "Создать задачу",
+    "createAgent": "Создать агента",
+    "createProject": "Создать проект",
+    "pagesGroup": "Страницы",
+    "issuesGroup": "Задачи",
+    "agentsGroup": "Агенты",
+    "projectsGroup": "Проекты"
+  },
+  "shortcuts": {
+    "title": "Горячие клавиши",
+    "closeHint": "Нажми Esc для закрытия · Шорткаты отключены в текстовых полях",
+    "then": "затем",
+    "inbox": {
+      "title": "Входящие",
+      "moveDown": "Вниз",
+      "moveUp": "Вверх",
+      "open": "Открыть выбранный элемент",
+      "archive": "Архивировать элемент",
+      "markRead": "Отметить как прочитанное",
+      "markUnread": "Отметить как непрочитанное"
+    },
+    "issueDetail": {
+      "title": "Детали задачи",
+      "quickArchive": "Быстро архивировать обратно во входящие",
+      "goToInbox": "Перейти во входящие",
+      "focusComment": "Фокус на поле комментария"
+    },
+    "global": {
+      "title": "Глобальные",
+      "search": "Поиск по странице или быстрый поиск",
+      "newIssue": "Новая задача",
+      "toggleSidebar": "Показать/скрыть боковую панель",
+      "togglePanel": "Показать/скрыть панель",
+      "showShortcuts": "Показать горячие клавиши"
+    }
+  },
+  "layout": {
+    "skipToMain": "Перейти к основному контенту",
+    "closeSidebar": "Закрыть боковую панель",
+    "openSidebar": "Открыть боковую панель"
+  },
+  "mobileNav": {
+    "ariaLabel": "Мобильная навигация"
+  },
+  "instanceSidebar": {
+    "title": "Настройки инстанса",
+    "profile": "Профиль",
+    "general": "Общие",
+    "access": "Доступ",
+    "heartbeats": "Хартбиты",
+    "experimental": "Экспериментальные",
+    "plugins": "Плагины",
+    "adapters": "Адаптеры"
+  },
+  "inbox": {
+    "breadcrumb": "Входящие",
+    "runExitedError": "Запуск завершился с ошибкой.",
+    "markAsRead": "Отметить как прочитанное",
+    "dismissFromInbox": "Убрать из входящих",
+    "dismiss": "Убрать",
+    "retrying": "Повтор…",
+    "retry": "Повторить",
+    "markAllRead": "Отметить все как прочитанные",
+    "markingAllRead": "Отмечаю…",
+    "nestingEnable": "Включить вложенность",
+    "nestingDisable": "Отключить вложенность",
+    "group": "Группировка",
+    "columnPickerTitle": "Выбери видимые колонки входящих",
+    "searchPlaceholder": "Поиск во входящих…",
+    "categoryPlaceholder": "Категория",
+    "approvalStatusPlaceholder": "Статус одобрения",
+    "earlier": "Ранее",
+    "joinRequest": {
+      "human": "Запрос на вступление от пользователя",
+      "agent": "Запрос на вступление от агента",
+      "agentNamed": "Запрос на вступление от агента: {{name}}"
+    },
+    "tabs": {
+      "mine": "Мои",
+      "recent": "Недавние",
+      "unread": "Непрочитанные",
+      "all": "Все"
+    },
+    "markAllReadDialog": {
+      "title": "Отметить все как прочитанные?",
+      "description_one": "Это отметит {{count}} непрочитанный элемент как прочитанный.",
+      "description_few": "Это отметит {{count}} непрочитанных элемента как прочитанные.",
+      "description_many": "Это отметит {{count}} непрочитанных элементов как прочитанные.",
+      "description_other": "Это отметит {{count}} непрочитанных элемента как прочитанные."
+    },
+    "categories": {
+      "allCategories": "Все категории",
+      "myRecentIssues": "Мои недавние задачи",
+      "joinRequests": "Запросы на вступление",
+      "approvals": "Одобрения",
+      "failedRuns": "Неудачные запуски",
+      "alerts": "Уведомления"
+    },
+    "approvalStatuses": {
+      "all": "Все статусы одобрения",
+      "needsAction": "Требуется действие",
+      "resolved": "Решено"
+    },
+    "groupBy": {
+      "none": "Без группировки",
+      "type": "По типу",
+      "workspace": "По воркспейсу"
+    },
+    "empty": {
+      "noSearchResults": "Ничего не найдено во входящих.",
+      "inboxZero": "Входящие пусты.",
+      "noNew": "Нет новых входящих.",
+      "noRecent": "Нет недавних входящих.",
+      "noFilterResults": "Нет входящих, соответствующих фильтрам."
+    },
+    "sections": {
+      "archived": "Архив",
+      "otherResults": "Другие результаты"
+    },
+    "errors": {
+      "failedToApprove": "Не удалось одобрить",
+      "failedToReject": "Не удалось отклонить",
+      "failedToApproveJoin": "Не удалось одобрить запрос на вступление",
+      "failedToRejectJoin": "Не удалось отклонить запрос на вступление",
+      "failedToArchive": "Не удалось архивировать задачу",
+      "failedToUndoArchive": "Не удалось отменить архивацию"
+    }
   }
 }

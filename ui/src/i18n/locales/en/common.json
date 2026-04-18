@@ -25,5 +25,246 @@
   "empty": {
     "noResults": "No results",
     "noData": "No data"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "inbox": "Inbox",
+    "issues": "Issues",
+    "routines": "Routines",
+    "goals": "Goals",
+    "projects": "Projects",
+    "agents": "Agents",
+    "org": "Org",
+    "skills": "Skills",
+    "costs": "Costs",
+    "activity": "Activity",
+    "settings": "Settings",
+    "work": "Work",
+    "company": "Company",
+    "home": "Home",
+    "create": "Create",
+    "newIssue": "New Issue",
+    "liveCount": "{{count}} live"
+  },
+  "sidebar": {
+    "newAgent": "New agent",
+    "newProject": "New project",
+    "selectCompany": "Select company",
+    "openCompanyMenu": "Open {{name}} menu",
+    "openCompanyMenuDefault": "Open company menu",
+    "invitePeople": "Invite people to {{name}}",
+    "invitePeopleDefault": "Invite people",
+    "companySettings": "Company settings",
+    "signingOut": "Signing out...",
+    "signOut": "Sign out"
+  },
+  "account": {
+    "openMenu": "Open account menu",
+    "displayNameFallback": "Board",
+    "localWorkspace": "Local workspace board",
+    "signedIn": "Signed in",
+    "accountBadge": "Account",
+    "localBadge": "Local",
+    "version": "Paperclip v{{version}}",
+    "editProfile": "Edit profile",
+    "editProfileDesc": "Update your display name and avatar.",
+    "instanceSettings": "Instance settings",
+    "instanceSettingsDesc": "Jump back to the last settings page you opened.",
+    "documentation": "Documentation",
+    "documentationDesc": "Open Paperclip docs in a new tab.",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode",
+    "toggleThemeDesc": "Toggle the app appearance.",
+    "signingOut": "Signing out...",
+    "signOut": "Sign out",
+    "signOutDesc": "End this browser session."
+  },
+  "companyRail": {
+    "addCompany": "Add company"
+  },
+  "companySwitcher": {
+    "selectCompany": "Select company",
+    "companies": "Companies",
+    "noCompanies": "No companies",
+    "companySettings": "Company Settings",
+    "manageCompanies": "Manage Companies"
+  },
+  "dashboard": {
+    "breadcrumb": "Dashboard",
+    "welcomeMessage": "Welcome to Paperclip. Set up your first company and agent to get started.",
+    "welcomeAction": "Get Started",
+    "selectCompany": "Create or select a company to view the dashboard.",
+    "noAgents": "You have no agents.",
+    "createAgent": "Create one here",
+    "budgetIncidents_one": "{{count}} active budget incident",
+    "budgetIncidents_other": "{{count}} active budget incidents",
+    "budgetDetails": "{{pausedAgents}} agents paused · {{pausedProjects}} projects paused · {{pendingApprovals}} pending budget approvals",
+    "openBudgets": "Open budgets",
+    "agentsEnabled": "Agents Enabled",
+    "agentsDesc": "{{running}} running, {{paused}} paused, {{errors}} errors",
+    "tasksInProgress": "Tasks In Progress",
+    "tasksDesc": "{{open}} open, {{blocked}} blocked",
+    "monthSpend": "Month Spend",
+    "budgetUsed": "{{pct}}% of {{budget}} budget",
+    "unlimitedBudget": "Unlimited budget",
+    "pendingApprovals": "Pending Approvals",
+    "budgetOverrides": "{{count}} budget overrides awaiting board review",
+    "awaitingReview": "Awaiting board review",
+    "charts": {
+      "runActivity": "Run Activity",
+      "issuesByPriority": "Issues by Priority",
+      "issuesByStatus": "Issues by Status",
+      "successRate": "Success Rate",
+      "last14Days": "Last 14 days"
+    },
+    "recentActivity": "Recent Activity",
+    "recentTasks": "Recent Tasks",
+    "noTasks": "No tasks yet."
+  },
+  "companies": {
+    "breadcrumb": "Companies",
+    "newCompany": "New Company",
+    "loading": "Loading companies...",
+    "rename": "Rename",
+    "deleteCompany": "Delete Company",
+    "agentCount_one": "{{count}} agent",
+    "agentCount_other": "{{count}} agents",
+    "issueCount_one": "{{count}} issue",
+    "issueCount_other": "{{count}} issues",
+    "unlimitedBudget": "Unlimited budget",
+    "created": "Created {{time}}",
+    "deleteConfirm": "Delete this company and all its data? This cannot be undone.",
+    "deleting": "Deleting…",
+    "delete": "Delete"
+  },
+  "commandPalette": {
+    "placeholder": "Search issues, agents, projects...",
+    "noResults": "No results found.",
+    "actionsGroup": "Actions",
+    "createIssue": "Create new issue",
+    "createAgent": "Create new agent",
+    "createProject": "Create new project",
+    "pagesGroup": "Pages",
+    "issuesGroup": "Issues",
+    "agentsGroup": "Agents",
+    "projectsGroup": "Projects"
+  },
+  "shortcuts": {
+    "title": "Keyboard shortcuts",
+    "closeHint": "Press Esc to close · Shortcuts are disabled in text fields",
+    "then": "then",
+    "inbox": {
+      "title": "Inbox",
+      "moveDown": "Move down",
+      "moveUp": "Move up",
+      "open": "Open selected item",
+      "archive": "Archive item",
+      "markRead": "Mark as read",
+      "markUnread": "Mark as unread"
+    },
+    "issueDetail": {
+      "title": "Issue detail",
+      "quickArchive": "Quick-archive back to inbox",
+      "goToInbox": "Go to inbox",
+      "focusComment": "Focus comment composer"
+    },
+    "global": {
+      "title": "Global",
+      "search": "Search current page or quick search",
+      "newIssue": "New issue",
+      "toggleSidebar": "Toggle sidebar",
+      "togglePanel": "Toggle panel",
+      "showShortcuts": "Show keyboard shortcuts"
+    }
+  },
+  "layout": {
+    "skipToMain": "Skip to Main Content",
+    "closeSidebar": "Close sidebar",
+    "openSidebar": "Open sidebar"
+  },
+  "mobileNav": {
+    "ariaLabel": "Mobile navigation"
+  },
+  "instanceSidebar": {
+    "title": "Instance Settings",
+    "profile": "Profile",
+    "general": "General",
+    "access": "Access",
+    "heartbeats": "Heartbeats",
+    "experimental": "Experimental",
+    "plugins": "Plugins",
+    "adapters": "Adapters"
+  },
+  "inbox": {
+    "breadcrumb": "Inbox",
+    "runExitedError": "Run exited with an error.",
+    "markAsRead": "Mark as read",
+    "dismissFromInbox": "Dismiss from inbox",
+    "dismiss": "Dismiss",
+    "retrying": "Retrying…",
+    "retry": "Retry",
+    "markAllRead": "Mark all as read",
+    "markingAllRead": "Marking…",
+    "nestingEnable": "Enable parent-child nesting",
+    "nestingDisable": "Disable parent-child nesting",
+    "group": "Group",
+    "columnPickerTitle": "Choose which inbox columns stay visible",
+    "searchPlaceholder": "Search inbox…",
+    "categoryPlaceholder": "Category",
+    "approvalStatusPlaceholder": "Approval status",
+    "earlier": "Earlier",
+    "joinRequest": {
+      "human": "Human join request",
+      "agent": "Agent join request",
+      "agentNamed": "Agent join request: {{name}}"
+    },
+    "tabs": {
+      "mine": "Mine",
+      "recent": "Recent",
+      "unread": "Unread",
+      "all": "All"
+    },
+    "markAllReadDialog": {
+      "title": "Mark all as read?",
+      "description_one": "This will mark {{count}} unread item as read.",
+      "description_other": "This will mark {{count}} unread items as read."
+    },
+    "categories": {
+      "allCategories": "All categories",
+      "myRecentIssues": "My recent issues",
+      "joinRequests": "Join requests",
+      "approvals": "Approvals",
+      "failedRuns": "Failed runs",
+      "alerts": "Alerts"
+    },
+    "approvalStatuses": {
+      "all": "All approval statuses",
+      "needsAction": "Needs action",
+      "resolved": "Resolved"
+    },
+    "groupBy": {
+      "none": "None",
+      "type": "Type",
+      "workspace": "Workspace"
+    },
+    "empty": {
+      "noSearchResults": "No inbox items match your search.",
+      "inboxZero": "Inbox zero.",
+      "noNew": "No new inbox items.",
+      "noRecent": "No recent inbox items.",
+      "noFilterResults": "No inbox items match these filters."
+    },
+    "sections": {
+      "archived": "Archived",
+      "otherResults": "Other results"
+    },
+    "errors": {
+      "failedToApprove": "Failed to approve",
+      "failedToReject": "Failed to reject",
+      "failedToApproveJoin": "Failed to approve join request",
+      "failedToRejectJoin": "Failed to reject join request",
+      "failedToArchive": "Failed to archive issue",
+      "failedToUndoArchive": "Failed to undo inbox archive"
+    }
   }
 }
