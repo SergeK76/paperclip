@@ -1,11 +1,12 @@
 import { PageTabBar } from "@/components/PageTabBar";
 import { Tabs } from "@/components/ui/tabs";
 import { useLocation, useNavigate } from "@/lib/router";
+import { useTranslation } from "react-i18next";
 
-const items = [
-  { value: "general", label: "General", href: "/company/settings" },
-  { value: "access", label: "Access", href: "/company/settings/access" },
-  { value: "invites", label: "Invites", href: "/company/settings/invites" },
+const itemRoutes = [
+  { value: "general", href: "/company/settings" },
+  { value: "access", href: "/company/settings/access" },
+  { value: "invites", href: "/company/settings/invites" },
 ] as const;
 
 type CompanySettingsTab = (typeof items)[number]["value"];
@@ -23,12 +24,19 @@ export function getCompanySettingsTab(pathname: string): CompanySettingsTab {
 }
 
 export function CompanySettingsNav() {
+  const { t } = useTranslation(["settings"]);
   const location = useLocation();
   const navigate = useNavigate();
   const activeTab = getCompanySettingsTab(location.pathname);
 
+  const items = [
+    { value: "general", label: t("settings:nav.general"), href: "/company/settings" },
+    { value: "access", label: t("settings:nav.access"), href: "/company/settings/access" },
+    { value: "invites", label: t("settings:nav.invites"), href: "/company/settings/invites" },
+  ] as const;
+
   function handleTabChange(value: string) {
-    const nextTab = items.find((item) => item.value === value);
+    const nextTab = itemRoutes.find((item) => item.value === value);
     if (!nextTab || nextTab.value === activeTab) return;
     navigate(nextTab.href);
   }

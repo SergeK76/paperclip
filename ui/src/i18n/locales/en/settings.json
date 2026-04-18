@@ -1,1 +1,647 @@
-{}
+{
+  "nav": {
+    "general": "General",
+    "access": "Access",
+    "invites": "Invites",
+    "companySettings": "Company Settings"
+  },
+  "modeBadge": {
+    "localTrusted": "Local trusted",
+    "authenticated": "Authenticated {{exposure}}"
+  },
+  "instance": {
+    "breadcrumb": "Instance Settings",
+    "heartbeats": {
+      "breadcrumb": "Heartbeats",
+      "loading": "Loading scheduler heartbeats...",
+      "loadFailed": "Failed to load scheduler heartbeats.",
+      "title": "Scheduler Heartbeats",
+      "description": "Agents with a timer heartbeat enabled across all of your companies.",
+      "active": "active",
+      "disabled_stat": "disabled",
+      "companies_one": "company",
+      "companies_other": "companies",
+      "confirmDisableAll_one": "Disable timer heartbeat for {{count}} enabled agent?",
+      "confirmDisableAll_other": "Disable timer heartbeats for all {{count}} enabled agents?",
+      "disabling": "Disabling...",
+      "disableAll": "Disable All",
+      "on": "On",
+      "off": "Off",
+      "fullConfig": "Full agent config",
+      "disableHeartbeat": "Disable Timer Heartbeat",
+      "enableHeartbeat": "Enable Timer Heartbeat",
+      "empty": "No scheduler heartbeats match the current criteria.",
+      "errors": {
+        "updateFailed": "Failed to update heartbeat.",
+        "disableAllFailed": "Failed to disable all heartbeats."
+      }
+    },
+    "general": {
+      "breadcrumb": "General",
+      "loading": "Loading general settings...",
+      "loadFailed": "Failed to load general settings.",
+      "title": "General",
+      "description": "Configure instance-wide defaults that affect how operator-visible logs are displayed.",
+      "deployment": {
+        "sectionTitle": "Deployment and auth",
+        "localTrusted": "Local trusted mode is optimized for a local operator. Browser requests run as local board context and no sign-in is required.",
+        "authenticatedPublic": "Authenticated public mode requires sign-in for board access and is intended for public URLs.",
+        "authenticatedPrivate": "Authenticated private mode requires sign-in and is intended for LAN, VPN, or other private-network deployments.",
+        "authReadiness": "Auth readiness",
+        "bootstrapStatus": "Bootstrap status",
+        "bootstrapInvite": "Bootstrap invite",
+        "ready": "Ready",
+        "notReady": "Not ready",
+        "setupRequired": "Setup required",
+        "active": "Active",
+        "none": "None"
+      },
+      "censorUsername": {
+        "title": "Censor username in logs",
+        "description": "Hide the username segment in home-directory paths and similar operator-visible log output. Standalone username mentions outside of paths are not yet masked in the live transcript view. This is off by default.",
+        "ariaLabel": "Toggle username log censoring"
+      },
+      "keyboardShortcuts": {
+        "title": "Keyboard shortcuts",
+        "description": "Enable app keyboard shortcuts, including inbox navigation and global shortcuts like creating issues or toggling panels. This is off by default.",
+        "ariaLabel": "Toggle keyboard shortcuts"
+      },
+      "backupRetention": {
+        "title": "Backup retention",
+        "description": "Configure how long to keep automatic database backups at each tier. Daily backups are kept in full, then thinned to one per week and one per month. Backups are compressed with gzip.",
+        "daily": "Daily",
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "days": "{{count}} days",
+        "week_one": "1 week",
+        "week_other": "{{count}} weeks",
+        "month_one": "1 month",
+        "month_other": "{{count}} months"
+      },
+      "feedback": {
+        "title": "AI feedback sharing",
+        "description": "Control whether thumbs up and thumbs down votes can send the voted AI output to Paperclip Labs. Votes are always saved locally.",
+        "terms": "Read our terms of service",
+        "noDefault": "No default is saved yet. The next thumbs up or thumbs down choice will ask once and then save the answer here.",
+        "allowed": {
+          "label": "Always allow",
+          "description": "Share voted AI outputs automatically."
+        },
+        "notAllowed": {
+          "label": "Don't allow",
+          "description": "Keep voted AI outputs local only."
+        }
+      },
+      "signOut": {
+        "title": "Sign out",
+        "description": "Sign out of this Paperclip instance. You will be redirected to the login page.",
+        "signingOut": "Signing out...",
+        "button": "Sign out"
+      },
+      "errors": {
+        "saveFailed": "Failed to update general settings.",
+        "signOutFailed": "Failed to sign out."
+      }
+    },
+    "access": {
+      "breadcrumb": "Access",
+      "loading": "Loading instance users…",
+      "loadFailed": "Failed to load users.",
+      "adminRequired": "Instance admin access is required to manage users.",
+      "permissionDenied": "You do not have permission to manage company members.",
+      "title": "Instance Access",
+      "description": "Search users, manage instance-admin status, and control which companies they can access.",
+      "search": {
+        "label": "Search users",
+        "placeholder": "Search by name or email"
+      },
+      "memberships": "{{count}} active company memberships",
+      "selectUser": "Select a user to inspect instance access.",
+      "loadingUser": "Loading user access…",
+      "loadUserFailed": "Failed to load user access.",
+      "companyAccess": {
+        "title": "Company access",
+        "description": "Toggle company membership for this user. New access defaults to an active operator membership.",
+        "removeAdmin": "Remove instance admin",
+        "promoteAdmin": "Promote to instance admin",
+        "saving": "Saving…",
+        "save": "Save company access"
+      },
+      "currentMemberships": {
+        "title": "Current memberships",
+        "unset": "unset"
+      },
+      "toasts": {
+        "companyUpdated": "Company access updated",
+        "instanceRoleUpdated": "Instance role updated"
+      }
+    },
+    "experimental": {
+      "breadcrumb": "Experimental",
+      "loading": "Loading experimental settings...",
+      "loadFailed": "Failed to load experimental settings.",
+      "title": "Experimental",
+      "description": "Opt into features that are still being evaluated before they become default behavior.",
+      "isolatedWorkspaces": {
+        "title": "Enable Isolated Workspaces",
+        "description": "Show execution workspace controls in project configuration and allow isolated workspace behavior for new and existing issue runs.",
+        "ariaLabel": "Toggle isolated workspaces experimental setting"
+      },
+      "autoRestart": {
+        "title": "Auto-Restart Dev Server When Idle",
+        "description": "In `pnpm dev:once`, wait for all queued and running local agent runs to finish, then restart the server automatically when backend changes or migrations make the current boot stale.",
+        "ariaLabel": "Toggle guarded dev-server auto-restart"
+      },
+      "errors": {
+        "saveFailed": "Failed to update experimental settings."
+      }
+    }
+  },
+  "company": {
+    "settings": {
+      "title": "Company Settings",
+      "noCompany": "No company selected. Select a company from the switcher above.",
+      "breadcrumb": "Settings",
+      "sections": {
+        "general": "General",
+        "appearance": "Appearance",
+        "hiring": "Hiring",
+        "feedbackSharing": "Feedback Sharing",
+        "invites": "Invites",
+        "packages": "Company Packages",
+        "danger": "Danger Zone"
+      },
+      "fields": {
+        "companyName": {
+          "label": "Company name",
+          "hint": "The display name for your company."
+        },
+        "description": {
+          "label": "Description",
+          "hint": "Optional description shown in the company profile.",
+          "placeholder": "Optional company description"
+        },
+        "logo": {
+          "label": "Logo",
+          "hint": "Upload a PNG, JPEG, WEBP, GIF, or SVG logo image."
+        },
+        "brandColor": {
+          "label": "Brand color",
+          "hint": "Sets the hue for the company icon. Leave empty for auto-generated color.",
+          "placeholder": "Auto"
+        }
+      },
+      "logo": {
+        "removing": "Removing...",
+        "remove": "Remove logo",
+        "uploadFailed": "Logo upload failed",
+        "uploading": "Uploading logo..."
+      },
+      "save": {
+        "saving": "Saving...",
+        "saveChanges": "Save changes",
+        "saved": "Saved",
+        "failed": "Failed to save"
+      },
+      "hiring": {
+        "label": "Require board approval for new hires",
+        "hint": "New agent hires stay pending until approved by board."
+      },
+      "feedbackSharing": {
+        "label": "Allow sharing voted AI outputs with Paperclip Labs",
+        "hint": "Only AI-generated outputs you explicitly vote on are eligible for feedback sharing.",
+        "description": "Votes are always saved locally. This setting controls whether voted AI outputs may also be marked for sharing with Paperclip Labs.",
+        "termsVersion": "Terms version:",
+        "enabled": "Enabled {{date}}",
+        "sharingDisabled": "Sharing is currently disabled.",
+        "terms": "Read our terms of service",
+        "toastEnabled": "Feedback sharing enabled",
+        "toastDisabled": "Feedback sharing disabled",
+        "toastFailed": "Failed to update feedback sharing"
+      },
+      "invites": {
+        "hint": "Generate an OpenClaw agent invite snippet.",
+        "hintIcon": "Creates a short-lived OpenClaw agent invite and renders a copy-ready prompt.",
+        "generating": "Generating...",
+        "generate": "Generate OpenClaw Invite Prompt",
+        "snippetTitle": "OpenClaw Invite Prompt",
+        "copied": "Copied",
+        "copySnippet": "Copy snippet",
+        "copiedSnippet": "Copied snippet"
+      },
+      "packages": {
+        "description": "Import and export have moved to dedicated pages accessible from the Org Chart header.",
+        "export": "Export",
+        "import": "Import"
+      },
+      "danger": {
+        "description": "Archive this company to hide it from the sidebar. This persists in the database.",
+        "archiving": "Archiving...",
+        "alreadyArchived": "Already archived",
+        "archive": "Archive company",
+        "archiveFailed": "Failed to archive company",
+        "confirmArchive": "Archive company \"{{name}}\"? It will be hidden from the sidebar."
+      }
+    },
+    "access": {
+      "breadcrumb": "Access",
+      "noCompany": "Select a company to manage access.",
+      "loading": "Loading company access…",
+      "loadFailed": "Failed to load company members.",
+      "permissionDenied": "You do not have permission to manage company members.",
+      "title": "Company Access",
+      "description": "Manage company user memberships, membership status, and explicit permission grants for {{company}}.",
+      "instanceAdminNote": "This account can manage access here through instance-admin privileges, but it does not currently hold an active company membership.",
+      "humans": {
+        "title": "Humans",
+        "description": "Manage human company memberships, status, and grants here."
+      },
+      "pendingJoins": {
+        "title": "Pending human joins",
+        "description": "Review human join requests before they become active company members.",
+        "badge": "{{count}} pending",
+        "unknownRequester": "Unknown human requester",
+        "noEmail": "No email available",
+        "inviteUnavailable": "Invite metadata unavailable",
+        "approveLabel": "Approve human",
+        "rejectLabel": "Reject human"
+      },
+      "table": {
+        "userAccount": "User account",
+        "role": "Role",
+        "status": "Status",
+        "grants": "Grants",
+        "action": "Action",
+        "unset": "Unset",
+        "noMembers": "No user memberships found for this company yet.",
+        "edit": "Edit"
+      },
+      "dialog": {
+        "title": "Edit member",
+        "description": "Update company role, membership status, and explicit grants for {{name}}.",
+        "companyRole": "Company role",
+        "membershipStatus": "Membership status",
+        "statusActive": "Active",
+        "statusPending": "Pending",
+        "statusSuspended": "Suspended",
+        "grantsTitle": "Grants",
+        "grantsDescription": "Roles provide implicit grants automatically. Explicit grants below are only for overrides and extra access that should persist even if the role changes.",
+        "implicitGrantsTitle": "Implicit grants from role",
+        "implicitGrantsHasRole": "{{role}} currently includes these permissions automatically.",
+        "implicitGrantsNoRole": "No role is selected, so this member has no implicit grants right now.",
+        "storedExplicitly": "Stored explicitly for this member.",
+        "implicitFromRole": "Included implicitly by the {{role}} role. Add an explicit grant only if it should stay after the role changes.",
+        "unsetOption": "Unset",
+        "cancel": "Cancel",
+        "saving": "Saving…",
+        "save": "Save access"
+      },
+      "permissions": {
+        "agentsCreate": "Create agents",
+        "usersInvite": "Invite humans and agents",
+        "usersManagePermissions": "Manage members and grants",
+        "tasksAssign": "Assign tasks",
+        "tasksAssignScope": "Assign scoped tasks",
+        "joinsApprove": "Approve join requests",
+        "noExplicitGrants": "No explicit grants"
+      },
+      "toasts": {
+        "memberUpdated": "Member updated",
+        "updateFailed": "Failed to update member",
+        "joinApproved": "Join request approved",
+        "joinApproveFailed": "Failed to approve join request",
+        "joinRejected": "Join request rejected",
+        "joinRejectFailed": "Failed to reject join request"
+      }
+    },
+    "invites": {
+      "breadcrumb": "Invites",
+      "noCompany": "Select a company to manage invites.",
+      "loading": "Loading invites…",
+      "loadFailed": "Failed to load invites.",
+      "permissionDenied": "You do not have permission to manage company invites.",
+      "title": "Company Invites",
+      "description": "Create human invite links for company access. New invite links are copied to your clipboard when they are generated.",
+      "create": {
+        "title": "Create invite",
+        "description": "Generate a human invite link and choose the default access it should request.",
+        "chooseRole": "Choose a role",
+        "singleUse": "Each invite link is single-use. The first successful use consumes the link and creates or reuses the matching join request before approval.",
+        "creating": "Creating…",
+        "button": "Create invite",
+        "historyNote": "Invite history below keeps the audit trail."
+      },
+      "roles": {
+        "viewer": {
+          "label": "Viewer",
+          "description": "Can view company work and follow along without operational permissions.",
+          "gets": "No built-in grants."
+        },
+        "operator": {
+          "label": "Operator",
+          "description": "Recommended for people who need to help run work without managing access.",
+          "gets": "Can assign tasks."
+        },
+        "admin": {
+          "label": "Admin",
+          "description": "Recommended for operators who need to invite people, create agents, and approve joins.",
+          "gets": "Can create agents, invite users, assign tasks, and approve join requests."
+        },
+        "owner": {
+          "label": "Owner",
+          "description": "Full company access, including membership and permission management.",
+          "gets": "Everything in Admin, plus managing members and permission grants."
+        }
+      },
+      "defaultBadge": "Default",
+      "latestInvite": {
+        "title": "Latest invite link",
+        "description": "This URL includes the current Paperclip domain returned by the server.",
+        "copied": "Copied",
+        "open": "Open invite"
+      },
+      "history": {
+        "title": "Invite history",
+        "description": "Review invite status, role, inviter, and any linked join request.",
+        "openQueue": "Open join request queue",
+        "empty": "No invites have been created for this company yet.",
+        "colState": "State",
+        "colRole": "Role",
+        "colInvitedBy": "Invited by",
+        "colCreated": "Created",
+        "colJoinRequest": "Join request",
+        "colAction": "Action",
+        "unknownInviter": "Unknown inviter",
+        "reviewRequest": "Review request",
+        "revoke": "Revoke",
+        "inactive": "Inactive",
+        "loadingMore": "Loading more…",
+        "viewMore": "View more"
+      },
+      "clipboard": {
+        "unavailableTitle": "Clipboard unavailable",
+        "unavailableBody": "Copy the invite URL manually from the field below."
+      },
+      "toasts": {
+        "created": "Invite created",
+        "createReadyCopied": "Invite ready below and copied to clipboard.",
+        "createReady": "Invite ready below.",
+        "createFailed": "Failed to create invite",
+        "revoked": "Invite revoked",
+        "revokeFailed": "Failed to revoke invite"
+      }
+    },
+    "skills": {
+      "noCompany": "Select a company to manage skills.",
+      "title": "Skills",
+      "breadcrumb": "Skills",
+      "detailBreadcrumb": "Detail",
+      "available": "{{count}} available",
+      "filterPlaceholder": "Filter skills",
+      "addSourcePlaceholder": "Paste path, GitHub URL, or skills.sh command",
+      "addButton": "Add",
+      "scanTooltip": "Scan project workspaces for skills",
+      "empty": "No skills match this filter.",
+      "selectSkill": "Select a skill to inspect its files.",
+      "collapseSkill": "Collapse {{name}}",
+      "expandSkill": "Expand {{name}}",
+      "create": {
+        "namePlaceholder": "Skill name",
+        "slugPlaceholder": "optional-shortname",
+        "descriptionPlaceholder": "Short description",
+        "cancel": "Cancel",
+        "creating": "Creating...",
+        "button": "Create skill"
+      },
+      "detail": {
+        "removing": "Removing...",
+        "remove": "Remove",
+        "stopEditing": "Stop editing",
+        "edit": "Edit",
+        "source": "Source",
+        "pin": "Pin",
+        "key": "Key",
+        "mode": "Mode",
+        "usedBy": "Used by",
+        "noAgents": "No agents attached",
+        "checkUpdates": "Check for updates",
+        "installUpdate": "Install update {{ref}}",
+        "upToDate": "Up to date",
+        "editable": "Editable",
+        "readOnly": "Read only",
+        "untracked": "untracked",
+        "view": "View",
+        "code": "Code",
+        "cancel": "Cancel",
+        "saving": "Saving...",
+        "save": "Save",
+        "selectFile": "Select a file to inspect.",
+        "detachFirst": "Detach this skill from all agents before removing it.",
+        "tracking": "tracking {{ref}}",
+        "managedBy": {
+          "skillsSh": "skills.sh managed",
+          "github": "GitHub managed",
+          "url": "URL managed",
+          "folder": "Folder managed",
+          "paperclip": "Paperclip managed",
+          "catalog": "Catalog managed"
+        }
+      },
+      "sourceHelp": {
+        "title": "Add a skill source",
+        "description": "Paste a local path, GitHub URL, or `skills.sh` command into the field first.",
+        "browseSkillsSh": "Browse skills.sh",
+        "browseSkillsShDesc": "Find install commands and paste one here.",
+        "searchGithub": "Search GitHub",
+        "searchGithubDesc": "Look for repositories with `SKILL.md`, then paste the repo URL here."
+      },
+      "delete": {
+        "title": "Remove skill",
+        "description": "Remove this skill from the company library. If any agents still use it, removal will be blocked until it is detached.",
+        "aboutToRemove": "You are about to remove {{name}}.",
+        "aboutToRemoveGeneric": "You are about to remove this skill.",
+        "usedBy": "Currently used by {{agents}}.",
+        "detachFirst": "Detach this skill from all agents to enable removal.",
+        "close": "Close",
+        "cancel": "Cancel",
+        "removing": "Removing...",
+        "remove": "Remove skill"
+      },
+      "scan": {
+        "found": "{{count}} found",
+        "imported": "{{count}} imported",
+        "updated": "{{count}} updated",
+        "conflicts": "{{count}} conflicts",
+        "skipped": "{{count}} skipped",
+        "acrossWorkspaces_one": "across {{count}} workspace",
+        "acrossWorkspaces_other": "across {{count}} workspaces"
+      },
+      "toasts": {
+        "importFailed": "Skill import failed",
+        "importWarnings": "Import warnings",
+        "importedSuccess": "Skills imported",
+        "importedBody_one": "{{count}} skill added.",
+        "importedBody_other": "{{count}} skills added.",
+        "createdSuccess": "Skill created",
+        "createdBody": "{{name}} is now editable in the Paperclip workspace.",
+        "createFailed": "Skill creation failed",
+        "scanMutating": "Scanning project workspaces for skills...",
+        "scanRefreshing": "Refreshing skills list...",
+        "scanComplete": "Project skill scan complete",
+        "scanFailed": "Project skill scan failed",
+        "conflictsFound": "Skill conflicts found",
+        "scanWarnings": "Scan warnings",
+        "copiedPath": "Copied path to workspace",
+        "saveFailed": "Save failed",
+        "saveSuccess": "Skill saved",
+        "updateFailed": "Update failed",
+        "updateSuccess": "Skill updated",
+        "updateSuccessBody": "Pinned to {{ref}}",
+        "removeFailed": "Remove failed",
+        "removeSuccess": "Skill removed",
+        "removeSuccessBody": "{{name}} was removed from the company skill library.",
+        "importErrorBody": "Failed to import skill source.",
+        "createErrorBody": "Failed to create skill.",
+        "scanErrorBody": "Failed to scan project workspaces.",
+        "saveErrorBody": "Failed to save skill file.",
+        "updateErrorBody": "Failed to install skill update.",
+        "removeErrorBody": "Failed to remove skill."
+      }
+    },
+    "export": {
+      "noCompany": "Select a company to export.",
+      "loadingData": "Loading export data...",
+      "breadcrumb": "Export",
+      "title": "{{company}} export",
+      "filesSelected_one": "{{selected}} / {{total}} file selected",
+      "filesSelected_other": "{{selected}} / {{total}} files selected",
+      "warnings_one": "{{count}} warning",
+      "warnings_other": "{{count}} warnings",
+      "building": "Building export...",
+      "button_one": "Export {{count}} file",
+      "button_other": "Export {{count}} files",
+      "packageFiles": "Package files",
+      "searchFiles": "Search files...",
+      "showMoreIssues": "Show more issues ({{visible}} of {{total}})",
+      "previewEmpty": "Select a file to preview its contents.",
+      "binaryPreview": "Binary asset preview is not available for this file type.",
+      "toasts": {
+        "downloadSuccess": "Export downloaded",
+        "downloadBody_one": "{{count}} file exported as {{rootPath}}.zip",
+        "downloadBody_other": "{{count}} files exported as {{rootPath}}.zip",
+        "failed": "Export failed",
+        "loadFailed": "Failed to load export data.",
+        "buildFailed": "Failed to build export package."
+      }
+    },
+    "import": {
+      "breadcrumb": "Import",
+      "noCompany": "Select a company to import into.",
+      "sourceTitle": "Import source",
+      "sourceDescription": "Choose a GitHub repo or upload a local Paperclip zip package.",
+      "github": "GitHub repo",
+      "localZip": "Local zip",
+      "chooseZip": "Choose zip",
+      "localZipHelp": "Upload a .zip exported directly from Paperclip. Re-zipped archives created by Finder, Explorer, or other zip tools may not import correctly.",
+      "localZipFiles_one": "{{name}} with {{count}} file",
+      "localZipFiles_other": "{{name}} with {{count}} files",
+      "githubUrl": {
+        "label": "GitHub URL",
+        "hint": "Repo tree path or blob URL to COMPANY.md (e.g. github.com/owner/repo/tree/main/company)."
+      },
+      "target": {
+        "label": "Target",
+        "hint": "Import into this company or create a new one.",
+        "newCompany": "Create new company",
+        "existingCompany": "Existing company: {{name}}"
+      },
+      "newCompanyName": {
+        "label": "New company name",
+        "hint": "Optional override. Leave blank to use the package name.",
+        "placeholder": "Imported Company"
+      },
+      "collision": {
+        "label": "Collision strategy",
+        "hint": "Board imports can rename, skip, or replace matching company content.",
+        "rename": "Rename on conflict",
+        "skip": "Skip on conflict",
+        "replace": "Replace existing"
+      },
+      "preview": {
+        "button": "Preview import",
+        "previewing": "Previewing...",
+        "title": "Import preview",
+        "filesSelected_one": "{{selected}} / {{total}} file selected",
+        "filesSelected_other": "{{selected}} / {{total}} files selected",
+        "conflicts_one": "{{count}} conflict",
+        "conflicts_other": "{{count}} conflicts",
+        "errors_one": "{{count}} error",
+        "errors_other": "{{count}} errors"
+      },
+      "renames": {
+        "title": "Renames",
+        "items_one": "{{count}} item",
+        "items_other": "{{count}} items",
+        "skip": "skip",
+        "skipped": "skipped",
+        "confirmRename": "confirm rename",
+        "confirmed": "confirmed"
+      },
+      "adapters": {
+        "title": "Adapters",
+        "configureButton": "configure adapter",
+        "agents_one": "{{count}} agent",
+        "agents_other": "{{count}} agents"
+      },
+      "importing": "Importing...",
+      "button_one": "Import {{count}} file",
+      "button_other": "Import {{count}} files",
+      "packageFiles": "Package files",
+      "previewEmpty": "Select a file to preview its contents.",
+      "binaryPreview": "Binary asset preview is not available for this file type.",
+      "toasts": {
+        "previewFailed": "Preview failed",
+        "previewFailedBody": "Failed to preview import.",
+        "importFailed": "Import failed",
+        "importFailedBody": "Failed to apply import.",
+        "importComplete": "Import complete",
+        "importCompleteBody_one": "{{company}}: {{count}} agent processed.",
+        "importCompleteBody_other": "{{company}}: {{count}} agents processed.",
+        "packageReadFailed": "Package read failed",
+        "packageReadFailedBody": "Failed to read folder.",
+        "notAZip": "Select a .zip company package.",
+        "emptyZip": "No package files were found in the selected zip archive."
+      }
+    }
+  },
+  "profile": {
+    "breadcrumb": "Profile",
+    "loading": "Loading profile...",
+    "loadFailed": "Failed to load profile.",
+    "title": "Profile",
+    "description": "Control how your account appears in the sidebar and other board surfaces.",
+    "changePhoto": "Change photo",
+    "uploadPhoto": "Upload photo",
+    "remove": "Remove",
+    "uploadHintPrefix": "Click the avatar to upload a new image.",
+    "uploadHintWithCompany": "Stored in Paperclip file storage for {{company}}.",
+    "uploadHintNoCompany": "Select a company to upload an avatar into Paperclip storage.",
+    "displayName": {
+      "label": "Display name",
+      "placeholder": "Board",
+      "hint": "Shown in the sidebar account footer and comment author surfaces."
+    },
+    "email": {
+      "label": "Email",
+      "hint": "Email is managed by your auth session and is read-only here."
+    },
+    "saving": "Saving...",
+    "save": "Save profile",
+    "errors": {
+      "updateFailed": "Failed to update profile.",
+      "uploadFailed": "Failed to upload avatar.",
+      "removeFailed": "Failed to remove avatar.",
+      "selectCompanyFirst": "Select a company before uploading a profile avatar."
+    }
+  }
+}
