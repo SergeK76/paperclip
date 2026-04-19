@@ -1,0 +1,477 @@
+{
+  "actions": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "create": "Erstellen",
+    "close": "Schließen",
+    "confirm": "Bestätigen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "submit": "Absenden",
+    "retry": "Wiederholen",
+    "copy": "Kopieren",
+    "refresh": "Aktualisieren",
+    "search": "Suchen",
+    "loading": "Wird geladen..."
+  },
+  "language": {
+    "label": "Sprache",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "empty": {
+    "noResults": "Keine Ergebnisse",
+    "noData": "Keine Daten"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "inbox": "Posteingang",
+    "issues": "Aufgaben",
+    "routines": "Routinen",
+    "goals": "Ziele",
+    "projects": "Projekte",
+    "agents": "Agenten",
+    "org": "Org",
+    "skills": "Skills",
+    "costs": "Kosten",
+    "activity": "Aktivität",
+    "settings": "Einstellungen",
+    "work": "Arbeit",
+    "company": "Unternehmen",
+    "home": "Startseite",
+    "create": "Erstellen",
+    "newIssue": "Neue Aufgabe",
+    "liveCount": "{{count}} live"
+  },
+  "sidebar": {
+    "newAgent": "Neuer Agent",
+    "newProject": "Neues Projekt",
+    "selectCompany": "Unternehmen auswählen",
+    "openCompanyMenu": "{{name}}-Menü öffnen",
+    "openCompanyMenuDefault": "Unternehmensmenü öffnen",
+    "invitePeople": "Personen zu {{name}} einladen",
+    "invitePeopleDefault": "Personen einladen",
+    "companySettings": "Unternehmenseinstellungen",
+    "signingOut": "Wird abgemeldet...",
+    "signOut": "Abmelden"
+  },
+  "account": {
+    "openMenu": "Kontomenü öffnen",
+    "displayNameFallback": "Board",
+    "localWorkspace": "Lokaler Workspace-Board",
+    "signedIn": "Angemeldet",
+    "accountBadge": "Konto",
+    "localBadge": "Lokal",
+    "version": "Paperclip v{{version}}",
+    "editProfile": "Profil bearbeiten",
+    "editProfileDesc": "Anzeigename und Avatar aktualisieren.",
+    "instanceSettings": "Instanzeinstellungen",
+    "instanceSettingsDesc": "Zur zuletzt geöffneten Einstellungsseite zurückkehren.",
+    "documentation": "Dokumentation",
+    "documentationDesc": "Paperclip-Dokumentation in einem neuen Tab öffnen.",
+    "switchToLight": "Zum hellen Modus wechseln",
+    "switchToDark": "Zum dunklen Modus wechseln",
+    "toggleThemeDesc": "App-Design umschalten.",
+    "signingOut": "Wird abgemeldet...",
+    "signOut": "Abmelden",
+    "signOutDesc": "Diese Browser-Session beenden."
+  },
+  "companyRail": {
+    "addCompany": "Unternehmen hinzufügen"
+  },
+  "companySwitcher": {
+    "selectCompany": "Unternehmen auswählen",
+    "companies": "Unternehmen",
+    "noCompanies": "Keine Unternehmen",
+    "companySettings": "Unternehmenseinstellungen",
+    "manageCompanies": "Unternehmen verwalten"
+  },
+  "dashboard": {
+    "breadcrumb": "Dashboard",
+    "welcomeMessage": "Willkommen bei Paperclip. Richten Sie Ihr erstes Unternehmen und einen Agenten ein, um loszulegen.",
+    "welcomeAction": "Loslegen",
+    "selectCompany": "Erstellen oder wählen Sie ein Unternehmen aus, um das Dashboard anzuzeigen.",
+    "noAgents": "Sie haben keine Agenten.",
+    "createAgent": "Hier einen erstellen",
+    "budgetIncidents_one": "{{count}} aktiver Budget-Vorfall",
+    "budgetIncidents_other": "{{count}} aktive Budget-Vorfälle",
+    "budgetDetails": "{{pausedAgents}} Agenten pausiert · {{pausedProjects}} Projekte pausiert · {{pendingApprovals}} ausstehende Budget-Genehmigungen",
+    "openBudgets": "Budgets öffnen",
+    "agentsEnabled": "Agenten aktiviert",
+    "agentsDesc": "{{running}} aktiv, {{paused}} pausiert, {{errors}} Fehler",
+    "tasksInProgress": "Aufgaben in Bearbeitung",
+    "tasksDesc": "{{open}} offen, {{blocked}} blockiert",
+    "monthSpend": "Monatsausgaben",
+    "budgetUsed": "{{pct}}% von {{budget}} Budget",
+    "unlimitedBudget": "Unbegrenztes Budget",
+    "pendingApprovals": "Ausstehende Genehmigungen",
+    "budgetOverrides": "{{count}} Budget-Überschreibungen warten auf Board-Prüfung",
+    "awaitingReview": "Wartet auf Board-Prüfung",
+    "charts": {
+      "runActivity": "Ausführungsaktivität",
+      "issuesByPriority": "Aufgaben nach Priorität",
+      "issuesByStatus": "Aufgaben nach Status",
+      "successRate": "Erfolgsrate",
+      "last14Days": "Letzte 14 Tage"
+    },
+    "recentActivity": "Aktuelle Aktivität",
+    "recentTasks": "Aktuelle Aufgaben",
+    "noTasks": "Noch keine Aufgaben."
+  },
+  "companies": {
+    "breadcrumb": "Unternehmen",
+    "newCompany": "Neues Unternehmen",
+    "loading": "Unternehmen werden geladen...",
+    "rename": "Umbenennen",
+    "deleteCompany": "Unternehmen löschen",
+    "agentCount_one": "{{count}} Agent",
+    "agentCount_other": "{{count}} Agenten",
+    "issueCount_one": "{{count}} Aufgabe",
+    "issueCount_other": "{{count}} Aufgaben",
+    "unlimitedBudget": "Unbegrenztes Budget",
+    "created": "Erstellt {{time}}",
+    "deleteConfirm": "Dieses Unternehmen und alle zugehörigen Daten löschen? Dies kann nicht rückgängig gemacht werden.",
+    "deleting": "Wird gelöscht…",
+    "delete": "Löschen"
+  },
+  "commandPalette": {
+    "placeholder": "Aufgaben, Agenten, Projekte suchen...",
+    "noResults": "Keine Ergebnisse gefunden.",
+    "actionsGroup": "Aktionen",
+    "createIssue": "Neue Aufgabe erstellen",
+    "createAgent": "Neuen Agenten erstellen",
+    "createProject": "Neues Projekt erstellen",
+    "pagesGroup": "Seiten",
+    "issuesGroup": "Aufgaben",
+    "agentsGroup": "Agenten",
+    "projectsGroup": "Projekte"
+  },
+  "shortcuts": {
+    "title": "Tastaturkürzel",
+    "closePre": "Drücken Sie",
+    "closePost": "zum Schließen · Kürzel sind in Textfeldern deaktiviert",
+    "then": "dann",
+    "inbox": {
+      "title": "Posteingang",
+      "moveDown": "Nach unten bewegen",
+      "moveUp": "Nach oben bewegen",
+      "open": "Ausgewähltes Element öffnen",
+      "archive": "Element archivieren",
+      "markRead": "Als gelesen markieren",
+      "markUnread": "Als ungelesen markieren"
+    },
+    "issueDetail": {
+      "title": "Aufgabendetail",
+      "quickArchive": "Schnell zum Posteingang archivieren",
+      "goToInbox": "Zum Posteingang gehen",
+      "focusComment": "Kommentarfeld fokussieren"
+    },
+    "global": {
+      "title": "Global",
+      "search": "Aktuelle Seite oder Schnellsuche",
+      "newIssue": "Neue Aufgabe",
+      "toggleSidebar": "Seitenleiste umschalten",
+      "togglePanel": "Panel umschalten",
+      "showShortcuts": "Tastaturkürzel anzeigen"
+    }
+  },
+  "layout": {
+    "skipToMain": "Zum Hauptinhalt springen",
+    "closeSidebar": "Seitenleiste schließen",
+    "openSidebar": "Seitenleiste öffnen"
+  },
+  "mobileNav": {
+    "ariaLabel": "Mobile Navigation"
+  },
+  "instanceSidebar": {
+    "title": "Instanzeinstellungen",
+    "profile": "Profil",
+    "general": "Allgemein",
+    "access": "Zugang",
+    "heartbeats": "Heartbeats",
+    "experimental": "Experimentell",
+    "plugins": "Plugins",
+    "adapters": "Adapter"
+  },
+  "inbox": {
+    "breadcrumb": "Posteingang",
+    "runExitedError": "Ausführung mit einem Fehler beendet.",
+    "markAsRead": "Als gelesen markieren",
+    "dismissFromInbox": "Aus dem Posteingang entfernen",
+    "dismiss": "Entfernen",
+    "retrying": "Wird wiederholt…",
+    "retry": "Wiederholen",
+    "markAllRead": "Alle als gelesen markieren",
+    "markingAllRead": "Wird markiert…",
+    "nestingEnable": "Eltern-Kind-Verschachtelung aktivieren",
+    "nestingDisable": "Eltern-Kind-Verschachtelung deaktivieren",
+    "group": "Gruppieren",
+    "columnPickerTitle": "Wählen Sie, welche Posteingang-Spalten sichtbar bleiben",
+    "searchPlaceholder": "Posteingang durchsuchen…",
+    "categoryPlaceholder": "Kategorie",
+    "approvalStatusPlaceholder": "Genehmigungsstatus",
+    "earlier": "Früher",
+    "joinRequest": {
+      "human": "Menschliche Beitrittsanfrage",
+      "agent": "Agenten-Beitrittsanfrage",
+      "agentNamed": "Agenten-Beitrittsanfrage: {{name}}"
+    },
+    "tabs": {
+      "mine": "Meine",
+      "recent": "Aktuell",
+      "unread": "Ungelesen",
+      "all": "Alle"
+    },
+    "markAllReadDialog": {
+      "title": "Alle als gelesen markieren?",
+      "description_one": "Dadurch wird {{count}} ungelesenes Element als gelesen markiert.",
+      "description_other": "Dadurch werden {{count}} ungelesene Elemente als gelesen markiert."
+    },
+    "categories": {
+      "allCategories": "Alle Kategorien",
+      "myRecentIssues": "Meine aktuellen Aufgaben",
+      "joinRequests": "Beitrittsanfragen",
+      "approvals": "Genehmigungen",
+      "failedRuns": "Fehlgeschlagene Ausführungen",
+      "alerts": "Benachrichtigungen"
+    },
+    "approvalStatuses": {
+      "all": "Alle Genehmigungsstatus",
+      "needsAction": "Aktion erforderlich",
+      "resolved": "Gelöst"
+    },
+    "groupBy": {
+      "none": "Keine",
+      "type": "Typ",
+      "workspace": "Workspace"
+    },
+    "empty": {
+      "noSearchResults": "Keine Posteingangs-Elemente entsprechen Ihrer Suche.",
+      "inboxZero": "Posteingang leer.",
+      "noNew": "Keine neuen Posteingangs-Elemente.",
+      "noRecent": "Keine aktuellen Posteingangs-Elemente.",
+      "noFilterResults": "Keine Posteingangs-Elemente entsprechen diesen Filtern."
+    },
+    "sections": {
+      "archived": "Archiviert",
+      "otherResults": "Weitere Ergebnisse"
+    },
+    "approve": "Genehmigen",
+    "reject": "Ablehnen",
+    "requestedBy": "angefragt von {{name}}",
+    "updatedAgo": "aktualisiert {{time}}",
+    "requestedFromIp": "angefragt {{time}} von IP {{ip}}",
+    "adapterType": "adapter: {{type}}",
+    "errors": {
+      "failedToApprove": "Genehmigung fehlgeschlagen",
+      "failedToReject": "Ablehnung fehlgeschlagen",
+      "failedToApproveJoin": "Genehmigung der Beitrittsanfrage fehlgeschlagen",
+      "failedToRejectJoin": "Ablehnung der Beitrittsanfrage fehlgeschlagen",
+      "failedToArchive": "Aufgabe archivieren fehlgeschlagen",
+      "failedToUndoArchive": "Rückgängigmachen der Posteingangs-Archivierung fehlgeschlagen"
+    }
+  },
+  "copyText": {
+    "copyFailed": "Kopieren fehlgeschlagen"
+  },
+  "worktreeBanner": {
+    "label": "Worktree",
+    "copyTitle": "Klicken zum Kopieren des Worktree-Namens",
+    "copied": "Kopiert!"
+  },
+  "devRestartBanner": {
+    "title": "Neustart erforderlich",
+    "autoRestartOn": "Auto-Neustart an",
+    "justNow": "gerade eben",
+    "minutesAgo": "vor {{count}} Min.",
+    "hoursAgo": "vor {{count}} Std.",
+    "daysAgo": "vor {{count}} T.",
+    "reason": {
+      "backendAndMigrations": "Backend-Dateien geändert und Migrationen stehen aus",
+      "pendingMigrations": "ausstehende Migrationen benötigen einen Neustart",
+      "backendChanged": "Backend-Dateien seit dem letzten Serverstart geändert"
+    },
+    "updatedAt": "· aktualisiert {{time}}",
+    "changed": "Geändert: {{paths}}",
+    "changedMore": "+{{count}} mehr",
+    "pendingMigrations": "Ausstehende Migrationen: {{paths}}",
+    "pendingMigrationsMore": "+{{count}} mehr",
+    "waitingForRuns_one": "Warte auf {{count}} laufende Ausführung",
+    "waitingForRuns_other": "Warte auf {{count}} laufende Ausführungen",
+    "autoRestartIdle": "Auto-Neustart wird ausgelöst, wenn die Instanz inaktiv ist",
+    "manualRestart": "{{command}} neu starten, nachdem die aktive Arbeit sicher unterbrochen werden kann"
+  },
+  "outputFeedback": {
+    "helpful": "Hilfreich",
+    "needsWork": "Verbesserungswürdig",
+    "whatCouldBeBetter": "Was hätte besser sein können?",
+    "addNote": "Kurze Notiz hinzufügen",
+    "dismiss": "Schließen",
+    "saving": "Wird gespeichert...",
+    "saveNote": "Notiz speichern",
+    "dialogTitle": "Feedback-Weitergabe-Einstellung speichern",
+    "dialogDesc": "Wählen Sie, ob bewertete KI-Ausgaben mit Paperclip Labs geteilt werden können. Diese Antwort wird zur Standardeinstellung für zukünftige Daumen-hoch- und Daumen-runter-Bewertungen.",
+    "alwaysSavedLocally": "Diese Bewertung wird immer lokal gespeichert.",
+    "alwaysAllowDesc": "Wählen Sie 'Immer erlauben', um diese Bewertung und zukünftige KI-Ausgaben zu teilen. Wählen Sie 'Nicht erlauben', um diese und zukünftige Bewertungen lokal zu behalten.",
+    "changeInSettings": "Sie können dies später unter Instanzeinstellungen > Allgemein ändern.",
+    "readTerms": "Unsere Nutzungsbedingungen lesen",
+    "dontAllow": "Nicht erlauben",
+    "alwaysAllow": "Immer erlauben"
+  },
+  "frontmatterFields": {
+    "name": "Name",
+    "title": "Titel",
+    "kind": "Art",
+    "reportsTo": "Berichtet an",
+    "skills": "Skills",
+    "status": "Status",
+    "description": "Beschreibung",
+    "priority": "Priorität",
+    "assignee": "Bearbeiter",
+    "project": "Projekt",
+    "recurring": "Wiederkehrend",
+    "targetDate": "Zieldatum"
+  },
+  "imageGallery": {
+    "imageFallback": "Bild",
+    "attachment": "Anhang",
+    "download": "Herunterladen",
+    "close": "Schließen",
+    "previous": "Zurück",
+    "next": "Weiter"
+  },
+  "documentDiff": {
+    "old": "Alt",
+    "new": "Neu",
+    "selectRevision": "Revision auswählen",
+    "loadingRevisions": "Revisionen werden geladen...",
+    "selectTwoRevisions": "Wählen Sie zwei Revisionen zum Vergleich.",
+    "sameRevision": "Beide Seiten sind dieselbe Revision.",
+    "content": "Inhalt"
+  },
+  "pathInstructions": {
+    "title": "So erhalten Sie einen vollständigen Pfad",
+    "description": "Fügen Sie den absoluten Pfad (z. B. /Users/you/project) in das Eingabefeld ein.",
+    "choose": "Auswählen",
+    "mac": {
+      "step1": "Öffnen Sie den Finder und navigieren Sie zum Ordner.",
+      "step2": "Rechtsklick (oder Control-Klick) auf den Ordner.",
+      "step3": "Halten Sie die Option-Taste (⌥) gedrückt — 'Kopieren' wechselt zu 'Pfadnamen kopieren'.",
+      "step4": "Klicken Sie auf 'Pfadnamen kopieren' und fügen Sie es hier ein.",
+      "tip": "Sie können auch das Terminal öffnen, cd eingeben, den Ordner ins Terminal-Fenster ziehen und Enter drücken. Dann pwd eingeben, um den vollständigen Pfad zu sehen."
+    },
+    "windows": {
+      "step1": "Öffnen Sie den Datei-Explorer und navigieren Sie zum Ordner.",
+      "step2": "Klicken Sie in die Adressleiste oben — der vollständige Pfad wird angezeigt.",
+      "step3": "Kopieren Sie den Pfad und fügen Sie ihn hier ein.",
+      "tip": "Alternativ halten Sie Shift gedrückt und klicken Sie mit der rechten Maustaste auf den Ordner, dann wählen Sie 'Als Pfad kopieren'."
+    },
+    "linux": {
+      "step1": "Öffnen Sie ein Terminal und navigieren Sie mit cd zum Verzeichnis.",
+      "step2": "Führen Sie pwd aus, um den vollständigen Pfad anzuzeigen.",
+      "step3": "Kopieren Sie die Ausgabe und fügen Sie sie hier ein.",
+      "tip": "In den meisten Dateimanagern zeigt Strg+L den vollständigen Pfad in der Adressleiste an."
+    }
+  },
+  "envVarEditor": {
+    "plain": "Klartext",
+    "secret": "Geheim",
+    "selectSecret": "Secret auswählen...",
+    "secretNamePrompt": "Secret-Name",
+    "failedToCreateSecret": "Secret konnte nicht erstellt werden",
+    "autoInjected": "PAPERCLIP_*-Variablen werden zur Laufzeit automatisch eingefügt."
+  },
+  "jsonSchemaForm": {
+    "required": "Dieses Feld ist erforderlich",
+    "mustBeNumber": "Muss eine gültige Zahl sein",
+    "mustBeInteger": "Muss eine ganze Zahl sein",
+    "mustBeAtLeastChars": "Muss mindestens {{count}} Zeichen haben",
+    "mustBeAtMostChars": "Darf höchstens {{count}} Zeichen haben",
+    "mustMatchPattern": "Muss dem Muster entsprechen: {{pattern}}",
+    "mustBeAtLeast": "Muss mindestens {{count}} sein",
+    "mustBeAtMost": "Darf höchstens {{count}} sein",
+    "mustBeGreaterThan": "Muss größer als {{count}} sein",
+    "mustBeLessThan": "Muss kleiner als {{count}} sein",
+    "mustBeMultipleOf": "Muss ein Vielfaches von {{count}} sein",
+    "mustHaveAtLeastItems": "Muss mindestens {{count}} Elemente haben",
+    "mustHaveAtMostItems": "Darf höchstens {{count}} Elemente haben",
+    "selectOption": "Option auswählen",
+    "secretStored": "Dieses Secret wird sicher über den Paperclip-Secret-Provider gespeichert.",
+    "hideSecret": "Secret ausblenden",
+    "showSecret": "Secret anzeigen",
+    "addItem": "Element hinzufügen",
+    "add": "Hinzufügen",
+    "removeItem": "Element entfernen",
+    "itemIndex": "Element {{index}}",
+    "noItemsAdded": "Noch keine Elemente hinzugefügt."
+  },
+  "inlineEditor": {
+    "placeholder": "Zum Bearbeiten klicken...",
+    "autosaving": "Wird automatisch gespeichert...",
+    "saved": "Gespeichert",
+    "couldNotSave": "Konnte nicht gespeichert werden",
+    "idle": "Inaktiv"
+  },
+  "propertiesPanel": {
+    "title": "Eigenschaften"
+  },
+  "markdownEditor": {
+    "richEditorUnavailable": "Rich-Editor für dieses Markdown nicht verfügbar. Zeige stattdessen den Rohquelltext.",
+    "retryRichEditor": "Rich-Editor erneut versuchen",
+    "imageUploadFailed": "Bild-Upload fehlgeschlagen",
+    "dropFileToUpload": "Datei zum Hochladen ablegen",
+    "dropImageToUpload": "Bild zum Hochladen ablegen"
+  },
+  "mermaid": {
+    "failedToRender": "Mermaid-Diagramm konnte nicht gerendert werden.",
+    "unableToRender": "Mermaid-Diagramm kann nicht gerendert werden: {{error}}",
+    "rendering": "Mermaid-Diagramm wird gerendert..."
+  },
+  "liveUpdates": {
+    "actors": {
+      "agentFallback": "Agent {{id}}",
+      "system": "System",
+      "board": "Board",
+      "someone": "Jemand",
+      "agentType": "Agent"
+    },
+    "viewRef": "{{ref}} anzeigen",
+    "viewInbox": "Posteingang anzeigen",
+    "viewAgent": "Agenten anzeigen",
+    "viewRun": "Ausführung anzeigen",
+    "joinRequest": {
+      "wantsToJoin": "{{label}} möchte beitreten",
+      "body": "Eine neue Beitrittsanfrage wartet auf Genehmigung."
+    },
+    "agentStatus": {
+      "started": "{{name}} gestartet",
+      "errored": "{{name}} Fehler"
+    },
+    "runStatus": {
+      "succeeded": "erfolgreich",
+      "failed": "fehlgeschlagen",
+      "timedOut": "abgelaufen",
+      "cancelled": "abgebrochen",
+      "title": "{{name}}-Ausführung {{statusLabel}}",
+      "trigger": "Auslöser: {{detail}}"
+    },
+    "issue": {
+      "created": "{{actor}} hat {{ref}} erstellt",
+      "updated": "{{actor}} hat {{ref}} aktualisiert",
+      "commented": "{{actor}} hat {{ref}} kommentiert",
+      "reopenedAndCommented": "{{actor}} hat {{ref}} wieder geöffnet und kommentiert",
+      "commentedAndUpdated": "{{actor}} hat {{ref}} kommentiert und aktualisiert",
+      "reassigned": "neu zugewiesen",
+      "unassigned": "Zuweisung aufgehoben",
+      "reopened": "wieder geöffnet",
+      "reopenedFrom": "wieder geöffnet von {{from}}",
+      "titleChanged": "Titel geändert",
+      "descriptionChanged": "Beschreibung geändert",
+      "statusChanged": "Status → {{status}}",
+      "priorityChanged": "Priorität → {{priority}}"
+    }
+  }
+}

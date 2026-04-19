@@ -1,0 +1,59 @@
+{
+  "auth": {
+    "failed": "Authentifizierung fehlgeschlagen"
+  },
+  "invite": {
+    "notFound": "Einladung nicht gefunden",
+    "checkingAccess": "Ihr Unternehmenszugang wird geprüft. Versuchen Sie es in einem Moment erneut.",
+    "alreadyMember": "Dieses Konto gehört bereits zum Unternehmen.",
+    "acceptFailed": "Einladung konnte nicht angenommen werden",
+    "invalidToken": "Ungültiger Einladungs-token.",
+    "notAvailable": "Einladung nicht verfügbar",
+    "expiredOrUsed": "Diese Einladung ist möglicherweise abgelaufen, widerrufen oder bereits verwendet.",
+    "rejected": "Diese Beitrittsanfrage wurde nicht genehmigt.",
+    "alreadyUsed": "Diese Einladung wurde bereits verwendet."
+  },
+  "notFound": {
+    "breadcrumb": "Nicht gefunden",
+    "pageTitle": "Seite nicht gefunden",
+    "pageDescription": "Diese Route existiert nicht.",
+    "companyTitle": "Unternehmen nicht gefunden",
+    "companyDescription": "Kein Unternehmen entspricht dem Präfix \"{{prefix}}\".",
+    "unknown": "unbekannt",
+    "requestedPath": "Angefragter Pfad:",
+    "openDashboard": "Dashboard öffnen",
+    "goHome": "Zur Startseite"
+  },
+  "cliAuth": {
+    "invalidUrl": "Ungültige CLI-Auth-URL.",
+    "unavailable": "CLI-Auth-Challenge nicht verfügbar",
+    "expired": "Challenge ist ungültig oder abgelaufen.",
+    "updateFailed": "CLI-Auth-Challenge konnte nicht aktualisiert werden",
+    "needsInstanceAdmin": "Diese Challenge erfordert Instanz-Admin-Zugang. Melden Sie sich mit einem Instanz-Admin-Konto an, um sie zu genehmigen."
+  },
+  "boardClaim": {
+    "invalidUrl": "Ungültige Board-Claim-URL.",
+    "unavailable": "Claim-Challenge nicht verfügbar",
+    "expired": "Challenge ist ungültig oder abgelaufen.",
+    "claimFailed": "Board-Eigentümerschaft konnte nicht beansprucht werden"
+  },
+  "onboarding": {
+    "wizard": {
+      "selectCompanyFirst": "Erstellen oder wählen Sie ein Unternehmen aus, bevor Sie die Adapter-Umgebung testen.",
+      "envTestFailed": "Adapter-Umgebungstest fehlgeschlagen",
+      "createCompanyFailed": "Unternehmen konnte nicht erstellt werden",
+      "openCodeNeedsModel": "OpenCode erfordert ein explizites Modell im Format Anbieter/Modell.",
+      "openCodeLoadModelsFailed": "OpenCode-Modelle konnten nicht geladen werden.",
+      "openCodeModelsLoading": "OpenCode-Modelle werden noch geladen. Bitte warten und erneut versuchen.",
+      "openCodeNoModels": "Keine OpenCode-Modelle gefunden. Führen Sie `opencode models` aus und authentifizieren Sie Anbieter.",
+      "openCodeModelUnavailable": "Konfiguriertes OpenCode-Modell ist nicht verfügbar: {{model}}",
+      "createAgentFailed": "Agent konnte nicht erstellt werden",
+      "unsetAnthropicStillFailing": "Erneut versucht ohne ANTHROPIC_API_KEY in der Adapter-Konfiguration, aber der Umgebungstest schlägt weiterhin fehl.",
+      "unsetAnthropicFailed": "ANTHROPIC_API_KEY konnte nicht entfernt und erneut versucht werden.",
+      "createTaskFailed": "Aufgabe konnte nicht erstellt werden"
+    }
+  },
+  "cloudGate": {
+    "loadFailed": "App-Status konnte nicht geladen werden"
+  }
+}

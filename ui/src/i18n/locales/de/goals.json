@@ -1,0 +1,61 @@
+{
+  "newGoalDialog": {
+    "header": {
+      "newGoal": "Neues Ziel",
+      "newSubGoal": "Neues Teilziel"
+    },
+    "fields": {
+      "titlePlaceholder": "Zieltitel",
+      "descriptionPlaceholder": "Beschreibung hinzufügen..."
+    },
+    "level": {
+      "company": "Unternehmen",
+      "team": "Team",
+      "agent": "Agent",
+      "task": "Aufgabe"
+    },
+    "parentGoal": {
+      "trigger": "Übergeordnetes Ziel",
+      "noParent": "Kein übergeordnetes Ziel"
+    },
+    "buttons": {
+      "createGoal": "Ziel erstellen",
+      "createSubGoal": "Teilziel erstellen",
+      "creating": "Wird erstellt…"
+    }
+  },
+  "properties": {
+    "rowLabel": {
+      "status": "Status",
+      "level": "Ebene",
+      "owner": "Eigentümer",
+      "parentGoal": "Übergeordnetes Ziel",
+      "created": "Erstellt",
+      "updated": "Aktualisiert"
+    },
+    "placeholders": {
+      "none": "Keines"
+    }
+  },
+  "tree": {
+    "empty": "Keine Ziele."
+  },
+  "list": {
+    "selectCompany": "Wählen Sie ein Unternehmen aus, um Ziele anzuzeigen.",
+    "noGoals": "Noch keine Ziele.",
+    "addGoal": "Ziel hinzufügen",
+    "newGoal": "Neues Ziel"
+  },
+  "detail": {
+    "fallback": "Ziel",
+    "showProperties": "Eigenschaften anzeigen",
+    "descriptionPlaceholder": "Beschreibung hinzufügen...",
+    "tabs": {
+      "subGoals": "Teilziele ({{count}})",
+      "projects": "Projekte ({{count}})"
+    },
+    "addSubGoal": "Teilziel",
+    "noSubGoals": "Keine Teilziele.",
+    "noLinkedProjects": "Keine verknüpften Projekte."
+  }
+}

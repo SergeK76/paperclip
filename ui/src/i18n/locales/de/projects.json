@@ -1,0 +1,176 @@
+{
+  "list": {
+    "selectCompany": "Wählen Sie ein Unternehmen aus, um Projekte anzuzeigen.",
+    "noProjects": "Noch keine Projekte.",
+    "addProject": "Projekt hinzufügen",
+    "fallback": "Projekt"
+  },
+  "newProjectDialog": {
+    "header": {
+      "title": "Neues Projekt"
+    },
+    "fields": {
+      "namePlaceholder": "Projektname",
+      "descriptionPlaceholder": "Beschreibung hinzufügen...",
+      "repoUrl": "Repo-URL",
+      "optional": "optional",
+      "repoUrlTooltip": "Verknüpfen Sie ein GitHub-Repository, damit Agenten Code für dieses Projekt klonen, lesen und pushen können.",
+      "localFolder": "Lokaler Ordner",
+      "localFolderTooltip": "Legen Sie einen absoluten Pfad auf diesem Rechner fest, in dem lokale Agenten Dateien für dieses Projekt lesen und schreiben.",
+      "noGoal": "Kein Ziel",
+      "goal": "Ziel",
+      "goalAdd": "+ Ziel",
+      "allGoalsSelected": "Alle Ziele bereits ausgewählt."
+    },
+    "buttons": {
+      "create": "Projekt erstellen",
+      "creating": "Wird erstellt…"
+    },
+    "errors": {
+      "createFailed": "Projekt konnte nicht erstellt werden.",
+      "localPathInvalid": "Lokaler Ordner muss ein vollständiger absoluter Pfad sein.",
+      "repoUrlInvalid": "Repo muss eine gültige GitHub- oder GitHub Enterprise-Repo-URL verwenden."
+    }
+  },
+  "workspaceSummary": {
+    "kinds": {
+      "executionWorkspace": "Ausführungs-Workspace",
+      "projectWorkspace": "Projekt-Workspace"
+    },
+    "labels": {
+      "updated": "Aktualisiert {{time}}",
+      "services": "{{running}}/{{total}} Services",
+      "branch": "Branch",
+      "path": "Pfad",
+      "pathCopied": "Pfad kopiert",
+      "service": "Service",
+      "linkedIssues": "Verknüpfte Aufgaben",
+      "moreIssues": "+{{count}} mehr"
+    },
+    "buttons": {
+      "startServices": "Services starten",
+      "stopServices": "Services stoppen",
+      "closeWorkspace": "Workspace schließen",
+      "retryClose": "Schließen wiederholen"
+    }
+  },
+  "detail": {
+    "descriptionPlaceholder": "Beschreibung hinzufügen...",
+    "overview": {
+      "status": "Status",
+      "targetDate": "Zieldatum"
+    },
+    "colorPicker": {
+      "changeColor": "Projektfarbe ändern",
+      "selectColor": "Farbe {{color}} auswählen"
+    },
+    "tabs": {
+      "issues": "Aufgaben",
+      "overview": "Übersicht",
+      "workspaces": "Workspaces",
+      "configuration": "Konfiguration",
+      "budget": "Budget"
+    },
+    "pausedByBudget": "Durch Budget-Hartstopp pausiert",
+    "loadingWorkspaces": "Workspaces werden geladen...",
+    "noWorkspaceActivity": "Noch keine Nicht-Standard-Workspace-Aktivität.",
+    "cleanupNeeded": "Bereinigung erforderlich",
+    "archived": "\"{{name}}\" wurde archiviert",
+    "unarchived": "\"{{name}}\" wurde aus dem Archiv geholt",
+    "failedToArchive": "Projekt archivieren fehlgeschlagen",
+    "failedToUnarchive": "Projekt aus dem Archiv holen fehlgeschlagen"
+  },
+  "properties": {
+    "saveState": {
+      "saving": "Wird gespeichert",
+      "saved": "Gespeichert",
+      "failed": "Fehlgeschlagen"
+    },
+    "statuses": {
+      "backlog": "Rückstand",
+      "planned": "Geplant",
+      "in_progress": "In Bearbeitung",
+      "completed": "Abgeschlossen",
+      "cancelled": "Abgebrochen"
+    },
+    "rowLabel": {
+      "name": "Name",
+      "description": "Beschreibung",
+      "status": "Status",
+      "lead": "Projektleiter",
+      "goals": "Ziele",
+      "env": "Umgebung",
+      "created": "Erstellt",
+      "updated": "Aktualisiert",
+      "targetDate": "Zieldatum"
+    },
+    "placeholders": {
+      "projectName": "Projektname",
+      "addDescription": "Beschreibung hinzufügen...",
+      "noDescription": "Keine Beschreibung",
+      "localPath": "/absoluter/pfad/zum/workspace",
+      "repoUrl": "https://github.com/org/repo"
+    },
+    "buttons": {
+      "save": "Speichern",
+      "cancel": "Abbrechen",
+      "confirm": "Bestätigen",
+      "addGoal": "Ziel",
+      "changeRepo": "Repo ändern",
+      "setRepo": "Repo festlegen",
+      "changeLocalFolder": "Lokalen Ordner ändern",
+      "setLocalFolder": "Lokalen Ordner festlegen"
+    },
+    "errors": {
+      "localPathNotAbsolute": "Lokaler Ordner muss ein vollständiger absoluter Pfad sein.",
+      "repoUrlInvalid": "Repo muss eine gültige GitHub- oder GitHub Enterprise-Repo-URL verwenden.",
+      "failedToSaveWorkspace": "Workspace konnte nicht gespeichert werden.",
+      "failedToDeleteWorkspace": "Workspace konnte nicht gelöscht werden.",
+      "failedToUpdateWorkspace": "Workspace konnte nicht aktualisiert werden."
+    },
+    "codebase": {
+      "title": "Codebasis",
+      "helpTooltip": "Das Repo identifiziert die Quelle der Wahrheit. Der lokale Ordner ist der Standardort, an dem Agenten Code schreiben.",
+      "repoLabel": "Repo",
+      "localFolderLabel": "Lokaler Ordner",
+      "notSet": "Nicht festgelegt.",
+      "managedFolder": "Von Paperclip verwalteter Ordner.",
+      "legacyWorkspacesNote": "Auf diesem Projekt gibt es zusätzliche Legacy-Workspace-Einträge. Paperclip verwendet den primären Workspace als Codebasis-Ansicht.",
+      "noUrl": "Keine URL",
+      "clearRepoWithFolder": "Repo aus diesem Workspace löschen?",
+      "deleteRepo": "Repo aus diesem Workspace löschen?",
+      "clearLocalWithRepo": "Lokalen Ordner aus diesem Workspace löschen?",
+      "deleteLocalFolder": "Lokalen Ordner aus diesem Workspace löschen?"
+    },
+    "executionWorkspace": {
+      "title": "Ausführungs-Workspaces",
+      "helpTooltip": "Projektweite Standards für isolierte Aufgaben-Checkouts und Ausführungs-Workspace-Verhalten.",
+      "enableTitle": "Isolierte Aufgaben-Checkouts aktivieren",
+      "enableDescription": "Erlauben Sie Aufgaben, zwischen dem primären Checkout des Projekts und einem isolierten Ausführungs-Workspace zu wählen.",
+      "enabled": "Aktiviert",
+      "disabled": "Deaktiviert",
+      "defaultIsolatedTitle": "Neue Aufgaben standardmäßig als isolierter Checkout",
+      "defaultIsolatedDescription": "Wenn deaktiviert, bleiben neue Aufgaben beim primären Checkout des Projekts, sofern sich niemand manuell entscheidet.",
+      "showAdvanced": "Erweiterte Checkout-Einstellungen anzeigen",
+      "hideAdvanced": "Erweiterte Checkout-Einstellungen ausblenden",
+      "implementation": "Host-verwaltete Implementierung: Git-Worktree",
+      "baseRef": "Basis-Ref",
+      "branchTemplate": "Branch-Vorlage",
+      "worktreeParentDir": "Worktree-Elternverzeichnis",
+      "provisionCommand": "Bereitstellungsbefehl",
+      "teardownCommand": "Abbaubefehl",
+      "provisionNote": "Die Bereitstellung wird im abgeleiteten Worktree vor der Agent-Ausführung ausgeführt. Der Abbau wird hier für zukünftige Bereinigungsabläufe gespeichert."
+    },
+    "archive": {
+      "archiveDescription": "Dieses Projekt archivieren, um es aus der Seitenleiste und den Projektselektoren auszublenden.",
+      "unarchiveDescription": "Dieses Projekt aus dem Archiv holen, um es in der Seitenleiste und den Projektselektoren wiederherzustellen.",
+      "archiving": "Wird archiviert...",
+      "unarchiving": "Wird aus dem Archiv geholt...",
+      "confirmPrompt": "{{action}} \"{{name}}\"?",
+      "archiveProject": "Projekt archivieren",
+      "unarchiveProject": "Projekt aus Archiv holen"
+    },
+    "dangerZone": "Gefahrenzone",
+    "allGoalsLinked": "Alle Ziele verknüpft."
+  }
+}

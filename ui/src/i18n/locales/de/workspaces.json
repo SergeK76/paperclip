@@ -1,0 +1,273 @@
+{
+  "common": {
+    "saveBtn": "Änderungen speichern",
+    "resetBtn": "Zurücksetzen",
+    "noChanges": "Keine nicht gespeicherten Änderungen.",
+    "none": "Keines",
+    "copied": "Kopiert"
+  },
+  "exec": {
+    "backBtn": "Zurück zu allen Workspaces",
+    "sectionLabel": "Ausführungs-Workspace",
+    "description": "Konfigurieren Sie den konkreten Laufzeit-Workspace, den Paperclip für diesen Aufgabenablauf wiederverwendet.",
+    "descriptionExtra": " Diese Einstellungen bleiben dem Ausführungs-Workspace angehängt, damit zukünftige Ausführungen lokale Pfade, Repo-Refs, Bereitstellung, Abbau und Laufzeit-Service-Verhalten mit dem tatsächlich wiederverwendeten Workspace synchron halten können.",
+    "commandsLabel": "Workspace-Befehle",
+    "commandsTitle": "Services und Jobs",
+    "sourceLabel": "Quelle",
+    "sourceExecWorkspace": "Ausführungs-Workspace-Überschreibung",
+    "sourceProjectWorkspace": "Projekt-Workspace-Standard",
+    "sourceNone": "keins",
+    "serviceEmpty": "Für diesen Ausführungs-Workspace wurden noch keine Services gestartet.",
+    "serviceEmptyNoConfig": "Für diesen Ausführungs-Workspace ist noch keine Workspace-Befehlskonfiguration definiert.",
+    "jobEmpty": "Für diesen Ausführungs-Workspace sind noch keine Einmal-Jobs konfiguriert.",
+    "disabledHint": "Ausführungs-Workspaces benötigen ein Arbeitsverzeichnis, bevor lokale Befehle ausgeführt werden können, und Services benötigen auch Laufzeitkonfiguration.",
+    "loadingState": "Workspace wird geladen…",
+    "loadError": "Workspace konnte nicht geladen werden",
+    "tabs": {
+      "configuration": "Konfiguration",
+      "runtimeLogs": "Laufzeitprotokolle",
+      "issues": "Aufgaben"
+    },
+    "config": {
+      "sectionLabel": "Konfiguration",
+      "title": "Workspace-Einstellungen",
+      "description": "Bearbeiten Sie den konkreten Pfad, das Repo, den Branch, die Bereitstellung, den Abbau und die Laufzeit-Überschreibungen, die diesem Ausführungs-Workspace angehängt sind.",
+      "closeBtn": "Workspace schließen",
+      "retryCloseBtn": "Schließen wiederholen"
+    },
+    "fields": {
+      "name": "Workspace-Name",
+      "branchName": "Branch-Name",
+      "cwd": "Arbeitsverzeichnis",
+      "providerRef": "Anbieter-Pfad / Ref",
+      "repoUrl": "Repo-URL",
+      "baseRef": "Basis-Ref",
+      "provisionCmd": "Bereitstellungsbefehl",
+      "teardownCmd": "Abbaubefehl",
+      "cleanupCmd": "Bereinigungsbefehl",
+      "runtimeJson": "Workspace-Befehle-JSON"
+    },
+    "hints": {
+      "branchName": "Nützlich für isolierte Worktrees",
+      "provisionCmd": "Wird ausgeführt, wenn Paperclip diesen Ausführungs-Workspace vorbereitet",
+      "teardownCmd": "Wird ausgeführt, wenn der Ausführungs-Workspace archiviert oder bereinigt wird",
+      "cleanupCmd": "Workspace-spezifische Bereinigung vor dem Abbau",
+      "runtimeJson": "Legacy-`services`-Arrays funktionieren noch, aber `commands` unterstützt sowohl Services als auch Jobs."
+    },
+    "placeholders": {
+      "name": "Ausführungs-Workspace-Name"
+    },
+    "runtimeSource": {
+      "label": "Laufzeitkonfigurations-Quelle",
+      "override": "Dieser Ausführungs-Workspace überschreibt derzeit die Laufzeitkonfiguration des Projekt-Workspaces.",
+      "inheriting": "Dieser Ausführungs-Workspace erbt derzeit die Laufzeitkonfiguration des Projekt-Workspaces.",
+      "none": "Auf diesem Ausführungs-Workspace oder seinem Projekt-Workspace ist derzeit keine Laufzeitkonfiguration definiert.",
+      "resetBtn": "Auf Erben zurücksetzen",
+      "advancedSummary": "Erweitertes Laufzeit-JSON",
+      "advancedHint": "Das geerbte Workspace-Befehlsmodell nur überschreiben, wenn dieser Ausführungs-Workspace wirklich anderes Service- oder Job-Verhalten benötigt.",
+      "inheritCheckbox": "Laufzeitkonfiguration des Projekt-Workspaces erben"
+    },
+    "runtimeMsg": {
+      "jobCompleted": "Workspace-Job abgeschlossen.",
+      "serviceStopped": "Workspace-Service gestoppt.",
+      "serviceRestarted": "Workspace-Service neu gestartet.",
+      "serviceStarted": "Workspace-Service gestartet."
+    },
+    "error": {
+      "saveFailed": "Ausführungs-Workspace konnte nicht gespeichert werden.",
+      "buildFailed": "Workspace-Update konnte nicht erstellt werden.",
+      "controlFailed": "Workspace-Befehle konnten nicht gesteuert werden."
+    },
+    "linked": {
+      "sectionLabel": "Verknüpfte Objekte",
+      "title": "Workspace-Kontext",
+      "project": "Projekt",
+      "projectWorkspace": "Projekt-Workspace",
+      "sourceIssue": "Quellaufgabe",
+      "derivedFrom": "Abgeleitet von",
+      "workspaceId": "Workspace-ID"
+    },
+    "paths": {
+      "sectionLabel": "Pfade und Refs",
+      "title": "Konkreter Speicherort",
+      "cwd": "Arbeitsverzeichnis",
+      "providerRef": "Anbieter-Ref",
+      "repoUrl": "Repo-URL",
+      "baseRef": "Basis-Ref",
+      "branch": "Branch",
+      "opened": "Geöffnet",
+      "lastUsed": "Zuletzt verwendet",
+      "cleanup": "Bereinigung",
+      "notScheduled": "Nicht geplant"
+    },
+    "logs": {
+      "sectionLabel": "Aktuelle Operationen",
+      "title": "Laufzeit- und Bereinigungsprotokolle",
+      "loading": "Workspace-Operationen werden geladen…",
+      "loadError": "Workspace-Operationen konnten nicht geladen werden.",
+      "empty": "Noch keine Workspace-Operationen aufgezeichnet."
+    }
+  },
+  "project": {
+    "backBtn": "Zurück zu den Workspaces",
+    "primaryBadge": "Primärer Workspace",
+    "secondaryBadge": "Sekundärer Workspace",
+    "sectionLabel": "Projekt-Workspace",
+    "description": "Konfigurieren Sie den konkreten Workspace, den Paperclip diesem Projekt anhängt. Diese Werte steuern das Checkout-Verhalten pro Workspace, Standard-Laufzeit-Services für untergeordnete Ausführungs-Workspaces und ermöglichen das Überschreiben von Einrichtungs- oder Bereinigungsbefehlen, wenn ein Workspace besondere Behandlung benötigt.",
+    "makePrimaryBtn": "Als primär festlegen",
+    "isPrimaryMsg": "Dies ist der primäre Codebasis-Workspace des Projekts.",
+    "notFound": "Workspace für dieses Projekt nicht gefunden.",
+    "fields": {
+      "name": "Workspace-Name",
+      "visibility": "Sichtbarkeit",
+      "sourceType": "Quellentyp",
+      "localPath": "Lokaler Pfad",
+      "repoUrl": "Repo-URL",
+      "repoRef": "Repo-Ref",
+      "defaultRef": "Standard-Ref",
+      "sharedKey": "Gemeinsamer Workspace-Schlüssel",
+      "remoteProvider": "Remote-Anbieter",
+      "remoteRef": "Remote-Workspace-Ref",
+      "setupCmd": "Einrichtungsbefehl",
+      "cleanupCmd": "Bereinigungsbefehl",
+      "runtimeJson": "Workspace-Befehle-JSON"
+    },
+    "hints": {
+      "setupCmd": "Wird ausgeführt, wenn dieser Workspace benutzerdefinierten Bootstrap benötigt",
+      "cleanupCmd": "Wird vor dem Abbau des projektweiten Ausführungs-Workspaces ausgeführt",
+      "runtimeJson": "Ausführungs-Workspaces erben diese Konfiguration, sofern sie nicht überschrieben wird. Legacy-`services`-Arrays funktionieren noch, aber `commands` unterstützt sowohl Services als auch Jobs."
+    },
+    "sourceTypes": {
+      "localPath": {
+        "label": "Lokaler Git-Checkout",
+        "description": "Ein lokaler Pfad, den Paperclip direkt verwenden kann."
+      },
+      "nonGitPath": {
+        "label": "Lokaler Nicht-Git-Pfad",
+        "description": "Ein lokaler Ordner ohne Git-Semantik."
+      },
+      "gitRepo": {
+        "label": "Remote-Git-Repo",
+        "description": "Eine Repo-URL mit optionalen Refs und lokalem Checkout."
+      },
+      "remoteManaged": {
+        "label": "Remote-verwalteter Workspace",
+        "description": "Ein gehosteter Workspace, der durch externe Referenz verfolgt wird."
+      }
+    },
+    "commands": {
+      "sectionLabel": "Workspace-Befehle",
+      "title": "Services und Jobs",
+      "description": "Langfristige Services werden hier überwacht, während Einmal-Jobs auf Anfrage gegen diesen Workspace ausgeführt werden. Ausführungs-Workspaces erben diese Konfiguration, sofern sie nicht überschrieben wird."
+    },
+    "serviceEmpty": "Für diesen Workspace wurden noch keine Services gestartet.",
+    "serviceEmptyNoConfig": "Für diesen Workspace ist noch keine Workspace-Befehlskonfiguration definiert.",
+    "jobEmpty": "Für diesen Workspace sind noch keine Einmal-Jobs konfiguriert.",
+    "disabledHint": "Projekt-Workspaces benötigen ein Arbeitsverzeichnis, bevor lokale Befehle ausgeführt werden können, und Services benötigen auch Laufzeitkonfiguration.",
+    "error": {
+      "saveFailed": "Workspace konnte nicht gespeichert werden.",
+      "updateFailed": "Workspace konnte nicht aktualisiert werden."
+    },
+    "facts": {
+      "sectionLabel": "Workspace-Fakten",
+      "title": "Aktueller Zustand",
+      "project": "Projekt",
+      "workspaceId": "Workspace-ID",
+      "localPath": "Lokaler Pfad",
+      "repo": "Repo",
+      "defaultRef": "Standard-Ref",
+      "updated": "Aktualisiert"
+    },
+    "runtimeAdvancedHint": "Paperclip leitet Services und Jobs aus diesem JSON ab. Bevorzugen Sie das Bearbeiten benannter Befehle zuerst; verwenden Sie Raw-JSON für erweiterte Lebenszyklus-, Port-, Bereitschafts- oder Umgebungseinstellungen."
+  },
+  "controls": {
+    "workspaceCommands": "Workspace-Befehle",
+    "servicesRunning_one": "{{count}} Service läuft",
+    "servicesRunning_other": "{{count}} Services laufen",
+    "noServicesRunning": "Keine Services laufen",
+    "jobsAvailable_one": "{{count}} Job zum Ausführen auf Anfrage verfügbar.",
+    "jobsAvailable_other": "{{count}} Jobs zum Ausführen auf Anfrage verfügbar.",
+    "eachCommandIndependent": "Jeder Befehl kann unabhängig gesteuert werden.",
+    "statusRunOnce": "einmal ausführen",
+    "port": "Port {{port}}",
+    "actions": {
+      "run": "Ausführen",
+      "start": "Starten",
+      "stop": "Stoppen",
+      "restart": "Neu starten"
+    },
+    "sections": {
+      "services": "Services",
+      "servicesDesc": "Langfristige Befehle, die Paperclip für diesen Workspace überwachen kann.",
+      "servicesEmpty": "Für diesen Workspace sind keine Services konfiguriert.",
+      "jobs": "Jobs",
+      "jobsDesc": "Einmal-Befehle, die jetzt ausgeführt werden und beenden, wenn sie fertig sind.",
+      "jobsEmpty": "Für diesen Workspace sind keine Einmal-Jobs konfiguriert.",
+      "untracked": "Nicht verfolgte Services",
+      "untrackedDesc": "Laufende Services, die nicht mehr der aktuellen Workspace-Befehlskonfiguration entsprechen."
+    }
+  },
+  "closeDialog": {
+    "actionRetry": "Schließen wiederholen",
+    "actionClose": "Workspace schließen",
+    "toast": {
+      "retried": "Workspace-Schließen wiederholt",
+      "closed": "Workspace geschlossen",
+      "closeFailed": "Workspace konnte nicht geschlossen werden",
+      "unknownError": "Unbekannter Fehler"
+    },
+    "description": "{{name}} archivieren und alle eigenen Workspace-Artefakte bereinigen. Paperclip behält den Workspace-Eintrag und die Aufgabenhistorie, entfernt ihn aber aus aktiven Workspace-Ansichten.",
+    "checkingReadiness": "Wird geprüft, ob dieser Workspace sicher geschlossen werden kann...",
+    "readinessError": "Workspace-Schließ-Bereitschaft konnte nicht überprüft werden.",
+    "state": {
+      "blocked": "Schließen ist blockiert",
+      "ready_with_warnings": "Schließen ist mit Warnungen erlaubt",
+      "ready": "Schließen ist bereit"
+    },
+    "workspaceDesc": {
+      "shared": "Dies ist eine gemeinsame Workspace-Session. Das Archivieren entfernt diesen Session-Eintrag, behält aber den zugrunde liegenden Projekt-Workspace.",
+      "ownCheckout": "Dieser Ausführungs-Workspace hat seinen eigenen Checkout-Pfad und kann unabhängig archiviert werden.",
+      "primaryPath": "Dieser Ausführungs-Workspace zeigt derzeit auf den primären Workspace-Pfad des Projekts.",
+      "disposable": "Dieser Workspace ist verfügbar und kann archiviert werden."
+    },
+    "sections": {
+      "blockingIssues": "Blockierende Aufgaben",
+      "blockingReasons": "Blockierende Gründe",
+      "warnings": "Warnungen",
+      "gitStatus": "Git-Status",
+      "otherIssues": "Andere verknüpfte Aufgaben",
+      "runtimeServices": "Angehängte Laufzeit-Services",
+      "cleanupActions": "Bereinigungsaktionen"
+    },
+    "git": {
+      "branch": "Branch",
+      "baseRef": "Basis-Ref",
+      "mergedIntoBase": "In Basis gemergt",
+      "aheadBehind": "Voraus / zurück",
+      "dirtyFiles": "Geänderte verfolgte Dateien",
+      "untrackedFiles": "Nicht verfolgte Dateien",
+      "unknown": "Unbekannt",
+      "notSet": "Nicht gesetzt",
+      "yes": "Ja",
+      "no": "Nein"
+    },
+    "noDetails": "Keine weiteren Details",
+    "retryNote": "Die Bereinigung ist zuvor für diesen Workspace fehlgeschlagen. Das Wiederholen des Schließens führt den Bereinigungsablauf erneut aus und aktualisiert den Workspace-Status bei Erfolg.",
+    "alreadyArchived": "Dieser Workspace ist bereits archiviert.",
+    "repoRoot": "Repo-Wurzel:",
+    "workspacePath": "Workspace-Pfad:",
+    "lastChecked": "Zuletzt geprüft {{time}}",
+    "cancel": "Abbrechen"
+  },
+  "participantPicker": {
+    "reviewers": "Prüfer",
+    "approvers": "Genehmiger",
+    "searchReviewers": "Prüfer suchen...",
+    "searchApprovers": "Genehmiger suchen...",
+    "noReviewers": "Keine Prüfer",
+    "noApprovers": "Keine Genehmiger",
+    "assignToMe": "Mir zuweisen",
+    "requester": "Antragsteller",
+    "user": "Benutzer"
+  }
+}

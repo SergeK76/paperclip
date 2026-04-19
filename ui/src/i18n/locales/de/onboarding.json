@@ -1,0 +1,254 @@
+{
+  "invite": {
+    "thisCompany": "dieses Paperclip-Unternehmen",
+    "thisAccount": "dieses Konto",
+    "loading": "Einladung wird geladen...",
+    "checkingAccess": "Ihr Zugang wird geprüft...",
+    "openingCompany": "Unternehmen wird geöffnet...",
+    "bootstrapComplete": "Bootstrap abgeschlossen",
+    "joined": "Sie sind dem Unternehmen beigetreten",
+    "messageFromInviter": "Nachricht vom Einladenden",
+    "signedInAs": "Angemeldet als",
+    "buttons": {
+      "continue": "Weiter",
+      "accept": "Einladung annehmen",
+      "submitRequest": "Anfrage absenden",
+      "working": "Wird verarbeitet..."
+    },
+    "header": {
+      "kicker": "Sie wurden eingeladen, Paperclip beizutreten",
+      "setupTitle": "Paperclip einrichten",
+      "joinTitle": "{{company}} beitreten",
+      "agentDescription": "Prüfen Sie die Einladungsdetails und senden Sie dann die Agent-Informationen unten ab, um die Beitrittsanfrage zu starten.",
+      "requiresAccountDescription": "Erstellen Sie zuerst Ihr Paperclip-Konto. Wenn Sie bereits eines haben, wechseln Sie zur Anmeldung und fahren Sie mit der Einladung mit derselben E-Mail fort.",
+      "readyDescription": "Ihr Konto ist bereit. Prüfen Sie die Einladungsdetails und nehmen Sie sie dann an, um fortzufahren."
+    },
+    "details": {
+      "company": "Unternehmen",
+      "invitedBy": "Eingeladen von",
+      "paperclipBoard": "Paperclip-Board",
+      "requestedAccess": "Angefragter Zugang",
+      "agentJoinRequest": "Agenten-Beitrittsanfrage",
+      "companyAccess": "Unternehmenszugang",
+      "expires": "Einladung läuft ab"
+    },
+    "pending": {
+      "title": "Anfrage, {{company}} beizutreten",
+      "waiting": "Ihre Anfrage wartet noch auf Genehmigung. {{approver}} muss Ihre Beitrittsanfrage genehmigen.",
+      "defaultApprover": "Ein Unternehmens-Admin",
+      "approvalPage": "Genehmigungsseite",
+      "approvalLinkLabel": "Unternehmenseinstellungen → Zugang",
+      "askAdminPrefix": "Bitten Sie ihn, zu besuchen",
+      "askAdminSuffix": "um Ihre Anfrage zu genehmigen.",
+      "refreshHint": "Aktualisieren Sie diese Seite, nachdem Sie genehmigt wurden — Sie werden automatisch weitergeleitet.",
+      "claimSecret": "Secret beanspruchen",
+      "onboardingLabel": "Onboarding:"
+    },
+    "agentForm": {
+      "title": "Agent-Details absenden",
+      "description": "Diese Einladung erstellt eine Genehmigungsanfrage für einen neuen Agenten in {{company}}.",
+      "agentName": "Agent-Name",
+      "adapterType": "Adapter-Typ",
+      "capabilities": "Fähigkeiten",
+      "comingSoon": "Demnächst verfügbar"
+    },
+    "auth": {
+      "createTitle": "Konto erstellen",
+      "signInTitle": "Anmelden um fortzufahren",
+      "createDescription": "Beginnen Sie mit einem Paperclip-Konto. Danach kommen Sie direkt zurück, um die Einladung für {{company}} anzunehmen.",
+      "signInDescription": "Verwenden Sie das Paperclip-Konto, das bereits zu dieser Einladung passt. Wenn Sie noch keines haben, wechseln Sie zurück zu Konto erstellen.",
+      "thatEmail": "diese E-Mail",
+      "existsSignIn": "Ein Konto existiert bereits für {{email}}. Melden Sie sich unten an, um mit dieser Einladung fortzufahren.",
+      "invalidCredentials": "Diese E-Mail und dieses Passwort stimmten mit keinem bestehenden Paperclip-Konto überein. Prüfen Sie beide Felder oder erstellen Sie zuerst ein Konto, wenn Sie neu hier sind.",
+      "maybeExists": "Möglicherweise existiert bereits ein Konto für {{email}}. Versuchen Sie stattdessen, sich anzumelden.",
+      "tabs": {
+        "create": "Konto erstellen",
+        "existing": "Ich habe bereits ein Konto"
+      },
+      "buttons": {
+        "signInContinue": "Anmelden und fortfahren",
+        "createContinue": "Konto erstellen und fortfahren"
+      },
+      "hint": {
+        "alreadyRegistered": "Schon früher angemeldet? Verwenden Sie die Option 'Bestehendes Konto', damit die Einladung beim richtigen Paperclip-Benutzer landet.",
+        "noAccount": "Noch kein Konto? Wechseln Sie zurück zu Konto erstellen, um die Einladung mit einer neuen Anmeldung anzunehmen."
+      }
+    },
+    "accept": {
+      "submittingTitle": "Beitrittsanfrage wird abgesendet",
+      "bootstrapTitle": "Bootstrap-Einladung annehmen",
+      "companyTitle": "Unternehmenseinladung annehmen",
+      "submittingDescription": "Ihre Beitrittsanfrage für {{company}} wird abgesendet.",
+      "alreadyMemberDescription": "Dieses Konto gehört bereits zu {{company}}.",
+      "bootstrapDescription": "Damit wird die Einrichtung von Paperclip abgeschlossen.",
+      "companyDescription": "Damit wird Ihre Beitrittsanfrage für {{company}} eingereicht oder abgeschlossen.",
+      "submittingRequest": "Anfrage wird abgesendet...",
+      "finishingSignIn": "Anmeldung wird abgeschlossen..."
+    }
+  },
+  "wizard": {
+    "close": "Schließen",
+    "steps": {
+      "company": "Unternehmen",
+      "agent": "Agent",
+      "task": "Aufgabe",
+      "launch": "Starten"
+    },
+    "step1": {
+      "title": "Nennen Sie Ihr Unternehmen",
+      "description": "Dies ist die Organisation, für die Ihre Agenten arbeiten werden.",
+      "companyName": "Unternehmensname",
+      "companyNamePlaceholder": "Muster GmbH",
+      "mission": "Mission / Ziel (optional)",
+      "missionPlaceholder": "Was versucht dieses Unternehmen zu erreichen?"
+    },
+    "step2": {
+      "title": "Ersten Agenten erstellen",
+      "description": "Wählen Sie, wie dieser Agent Aufgaben ausführen wird.",
+      "agentName": "Agent-Name",
+      "agentNamePlaceholder": "CEO",
+      "adapterType": "Adapter-Typ",
+      "recommended": "Empfohlen",
+      "moreAdapters": "Weitere Agent-Adapter-Typen",
+      "model": "Modell",
+      "modelRequired": "Modell auswählen (erforderlich)",
+      "modelDefault": "Standard",
+      "modelSearchPlaceholder": "Modelle suchen...",
+      "noModels": "Keine Modelle gefunden.",
+      "gatewayUrl": "Gateway-URL",
+      "webhookUrl": "Webhook-URL",
+      "envCheck": {
+        "title": "Adapter-Umgebungsprüfung",
+        "description": "Führt eine Live-Prüfung durch, die den Adapter-CLI bittet, mit hello zu antworten.",
+        "testNow": "Jetzt testen",
+        "testing": "Wird getestet...",
+        "passed": "Bestanden",
+        "unsetAnthropicPrefix": "Claude ist fehlgeschlagen, während",
+        "unsetAnthropicSuffix": "gesetzt ist. Sie können es in dieser CEO-Adapter-Konfiguration löschen und die Prüfung erneut versuchen.",
+        "unsetAnthropic": "ANTHROPIC_API_KEY entfernen",
+        "unsetAnthropicRetrying": "Wird wiederholt...",
+        "manualDebug": "Manuelles Debugging",
+        "promptLabel": "Prompt:",
+        "promptValue": "Mit hello antworten.",
+        "authHintPrefix": "Wenn die Authentifizierung fehlschlägt, setzen Sie",
+        "authHintInfix": "in der Umgebung oder führen Sie aus",
+        "loginHintPrefix": "Wenn eine Anmeldung erforderlich ist, führen Sie aus",
+        "loginHintSuffix": "und versuchen Sie es erneut."
+      }
+    },
+    "step3": {
+      "title": "Etwas zu tun geben",
+      "description": "Geben Sie Ihrem Agenten eine kleine Aufgabe zum Starten — einen Bugfix, eine Recherchefrage, ein Skript schreiben.",
+      "taskTitle": "Aufgabentitel",
+      "taskTitlePlaceholder": "z. B. Konkurrenzpreise recherchieren",
+      "taskDescription": "Beschreibung (optional)",
+      "taskDescriptionPlaceholder": "Weitere Details darüber, was der Agent tun soll...",
+      "defaultTaskTitle": "Ersten Ingenieur einstellen und Einstellungsplan erstellen",
+      "defaultTaskDescription": "Sie sind der CEO. Sie geben die Richtung für das Unternehmen vor.\n\n- einen Gründungsingenieur einstellen\n- einen Einstellungsplan schreiben\n- die Roadmap in konkrete Aufgaben aufteilen und Arbeit delegieren"
+    },
+    "step4": {
+      "title": "Bereit zum Starten",
+      "description": "Alles ist eingerichtet. Das Starten jetzt erstellt die Starteraufgabe, weckt den Agenten und öffnet die Aufgabe.",
+      "labelCompany": "Unternehmen",
+      "labelTask": "Aufgabe"
+    },
+    "buttons": {
+      "back": "Zurück",
+      "next": "Weiter",
+      "creating": "Wird erstellt...",
+      "createAndOpenIssue": "Erstellen & Aufgabe öffnen"
+    },
+    "envResult": {
+      "passed": "Bestanden",
+      "warnings": "Warnungen",
+      "failed": "Fehlgeschlagen",
+      "hintLabel": "Hinweis:"
+    }
+  },
+  "access": {
+    "loading": "Wird geladen...",
+    "bootstrap": {
+      "title": "Instanz-Setup erforderlich",
+      "descriptionWithInvite": "Noch kein Instanz-Admin vorhanden. Eine Bootstrap-Einladung ist bereits aktiv. Prüfen Sie Ihre Paperclip-Startprotokolle für die erste Admin-Einladungs-URL oder führen Sie diesen Befehl aus, um sie zu rotieren:",
+      "descriptionNoInvite": "Noch kein Instanz-Admin vorhanden. Führen Sie diesen Befehl in Ihrer Paperclip-Umgebung aus, um die erste Admin-Einladungs-URL zu generieren:"
+    },
+    "noBoard": {
+      "title": "Kein Unternehmenszugang",
+      "description1": "Dieses Konto ist angemeldet, hat aber keine aktive Unternehmensmitgliedschaft oder Instanz-Admin-Zugang auf dieser Paperclip-Instanz.",
+      "description2": "Verwenden Sie eine Unternehmenseinladung oder melden Sie sich mit einem Konto an, das bereits zu dieser Organisation gehört."
+    }
+  },
+  "cliAuth": {
+    "loading": "CLI-Auth-Challenge wird geladen...",
+    "title": "Paperclip-CLI-Zugang genehmigen",
+    "description": "Ein lokaler Paperclip-CLI-Prozess fordert Board-Zugang zu dieser Instanz an.",
+    "approvedTitle": "CLI-Zugang genehmigt",
+    "approvedDescription": "Der Paperclip-CLI kann nun die Authentifizierung auf dem anfragenden Rechner abschließen.",
+    "commandLabel": "Befehl:",
+    "expiredTitle": "CLI-Auth-Challenge abgelaufen",
+    "cancelledTitle": "CLI-Auth-Challenge abgebrochen",
+    "restartHint": "Starten Sie den CLI-Auth-Ablauf erneut von Ihrem Terminal aus, um eine neue Genehmigungsanfrage zu generieren.",
+    "signInRequiredTitle": "Anmeldung erforderlich",
+    "signInRequiredDescription": "Melden Sie sich an oder erstellen Sie ein Konto und kehren Sie dann zu dieser Seite zurück, um die CLI-Zugriffsanfrage zu genehmigen.",
+    "signInOrCreate": "Anmelden / Konto erstellen",
+    "labels": {
+      "command": "Befehl",
+      "client": "Client",
+      "requestedAccess": "Angefragter Zugang",
+      "requestedCompany": "Angefragtes Unternehmen"
+    },
+    "access": {
+      "instanceAdmin": "Instanz-Admin",
+      "board": "Board"
+    },
+    "buttons": {
+      "approve": "CLI-Zugang genehmigen",
+      "approving": "Wird genehmigt...",
+      "cancel": "Abbrechen",
+      "cancelling": "Wird abgebrochen..."
+    }
+  },
+  "boardClaim": {
+    "loading": "Claim-Challenge wird geladen...",
+    "title": "Board-Eigentümerschaft beanspruchen",
+    "description": "Dadurch wird Ihr Benutzer zum Instanz-Admin befördert und der Unternehmenseigentümer-Zugang vom lokalen vertrauenswürdigen Modus migriert.",
+    "claimButton": "Eigentümerschaft beanspruchen",
+    "claiming": "Wird beansprucht…",
+    "claimedTitle": "Board-Eigentümerschaft beansprucht",
+    "claimedDescription": "Diese Instanz ist nun mit Ihrem authentifizierten Benutzer verknüpft.",
+    "openBoard": "Board öffnen",
+    "signInRequiredTitle": "Anmeldung erforderlich",
+    "signInRequiredDescription": "Melden Sie sich an oder erstellen Sie ein Konto und kehren Sie dann zu dieser Seite zurück, um die Board-Eigentümerschaft zu beanspruchen.",
+    "signInOrCreate": "Anmelden / Konto erstellen"
+  },
+  "auth": {
+    "loading": "Wird geladen…",
+    "signIn": {
+      "title": "Bei Paperclip anmelden",
+      "subtitle": "Verwenden Sie Ihre E-Mail und Ihr Passwort, um auf diese Instanz zuzugreifen."
+    },
+    "signUp": {
+      "title": "Paperclip-Konto erstellen",
+      "subtitle": "Erstellen Sie ein Konto für diese Instanz. E-Mail-Bestätigung ist in v1 nicht erforderlich."
+    },
+    "fields": {
+      "name": "Name",
+      "email": "E-Mail",
+      "password": "Passwort"
+    },
+    "submit": {
+      "working": "Wird verarbeitet…",
+      "signIn": "Anmelden",
+      "signUp": "Konto erstellen"
+    },
+    "toggle": {
+      "needAccount": "Kein Konto?",
+      "haveAccount": "Bereits ein Konto?",
+      "createOne": "Eines erstellen",
+      "signIn": "Anmelden"
+    },
+    "validation": {
+      "required": "Bitte füllen Sie alle erforderlichen Felder aus."
+    }
+  }
+}

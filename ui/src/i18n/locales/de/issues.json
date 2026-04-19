@@ -1,0 +1,628 @@
+{
+  "row": {
+    "markAsRead": "Als gelesen markieren",
+    "dismissFromInbox": "Aus dem Posteingang entfernen"
+  },
+  "columns": {
+    "buttonLabel": "Spalten",
+    "desktopRows": "Desktop-Aufgabenzeilen",
+    "resetDefaults": "Standard zurücksetzen",
+    "resetHint": "Status, ID, aktualisiert",
+    "filterByWorkspace": "Nach Workspace filtern",
+    "unassigned": "Nicht zugewiesen",
+    "noProject": "Kein Projekt",
+    "subIssue": "Teilaufgabe",
+    "live": "Live",
+    "labels": {
+      "status": "Status",
+      "id": "ID",
+      "assignee": "Bearbeiter",
+      "project": "Projekt",
+      "workspace": "Workspace",
+      "parent": "Übergeordnete Aufgabe",
+      "labels": "Tags",
+      "updated": "Zuletzt aktualisiert"
+    },
+    "descriptions": {
+      "status": "Aufgabenstatus-Chip am linken Rand.",
+      "id": "Ticket-Kennung wie PAP-1009.",
+      "assignee": "Zugewiesener Agent oder Board-Benutzer.",
+      "project": "Verknüpfte Projekt-Pille mit ihrer Farbe.",
+      "workspace": "Ausführungs- oder Projekt-Workspace für die Aufgabe.",
+      "parent": "Übergeordnete Aufgabenkennung und -titel.",
+      "labels": "Aufgaben-Labels und Tags.",
+      "updated": "Neueste sichtbare Aktivitätszeit."
+    }
+  },
+  "filters": {
+    "title": "Filter",
+    "clear": "Löschen",
+    "filter": "Filtern",
+    "activeCount": "Filter: {{count}}",
+    "removeCreator": "Ersteller {{name}} entfernen",
+    "quickFilters": "Schnellfilter",
+    "status": "Status",
+    "priority": "Priorität",
+    "assignee": "Bearbeiter",
+    "noAssignee": "Kein Bearbeiter",
+    "me": "Ich",
+    "creator": "Ersteller",
+    "searchCreators": "Ersteller suchen...",
+    "noCreatorsMatch": "Keine Ersteller gefunden.",
+    "project": "Projekt",
+    "labels": "Labels",
+    "workspace": "Workspace",
+    "visibility": "Sichtbarkeit",
+    "hideRoutineRuns": "Routinen-Ausführungen ausblenden",
+    "presets": {
+      "All": "Alle",
+      "Active": "Aktiv",
+      "Backlog": "Rückstand",
+      "Done": "Erledigt"
+    }
+  },
+  "list": {
+    "selectCompany": "Wählen Sie ein Unternehmen aus, um Aufgaben anzuzeigen."
+  },
+  "myIssues": {
+    "breadcrumb": "Meine Aufgaben",
+    "selectCompany": "Wählen Sie ein Unternehmen aus, um Ihre Aufgaben anzuzeigen.",
+    "noIssues": "Keine Ihnen zugewiesenen Aufgaben."
+  },
+  "detail": {
+    "breadcrumbFallback": "Aufgabe",
+    "breadcrumbSource": "Aufgaben",
+    "noProject": "Kein Projekt",
+    "hiddenBanner": "Diese Aufgabe ist ausgeblendet",
+    "liveBadge": "Live",
+    "routineBadge": "Routine",
+    "copyMarkdown": "Aufgabe als Markdown kopieren",
+    "propertiesTitle": "Eigenschaften",
+    "showProperties": "Eigenschaften anzeigen",
+    "hideIssue": "Diese Aufgabe ausblenden",
+    "descriptionPlaceholder": "Beschreibung hinzufügen...",
+    "subIssues": "Teilaufgaben",
+    "newSubIssue": "Neue Teilaufgabe",
+    "subIssueLabel": "Teilaufgabe",
+    "uploading": "Wird hochgeladen...",
+    "uploadAttachment": "Anhang hochladen",
+    "uploadShort": "Hochladen",
+    "attachments": "Anhänge",
+    "attachmentAlt": "Anhang",
+    "deleteConfirm": "Löschen?",
+    "deleteYes": "Ja",
+    "deleteNo": "Nein",
+    "deleteAttachment": "Anhang löschen",
+    "copiedToClipboard": "In die Zwischenablage kopiert",
+    "actor": {
+      "system": "System",
+      "board": "Board",
+      "unknown": "Unbekannt"
+    },
+    "toolbar": {
+      "backToInbox": "Zurück zum Posteingang",
+      "archiveFromInbox": "Aus dem Posteingang archivieren",
+      "moreActions": "Weitere Aktionen",
+      "copyMarkdown": "Als Markdown kopieren",
+      "properties": "Eigenschaften",
+      "hideIssue": "Diese Aufgabe ausblenden"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "activity": "Aktivität"
+    },
+    "chat": {
+      "loadEarlier": "Frühere Kommentare laden",
+      "loadingEarlier": "Frühere Kommentare werden geladen..."
+    },
+    "activity": {
+      "costSummary": "Kostenzusammenfassung",
+      "noCostData": "Noch keine Kostendaten.",
+      "tokens": "Token",
+      "tokenIn": "ein",
+      "tokenOut": "aus",
+      "tokenCached": "gecacht",
+      "noActivity": "Noch keine Aktivität."
+    },
+    "toasts": {
+      "updateFailed": "Aufgabe aktualisieren fehlgeschlagen",
+      "updateFailedBody": "Aufgabenänderungen konnten nicht gespeichert werden",
+      "subUpdateFailedBody": "Teilaufgaben-Änderungen konnten nicht gespeichert werden",
+      "approvalApproved": "Genehmigung erteilt",
+      "approvalRejected": "Genehmigung abgelehnt",
+      "approvalFailed": "Genehmigung fehlgeschlagen",
+      "rejectionFailed": "Ablehnung fehlgeschlagen",
+      "approvalFailedBody": "Genehmigung konnte nicht aktualisiert werden",
+      "cancelFailed": "Abbrechen fehlgeschlagen",
+      "cancelFailedBody": "Warteschlangen-Kommentar konnte nicht abgebrochen werden",
+      "commentFailed": "Kommentar fehlgeschlagen",
+      "commentFailedBody": "Kommentar konnte nicht gepostet werden",
+      "interruptRequested": "Unterbrechung angefordert",
+      "interruptRequestedBody": "Die aktive Ausführung wird gestoppt, damit wartende Kommentare als nächstes fortgesetzt werden können.",
+      "interruptFailed": "Unterbrechung fehlgeschlagen",
+      "interruptFailedBody": "Die aktive Ausführung konnte nicht unterbrochen werden",
+      "queueCanceled": "Warteschlangen-Kommentar abgebrochen",
+      "queueCanceledBody": "Die wartende Nachricht wurde in den Composer zurückgelegt.",
+      "feedbackSavedShare": "Feedback gespeichert. Zukünftige Bewertungen werden geteilt",
+      "feedbackSavedLocal": "Feedback gespeichert. Zukünftige Bewertungen bleiben lokal",
+      "feedbackSavedSharing": "Feedback gespeichert und Teilen aktiviert",
+      "feedbackSaved": "Feedback gespeichert",
+      "feedbackFailed": "Feedback konnte nicht gespeichert werden",
+      "feedbackFailedBody": "Unbekannter Fehler",
+      "uploadFailed": "Upload fehlgeschlagen",
+      "importFailed": "Dokument-Import fehlgeschlagen",
+      "deleteFailed": "Löschen fehlgeschlagen",
+      "archived": "Aufgabe aus Posteingang archiviert",
+      "archiveFailed": "Archivieren fehlgeschlagen",
+      "archiveFailedBody": "Diese Aufgabe konnte nicht aus dem Posteingang archiviert werden"
+    }
+  },
+  "properties": {
+    "copiedConfirm": "Kopiert!",
+    "clickToCopy": "Zum Kopieren klicken",
+    "noLabels": "Keine Labels",
+    "addLabel": "Label hinzufügen",
+    "searchLabels": "Labels suchen...",
+    "newLabelPlaceholder": "Neues Label",
+    "creatingLabel": "Wird erstellt…",
+    "createLabel": "Label erstellen",
+    "unassigned": "Nicht zugewiesen",
+    "searchAssignees": "Bearbeiter suchen...",
+    "noAssignee": "Kein Bearbeiter",
+    "assignToMe": "Mir zuweisen",
+    "assignTo": "{{name}} zuweisen",
+    "assignToRequester": "Dem Antragsteller zuweisen",
+    "searchReviewers": "Prüfer suchen...",
+    "searchApprovers": "Genehmiger suchen...",
+    "noReviewers": "Keine Prüfer",
+    "noApprovers": "Keine Genehmiger",
+    "requester": "Antragsteller",
+    "noProject": "Kein Projekt",
+    "searchProjects": "Projekte suchen...",
+    "searchIssues": "Aufgaben suchen...",
+    "noParent": "Kein übergeordnetes Element",
+    "noBlockers": "Keine Blocker",
+    "runReviewNow": "Prüfung jetzt ausführen",
+    "runApprovalNow": "Genehmigung jetzt ausführen",
+    "none": "Keines",
+    "addSubIssue": "Teilaufgabe hinzufügen",
+    "viewWorkspace": "Workspace anzeigen",
+    "rowLabel": {
+      "status": "Status",
+      "priority": "Priorität",
+      "labels": "Labels",
+      "assignee": "Bearbeiter",
+      "project": "Projekt",
+      "parent": "Übergeordnet",
+      "blockedBy": "Blockiert durch",
+      "blocking": "Blockiert",
+      "subIssues": "Teilaufgaben",
+      "reviewers": "Prüfer",
+      "approvers": "Genehmiger",
+      "execution": "Ausführung",
+      "depth": "Tiefe",
+      "workspace": "Workspace",
+      "branch": "Branch",
+      "folder": "Ordner",
+      "createdBy": "Erstellt von",
+      "started": "Gestartet",
+      "completed": "Abgeschlossen",
+      "created": "Erstellt",
+      "updated": "Aktualisiert"
+    },
+    "executionLabel": {
+      "reviewChangesRequested": "Prüfung mit angeforderten Änderungen",
+      "reviewChangesRequestedBy": "Prüfung mit angeforderten Änderungen von {{participant}}",
+      "reviewPending": "Prüfung ausstehend",
+      "reviewPendingWith": "Prüfung ausstehend bei {{participant}}",
+      "approvalChangesRequested": "Genehmigung mit angeforderten Änderungen",
+      "approvalChangesRequestedBy": "Genehmigung mit angeforderten Änderungen von {{participant}}",
+      "approvalPending": "Genehmigung ausstehend",
+      "approvalPendingWith": "Genehmigung ausstehend bei {{participant}}"
+    }
+  },
+  "newIssue": {
+    "titlePlaceholder": "Aufgabentitel",
+    "for": "Für",
+    "assigneePlaceholder": "Bearbeiter",
+    "noAssignee": "Kein Bearbeiter",
+    "searchAssignees": "Bearbeiter suchen...",
+    "noAssigneesFound": "Keine Bearbeiter gefunden.",
+    "in": "in",
+    "projectPlaceholder": "Projekt",
+    "noProject": "Kein Projekt",
+    "searchProjects": "Projekte suchen...",
+    "noProjectsFound": "Keine Projekte gefunden.",
+    "addParticipantTitle": "Prüfer oder Genehmiger hinzufügen",
+    "reviewer": "Prüfer",
+    "approver": "Genehmiger",
+    "noReviewer": "Kein Prüfer",
+    "searchReviewers": "Prüfer suchen...",
+    "noReviewersFound": "Keine Prüfer gefunden.",
+    "noApprover": "Kein Genehmiger",
+    "searchApprovers": "Genehmiger suchen...",
+    "noApproversFound": "Keine Genehmiger gefunden.",
+    "subIssueOf": "Teilaufgabe von",
+    "newSubIssue": "Neue Teilaufgabe",
+    "newIssue": "Neue Aufgabe",
+    "executionWorkspaceTitle": "Ausführungs-Workspace",
+    "executionWorkspaceDesc": "Steuern Sie, ob diese Aufgabe im gemeinsamen Workspace, einem neuen isolierten Workspace oder einem bestehenden ausgeführt wird.",
+    "chooseWorkspace": "Bestehenden Workspace auswählen",
+    "reusingWorkspace": "{{name}} von {{location}} wird wiederverwendet.",
+    "existingWorkspace": "bestehender Ausführungs-Workspace",
+    "parentWorkspaceWarning": "Warnung: Diese Teilaufgabe verwendet nicht mehr den übergeordneten Aufgaben-Workspace.",
+    "parentWorkspaceWarningWithLabel": "Warnung: Diese Teilaufgabe verwendet nicht mehr den übergeordneten Aufgaben-Workspace ({{label}}).",
+    "model": "Modell",
+    "defaultModel": "Standardmodell",
+    "searchModels": "Modelle suchen...",
+    "noModelsFound": "Keine Modelle gefunden.",
+    "thinkingEffort": "Denkaufwand",
+    "enableChrome": "Chrome aktivieren (--chrome)",
+    "documents": "Dokumente",
+    "attachments": "Anhänge",
+    "removeDocument": "Dokument entfernen",
+    "removeAttachment": "Anhang entfernen",
+    "upload": "Hochladen",
+    "startDate": "Startdatum",
+    "dueDate": "Fälligkeitsdatum",
+    "discardDraft": "Entwurf verwerfen",
+    "creatingIssue": "Aufgabe wird erstellt...",
+    "creating": "Wird erstellt...",
+    "createSubIssue": "Teilaufgabe erstellen",
+    "createIssueBtn": "Aufgabe erstellen",
+    "createErrorFallback": "Aufgabe konnte nicht erstellt werden. Erneut versuchen.",
+    "uploadWarningTitle": "{{ref}} mit Upload-Warnungen erstellt",
+    "uploadWarningBody_one": "{{count}} bereitgestellte Datei konnte nicht hinzugefügt werden.",
+    "uploadWarningBody_other": "{{count}} bereitgestellte Dateien konnten nicht hinzugefügt werden.",
+    "openIssue": "{{ref}} öffnen",
+    "descriptionPlaceholder": "Beschreibung hinzufügen...",
+    "agentOptions": "Agent-Optionen",
+    "claudeOptions": "Claude-Optionen",
+    "codexOptions": "Codex-Optionen",
+    "openCodeOptions": "OpenCode-Optionen",
+    "status": {
+      "backlog": "Rückstand",
+      "todo": "Zu erledigen",
+      "in_progress": "In Bearbeitung",
+      "in_review": "In Prüfung",
+      "done": "Erledigt"
+    },
+    "priority": {
+      "critical": "Kritisch",
+      "high": "Hoch",
+      "medium": "Mittel",
+      "low": "Niedrig"
+    },
+    "workspaceMode": {
+      "shared_workspace": "Projektstandard",
+      "isolated_workspace": "Neuer isolierter Workspace",
+      "reuse_existing": "Bestehenden Workspace wiederverwenden"
+    },
+    "thinkingOption": {
+      "default": "Standard",
+      "minimal": "Minimal",
+      "low": "Niedrig",
+      "medium": "Mittel",
+      "high": "Hoch",
+      "xhigh": "Sehr hoch",
+      "max": "Maximal"
+    }
+  },
+  "issueChatThread": {
+    "fallback": {
+      "rendererError": "Chat-Renderer hat einen internen Statusfehler getroffen.",
+      "rendererErrorHint": "Es wird ein sicheres Fallback-Transkript anstelle eines Absturzes der Aufgabenseite angezeigt.",
+      "noContent": "Kein Nachrichteninhalt."
+    },
+    "author": {
+      "agent": "Agent",
+      "you": "Sie",
+      "system": "System",
+      "board": "Board",
+      "user": "Benutzer"
+    },
+    "value": {
+      "none": "Keines",
+      "unassigned": "Nicht zugewiesen",
+      "board": "Board"
+    },
+    "cot": {
+      "working": "Arbeitet",
+      "worked": "Gearbeitet",
+      "forDuration": "für {{duration}}",
+      "commands_one": "{{count}} Befehl ausgeführt",
+      "commands_other": "{{count}} Befehle ausgeführt",
+      "tools_one": "{{count}} Tool aufgerufen",
+      "tools_other": "{{count}} Tools aufgerufen"
+    },
+    "tool": {
+      "copy": "Kopieren",
+      "input": "Eingabe",
+      "result": "Ergebnis"
+    },
+    "userMessage": {
+      "queued": "In Warteschlange",
+      "interrupting": "Wird unterbrochen...",
+      "interrupt": "Unterbrechen",
+      "cancel": "Abbrechen",
+      "sending": "Wird gesendet...",
+      "copyMessage": "Nachricht kopieren"
+    },
+    "assistantMessage": {
+      "running": "Läuft",
+      "copyMessage": "Nachricht kopieren",
+      "moreActions": "Weitere Aktionen",
+      "stopping": "Wird gestoppt…",
+      "stopRun": "Ausführung stoppen",
+      "viewRun": "Ausführung anzeigen"
+    },
+    "feedback": {
+      "helpful": "Hilfreich",
+      "needsWork": "Verbesserungswürdig",
+      "betterPrompt": "Was hätte besser sein können?",
+      "notePlaceholder": "Kurze Notiz hinzufügen",
+      "dismiss": "Schließen",
+      "saving": "Wird gespeichert...",
+      "saveNote": "Notiz speichern",
+      "sharingDialogTitle": "Feedback-Weitergabe-Einstellung speichern",
+      "sharingDialogDesc": "Wählen Sie, ob bewertete KI-Ausgaben mit Paperclip Labs geteilt werden können. Diese Antwort wird zur Standardeinstellung für zukünftige Daumen-hoch- und Daumen-runter-Bewertungen.",
+      "alwaysLocal": "Diese Bewertung wird immer lokal gespeichert.",
+      "choosePromptPrefix": "Wählen Sie ",
+      "choosePromptAlwaysAllow": "Immer erlauben",
+      "choosePromptMiddle": ", um diese Bewertung und zukünftige KI-Ausgaben zu teilen. Wählen Sie ",
+      "choosePromptDontAllow": "Nicht erlauben",
+      "choosePromptSuffix": ", um diese und zukünftige Bewertungen lokal zu behalten.",
+      "changeLaterHint": "Sie können dies später unter Instanzeinstellungen > Allgemein ändern.",
+      "readTerms": "Unsere Nutzungsbedingungen lesen",
+      "dontAllow": "Nicht erlauben",
+      "alwaysAllow": "Immer erlauben"
+    },
+    "systemMessage": {
+      "updatedTask": "diese Aufgabe aktualisiert",
+      "statusLabel": "Status",
+      "assigneeLabel": "Bearbeiter",
+      "run": "Ausführung"
+    },
+    "composer": {
+      "reply": "Antworten",
+      "attachImage": "Bild anhängen",
+      "assignee": "Bearbeiter",
+      "noAssignee": "Kein Bearbeiter",
+      "searchAssignees": "Bearbeiter suchen...",
+      "noAssigneesFound": "Keine Bearbeiter gefunden.",
+      "posting": "Wird gepostet...",
+      "send": "Senden"
+    },
+    "thread": {
+      "jumpToLatest": "Zum Neuesten springen",
+      "emptyEmbedded": "Noch keine Ausführungsausgabe.",
+      "emptyFull": "Diese Aufgabenkonversation ist leer. Beginnen Sie mit einer Nachricht unten."
+    }
+  },
+  "linkQuicklook": {
+    "unableToLoad": "Aufgabenvorschau konnte nicht geladen werden."
+  },
+  "issueWorkspaceCard": {
+    "actions": {
+      "cancel": "Abbrechen",
+      "save": "Speichern",
+      "edit": "Bearbeiten",
+      "viewDetails": "Workspace-Details anzeigen →"
+    },
+    "copy": {
+      "copied": "Kopiert!",
+      "copy": "Kopieren"
+    },
+    "modeLabel": {
+      "isolated_workspace": "Isolierter Workspace",
+      "operator_branch": "Operator-Branch",
+      "cloud_sandbox": "Cloud-Sandbox",
+      "adapter_managed": "Adapter-verwaltet",
+      "default": "Workspace"
+    },
+    "configuredLabel": {
+      "shared_workspace": "Projektstandard",
+      "isolated_workspace": "Neuer isolierter Workspace",
+      "existingIsolated": "Bestehender isolierter Workspace",
+      "reuse_existing": "Bestehenden Workspace wiederverwenden",
+      "default": "Projektstandard"
+    },
+    "info": {
+      "repo": "Repo:",
+      "reusing": "Wiederverwendet:",
+      "current": "Aktuell:"
+    },
+    "empty": {
+      "isolated_workspace": "Ein neuer isolierter Workspace wird erstellt, wenn diese Aufgabe ausgeführt wird.",
+      "reuse_existing": "Diese Aufgabe verwendet einen bestehenden Workspace, wenn sie ausgeführt wird.",
+      "default": "Diese Aufgabe verwendet die Standard-Workspace-Konfiguration des Projekts, wenn sie ausgeführt wird."
+    },
+    "select": {
+      "chooseWorkspace": "Bestehenden Workspace auswählen"
+    }
+  },
+  "commentThread": {
+    "labels": {
+      "you": "Sie",
+      "queued": "In Warteschlange",
+      "timeline": "Zeitlinie ({{count}})",
+      "queuedComments": "Warteschlangen-Kommentare ({{count}})",
+      "status": "Status",
+      "assignee": "Bearbeiter",
+      "updatedTask": "diese Aufgabe aktualisiert"
+    },
+    "composer": {
+      "placeholder": "Kommentar hinterlassen...",
+      "attachImage": "Bild anhängen",
+      "assigneePlaceholder": "Bearbeiter",
+      "noAssignee": "Kein Bearbeiter",
+      "searchAssignees": "Bearbeiter suchen...",
+      "noAssigneesFound": "Keine Bearbeiter gefunden.",
+      "posting": "Wird gepostet...",
+      "comment": "Kommentieren"
+    },
+    "actions": {
+      "interrupt": "Unterbrechen",
+      "interrupting": "Wird unterbrochen...",
+      "copyMarkdown": "Kommentar als Markdown kopieren"
+    },
+    "copy": {
+      "copy": "Kopieren",
+      "copied": "Kopiert",
+      "copyFailed": "Kopieren fehlgeschlagen"
+    },
+    "empty": {
+      "noTimeline": "Noch keine Zeitlinieneinträge."
+    },
+    "pending": {
+      "queueing": "Wird in Warteschlange gestellt...",
+      "sending": "Wird gesendet..."
+    }
+  },
+  "issuesList": {
+    "search": {
+      "placeholder": "Aufgaben suchen...",
+      "ariaLabel": "Aufgaben suchen",
+      "limitHint": "Es werden bis zu {{limit}} Treffer angezeigt. Verfeinern Sie die Suche für weitere Einschränkungen."
+    },
+    "actions": {
+      "createIssue": "Aufgabe erstellen",
+      "newIssue": "Neue Aufgabe",
+      "createWithLabel": "{{label}} erstellen",
+      "newWithLabel": "Neu {{label}}"
+    },
+    "viewMode": {
+      "list": "Listenansicht",
+      "board": "Board-Ansicht"
+    },
+    "nesting": {
+      "enable": "Eltern-Kind-Verschachtelung aktivieren",
+      "disable": "Eltern-Kind-Verschachtelung deaktivieren"
+    },
+    "columns": {
+      "pickerTitle": "Wählen Sie, welche Aufgabenspalten sichtbar bleiben"
+    },
+    "sort": {
+      "title": "Sortieren",
+      "status": "Status",
+      "priority": "Priorität",
+      "titleField": "Titel",
+      "created": "Erstellt",
+      "updated": "Aktualisiert"
+    },
+    "group": {
+      "title": "Gruppieren",
+      "status": "Status",
+      "priority": "Priorität",
+      "assignee": "Bearbeiter",
+      "workspace": "Workspace",
+      "parentIssue": "Übergeordnete Aufgabe",
+      "none": "Keine"
+    },
+    "groups": {
+      "noWorkspace": "Kein Workspace",
+      "noParent": "Kein übergeordnetes Element",
+      "unassigned": "Nicht zugewiesen",
+      "userFallback": "Benutzer"
+    },
+    "creators": {
+      "board": "Board",
+      "me": "Ich"
+    },
+    "empty": {
+      "noMatches": "Keine Aufgaben entsprechen den aktuellen Filtern oder der Suche."
+    },
+    "assignee": {
+      "placeholder": "Bearbeiter",
+      "searchPlaceholder": "Bearbeiter suchen...",
+      "none": "Kein Bearbeiter",
+      "me": "Ich"
+    },
+    "subTasksCount_one": "{{count}} Teilaufgabe",
+    "subTasksCount_other": "{{count}} Teilaufgaben",
+    "renderingCounter": "{{rendered}} von {{total}} Aufgaben werden gerendert"
+  },
+  "issueDocuments": {
+    "header": {
+      "title": "Dokumente"
+    },
+    "actions": {
+      "newDocument": "Neues Dokument",
+      "newDocumentShort": "Neu",
+      "editDocument": "Dokument bearbeiten",
+      "downloadDocument": "Dokument herunterladen",
+      "viewDiff": "Diff anzeigen",
+      "deleteDocument": "Dokument löschen",
+      "documentActions": "Dokumentaktionen",
+      "copyDocument": "Dokument kopieren",
+      "copied": "Kopiert"
+    },
+    "upload": {
+      "keyPlaceholder": "Dokumentschlüssel",
+      "titlePlaceholder": "Optionaler Titel",
+      "bodyPlaceholder": "Markdown-Inhalt",
+      "cancel": "Abbrechen",
+      "create": "Dokument erstellen",
+      "saving": "Wird gespeichert..."
+    },
+    "revisions": {
+      "history": "Revisionshistorie",
+      "loading": "Revisionen werden geladen...",
+      "noRevisions": "Noch keine Revisionen",
+      "current": "Aktuell",
+      "updated": "aktualisiert {{time}}",
+      "viewingRevision": "Revision {{number}} wird angezeigt",
+      "viewingHistorical": "Historische Revision wird angezeigt",
+      "historicalHint": "Dies ist eine historische Vorschau. Das Wiederherstellen erstellt eine neue aktuelle Revision und hält die Historie nur zum Anhängen.",
+      "returnToLatest": "Zur neuesten zurückkehren",
+      "restore": "Diese Revision wiederherstellen",
+      "restoring": "Wird wiederhergestellt..."
+    },
+    "conflict": {
+      "title": "Veraltet",
+      "description": "Dieses Dokument wurde geändert, während Sie es bearbeitet haben. Ihr lokaler Entwurf ist erhalten und die automatische Speicherung ist pausiert.",
+      "hideRemote": "Remote ausblenden",
+      "reviewRemote": "Remote prüfen",
+      "keepDraft": "Meinen Entwurf behalten",
+      "reloadRemote": "Remote neu laden",
+      "overwriteRemote": "Remote überschreiben",
+      "remoteRevision": "Remote-Revision {{number}}",
+      "remoteUpdated": "aktualisiert {{time}}",
+      "outOfDate": "Veraltet"
+    },
+    "autosave": {
+      "autosaving": "Wird automatisch gespeichert...",
+      "saved": "Gespeichert",
+      "error": "Konnte nicht gespeichert werden"
+    },
+    "dialogs": {
+      "deleteConfirmText": "Dieses Dokument löschen? Dies kann nicht rückgängig gemacht werden.",
+      "deleteCancel": "Abbrechen",
+      "deleteConfirm": "Löschen",
+      "deleting": "Wird gelöscht..."
+    },
+    "errors": {
+      "keyAndBodyRequired": "Dokumentschlüssel und Inhalt sind erforderlich",
+      "bodyRequired": "Dokumentinhalt darf nicht leer sein",
+      "invalidKey": "Dokumentschlüssel muss mit einem Buchstaben oder einer Zahl beginnen und nur Kleinbuchstaben, Zahlen, - oder _ verwenden.",
+      "invalidKeyInline": "Verwenden Sie Kleinbuchstaben, Zahlen, - oder _, und beginnen Sie mit einem Buchstaben oder einer Zahl.",
+      "saveFailed": "Dokument konnte nicht gespeichert werden",
+      "deleteFailed": "Dokument konnte nicht gelöscht werden",
+      "restoreFailed": "Dokumentrevision konnte nicht wiederhergestellt werden",
+      "remoteLoadFailed": "Dokument wurde remote geändert und die neueste Version konnte nicht geladen werden",
+      "copyFailed": "Dokument konnte nicht kopiert werden",
+      "saveConflictBlocked": "Speichern oder verwerfen Sie Ihre lokalen Änderungen, bevor Sie eine ältere Revision anzeigen."
+    }
+  },
+  "kanban": {
+    "status": {
+      "backlog": "Rückstand",
+      "todo": "Zu erledigen",
+      "in_progress": "In Bearbeitung",
+      "in_review": "In Prüfung",
+      "blocked": "Blockiert",
+      "done": "Erledigt",
+      "cancelled": "Abgebrochen"
+    }
+  }
+}

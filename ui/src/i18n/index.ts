@@ -38,7 +38,7 @@ import ruAdapters from "./locales/ru/adapters.json";
 import ruPlugins from "./locales/ru/plugins.json";
 import ruWorkspaces from "./locales/ru/workspaces.json";
 
-export const SUPPORTED_LANGUAGES = ["en", "ru"] as const;
+export const SUPPORTED_LANGUAGES = ["en", "ru", "de"] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
 export const DEFAULT_LANGUAGE: SupportedLanguage = "en";
@@ -47,6 +47,7 @@ export const LANGUAGE_STORAGE_KEY = "paperclip-lang";
 export const LANGUAGE_LABELS: Record<string, string> = {
   en: "English",
   ru: "Русский",
+  de: "Deutsch",
 };
 
 export const resources = {

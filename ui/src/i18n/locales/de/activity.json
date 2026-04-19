@@ -1,0 +1,30 @@
+{
+  "selectCompany": "Wählen Sie ein Unternehmen aus, um die Aktivität anzuzeigen.",
+  "filterPlaceholder": "Nach Typ filtern",
+  "allTypes": "Alle Typen",
+  "noActivity": "Noch keine Aktivität.",
+  "actor": {
+    "system": "System",
+    "board": "Board",
+    "unknown": "Unbekannt"
+  },
+  "charts": {
+    "noRuns": "Noch keine Ausführungen",
+    "noIssues": "Keine Aufgaben",
+    "statusLabels": {
+      "todo": "Zu erledigen",
+      "in_progress": "In Bearbeitung",
+      "in_review": "In Prüfung",
+      "done": "Erledigt",
+      "blocked": "Blockiert",
+      "cancelled": "Abgebrochen",
+      "backlog": "Rückstand"
+    },
+    "priorityLabels": {
+      "critical": "Kritisch",
+      "high": "Hoch",
+      "medium": "Mittel",
+      "low": "Niedrig"
+    }
+  }
+}

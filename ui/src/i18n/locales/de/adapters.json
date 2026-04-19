@@ -1,0 +1,125 @@
+{
+  "row": {
+    "sourceExternal": "Extern",
+    "sourceBuiltin": "Integriert",
+    "localPathTitle": "Aus lokalem Pfad installiert",
+    "npmTitle": "Aus npm installiert",
+    "reinstallTitle": "Adapter neu installieren (neueste Version von npm laden)",
+    "reloadTitle": "Adapter neu laden (Hot-Swap)",
+    "showInMenus": "In Agent-Menüs anzeigen",
+    "hideFromMenus": "Aus Agent-Menüs ausblenden",
+    "removeTitle": "Adapter entfernen",
+    "hiddenBadge": "Aus Menüs ausgeblendet",
+    "overridesBuiltin": "Überschreibt integrierten Adapter",
+    "overriddenBy": "Überschrieben durch {{name}}",
+    "overridePaused": "Überschreibung pausiert",
+    "pauseOverride": "Externe Überschreibung pausieren",
+    "resumeOverride": "Externe Überschreibung fortsetzen",
+    "modelCount": "{{count}} Modelle"
+  },
+  "reinstall": {
+    "title": "Adapter neu installieren",
+    "descriptionPre": "Dadurch wird die neueste Version von",
+    "descriptionPost": "von npm geladen und das laufende Adapter-Modul per Hot-Swap ausgetauscht. Bestehende Agenten verwenden die neue Version bei ihrer nächsten Ausführung.",
+    "packageLabel": "Paket",
+    "currentLabel": "Aktuell",
+    "latestLabel": "Neueste auf npm",
+    "checking": "Wird geprüft...",
+    "unavailable": "Nicht verfügbar",
+    "upToDate": "Bereits auf der neuesten Version.",
+    "cancel": "Abbrechen",
+    "reinstalling": "Wird neu installiert...",
+    "reinstall": "Neu installieren"
+  },
+  "breadcrumb": {
+    "settings": "Einstellungen",
+    "adapters": "Adapter"
+  },
+  "loading": "Adapter werden geladen...",
+  "title": "Adapter",
+  "installBtn": "Adapter installieren",
+  "installDialog": {
+    "title": "Externen Adapter installieren",
+    "description": "Fügen Sie einen Adapter von npm oder einem lokalen Pfad hinzu. Das Adapter-Paket muss createServerAdapter() exportieren.",
+    "npmPackage": "npm-Paket",
+    "localPath": "Lokaler Pfad",
+    "localPathLabel": "Pfad zum Adapter-Paket",
+    "localPathHint": "Akzeptiert Linux-, WSL- und Windows-Pfade. Windows-Pfade werden automatisch konvertiert.",
+    "packageNameLabel": "Paketname",
+    "versionLabel": "Version (optional)",
+    "cancel": "Abbrechen",
+    "installing": "Wird installiert...",
+    "install": "Installieren"
+  },
+  "alpha": {
+    "title": "Externe Adapter sind Alpha.",
+    "description": "Das Adapter-plugin-System befindet sich in aktiver Entwicklung. APIs und Speicherformat können sich ändern. Verwenden Sie das Power-Symbol, um Adapter aus Agent-Menüs auszublenden, ohne sie zu entfernen."
+  },
+  "externalSection": {
+    "title": "Externe Adapter",
+    "empty": "Keine externen Adapter installiert",
+    "emptyHint": "Installieren Sie ein Adapter-Paket, um die Modellunterstützung zu erweitern."
+  },
+  "builtinSection": {
+    "title": "Integrierte Adapter",
+    "empty": "Keine integrierten Adapter gefunden."
+  },
+  "removeDialog": {
+    "title": "Adapter entfernen",
+    "descriptionPre": "Möchten Sie den",
+    "descriptionMid": "Adapter wirklich entfernen? Er wird abgemeldet und aus dem Adapter-Store entfernt.",
+    "npmCleanup": " npm-Pakete werden von der Festplatte bereinigt.",
+    "cannotUndo": "Diese Aktion kann nicht rückgängig gemacht werden.",
+    "cancel": "Abbrechen",
+    "removing": "Wird entfernt...",
+    "remove": "Entfernen"
+  },
+  "toasts": {
+    "installed": "Adapter installiert",
+    "installFailed": "Installation fehlgeschlagen",
+    "removed": "Adapter entfernt",
+    "removalFailed": "Entfernung fehlgeschlagen",
+    "toggleFailed": "Umschalten fehlgeschlagen",
+    "overrideToggleFailed": "Überschreibungs-Umschalten fehlgeschlagen",
+    "reloaded": "Adapter neu geladen",
+    "reloadFailed": "Neu laden fehlgeschlagen",
+    "reinstalled": "Adapter neu installiert",
+    "reinstallFailed": "Neuinstallation fehlgeschlagen"
+  },
+  "configFields": {
+    "instructionsFile": {
+      "label": "Agent-Anweisungsdatei",
+      "hintDefault": "Absoluter Pfad zu einer Markdown-Datei (z. B. AGENTS.md), die das Verhalten dieses Agenten definiert. Wird zur Laufzeit in den System-Prompt eingefügt.",
+      "hintCursor": "Absoluter Pfad zu einer Markdown-Datei (z. B. AGENTS.md), die das Verhalten dieses Agenten definiert. Wird zur Laufzeit in den Prompt eingefügt.",
+      "hintGemini": "Absoluter Pfad zu einer Markdown-Datei (z. B. AGENTS.md), die das Verhalten dieses Agenten definiert. Wird zur Laufzeit dem Gemini-Prompt vorangestellt.",
+      "hintCodex": "Absoluter Pfad zu einer Markdown-Datei (z. B. AGENTS.md), die das Verhalten dieses Agenten definiert. Wird zur Laufzeit in den System-Prompt eingefügt. Hinweis: Codex kann trotzdem automatisch repo-bezogene AGENTS.md-Dateien aus dem Workspace anwenden."
+    },
+    "enableChrome": "Chrome aktivieren",
+    "skipPermissions": "Berechtigungen überspringen",
+    "maxTurnsPerRun": "Max. Durchläufe pro Ausführung",
+    "bypassSandbox": "Sandbox umgehen",
+    "enableSearch": "Suche aktivieren",
+    "fastMode": "Schnellmodus",
+    "fastModeWarnActive": "Der Schnellmodus verbraucht Credits/token viel schneller als Standard-Codex-Ausführungen.",
+    "fastModeWarnUnsupported": "Der Schnellmodus funktioniert derzeit nur mit {{models}}. Paperclip ignoriert diesen Schalter, bis das Modell gewechselt wird.",
+    "webhookUrl": "Webhook-URL",
+    "gatewayUrl": "Gateway-URL",
+    "paperclipApiUrl": "Paperclip-API-URL-Überschreibung",
+    "claimedApiKeyPath": "Beanspruchter API-Schlüssel-Pfad",
+    "sessionStrategy": "Session-Strategie",
+    "sessionStrategyFixed": "Fest",
+    "sessionStrategyIssue": "Pro Aufgabe",
+    "sessionStrategyRun": "Pro Ausführung",
+    "sessionKey": "Session-Schlüssel",
+    "gatewayAuthToken": "Gateway-Auth-token (x-openclaw-token)",
+    "role": "Rolle",
+    "scopes": "Bereiche (kommagetrennt)",
+    "waitTimeout": "Wartezeit-Timeout (ms)",
+    "deviceAuth": "Geräte-Auth",
+    "deviceAuthHint": "Immer für Gateway-Agenten aktiviert. Paperclip speichert einen Geräteschlüssel beim Onboarding, damit Kopplungsgenehmigungen über Ausführungen hinweg stabil bleiben.",
+    "runtimeServicesJson": "Laufzeit-Services-JSON",
+    "payloadTemplateJson": "Payload-Template-JSON",
+    "command": "Befehl",
+    "args": "Argumente (kommagetrennt)"
+  }
+}

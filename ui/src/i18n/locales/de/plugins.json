@@ -1,0 +1,162 @@
+{
+  "breadcrumb": {
+    "settings": "Einstellungen",
+    "plugins": "Plugins",
+    "pluginDetails": "Plugin-Details"
+  },
+  "loading": "Plugins werden geladen...",
+  "loadError": "Plugins konnten nicht geladen werden.",
+  "managerTitle": "Plugin-Manager",
+  "installBtn": "Plugin installieren",
+  "installDialog": {
+    "title": "Plugin installieren",
+    "description": "Geben Sie den npm-Paketnamen des Plugins ein, das Sie installieren möchten.",
+    "packageLabel": "npm-Paketname",
+    "cancel": "Abbrechen",
+    "installing": "Wird installiert...",
+    "install": "Installieren"
+  },
+  "alpha": {
+    "title": "Plugins sind Alpha.",
+    "description": "Die Plugin-Laufzeit und die API-Oberfläche ändern sich noch. Erwarten Sie Breaking Changes, während sich diese Funktion stabilisiert."
+  },
+  "availableSection": {
+    "title": "Verfügbare Plugins",
+    "loading": "Integrierte Beispiele werden geladen...",
+    "loadError": "Integrierte Beispiele konnten nicht geladen werden.",
+    "empty": "In diesem Checkout wurden keine integrierten Beispiel-Plugins gefunden."
+  },
+  "badge": {
+    "example": "Beispiel",
+    "notInstalled": "Nicht installiert"
+  },
+  "btn": {
+    "enable": "Aktivieren",
+    "disable": "Deaktivieren",
+    "openSettings": "Einstellungen öffnen",
+    "review": "Prüfen",
+    "installExample": "Beispiel installieren",
+    "uninstall": "Deinstallieren",
+    "configure": "Konfigurieren"
+  },
+  "installedSection": {
+    "title": "Installierte Plugins",
+    "empty": "Keine Plugins installiert",
+    "emptyHint": "Installieren Sie ein Plugin, um die Funktionalität zu erweitern."
+  },
+  "noDescription": "Keine Beschreibung vorhanden.",
+  "errorState": {
+    "title": "Plugin-Fehler",
+    "viewFull": "Vollständigen Fehler anzeigen"
+  },
+  "uninstallDialog": {
+    "title": "Plugin deinstallieren",
+    "descriptionPre": "Möchten Sie wirklich",
+    "descriptionPost": "deinstallieren? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "cancel": "Abbrechen",
+    "uninstalling": "Wird deinstalliert...",
+    "uninstall": "Deinstallieren"
+  },
+  "errorDialog": {
+    "title": "Fehlerdetails",
+    "description": " hat einen Fehlerstatus getroffen.",
+    "whatErrored": "Was den Fehler verursacht hat",
+    "noSummary": "Keine Fehlerzusammenfassung verfügbar.",
+    "fullOutput": "Vollständige Fehlerausgabe",
+    "noMessage": "Keine gespeicherte Fehlermeldung.",
+    "close": "Schließen"
+  },
+  "toasts": {
+    "installed": "Plugin erfolgreich installiert",
+    "installFailed": "Plugin konnte nicht installiert werden",
+    "uninstalled": "Plugin erfolgreich deinstalliert",
+    "uninstallFailed": "Plugin konnte nicht deinstalliert werden",
+    "enabled": "Plugin aktiviert",
+    "enableFailed": "Plugin konnte nicht aktiviert werden",
+    "disabled": "Plugin deaktiviert",
+    "disableFailed": "Plugin konnte nicht deaktiviert werden"
+  },
+  "page": {
+    "selectCompany": "Wählen Sie ein Unternehmen aus, um diese Seite anzuzeigen.",
+    "loading": "Wird geladen…",
+    "routeConflictPre": "Mehrere Plugins deklarieren die Route",
+    "routeConflictPost": ". Verwenden Sie die Plugin-ID-Route, bis der Konflikt gelöst ist.",
+    "back": "Zurück"
+  },
+  "settings": {
+    "loading": "Plugin-Details werden geladen...",
+    "tabs": {
+      "configuration": "Konfiguration",
+      "status": "Status"
+    },
+    "about": {
+      "title": "Über",
+      "descriptionLabel": "Beschreibung",
+      "authorLabel": "Autor",
+      "categoriesLabel": "Kategorien",
+      "noneCategories": "Keine"
+    },
+    "settingsTitle": "Einstellungen",
+    "noSettings": "Dieses Plugin benötigt keine Einstellungen."
+  },
+  "status": {
+    "runtimeDashboard": {
+      "title": "Laufzeit-Dashboard",
+      "description": "Worker-Prozess, geplante Jobs und Webhook-Zustellungen"
+    },
+    "worker": {
+      "title": "Worker-Prozess",
+      "statusLabel": "Status",
+      "pidLabel": "PID",
+      "uptimeLabel": "Laufzeit",
+      "pendingRpcsLabel": "Ausstehende RPCs",
+      "crashesLabel": "Abstürze",
+      "lastCrashLabel": "Letzter Absturz",
+      "noWorker": "Kein Worker-Prozess registriert.",
+      "consecutive": "aufeinanderfolgend",
+      "total": "gesamt"
+    },
+    "jobs": {
+      "title": "Aktuelle Job-Ausführungen",
+      "empty": "Noch keine Job-Ausführungen aufgezeichnet."
+    },
+    "webhooks": {
+      "title": "Aktuelle Webhook-Zustellungen",
+      "empty": "Noch keine Webhook-Zustellungen aufgezeichnet."
+    },
+    "lastChecked": "Zuletzt geprüft: ",
+    "noDashboard": "Laufzeit-Diagnosen sind derzeit nicht verfügbar.",
+    "logs": {
+      "title": "Aktuelle Protokolle",
+      "description": "Letzte {{count}} Protokolleinträge"
+    },
+    "health": {
+      "title": "Gesundheitsstatus",
+      "checking": "Gesundheit wird geprüft...",
+      "overallLabel": "Gesamt",
+      "waitingHint": "Gesundheitsprüfungen werden ausgeführt, sobald das Plugin bereit ist."
+    },
+    "details": {
+      "title": "Details",
+      "pluginId": "Plugin-ID",
+      "pluginKey": "Plugin-Schlüssel",
+      "npmPackage": "NPM-Paket",
+      "version": "Version"
+    },
+    "permissions": {
+      "title": "Berechtigungen",
+      "none": "Keine speziellen Berechtigungen angefordert."
+    }
+  },
+  "configForm": {
+    "loading": "Konfiguration wird geladen...",
+    "saved": "Konfiguration gespeichert.",
+    "saveFailed": "Konfiguration konnte nicht gespeichert werden.",
+    "testPassed": "Konfigurationstest bestanden.",
+    "testFailed": "Konfigurationstest fehlgeschlagen.",
+    "saving": "Wird gespeichert...",
+    "save": "Konfiguration speichern",
+    "testing": "Wird getestet...",
+    "test": "Konfiguration testen"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "list": {
+    "breadcrumb": "Genehmigungen",
+    "selectCompany": "Wählen Sie zuerst ein Unternehmen aus.",
+    "tabs": {
+      "pending": "Ausstehend",
+      "all": "Alle"
+    },
+    "noPending": "Keine ausstehenden Genehmigungen.",
+    "noApprovals": "Noch keine Genehmigungen.",
+    "failedToApprove": "Genehmigung fehlgeschlagen",
+    "failedToReject": "Ablehnung fehlgeschlagen"
+  },
+  "detail": {
+    "fallback": "Genehmigung",
+    "notFound": "Genehmigung nicht gefunden.",
+    "cta": {
+      "reviewLinkedIssues": "Verknüpfte Aufgaben prüfen",
+      "reviewLinkedIssue": "Verknüpfte Aufgabe prüfen",
+      "openHiredAgent": "Eingestellten Agenten öffnen",
+      "backToApprovals": "Zurück zu den Genehmigungen"
+    },
+    "approvedBanner": {
+      "title": "Genehmigung bestätigt",
+      "description": "Der anfragende Agent wurde benachrichtigt, diese Genehmigung und verknüpfte Aufgaben zu prüfen."
+    },
+    "requestedBy": "Angefragt von",
+    "seeFullRequest": "Vollständige Anfrage anzeigen",
+    "decisionNote": "Entscheidungsnotiz: {{note}}",
+    "linkedIssues": "Verknüpfte Aufgaben",
+    "linkedIssuesNote": "Verknüpfte Aufgaben bleiben offen, bis der anfragende Agent nachfasst und sie schließt.",
+    "approve": "Genehmigen",
+    "reject": "Ablehnen",
+    "budgetStop": "Lösen Sie diesen Budget-Stopp über die Budgetkontrollen auf",
+    "requestRevision": "Überarbeitung anfragen",
+    "markResubmitted": "Als erneut eingereicht markieren",
+    "deleteDisapproved": "Abgelehnten Agenten löschen",
+    "deleteDisapprovedConfirm": "Diesen abgelehnten Agenten löschen? Dies kann nicht rückgängig gemacht werden.",
+    "errors": {
+      "approveFailed": "Genehmigung fehlgeschlagen",
+      "rejectFailed": "Ablehnung fehlgeschlagen",
+      "revisionFailed": "Überarbeitungsanfrage fehlgeschlagen",
+      "resubmitFailed": "Erneutes Einreichen fehlgeschlagen",
+      "commentFailed": "Kommentar fehlgeschlagen",
+      "deleteFailed": "Löschen fehlgeschlagen"
+    },
+    "comments": "Kommentare ({{count}})",
+    "commentBoard": "Board",
+    "commentPlaceholder": "Kommentar hinzufügen...",
+    "posting": "Wird gepostet…",
+    "postComment": "Kommentar posten"
+  },
+  "joinRequests": {
+    "breadcrumb": "Beitrittsanfragen",
+    "selectCompany": "Wählen Sie ein Unternehmen aus, um Beitrittsanfragen zu prüfen.",
+    "loading": "Beitrittsanfragen werden geladen…",
+    "noPermission": "Sie haben keine Berechtigung, Beitrittsanfragen für dieses Unternehmen zu prüfen.",
+    "failedToLoad": "Beitrittsanfragen konnten nicht geladen werden.",
+    "title": "Beitrittsanfragen-Warteschlange",
+    "description": "Prüfen Sie menschliche und Agenten-Beitrittsanfragen außerhalb des gemischten Posteingangs-Feeds. Diese Warteschlange verwendet dieselben Genehmigungsmutationen wie die Inline-Posteingangs-Karten.",
+    "statusLabel": "Status",
+    "requestTypeLabel": "Anfragetyp",
+    "statusOptions": {
+      "pendingApproval": "Genehmigung ausstehend",
+      "approved": "Genehmigt",
+      "rejected": "Abgelehnt"
+    },
+    "typeOptions": {
+      "all": "Alle",
+      "human": "Mensch",
+      "agent": "Agent"
+    },
+    "noRequests": "Keine Beitrittsanfragen entsprechen den aktuellen Filtern.",
+    "approved": "Beitrittsanfrage genehmigt",
+    "rejected": "Beitrittsanfrage abgelehnt",
+    "inviteContext": "Einladungskontext",
+    "requestDetails": "Anfragedetails",
+    "reject": "Ablehnen",
+    "approve": "Genehmigen",
+    "submitted": "Eingereicht {{date}}",
+    "sourceIp": "Quell-IP {{ip}}",
+    "inviteMetaUnavailable": "Einladungsmetadaten nicht verfügbar"
+  },
+  "card": {
+    "requestedBy": "Angefragt von",
+    "createdAt": "Genehmigungsanfrage erstellt {{timeAgo}}",
+    "decisionNote": "Entscheidungsnotiz.",
+    "approve": "Genehmigen",
+    "approving": "Wird genehmigt...",
+    "reject": "Ablehnen",
+    "rejecting": "Wird abgelehnt...",
+    "viewDetails": "Details anzeigen"
+  },
+  "typeLabel": {
+    "hire_agent": "Agent einstellen",
+    "approve_ceo_strategy": "CEO-Strategie",
+    "budget_override_required": "Budget-Überschreibung",
+    "request_board_approval": "Board-Genehmigung"
+  },
+  "payload": {
+    "fields": {
+      "name": "Name",
+      "role": "Rolle",
+      "title": "Titel",
+      "icon": "Symbol",
+      "capabilities": "Fähigkeiten",
+      "adapter": "Adapter",
+      "skills": "Skills",
+      "scope": "Bereich",
+      "window": "Fenster",
+      "metric": "Metrik",
+      "summary": "Zusammenfassung",
+      "recommendedAction": "Empfohlene Aktion",
+      "onApproval": "Bei Genehmigung",
+      "risks": "Risiken",
+      "proposedComment": "Vorgeschlagener Kommentar"
+    },
+    "budget": "Limit {{limit}} · Beobachtet {{observed}}"
+  }
+}

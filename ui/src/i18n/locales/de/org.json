@@ -1,0 +1,12 @@
+{
+  "breadcrumb": "Organigramm",
+  "selectCompany": "Wählen Sie ein Unternehmen aus, um das Organigramm anzuzeigen.",
+  "noAgents": "Keine Agenten in der Organisation. Erstellen Sie Agenten, um Ihr Organigramm aufzubauen.",
+  "noHierarchy": "Keine Organisationshierarchie definiert.",
+  "importCompany": "Unternehmen importieren",
+  "exportCompany": "Unternehmen exportieren",
+  "zoomIn": "Vergrößern",
+  "zoomOut": "Verkleinern",
+  "fitToScreen": "An Bildschirm anpassen",
+  "fitChartToScreen": "Diagramm an Bildschirm anpassen"
+}

@@ -1,0 +1,678 @@
+{
+  "nav": {
+    "general": "Allgemein",
+    "access": "Zugang",
+    "invites": "Einladungen",
+    "companySettings": "Unternehmenseinstellungen"
+  },
+  "modeBadge": {
+    "localTrusted": "Lokal vertrauenswürdig",
+    "authenticated": "Authentifiziert {{exposure}}"
+  },
+  "instance": {
+    "breadcrumb": "Instanzeinstellungen",
+    "heartbeats": {
+      "breadcrumb": "Heartbeats",
+      "loading": "Scheduler-Heartbeats werden geladen...",
+      "loadFailed": "Scheduler-Heartbeats konnten nicht geladen werden.",
+      "title": "Scheduler-Heartbeats",
+      "description": "Agenten mit aktiviertem Timer-Heartbeat in allen Ihren Unternehmen.",
+      "active": "aktiv",
+      "disabled_stat": "deaktiviert",
+      "companies_one": "Unternehmen",
+      "companies_other": "Unternehmen",
+      "confirmDisableAll_one": "Timer-Heartbeat für {{count}} aktivierten Agenten deaktivieren?",
+      "confirmDisableAll_other": "Timer-Heartbeats für alle {{count}} aktivierten Agenten deaktivieren?",
+      "disabling": "Wird deaktiviert...",
+      "disableAll": "Alle deaktivieren",
+      "on": "An",
+      "off": "Aus",
+      "fullConfig": "Vollständige Agent-Konfiguration",
+      "disableHeartbeat": "Timer-Heartbeat deaktivieren",
+      "enableHeartbeat": "Timer-Heartbeat aktivieren",
+      "empty": "Keine Scheduler-Heartbeats entsprechen den aktuellen Kriterien.",
+      "errors": {
+        "updateFailed": "Heartbeat konnte nicht aktualisiert werden.",
+        "disableAllFailed": "Alle Heartbeats konnten nicht deaktiviert werden."
+      }
+    },
+    "general": {
+      "breadcrumb": "Allgemein",
+      "loading": "Allgemeine Einstellungen werden geladen...",
+      "loadFailed": "Allgemeine Einstellungen konnten nicht geladen werden.",
+      "title": "Allgemein",
+      "description": "Konfigurieren Sie instanzweite Standards, die beeinflussen, wie operator-sichtbare Protokolle angezeigt werden.",
+      "deployment": {
+        "sectionTitle": "Bereitstellung und Authentifizierung",
+        "localTrusted": "Lokal vertrauenswürdiger Modus ist für einen lokalen Operator optimiert. Browser-Anfragen laufen als lokaler Board-Kontext und es ist keine Anmeldung erforderlich.",
+        "authenticatedPublic": "Authentifizierter öffentlicher Modus erfordert eine Anmeldung für den Board-Zugang und ist für öffentliche URLs gedacht.",
+        "authenticatedPrivate": "Authentifizierter privater Modus erfordert eine Anmeldung und ist für LAN-, VPN- oder andere private Netzwerkbereitstellungen gedacht.",
+        "authReadiness": "Auth-Bereitschaft",
+        "bootstrapStatus": "Bootstrap-Status",
+        "bootstrapInvite": "Bootstrap-Einladung",
+        "ready": "Bereit",
+        "notReady": "Nicht bereit",
+        "setupRequired": "Einrichtung erforderlich",
+        "active": "Aktiv",
+        "none": "Keine"
+      },
+      "censorUsername": {
+        "title": "Benutzernamen in Protokollen zensieren",
+        "description": "Den Benutzernamen-Abschnitt in Home-Verzeichnis-Pfaden und ähnlicher operator-sichtbarer Protokollausgabe ausblenden. Eigenständige Benutzernamen-Erwähnungen außerhalb von Pfaden sind in der Live-Transkript-Ansicht noch nicht maskiert. Dies ist standardmäßig deaktiviert.",
+        "ariaLabel": "Benutzernamen-Protokollzensierung umschalten"
+      },
+      "keyboardShortcuts": {
+        "title": "Tastaturkürzel",
+        "description": "App-Tastaturkürzel aktivieren, einschließlich Posteingangsnavigation und globale Kürzel wie das Erstellen von Aufgaben oder das Umschalten von Panels. Dies ist standardmäßig deaktiviert.",
+        "ariaLabel": "Tastaturkürzel umschalten"
+      },
+      "backupRetention": {
+        "title": "Backup-Aufbewahrung",
+        "description": "Konfigurieren Sie, wie lange automatische Datenbank-Backups auf jeder Ebene aufbewahrt werden. Tägliche Backups werden vollständig aufbewahrt, dann auf eines pro Woche und eines pro Monat ausgedünnt. Backups werden mit gzip komprimiert.",
+        "daily": "Täglich",
+        "weekly": "Wöchentlich",
+        "monthly": "Monatlich",
+        "days": "{{count}} Tage",
+        "week_one": "1 Woche",
+        "week_other": "{{count}} Wochen",
+        "month_one": "1 Monat",
+        "month_other": "{{count}} Monate"
+      },
+      "feedback": {
+        "title": "KI-Feedback-Weitergabe",
+        "description": "Steuern Sie, ob Daumen-hoch- und Daumen-runter-Bewertungen die bewertete KI-Ausgabe an Paperclip Labs senden können. Bewertungen werden immer lokal gespeichert.",
+        "terms": "Unsere Nutzungsbedingungen lesen",
+        "noDefault": "Noch kein Standard gespeichert. Die nächste Daumen-hoch- oder Daumen-runter-Auswahl fragt einmal und speichert die Antwort hier.",
+        "allowed": {
+          "label": "Immer erlauben",
+          "description": "Bewertete KI-Ausgaben automatisch teilen."
+        },
+        "notAllowed": {
+          "label": "Nicht erlauben",
+          "description": "Bewertete KI-Ausgaben nur lokal behalten."
+        }
+      },
+      "signOut": {
+        "title": "Abmelden",
+        "description": "Von dieser Paperclip-Instanz abmelden. Sie werden zur Anmeldeseite weitergeleitet.",
+        "signingOut": "Wird abgemeldet...",
+        "button": "Abmelden"
+      },
+      "errors": {
+        "saveFailed": "Allgemeine Einstellungen konnten nicht aktualisiert werden.",
+        "signOutFailed": "Abmelden fehlgeschlagen."
+      }
+    },
+    "access": {
+      "breadcrumb": "Zugang",
+      "loading": "Instanzbenutzer werden geladen…",
+      "loadFailed": "Benutzer konnten nicht geladen werden.",
+      "adminRequired": "Instanz-Admin-Zugang ist erforderlich, um Benutzer zu verwalten.",
+      "permissionDenied": "Sie haben keine Berechtigung, Unternehmensmitglieder zu verwalten.",
+      "title": "Instanzzugang",
+      "description": "Benutzer suchen, Instanz-Admin-Status verwalten und kontrollieren, auf welche Unternehmen sie zugreifen können.",
+      "search": {
+        "label": "Benutzer suchen",
+        "placeholder": "Nach Name oder E-Mail suchen"
+      },
+      "memberships": "{{count}} aktive Unternehmensmitgliedschaften",
+      "selectUser": "Wählen Sie einen Benutzer aus, um den Instanzzugang zu prüfen.",
+      "loadingUser": "Benutzerzugang wird geladen…",
+      "loadUserFailed": "Benutzerzugang konnte nicht geladen werden.",
+      "companyAccess": {
+        "title": "Unternehmenszugang",
+        "description": "Unternehmensmitgliedschaft für diesen Benutzer umschalten. Neuer Zugang entspricht standardmäßig einer aktiven Operator-Mitgliedschaft.",
+        "removeAdmin": "Instanz-Admin entfernen",
+        "promoteAdmin": "Zum Instanz-Admin befördern",
+        "saving": "Wird gespeichert…",
+        "save": "Unternehmenszugang speichern"
+      },
+      "currentMemberships": {
+        "title": "Aktuelle Mitgliedschaften",
+        "unset": "nicht gesetzt"
+      },
+      "toasts": {
+        "companyUpdated": "Unternehmenszugang aktualisiert",
+        "instanceRoleUpdated": "Instanzrolle aktualisiert"
+      }
+    },
+    "experimental": {
+      "breadcrumb": "Experimentell",
+      "loading": "Experimentelle Einstellungen werden geladen...",
+      "loadFailed": "Experimentelle Einstellungen konnten nicht geladen werden.",
+      "title": "Experimentell",
+      "description": "Opt-in für Funktionen, die noch evaluiert werden, bevor sie zum Standardverhalten werden.",
+      "isolatedWorkspaces": {
+        "title": "Isolierte Workspaces aktivieren",
+        "description": "Ausführungs-Workspace-Kontrollen in der Projektkonfiguration anzeigen und isoliertes Workspace-Verhalten für neue und bestehende Aufgabenausführungen erlauben.",
+        "ariaLabel": "Experimentelle Einstellung für isolierte Workspaces umschalten"
+      },
+      "autoRestart": {
+        "title": "Dev-Server automatisch neu starten bei Inaktivität",
+        "description": "In `pnpm dev:once` auf alle wartenden und laufenden lokalen Agent-Ausführungen warten, dann den Server automatisch neu starten, wenn Backend-Änderungen oder Migrationen den aktuellen Start veralten lassen.",
+        "ariaLabel": "Bewachten Dev-Server-Auto-Neustart umschalten"
+      },
+      "errors": {
+        "saveFailed": "Experimentelle Einstellungen konnten nicht aktualisiert werden."
+      }
+    }
+  },
+  "company": {
+    "settings": {
+      "title": "Unternehmenseinstellungen",
+      "noCompany": "Kein Unternehmen ausgewählt. Wählen Sie ein Unternehmen aus dem Umschalter oben.",
+      "breadcrumb": "Einstellungen",
+      "sections": {
+        "general": "Allgemein",
+        "appearance": "Erscheinungsbild",
+        "hiring": "Einstellungen",
+        "feedbackSharing": "Feedback-Weitergabe",
+        "invites": "Einladungen",
+        "packages": "Unternehmenspakete",
+        "danger": "Gefahrenzone"
+      },
+      "fields": {
+        "companyName": {
+          "label": "Unternehmensname",
+          "hint": "Der Anzeigename für Ihr Unternehmen."
+        },
+        "description": {
+          "label": "Beschreibung",
+          "hint": "Optionale Beschreibung, die im Unternehmensprofil angezeigt wird.",
+          "placeholder": "Optionale Unternehmensbeschreibung"
+        },
+        "logo": {
+          "label": "Logo",
+          "hint": "Laden Sie ein PNG-, JPEG-, WEBP-, GIF- oder SVG-Logo-Bild hoch."
+        },
+        "brandColor": {
+          "label": "Markenfarbe",
+          "hint": "Legt den Farbton für das Unternehmenssymbol fest. Leer lassen für automatisch generierte Farbe.",
+          "placeholder": "Automatisch"
+        }
+      },
+      "logo": {
+        "removing": "Wird entfernt...",
+        "remove": "Logo entfernen",
+        "uploadFailed": "Logo-Upload fehlgeschlagen",
+        "uploading": "Logo wird hochgeladen..."
+      },
+      "save": {
+        "saving": "Wird gespeichert...",
+        "saveChanges": "Änderungen speichern",
+        "saved": "Gespeichert",
+        "failed": "Speichern fehlgeschlagen"
+      },
+      "hiring": {
+        "label": "Board-Genehmigung für neue Einstellungen erforderlich",
+        "hint": "Neue Agent-Einstellungen bleiben ausstehend, bis sie vom Board genehmigt werden."
+      },
+      "feedbackSharing": {
+        "label": "Teilen bewerteter KI-Ausgaben mit Paperclip Labs erlauben",
+        "hint": "Nur KI-generierte Ausgaben, die Sie explizit bewerten, kommen für die Feedback-Weitergabe in Frage.",
+        "description": "Bewertungen werden immer lokal gespeichert. Diese Einstellung kontrolliert, ob bewertete KI-Ausgaben auch für die Weitergabe an Paperclip Labs markiert werden dürfen.",
+        "termsVersion": "Bedingungsversion:",
+        "enabled": "Aktiviert {{date}}",
+        "sharingDisabled": "Weitergabe ist derzeit deaktiviert.",
+        "terms": "Unsere Nutzungsbedingungen lesen",
+        "toastEnabled": "Feedback-Weitergabe aktiviert",
+        "toastDisabled": "Feedback-Weitergabe deaktiviert",
+        "toastFailed": "Feedback-Weitergabe konnte nicht aktualisiert werden"
+      },
+      "invites": {
+        "hint": "OpenClaw-Agent-Einladungsausschnitt generieren.",
+        "hintIcon": "Erstellt eine kurzlebige OpenClaw-Agent-Einladung und rendert einen kopierbereiten Prompt.",
+        "generating": "Wird generiert...",
+        "generate": "OpenClaw-Einladungs-Prompt generieren",
+        "snippetTitle": "OpenClaw-Einladungs-Prompt",
+        "copied": "Kopiert",
+        "copySnippet": "Ausschnitt kopieren",
+        "copiedSnippet": "Ausschnitt kopiert"
+      },
+      "packages": {
+        "description": "Import und Export wurden auf dedizierte Seiten verschoben, die vom Organigramm-Header aus zugänglich sind.",
+        "export": "Exportieren",
+        "import": "Importieren"
+      },
+      "danger": {
+        "description": "Dieses Unternehmen archivieren, um es aus der Seitenleiste auszublenden. Dies wird in der Datenbank gespeichert.",
+        "archiving": "Wird archiviert...",
+        "alreadyArchived": "Bereits archiviert",
+        "archive": "Unternehmen archivieren",
+        "archiveFailed": "Unternehmen archivieren fehlgeschlagen",
+        "confirmArchive": "Unternehmen \"{{name}}\" archivieren? Es wird aus der Seitenleiste ausgeblendet."
+      }
+    },
+    "access": {
+      "breadcrumb": "Zugang",
+      "noCompany": "Wählen Sie ein Unternehmen aus, um den Zugang zu verwalten.",
+      "loading": "Unternehmenszugang wird geladen…",
+      "loadFailed": "Unternehmensmitglieder konnten nicht geladen werden.",
+      "permissionDenied": "Sie haben keine Berechtigung, Unternehmensmitglieder zu verwalten.",
+      "title": "Unternehmenszugang",
+      "description": "Verwalten Sie Unternehmens-Benutzermitgliedschaften, Mitgliedschaftsstatus und explizite Berechtigungszuweisungen für {{company}}.",
+      "instanceAdminNote": "Dieses Konto kann den Zugang hier über Instanz-Admin-Berechtigungen verwalten, hat aber derzeit keine aktive Unternehmensmitgliedschaft.",
+      "humans": {
+        "title": "Menschen",
+        "description": "Menschliche Unternehmensmitgliedschaften, Status und Zuweisungen hier verwalten."
+      },
+      "pendingJoins": {
+        "title": "Ausstehende menschliche Beitritte",
+        "description": "Menschliche Beitrittsanfragen prüfen, bevor sie aktive Unternehmensmitglieder werden.",
+        "badge": "{{count}} ausstehend",
+        "unknownRequester": "Unbekannter menschlicher Antragsteller",
+        "noEmail": "Keine E-Mail verfügbar",
+        "inviteUnavailable": "Einladungsmetadaten nicht verfügbar",
+        "approveLabel": "Mensch genehmigen",
+        "rejectLabel": "Mensch ablehnen"
+      },
+      "table": {
+        "userAccount": "Benutzerkonto",
+        "role": "Rolle",
+        "status": "Status",
+        "grants": "Zuweisungen",
+        "action": "Aktion",
+        "unset": "Nicht gesetzt",
+        "noMembers": "Noch keine Benutzermitgliedschaften für dieses Unternehmen gefunden.",
+        "edit": "Bearbeiten"
+      },
+      "dialog": {
+        "title": "Mitglied bearbeiten",
+        "description": "Unternehmensrolle, Mitgliedschaftsstatus und explizite Zuweisungen für {{name}} aktualisieren.",
+        "companyRole": "Unternehmensrolle",
+        "membershipStatus": "Mitgliedschaftsstatus",
+        "statusActive": "Aktiv",
+        "statusPending": "Ausstehend",
+        "statusSuspended": "Gesperrt",
+        "grantsTitle": "Zuweisungen",
+        "grantsDescription": "Rollen bieten implizite Zuweisungen automatisch. Explizite Zuweisungen unten sind nur für Überschreibungen und zusätzlichen Zugang, der auch nach einer Rollenänderung erhalten bleiben soll.",
+        "implicitGrantsTitle": "Implizite Zuweisungen aus der Rolle",
+        "implicitGrantsHasRole": "{{role}} beinhaltet derzeit diese Berechtigungen automatisch.",
+        "implicitGrantsNoRole": "Keine Rolle ausgewählt, daher hat dieses Mitglied derzeit keine impliziten Zuweisungen.",
+        "storedExplicitly": "Explizit für dieses Mitglied gespeichert.",
+        "implicitFromRole": "Implizit durch die {{role}}-Rolle eingeschlossen. Fügen Sie eine explizite Zuweisung nur hinzu, wenn sie nach einer Rollenänderung bestehen bleiben soll.",
+        "unsetOption": "Nicht gesetzt",
+        "cancel": "Abbrechen",
+        "saving": "Wird gespeichert…",
+        "save": "Zugang speichern"
+      },
+      "permissions": {
+        "agentsCreate": "Agenten erstellen",
+        "usersInvite": "Menschen und Agenten einladen",
+        "usersManagePermissions": "Mitglieder und Zuweisungen verwalten",
+        "tasksAssign": "Aufgaben zuweisen",
+        "tasksAssignScope": "Aufgaben mit Bereich zuweisen",
+        "joinsApprove": "Beitrittsanfragen genehmigen",
+        "noExplicitGrants": "Keine expliziten Zuweisungen"
+      },
+      "toasts": {
+        "memberUpdated": "Mitglied aktualisiert",
+        "updateFailed": "Mitglied konnte nicht aktualisiert werden",
+        "joinApproved": "Beitrittsanfrage genehmigt",
+        "joinApproveFailed": "Beitrittsanfrage konnte nicht genehmigt werden",
+        "joinRejected": "Beitrittsanfrage abgelehnt",
+        "joinRejectFailed": "Beitrittsanfrage konnte nicht abgelehnt werden"
+      }
+    },
+    "invites": {
+      "breadcrumb": "Einladungen",
+      "noCompany": "Wählen Sie ein Unternehmen aus, um Einladungen zu verwalten.",
+      "loading": "Einladungen werden geladen…",
+      "loadFailed": "Einladungen konnten nicht geladen werden.",
+      "permissionDenied": "Sie haben keine Berechtigung, Unternehmenseinladungen zu verwalten.",
+      "title": "Unternehmenseinladungen",
+      "description": "Erstellen Sie menschliche Einladungslinks für den Unternehmenszugang. Neue Einladungslinks werden beim Generieren in Ihre Zwischenablage kopiert.",
+      "create": {
+        "title": "Einladung erstellen",
+        "description": "Generieren Sie einen menschlichen Einladungslink und wählen Sie den Standardzugang, den er anfordern soll.",
+        "chooseRole": "Rolle auswählen",
+        "singleUse": "Jeder Einladungslink ist einmalig verwendbar. Die erste erfolgreiche Verwendung verbraucht den Link und erstellt oder verwendet die passende Beitrittsanfrage vor der Genehmigung wieder.",
+        "creating": "Wird erstellt…",
+        "button": "Einladung erstellen",
+        "historyNote": "Die Einladungshistorie unten hält den Prüfpfad fest."
+      },
+      "roles": {
+        "viewer": {
+          "label": "Betrachter",
+          "description": "Kann Unternehmensarbeit einsehen und verfolgen, ohne operative Berechtigungen.",
+          "gets": "Keine integrierten Zuweisungen."
+        },
+        "operator": {
+          "label": "Operator",
+          "description": "Empfohlen für Personen, die bei der Arbeit helfen müssen, ohne den Zugang zu verwalten.",
+          "gets": "Kann Aufgaben zuweisen."
+        },
+        "admin": {
+          "label": "Admin",
+          "description": "Empfohlen für Operatoren, die Personen einladen, Agenten erstellen und Beitritte genehmigen müssen.",
+          "gets": "Kann Agenten erstellen, Benutzer einladen, Aufgaben zuweisen und Beitrittsanfragen genehmigen."
+        },
+        "owner": {
+          "label": "Eigentümer",
+          "description": "Vollständiger Unternehmenszugang, einschließlich Mitgliedschafts- und Berechtigungsverwaltung.",
+          "gets": "Alles in Admin, plus Verwaltung von Mitgliedern und Berechtigungszuweisungen."
+        }
+      },
+      "defaultBadge": "Standard",
+      "latestInvite": {
+        "title": "Neuester Einladungslink",
+        "description": "Diese URL enthält die aktuelle Paperclip-Domain, die vom Server zurückgegeben wird.",
+        "copied": "Kopiert",
+        "open": "Einladung öffnen"
+      },
+      "history": {
+        "title": "Einladungshistorie",
+        "description": "Einladungsstatus, Rolle, Einladenden und verknüpfte Beitrittsanfrage prüfen.",
+        "openQueue": "Beitrittsanfragen-Warteschlange öffnen",
+        "empty": "Noch keine Einladungen für dieses Unternehmen erstellt.",
+        "colState": "Status",
+        "colRole": "Rolle",
+        "colInvitedBy": "Eingeladen von",
+        "colCreated": "Erstellt",
+        "colJoinRequest": "Beitrittsanfrage",
+        "colAction": "Aktion",
+        "unknownInviter": "Unbekannter Einladender",
+        "reviewRequest": "Anfrage prüfen",
+        "revoke": "Widerrufen",
+        "inactive": "Inaktiv",
+        "loadingMore": "Weitere werden geladen…",
+        "viewMore": "Mehr anzeigen"
+      },
+      "clipboard": {
+        "unavailableTitle": "Zwischenablage nicht verfügbar",
+        "unavailableBody": "Kopieren Sie die Einladungs-URL manuell aus dem Feld unten."
+      },
+      "toasts": {
+        "created": "Einladung erstellt",
+        "createReadyCopied": "Einladung unten bereit und in die Zwischenablage kopiert.",
+        "createReady": "Einladung unten bereit.",
+        "createFailed": "Einladung konnte nicht erstellt werden",
+        "revoked": "Einladung widerrufen",
+        "revokeFailed": "Einladung konnte nicht widerrufen werden"
+      }
+    },
+    "skills": {
+      "noCompany": "Wählen Sie ein Unternehmen aus, um Skills zu verwalten.",
+      "title": "Skills",
+      "breadcrumb": "Skills",
+      "detailBreadcrumb": "Detail",
+      "available": "{{count}} verfügbar",
+      "filterPlaceholder": "Skills filtern",
+      "addSourcePlaceholder": "Pfad, GitHub-URL oder skills.sh-Befehl einfügen",
+      "addButton": "Hinzufügen",
+      "scanTooltip": "Projekt-Workspaces nach Skills scannen",
+      "empty": "Keine Skills entsprechen diesem Filter.",
+      "selectSkill": "Wählen Sie einen Skill aus, um seine Dateien zu prüfen.",
+      "collapseSkill": "{{name}} einklappen",
+      "expandSkill": "{{name}} ausklappen",
+      "create": {
+        "namePlaceholder": "Skill-Name",
+        "slugPlaceholder": "optionaler-kurzname",
+        "descriptionPlaceholder": "Kurze Beschreibung",
+        "cancel": "Abbrechen",
+        "creating": "Wird erstellt...",
+        "button": "Skill erstellen"
+      },
+      "detail": {
+        "removing": "Wird entfernt...",
+        "remove": "Entfernen",
+        "stopEditing": "Bearbeitung beenden",
+        "edit": "Bearbeiten",
+        "source": "Quelle",
+        "pin": "Anheften",
+        "key": "Schlüssel",
+        "mode": "Modus",
+        "usedBy": "Verwendet von",
+        "noAgents": "Keine Agenten angehängt",
+        "checkUpdates": "Nach Updates suchen",
+        "installUpdate": "Update {{ref}} installieren",
+        "upToDate": "Auf dem neuesten Stand",
+        "editable": "Bearbeitbar",
+        "readOnly": "Schreibgeschützt",
+        "untracked": "nicht verfolgt",
+        "view": "Anzeigen",
+        "code": "Code",
+        "cancel": "Abbrechen",
+        "saving": "Wird gespeichert...",
+        "save": "Speichern",
+        "selectFile": "Wählen Sie eine Datei zum Prüfen aus.",
+        "detachFirst": "Trennen Sie diesen Skill von allen Agenten, bevor Sie ihn entfernen.",
+        "tracking": "verfolgt {{ref}}",
+        "managedBy": {
+          "skillsSh": "skills.sh verwaltet",
+          "github": "GitHub verwaltet",
+          "url": "URL verwaltet",
+          "folder": "Ordner verwaltet",
+          "paperclip": "Paperclip verwaltet",
+          "catalog": "Katalog verwaltet"
+        }
+      },
+      "sourceHelp": {
+        "title": "Skill-Quelle hinzufügen",
+        "description": "Fügen Sie zuerst einen lokalen Pfad, eine GitHub-URL oder einen `skills.sh`-Befehl in das Feld ein.",
+        "browseSkillsSh": "skills.sh durchsuchen",
+        "browseSkillsShDesc": "Installationsbefehle finden und hier einfügen.",
+        "searchGithub": "GitHub durchsuchen",
+        "searchGithubDesc": "Nach Repositories mit `SKILL.md` suchen, dann die Repo-URL hier einfügen."
+      },
+      "delete": {
+        "title": "Skill entfernen",
+        "description": "Diesen Skill aus der Unternehmensbibliothek entfernen. Wenn Agenten ihn noch verwenden, wird das Entfernen blockiert, bis er getrennt wird.",
+        "aboutToRemove": "Sie sind dabei, {{name}} zu entfernen.",
+        "aboutToRemoveGeneric": "Sie sind dabei, diesen Skill zu entfernen.",
+        "usedBy": "Derzeit verwendet von {{agents}}.",
+        "detachFirst": "Trennen Sie diesen Skill von allen Agenten, um das Entfernen zu ermöglichen.",
+        "close": "Schließen",
+        "cancel": "Abbrechen",
+        "removing": "Wird entfernt...",
+        "remove": "Skill entfernen"
+      },
+      "scan": {
+        "found": "{{count}} gefunden",
+        "imported": "{{count}} importiert",
+        "updated": "{{count}} aktualisiert",
+        "conflicts": "{{count}} Konflikte",
+        "skipped": "{{count}} übersprungen",
+        "acrossWorkspaces_one": "über {{count}} Workspace",
+        "acrossWorkspaces_other": "über {{count}} Workspaces"
+      },
+      "toasts": {
+        "importFailed": "Skill-Import fehlgeschlagen",
+        "importWarnings": "Import-Warnungen",
+        "importedSuccess": "Skills importiert",
+        "importedBody_one": "{{count}} Skill hinzugefügt.",
+        "importedBody_other": "{{count}} Skills hinzugefügt.",
+        "createdSuccess": "Skill erstellt",
+        "createdBody": "{{name}} ist jetzt im Paperclip-Workspace bearbeitbar.",
+        "createFailed": "Skill-Erstellung fehlgeschlagen",
+        "scanMutating": "Projekt-Workspaces werden nach Skills gescannt...",
+        "scanRefreshing": "Skills-Liste wird aktualisiert...",
+        "scanComplete": "Projekt-Skill-Scan abgeschlossen",
+        "scanFailed": "Projekt-Skill-Scan fehlgeschlagen",
+        "conflictsFound": "Skill-Konflikte gefunden",
+        "scanWarnings": "Scan-Warnungen",
+        "copiedPath": "Pfad zum Workspace kopiert",
+        "saveFailed": "Speichern fehlgeschlagen",
+        "saveSuccess": "Skill gespeichert",
+        "updateFailed": "Aktualisierung fehlgeschlagen",
+        "updateSuccess": "Skill aktualisiert",
+        "updateSuccessBody": "Auf {{ref}} angeheftet",
+        "removeFailed": "Entfernen fehlgeschlagen",
+        "removeSuccess": "Skill entfernt",
+        "removeSuccessBody": "{{name}} wurde aus der Unternehmens-Skill-Bibliothek entfernt.",
+        "importErrorBody": "Skill-Quelle konnte nicht importiert werden.",
+        "createErrorBody": "Skill konnte nicht erstellt werden.",
+        "scanErrorBody": "Projekt-Workspaces konnten nicht gescannt werden.",
+        "saveErrorBody": "Skill-Datei konnte nicht gespeichert werden.",
+        "updateErrorBody": "Skill-Update konnte nicht installiert werden.",
+        "removeErrorBody": "Skill konnte nicht entfernt werden."
+      }
+    },
+    "export": {
+      "noCompany": "Wählen Sie ein Unternehmen zum Exportieren aus.",
+      "loadingData": "Exportdaten werden geladen...",
+      "breadcrumb": "Exportieren",
+      "title": "{{company}} exportieren",
+      "filesSelected_one": "{{selected}} / {{total}} Datei ausgewählt",
+      "filesSelected_other": "{{selected}} / {{total}} Dateien ausgewählt",
+      "warnings_one": "{{count}} Warnung",
+      "warnings_other": "{{count}} Warnungen",
+      "building": "Export wird erstellt...",
+      "button_one": "{{count}} Datei exportieren",
+      "button_other": "{{count}} Dateien exportieren",
+      "packageFiles": "Paketdateien",
+      "searchFiles": "Dateien suchen...",
+      "showMoreIssues": "Weitere Aufgaben anzeigen ({{visible}} von {{total}})",
+      "previewEmpty": "Wählen Sie eine Datei aus, um ihren Inhalt zu sehen.",
+      "binaryPreview": "Binäre Asset-Vorschau ist für diesen Dateityp nicht verfügbar.",
+      "toasts": {
+        "downloadSuccess": "Export heruntergeladen",
+        "downloadBody_one": "{{count}} Datei als {{rootPath}}.zip exportiert",
+        "downloadBody_other": "{{count}} Dateien als {{rootPath}}.zip exportiert",
+        "failed": "Export fehlgeschlagen",
+        "loadFailed": "Exportdaten konnten nicht geladen werden.",
+        "buildFailed": "Exportpaket konnte nicht erstellt werden."
+      }
+    },
+    "import": {
+      "breadcrumb": "Importieren",
+      "noCompany": "Wählen Sie ein Unternehmen aus, in das importiert werden soll.",
+      "sourceTitle": "Importquelle",
+      "sourceDescription": "Wählen Sie ein GitHub-Repo oder laden Sie ein lokales Paperclip-ZIP-Paket hoch.",
+      "github": "GitHub-Repo",
+      "localZip": "Lokales ZIP",
+      "chooseZip": "ZIP auswählen",
+      "localZipHelp": "Laden Sie eine direkt aus Paperclip exportierte .zip-Datei hoch. Neu gezippte Archive, die von Finder, Explorer oder anderen ZIP-Tools erstellt wurden, importieren möglicherweise nicht korrekt.",
+      "localZipFiles_one": "{{name}} mit {{count}} Datei",
+      "localZipFiles_other": "{{name}} mit {{count}} Dateien",
+      "githubUrl": {
+        "label": "GitHub-URL",
+        "hint": "Repo-Baum-Pfad oder Blob-URL zu COMPANY.md (z. B. github.com/owner/repo/tree/main/company)."
+      },
+      "target": {
+        "label": "Ziel",
+        "hint": "In dieses Unternehmen importieren oder ein neues erstellen.",
+        "newCompany": "Neues Unternehmen erstellen",
+        "existingCompany": "Bestehendes Unternehmen: {{name}}"
+      },
+      "newCompanyName": {
+        "label": "Neuer Unternehmensname",
+        "hint": "Optionale Überschreibung. Leer lassen, um den Paketnamen zu verwenden.",
+        "placeholder": "Importiertes Unternehmen"
+      },
+      "collision": {
+        "label": "Kollisionsstrategie",
+        "hint": "Board-Importe können übereinstimmende Unternehmensinhalte umbenennen, überspringen oder ersetzen.",
+        "rename": "Bei Konflikt umbenennen",
+        "skip": "Bei Konflikt überspringen",
+        "replace": "Bestehendes ersetzen"
+      },
+      "preview": {
+        "button": "Import vorschau",
+        "previewing": "Wird in der Vorschau angezeigt...",
+        "title": "Importvorschau",
+        "filesSelected_one": "{{selected}} / {{total}} Datei ausgewählt",
+        "filesSelected_other": "{{selected}} / {{total}} Dateien ausgewählt",
+        "conflicts_one": "{{count}} Konflikt",
+        "conflicts_other": "{{count}} Konflikte",
+        "errors_one": "{{count}} Fehler",
+        "errors_other": "{{count}} Fehler"
+      },
+      "renames": {
+        "title": "Umbenennungen",
+        "items_one": "{{count}} Element",
+        "items_other": "{{count}} Elemente",
+        "skip": "überspringen",
+        "skipped": "übersprungen",
+        "confirmRename": "Umbenennung bestätigen",
+        "confirmed": "bestätigt"
+      },
+      "adapters": {
+        "title": "Adapter",
+        "configureButton": "Adapter konfigurieren",
+        "agents_one": "{{count}} Agent",
+        "agents_other": "{{count}} Agenten"
+      },
+      "importing": "Wird importiert...",
+      "button_one": "{{count}} Datei importieren",
+      "button_other": "{{count}} Dateien importieren",
+      "packageFiles": "Paketdateien",
+      "previewEmpty": "Wählen Sie eine Datei aus, um ihren Inhalt zu sehen.",
+      "binaryPreview": "Binäre Asset-Vorschau ist für diesen Dateityp nicht verfügbar.",
+      "toasts": {
+        "previewFailed": "Vorschau fehlgeschlagen",
+        "previewFailedBody": "Import konnte nicht in der Vorschau angezeigt werden.",
+        "importFailed": "Import fehlgeschlagen",
+        "importFailedBody": "Import konnte nicht angewendet werden.",
+        "importComplete": "Import abgeschlossen",
+        "importCompleteBody_one": "{{company}}: {{count}} Agent verarbeitet.",
+        "importCompleteBody_other": "{{company}}: {{count}} Agenten verarbeitet.",
+        "packageReadFailed": "Paket lesen fehlgeschlagen",
+        "packageReadFailedBody": "Ordner konnte nicht gelesen werden.",
+        "notAZip": "Wählen Sie ein .zip-Unternehmenspaket.",
+        "emptyZip": "Im ausgewählten ZIP-Archiv wurden keine Paketdateien gefunden."
+      }
+    }
+  },
+  "codexPanel": {
+    "title": "Codex-Abonnement",
+    "subtitle": "Live-Codex-Kontingentzeitfenster.",
+    "accountWindows": "Konto-Fenster",
+    "modelWindows": "Modell-Fenster"
+  },
+  "claudePanel": {
+    "title": "Anthropic-Abonnement",
+    "subtitle": "Live-Claude-Kontingentzeitfenster."
+  },
+  "subscriptionPanel": {
+    "percentUsed": "{{pct}}% verwendet",
+    "resetsAt": "Zurückgesetzt {{date}}",
+    "resetsShort": "zurückgesetzt {{date}}"
+  },
+  "providerQuota": {
+    "tokensIn": "ein",
+    "tokensOut": "aus",
+    "runs": "Ausführungen",
+    "total": "gesamt",
+    "periodSpend": "Zeitraumausgaben",
+    "ofAllocation": "{{pct}}% der Zuteilung",
+    "thisWeek": "Diese Woche",
+    "perWeek": "~{{amount}} / Woche",
+    "rollingWindows": "Rollierende Fenster",
+    "subscription": "Abonnement",
+    "percentOfSubscription": "{{pct}}% der token-Nutzung über Abonnement",
+    "providerTokenPct": "{{pct}}% der Anbieter-token",
+    "providerCostPct": "{{pct}}% der Anbieterkosten",
+    "subscriptionQuota": "Abonnement-Kontingent"
+  },
+  "profile": {
+    "breadcrumb": "Profil",
+    "loading": "Profil wird geladen...",
+    "loadFailed": "Profil konnte nicht geladen werden.",
+    "title": "Profil",
+    "description": "Steuern Sie, wie Ihr Konto in der Seitenleiste und anderen Board-Oberflächen erscheint.",
+    "changePhoto": "Foto ändern",
+    "uploadPhoto": "Foto hochladen",
+    "remove": "Entfernen",
+    "uploadHintPrefix": "Klicken Sie auf den Avatar, um ein neues Bild hochzuladen.",
+    "uploadHintWithCompany": "In Paperclip-Dateispeicher für {{company}} gespeichert.",
+    "uploadHintNoCompany": "Wählen Sie ein Unternehmen aus, um einen Avatar in den Paperclip-Speicher hochzuladen.",
+    "displayName": {
+      "label": "Anzeigename",
+      "placeholder": "Board",
+      "hint": "Wird in der Seitenleisten-Kontozeile und Kommentarautoren-Oberflächen angezeigt."
+    },
+    "email": {
+      "label": "E-Mail",
+      "hint": "E-Mail wird von Ihrer Auth-Session verwaltet und ist hier schreibgeschützt."
+    },
+    "saving": "Wird gespeichert...",
+    "save": "Profil speichern",
+    "errors": {
+      "updateFailed": "Profil konnte nicht aktualisiert werden.",
+      "uploadFailed": "Avatar konnte nicht hochgeladen werden.",
+      "removeFailed": "Avatar konnte nicht entfernt werden.",
+      "selectCompanyFirst": "Wählen Sie ein Unternehmen aus, bevor Sie einen Profil-Avatar hochladen."
+    }
+  }
+}

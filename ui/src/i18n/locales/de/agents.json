@@ -1,0 +1,275 @@
+{
+  "list": {
+    "selectCompany": "Wählen Sie ein Unternehmen aus, um Agenten anzuzeigen.",
+    "tabs": {
+      "all": "Alle",
+      "active": "Aktiv",
+      "paused": "Pausiert",
+      "error": "Fehler"
+    },
+    "filters": {
+      "button": "Filter",
+      "showTerminated": "Beendete anzeigen"
+    },
+    "newAgent": "Neuer Agent",
+    "count_one": "{{count}} Agent",
+    "count_other": "{{count}} Agenten",
+    "emptyFirst": "Erstellen Sie Ihren ersten Agenten, um loszulegen.",
+    "noMatch": "Keine Agenten entsprechen dem ausgewählten Filter.",
+    "noHierarchy": "Keine Organisationshierarchie definiert.",
+    "liveNow": "Live",
+    "liveCount": "Live ({{count}})"
+  },
+  "new": {
+    "title": "Neuer Agent",
+    "subtitle": "Erweiterte Agent-Konfiguration",
+    "namePlaceholder": "Agent-Name",
+    "titlePlaceholder": "Titel (z. B. VP of Engineering)",
+    "skillsTitle": "Unternehmens-Skills",
+    "skillsDesc": "Optionale Skills aus der Unternehmensbibliothek. Integrierte Paperclip-Laufzeit-Skills werden automatisch hinzugefügt.",
+    "noSkills": "Noch keine optionalen Unternehmens-Skills installiert.",
+    "ceoNote": "Dies wird der CEO sein",
+    "creating": "Wird erstellt…",
+    "create": "Agent erstellen",
+    "errorCreate": "Agent konnte nicht erstellt werden"
+  },
+  "actions": {
+    "runNow": "Jetzt ausführen",
+    "resume": "Fortsetzen",
+    "pause": "Pausieren",
+    "assignTask": "Aufgabe zuweisen",
+    "runHeartbeat": "Heartbeat ausführen",
+    "copyId": "Agent-ID kopieren",
+    "resetSessions": "Sessions zurücksetzen",
+    "terminate": "Beenden",
+    "restore": "Wiederherstellen"
+  },
+  "properties": {
+    "status": "Status",
+    "role": "Rolle",
+    "title": "Titel",
+    "adapter": "Adapter",
+    "session": "Session",
+    "lastError": "Letzter Fehler",
+    "lastHeartbeat": "Letzter Heartbeat",
+    "reportsTo": "Berichtet an",
+    "created": "Erstellt"
+  },
+  "iconPicker": {
+    "searchPlaceholder": "Symbole suchen...",
+    "noMatch": "Keine Symbole gefunden"
+  },
+  "dialog": {
+    "header": "Neuen Agenten hinzufügen",
+    "recommendation": "Wir empfehlen, Ihren CEO die Agent-Einrichtung übernehmen zu lassen — er kennt die Organisationsstruktur und kann Berichtslinien, Berechtigungen und Adapter konfigurieren.",
+    "askCeo": "CEO bitten, einen neuen Agenten zu erstellen",
+    "advancedLink": "Ich möchte die erweiterte Konfiguration selbst vornehmen",
+    "back": "Zurück",
+    "chooseAdapter": "Wählen Sie Ihren Adapter-Typ für die erweiterte Einrichtung.",
+    "recommended": "Empfohlen"
+  },
+  "panel": {
+    "heading": "Agenten",
+    "noRuns": "Keine aktuellen Agent-Ausführungen.",
+    "liveNow": "Gerade live",
+    "finished": "Abgeschlossen {{time}}",
+    "started": "Gestartet {{time}}"
+  },
+  "choosePath": {
+    "button": "Auswählen",
+    "title": "Pfad manuell angeben",
+    "description": "Die Browser-Sicherheit verhindert, dass Apps vollständige lokale Pfade über einen Dateiauswähler lesen. Kopieren Sie den absoluten Pfad und fügen Sie ihn in das Eingabefeld ein.",
+    "macos": "macOS (Finder)",
+    "windows": "Windows (Datei-Explorer)",
+    "terminal": "Terminal-Fallback (macOS/Linux)",
+    "ok": "OK"
+  },
+  "reportsToPicker": {
+    "unknownManager": "Unbekannter Manager (veraltete ID)",
+    "reportTo": "Berichtet an {{name}}",
+    "reportToTerminated": "Berichtet an {{name}} (beendet)",
+    "noManager": "Kein Manager",
+    "currentTerminated": "Aktuell: {{name}} (beendet)",
+    "missingManager": "Der gespeicherte Manager fehlt in diesem Unternehmen. Wählen Sie einen neuen Manager oder löschen Sie die Auswahl."
+  },
+  "config": {
+    "unsavedChanges": "Nicht gespeicherte Änderungen",
+    "testing": "Wird getestet...",
+    "testEnvironment": "Umgebung testen",
+    "envPassed": "Bestanden",
+    "envWarnings": "Warnungen",
+    "envFailed": "Fehlgeschlagen",
+    "sections": {
+      "identity": "Identität",
+      "adapter": "Adapter",
+      "permissions": "Berechtigungen & Konfiguration",
+      "runPolicy": "Ausführungsrichtlinie",
+      "advancedRunPolicy": "Erweiterte Ausführungsrichtlinie"
+    },
+    "comingSoon": "Demnächst verfügbar",
+    "modelDefault": "Standard",
+    "modelManual": "Manuelles Modell verwenden",
+    "saving": "Wird gespeichert...",
+    "fields": {
+      "name": "Name",
+      "title": "Titel",
+      "reportsTo": "Berichtet an",
+      "capabilities": "Fähigkeiten",
+      "promptTemplate": "Prompt-Vorlage",
+      "adapterType": "Adapter-Typ",
+      "workingDirDeprecated": "Arbeitsverzeichnis (veraltet)",
+      "command": "Befehl",
+      "bootstrapPrompt": "Bootstrap-Prompt (Legacy)",
+      "extraArgs": "Zusätzliche Argumente (kommagetrennt)",
+      "envVars": "Umgebungsvariablen",
+      "timeoutSec": "Timeout (Sek.)",
+      "graceSec": "Unterbrechungs-Toleranzzeit (Sek.)",
+      "cooldownSec": "Abkühlzeit (Sek.)",
+      "maxConcurrentRuns": "Max. gleichzeitige Ausführungen",
+      "model": "Modell",
+      "thinkingEffort": "Denkaufwand",
+      "heartbeatOnInterval": "Heartbeat im Intervall",
+      "runHeartbeatEvery": "Heartbeat ausführen alle",
+      "wakeOnDemand": "Bei Bedarf aufwecken"
+    }
+  },
+  "detail": {
+    "tabs": {
+      "dashboard": "Dashboard",
+      "instructions": "Anweisungen",
+      "skills": "Skills",
+      "configuration": "Konfiguration",
+      "runs": "Ausführungen",
+      "budget": "Budget"
+    },
+    "pendingApproval": "Dieser Agent wartet auf die Genehmigung des Boards und kann noch nicht aufgerufen werden.",
+    "sources": {
+      "timer": "Timer",
+      "assignment": "Zuweisung",
+      "onDemand": "Auf Anfrage",
+      "automation": "Automatisierung"
+    },
+    "liveRun": "Live-Ausführung",
+    "latestRun": "Letzte Ausführung",
+    "viewDetails": "Details anzeigen →",
+    "charts": {
+      "runActivity": "Ausführungsaktivität",
+      "issuesByPriority": "Aufgaben nach Priorität",
+      "issuesByStatus": "Aufgaben nach Status",
+      "successRate": "Erfolgsrate",
+      "last14Days": "Letzte 14 Tage"
+    },
+    "recentIssues": "Aktuelle Aufgaben",
+    "seeAll": "Alle anzeigen →",
+    "noRecentIssues": "Keine aktuellen Aufgaben.",
+    "moreIssues": "+{{count}} weitere Aufgaben",
+    "costs": {
+      "title": "Kosten",
+      "inputTokens": "Eingabe-token",
+      "outputTokens": "Ausgabe-token",
+      "cachedTokens": "Gecachte token",
+      "totalCost": "Gesamtkosten",
+      "date": "Datum",
+      "run": "Ausführung",
+      "input": "Eingabe",
+      "output": "Ausgabe",
+      "cost": "Kosten"
+    },
+    "apiKeys": "API-Schlüssel",
+    "configRevisions": "Konfigurationsrevisionen",
+    "noConfigRevisions": "Noch keine Konfigurationsrevisionen.",
+    "changedKeys": "Geändert:",
+    "noChanges": "keine verfolgten Änderungen",
+    "permissions": {
+      "title": "Berechtigungen",
+      "canCreateAgents": "Kann neue Agenten erstellen",
+      "canCreateAgentsDesc": "Erlaubt diesem Agenten, Agenten zu erstellen oder einzustellen und ihnen implizit Aufgaben zuzuweisen.",
+      "canAssignTasks": "Kann Aufgaben zuweisen"
+    },
+    "instructions": {
+      "notLocal": "Anweisungspakete sind nur für lokale Adapter verfügbar.",
+      "filesTitle": "Dateien",
+      "advanced": "Erweitert",
+      "mode": "Modus",
+      "rootPath": "Wurzelpfad",
+      "entryFile": "Einstiegsdatei",
+      "managed": "Verwaltet",
+      "external": "Extern",
+      "create": "Erstellen",
+      "delete": "Löschen",
+      "deprecated": "Veraltete virtuelle Datei",
+      "newFile": "Neue Datei in diesem Paket"
+    },
+    "skills": {
+      "viewLibrary": "Unternehmens-Skills-Bibliothek anzeigen",
+      "saving": "Änderungen werden gespeichert...",
+      "savingSoon": "Wird bald gespeichert...",
+      "skillLocation": "Speicherort: {{location}}",
+      "importFirst": "Skills zuerst in die Unternehmensbibliothek importieren, dann hier anhängen.",
+      "requiredByPaperclip": "Von Paperclip benötigt",
+      "userInstalled": "({{count}}) Vom Benutzer installierte Skills, nicht von Paperclip verwaltet",
+      "skillsApplied": "Skills angewendet",
+      "selectedSkills": "Ausgewählte Skills",
+      "missingSkills": "Angeforderte Skills fehlen in der Unternehmensbibliothek",
+      "failedToUpdate": "Skills konnten nicht aktualisiert werden"
+    },
+    "invocation": {
+      "title": "Aufruf",
+      "adapter": "Adapter:",
+      "workingDir": "Arbeitsverzeichnis:",
+      "details": "Details",
+      "command": "Befehl:",
+      "commandNotes": "Befehlshinweise",
+      "prompt": "Prompt",
+      "context": "Kontext",
+      "environment": "Umgebung",
+      "showLog": "Vollständiges Protokoll anzeigen",
+      "hideLog": "Vollständiges Protokoll ausblenden",
+      "loadingLog": "Protokoll wird geladen...",
+      "noLog": "Keine gespeicherten Protokollzeilen.",
+      "failedToLoad": "Workspace-Betriebsprotokoll konnte nicht geladen werden"
+    },
+    "workspace": {
+      "title": "Workspace ({{count}})",
+      "phases": {
+        "worktreePrepare": "Worktree-Einrichtung",
+        "workspaceProvision": "Bereitstellung",
+        "workspaceTeardown": "Abbau",
+        "worktreeCleanup": "Worktree-Bereinigung"
+      },
+      "branch": "Branch:",
+      "baseRef": "Basis-Ref:",
+      "worktree": "Worktree:",
+      "repoRoot": "Repo-Wurzel:",
+      "cleanup": "Bereinigung:",
+      "createdByRun": "Von dieser Ausführung erstellt",
+      "reusedWorkspace": "Bestehenden Workspace wiederverwendet",
+      "stderr": "stderr-Auszug",
+      "stdout": "stdout-Auszug"
+    },
+    "liveRun": {
+      "title": "Live-Ausführungen",
+      "devNote": "Verwendet die gemeinsame chat-ähnliche Ausführungsoberfläche aus der Aufgabenaktivität.",
+      "stopping": "Wird gestoppt…",
+      "stop": "Stoppen",
+      "openRun": "Ausführung öffnen"
+    },
+    "runs": {
+      "noRuns": "Noch keine Ausführungen.",
+      "backToRuns": "Zurück zu den Ausführungen",
+      "cancelRun": "Abbrechen",
+      "cancelling": "Wird abgebrochen…",
+      "resume": "Fortsetzen",
+      "resuming": "Wird fortgesetzt…",
+      "retry": "Wiederholen",
+      "retrying": "Wird wiederholt…",
+      "session": "Session",
+      "sessionChanged": "(geändert)",
+      "duration": "Dauer:",
+      "exitCode": "Exitcode {{code}}",
+      "loginClaude": "Bei Claude Code anmelden",
+      "loggingIn": "Claude-Login wird ausgeführt...",
+      "loginUrl": "Anmelde-URL:"
+    }
+  }
+}
