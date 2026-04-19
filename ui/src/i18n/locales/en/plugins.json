@@ -1,0 +1,162 @@
+{
+  "breadcrumb": {
+    "settings": "Settings",
+    "plugins": "Plugins",
+    "pluginDetails": "Plugin Details"
+  },
+  "loading": "Loading plugins...",
+  "loadError": "Failed to load plugins.",
+  "managerTitle": "Plugin Manager",
+  "installBtn": "Install Plugin",
+  "installDialog": {
+    "title": "Install Plugin",
+    "description": "Enter the npm package name of the plugin you wish to install.",
+    "packageLabel": "npm Package Name",
+    "cancel": "Cancel",
+    "installing": "Installing...",
+    "install": "Install"
+  },
+  "alpha": {
+    "title": "Plugins are alpha.",
+    "description": "The plugin runtime and API surface are still changing. Expect breaking changes while this feature settles."
+  },
+  "availableSection": {
+    "title": "Available Plugins",
+    "loading": "Loading bundled examples...",
+    "loadError": "Failed to load bundled examples.",
+    "empty": "No bundled example plugins were found in this checkout."
+  },
+  "badge": {
+    "example": "Example",
+    "notInstalled": "Not installed"
+  },
+  "btn": {
+    "enable": "Enable",
+    "disable": "Disable",
+    "openSettings": "Open Settings",
+    "review": "Review",
+    "installExample": "Install Example",
+    "uninstall": "Uninstall",
+    "configure": "Configure"
+  },
+  "installedSection": {
+    "title": "Installed Plugins",
+    "empty": "No plugins installed",
+    "emptyHint": "Install a plugin to extend functionality."
+  },
+  "noDescription": "No description provided.",
+  "errorState": {
+    "title": "Plugin error",
+    "viewFull": "View full error"
+  },
+  "uninstallDialog": {
+    "title": "Uninstall Plugin",
+    "descriptionPre": "Are you sure you want to uninstall",
+    "descriptionPost": "? This action cannot be undone.",
+    "cancel": "Cancel",
+    "uninstalling": "Uninstalling...",
+    "uninstall": "Uninstall"
+  },
+  "errorDialog": {
+    "title": "Error Details",
+    "description": " hit an error state.",
+    "whatErrored": "What errored",
+    "noSummary": "No error summary available.",
+    "fullOutput": "Full error output",
+    "noMessage": "No stored error message.",
+    "close": "Close"
+  },
+  "toasts": {
+    "installed": "Plugin installed successfully",
+    "installFailed": "Failed to install plugin",
+    "uninstalled": "Plugin uninstalled successfully",
+    "uninstallFailed": "Failed to uninstall plugin",
+    "enabled": "Plugin enabled",
+    "enableFailed": "Failed to enable plugin",
+    "disabled": "Plugin disabled",
+    "disableFailed": "Failed to disable plugin"
+  },
+  "page": {
+    "selectCompany": "Select a company to view this page.",
+    "loading": "Loading\u2026",
+    "routeConflictPre": "Multiple plugins declare the route",
+    "routeConflictPost": ". Use the plugin-id route until the conflict is resolved.",
+    "back": "Back"
+  },
+  "settings": {
+    "loading": "Loading plugin details...",
+    "tabs": {
+      "configuration": "Configuration",
+      "status": "Status"
+    },
+    "about": {
+      "title": "About",
+      "descriptionLabel": "Description",
+      "authorLabel": "Author",
+      "categoriesLabel": "Categories",
+      "noneCategories": "None"
+    },
+    "settingsTitle": "Settings",
+    "noSettings": "This plugin does not require any settings."
+  },
+  "status": {
+    "runtimeDashboard": {
+      "title": "Runtime Dashboard",
+      "description": "Worker process, scheduled jobs, and webhook deliveries"
+    },
+    "worker": {
+      "title": "Worker Process",
+      "statusLabel": "Status",
+      "pidLabel": "PID",
+      "uptimeLabel": "Uptime",
+      "pendingRpcsLabel": "Pending RPCs",
+      "crashesLabel": "Crashes",
+      "lastCrashLabel": "Last Crash",
+      "noWorker": "No worker process registered.",
+      "consecutive": "consecutive",
+      "total": "total"
+    },
+    "jobs": {
+      "title": "Recent Job Runs",
+      "empty": "No job runs recorded yet."
+    },
+    "webhooks": {
+      "title": "Recent Webhook Deliveries",
+      "empty": "No webhook deliveries recorded yet."
+    },
+    "lastChecked": "Last checked: ",
+    "noDashboard": "Runtime diagnostics are unavailable right now.",
+    "logs": {
+      "title": "Recent Logs",
+      "description": "Last {{count}} log entries"
+    },
+    "health": {
+      "title": "Health Status",
+      "checking": "Checking health...",
+      "overallLabel": "Overall",
+      "waitingHint": "Health checks run once the plugin is ready."
+    },
+    "details": {
+      "title": "Details",
+      "pluginId": "Plugin ID",
+      "pluginKey": "Plugin Key",
+      "npmPackage": "NPM Package",
+      "version": "Version"
+    },
+    "permissions": {
+      "title": "Permissions",
+      "none": "No special permissions requested."
+    }
+  },
+  "configForm": {
+    "loading": "Loading configuration...",
+    "saved": "Configuration saved.",
+    "saveFailed": "Failed to save configuration.",
+    "testPassed": "Configuration test passed.",
+    "testFailed": "Configuration test failed.",
+    "saving": "Saving...",
+    "save": "Save Configuration",
+    "testing": "Testing...",
+    "test": "Test Configuration"
+  }
+}

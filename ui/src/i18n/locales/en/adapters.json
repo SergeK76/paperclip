@@ -1,0 +1,89 @@
+{
+  "row": {
+    "sourceExternal": "External",
+    "sourceBuiltin": "Built-in",
+    "localPathTitle": "Installed from local path",
+    "npmTitle": "Installed from npm",
+    "reinstallTitle": "Reinstall adapter (pull latest from npm)",
+    "reloadTitle": "Reload adapter (hot-swap)",
+    "showInMenus": "Show in agent menus",
+    "hideFromMenus": "Hide from agent menus",
+    "removeTitle": "Remove adapter",
+    "hiddenBadge": "Hidden from menus",
+    "overridesBuiltin": "Overrides built-in",
+    "overriddenBy": "Overridden by {{name}}",
+    "overridePaused": "Override paused",
+    "pauseOverride": "Pause external override",
+    "resumeOverride": "Resume external override",
+    "modelCount": "{{count}} models"
+  },
+  "reinstall": {
+    "title": "Reinstall Adapter",
+    "descriptionPre": "This will pull the latest version of",
+    "descriptionPost": "from npm and hot-swap the running adapter module. Existing agents will use the new version on their next run.",
+    "packageLabel": "Package",
+    "currentLabel": "Current",
+    "latestLabel": "Latest on npm",
+    "checking": "checking...",
+    "unavailable": "unavailable",
+    "upToDate": "Already on the latest version.",
+    "cancel": "Cancel",
+    "reinstalling": "Reinstalling...",
+    "reinstall": "Reinstall"
+  },
+  "breadcrumb": {
+    "settings": "Settings",
+    "adapters": "Adapters"
+  },
+  "loading": "Loading adapters...",
+  "title": "Adapters",
+  "installBtn": "Install Adapter",
+  "installDialog": {
+    "title": "Install External Adapter",
+    "description": "Add an adapter from npm or a local path. The adapter package must export createServerAdapter().",
+    "npmPackage": "npm package",
+    "localPath": "Local path",
+    "localPathLabel": "Path to adapter package",
+    "localPathHint": "Accepts Linux, WSL, and Windows paths. Windows paths are auto-converted.",
+    "packageNameLabel": "Package Name",
+    "versionLabel": "Version (optional)",
+    "cancel": "Cancel",
+    "installing": "Installing...",
+    "install": "Install"
+  },
+  "alpha": {
+    "title": "External adapters are alpha.",
+    "description": "The adapter plugin system is under active development. APIs and storage format may change. Use the power icon to hide adapters from agent menus without removing them."
+  },
+  "externalSection": {
+    "title": "External Adapters",
+    "empty": "No external adapters installed",
+    "emptyHint": "Install an adapter package to extend model support."
+  },
+  "builtinSection": {
+    "title": "Built-in Adapters",
+    "empty": "No built-in adapters found."
+  },
+  "removeDialog": {
+    "title": "Remove Adapter",
+    "descriptionPre": "Are you sure you want to remove the",
+    "descriptionMid": "adapter? It will be unregistered and removed from the adapter store.",
+    "npmCleanup": " npm packages will be cleaned up from disk.",
+    "cannotUndo": "This action cannot be undone.",
+    "cancel": "Cancel",
+    "removing": "Removing...",
+    "remove": "Remove"
+  },
+  "toasts": {
+    "installed": "Adapter installed",
+    "installFailed": "Install failed",
+    "removed": "Adapter removed",
+    "removalFailed": "Removal failed",
+    "toggleFailed": "Toggle failed",
+    "overrideToggleFailed": "Override toggle failed",
+    "reloaded": "Adapter reloaded",
+    "reloadFailed": "Reload failed",
+    "reinstalled": "Adapter reinstalled",
+    "reinstallFailed": "Reinstall failed"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "common": {
+    "saveBtn": "Save changes",
+    "resetBtn": "Reset",
+    "noChanges": "No unsaved changes.",
+    "none": "None",
+    "copied": "Copied"
+  },
+  "exec": {
+    "backBtn": "Back to all workspaces",
+    "sectionLabel": "Execution workspace",
+    "description": "Configure the concrete runtime workspace that Paperclip reuses for this issue flow.",
+    "descriptionExtra": " These settings stay attached to the execution workspace so future runs can keep local paths, repo refs, provisioning, teardown, and runtime-service behavior in sync with the actual workspace being reused.",
+    "commandsLabel": "Workspace commands",
+    "commandsTitle": "Services and jobs",
+    "sourceLabel": "Source",
+    "sourceExecWorkspace": "execution workspace override",
+    "sourceProjectWorkspace": "project workspace default",
+    "sourceNone": "none",
+    "serviceEmpty": "No services have been started for this execution workspace yet.",
+    "serviceEmptyNoConfig": "No workspace command config is defined for this execution workspace yet.",
+    "jobEmpty": "No one-shot jobs are configured for this execution workspace yet.",
+    "disabledHint": "Execution workspaces need a working directory before local commands can run, and services also need runtime config.",
+    "loadingState": "Loading workspace…",
+    "loadError": "Failed to load workspace",
+    "tabs": {
+      "configuration": "Configuration",
+      "runtimeLogs": "Runtime logs",
+      "issues": "Issues"
+    },
+    "config": {
+      "sectionLabel": "Configuration",
+      "title": "Workspace settings",
+      "description": "Edit the concrete path, repo, branch, provisioning, teardown, and runtime overrides attached to this execution workspace.",
+      "closeBtn": "Close workspace",
+      "retryCloseBtn": "Retry close"
+    },
+    "fields": {
+      "name": "Workspace name",
+      "branchName": "Branch name",
+      "cwd": "Working directory",
+      "providerRef": "Provider path / ref",
+      "repoUrl": "Repo URL",
+      "baseRef": "Base ref",
+      "provisionCmd": "Provision command",
+      "teardownCmd": "Teardown command",
+      "cleanupCmd": "Cleanup command",
+      "runtimeJson": "Workspace commands JSON"
+    },
+    "hints": {
+      "branchName": "Useful for isolated worktrees",
+      "provisionCmd": "Runs when Paperclip prepares this execution workspace",
+      "teardownCmd": "Runs when the execution workspace is archived or cleaned up",
+      "cleanupCmd": "Workspace-specific cleanup before teardown",
+      "runtimeJson": "Legacy `services` arrays still work, but `commands` supports both services and jobs."
+    },
+    "placeholders": {
+      "name": "Execution workspace name"
+    },
+    "runtimeSource": {
+      "label": "Runtime config source",
+      "override": "This execution workspace currently overrides the project workspace runtime config.",
+      "inheriting": "This execution workspace is inheriting the project workspace runtime config.",
+      "none": "No runtime config is currently defined on this execution workspace or its project workspace.",
+      "resetBtn": "Reset to inherit",
+      "advancedSummary": "Advanced runtime JSON",
+      "advancedHint": "Override the inherited workspace command model only when this execution workspace truly needs different service or job behavior.",
+      "inheritCheckbox": "Inherit project workspace runtime config"
+    },
+    "runtimeMsg": {
+      "jobCompleted": "Workspace job completed.",
+      "serviceStopped": "Workspace service stopped.",
+      "serviceRestarted": "Workspace service restarted.",
+      "serviceStarted": "Workspace service started."
+    },
+    "error": {
+      "saveFailed": "Failed to save execution workspace.",
+      "buildFailed": "Failed to build workspace update.",
+      "controlFailed": "Failed to control workspace commands."
+    },
+    "linked": {
+      "sectionLabel": "Linked objects",
+      "title": "Workspace context",
+      "project": "Project",
+      "projectWorkspace": "Project workspace",
+      "sourceIssue": "Source issue",
+      "derivedFrom": "Derived from",
+      "workspaceId": "Workspace ID"
+    },
+    "paths": {
+      "sectionLabel": "Paths and refs",
+      "title": "Concrete location",
+      "cwd": "Working dir",
+      "providerRef": "Provider ref",
+      "repoUrl": "Repo URL",
+      "baseRef": "Base ref",
+      "branch": "Branch",
+      "opened": "Opened",
+      "lastUsed": "Last used",
+      "cleanup": "Cleanup",
+      "notScheduled": "Not scheduled"
+    },
+    "logs": {
+      "sectionLabel": "Recent operations",
+      "title": "Runtime and cleanup logs",
+      "loading": "Loading workspace operations…",
+      "loadError": "Failed to load workspace operations.",
+      "empty": "No workspace operations have been recorded yet."
+    }
+  },
+  "project": {
+    "backBtn": "Back to workspaces",
+    "primaryBadge": "Primary workspace",
+    "secondaryBadge": "Secondary workspace",
+    "sectionLabel": "Project workspace",
+    "description": "Configure the concrete workspace Paperclip attaches to this project. These values drive per-workspace checkout behavior, default runtime services for child execution workspaces, and let you override setup or cleanup commands when one workspace needs special handling.",
+    "makePrimaryBtn": "Make primary",
+    "isPrimaryMsg": "This is the project's primary codebase workspace.",
+    "notFound": "Workspace not found for this project.",
+    "fields": {
+      "name": "Workspace name",
+      "visibility": "Visibility",
+      "sourceType": "Source type",
+      "localPath": "Local path",
+      "repoUrl": "Repo URL",
+      "repoRef": "Repo ref",
+      "defaultRef": "Default ref",
+      "sharedKey": "Shared workspace key",
+      "remoteProvider": "Remote provider",
+      "remoteRef": "Remote workspace ref",
+      "setupCmd": "Setup command",
+      "cleanupCmd": "Cleanup command",
+      "runtimeJson": "Workspace commands JSON"
+    },
+    "hints": {
+      "setupCmd": "Runs when this workspace needs custom bootstrap",
+      "cleanupCmd": "Runs before project-level execution workspace teardown",
+      "runtimeJson": "Execution workspaces inherit this config unless they override it. Legacy `services` arrays still work, but `commands` supports both services and jobs."
+    },
+    "sourceTypes": {
+      "localPath": {
+        "label": "Local git checkout",
+        "description": "A local path Paperclip can use directly."
+      },
+      "nonGitPath": {
+        "label": "Local non-git path",
+        "description": "A local folder without git semantics."
+      },
+      "gitRepo": {
+        "label": "Remote git repo",
+        "description": "A repo URL with optional refs and local checkout."
+      },
+      "remoteManaged": {
+        "label": "Remote-managed workspace",
+        "description": "A hosted workspace tracked by external reference."
+      }
+    },
+    "commands": {
+      "sectionLabel": "Workspace commands",
+      "title": "Services and jobs",
+      "description": "Long-running services stay supervised here, while one-shot jobs run on demand against this workspace. Execution workspaces inherit this config unless they override it."
+    },
+    "serviceEmpty": "No services have been started for this workspace yet.",
+    "serviceEmptyNoConfig": "No workspace command config is defined for this workspace yet.",
+    "jobEmpty": "No one-shot jobs are configured for this workspace yet.",
+    "disabledHint": "Project workspaces need a working directory before local commands can run, and services also need runtime config.",
+    "error": {
+      "saveFailed": "Failed to save workspace.",
+      "updateFailed": "Failed to update workspace."
+    },
+    "facts": {
+      "sectionLabel": "Workspace facts",
+      "title": "Current state",
+      "project": "Project",
+      "workspaceId": "Workspace ID",
+      "localPath": "Local path",
+      "repo": "Repo",
+      "defaultRef": "Default ref",
+      "updated": "Updated"
+    },
+    "runtimeAdvancedHint": "Paperclip derives Services and Jobs from this JSON. Prefer editing named commands first; use raw JSON for advanced lifecycle, port, readiness, or environment settings."
+  }
+}
