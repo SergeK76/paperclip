@@ -8,6 +8,7 @@ import {
   matchWorkspaceRuntimeServiceToCommand,
 } from "@paperclipai/shared";
 import { Activity, ExternalLink, Loader2, Play, RotateCcw, Square } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -218,6 +219,7 @@ function CommandActionButtons({
   pendingRequest: WorkspaceRuntimeControlRequest | null | undefined;
   onAction: (request: WorkspaceRuntimeControlRequest) => void;
 }) {
+  const { t } = useTranslation(["workspaces"]);
   const actions: WorkspaceRuntimeAction[] =
     item.kind === "job"
       ? ["run"]
@@ -231,12 +233,12 @@ function CommandActionButtons({
         const request = buildRequest(item, action);
         const Icon = action === "stop" ? Square : action === "restart" ? RotateCcw : Play;
         const label = action === "run"
-          ? "Run"
+          ? t("workspaces:controls.actions.run")
           : action === "start"
-            ? "Start"
+            ? t("workspaces:controls.actions.start")
             : action === "stop"
-              ? "Stop"
-              : "Restart";
+              ? t("workspaces:controls.actions.stop")
+              : t("workspaces:controls.actions.restart");
         const showSpinner = isPending && requestMatchesPending(pendingRequest, request);
         const disabled =
           isPending
@@ -283,6 +285,7 @@ function CommandSection({
   pendingRequest: WorkspaceRuntimeControlRequest | null | undefined;
   onAction: (request: WorkspaceRuntimeControlRequest) => void;
 }) {
+  const { t } = useTranslation(["workspaces"]);
   return (
     <div className="space-y-3">
       <div className="space-y-1">
@@ -303,7 +306,7 @@ function CommandSection({
                   <div className="space-y-1">
                     <div className="text-sm font-medium">{item.title}</div>
                     <div className="text-xs text-muted-foreground">
-                      {item.kind} · {item.statusLabel}
+                      {item.kind} · {item.statusLabel === "run once" ? t("workspaces:controls.statusRunOnce") : item.statusLabel}
                       {item.lifecycle ? ` · ${item.lifecycle}` : ""}
                     </div>
                   </div>
@@ -321,7 +324,7 @@ function CommandSection({
                       <ExternalLink className="h-3.5 w-3.5" />
                     </a>
                   ) : null}
-                  {item.port ? <div>Port {item.port}</div> : null}
+                  {item.port ? <div>{t("workspaces:controls.port", { port: item.port })}</div> : null}
                   {item.command ? <div className="break-all font-mono">{item.command}</div> : null}
                   {item.cwd ? <div className="break-all font-mono">{item.cwd}</div> : null}
                   {item.disabledReason ? <div>{item.disabledReason}</div> : null}
@@ -354,13 +357,14 @@ export function WorkspaceRuntimeControls({
   items,
   isPending = false,
   pendingRequest = null,
-  serviceEmptyMessage = "No services are configured for this workspace.",
-  jobEmptyMessage = "No one-shot jobs are configured for this workspace.",
+  serviceEmptyMessage,
+  jobEmptyMessage,
   emptyMessage,
   disabledHint = null,
   onAction,
   className,
 }: WorkspaceRuntimeControlsProps) {
+  const { t } = useTranslation(["workspaces"]);
   const resolvedSections = sections ?? {
     services: (items ?? []).map((item) => ({
       ...item,
@@ -369,7 +373,8 @@ export function WorkspaceRuntimeControls({
     jobs: [],
     otherServices: [],
   };
-  const resolvedServiceEmptyMessage = emptyMessage ?? serviceEmptyMessage;
+  const resolvedServiceEmptyMessage = emptyMessage ?? serviceEmptyMessage ?? t("workspaces:controls.sections.servicesEmpty");
+  const resolvedJobEmptyMessage = jobEmptyMessage ?? t("workspaces:controls.sections.jobsEmpty");
   const runningCount = resolvedSections.services.filter(
     (item) => item.statusLabel === "running" || item.statusLabel === "starting",
   ).length;
@@ -379,7 +384,7 @@ export function WorkspaceRuntimeControls({
     <div className={cn("space-y-4", className)}>
       <div className="rounded-xl border border-border/70 bg-background/60 p-3">
         <div className="space-y-1">
-          <div className="text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">Workspace commands</div>
+          <div className="text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">{t("workspaces:controls.workspaceCommands")}</div>
           <div className="flex flex-wrap items-center gap-2">
             <span
               className={cn(
@@ -390,12 +395,12 @@ export function WorkspaceRuntimeControls({
               )}
             >
               <Activity className="h-3.5 w-3.5" />
-              {runningCount > 0 ? `${runningCount} services running` : "No services running"}
+              {runningCount > 0 ? t("workspaces:controls.servicesRunning", { count: runningCount }) : t("workspaces:controls.noServicesRunning")}
             </span>
             <span className="text-xs text-muted-foreground">
               {resolvedSections.jobs.length > 0
-                ? `${resolvedSections.jobs.length} job${resolvedSections.jobs.length === 1 ? "" : "s"} available to run on demand.`
-                : "Each command can be controlled independently."}
+                ? t("workspaces:controls.jobsAvailable", { count: resolvedSections.jobs.length })
+                : t("workspaces:controls.eachCommandIndependent")}
             </span>
           </div>
           {visibleDisabledHint ? <p className="text-xs text-muted-foreground">{visibleDisabledHint}</p> : null}
@@ -403,8 +408,8 @@ export function WorkspaceRuntimeControls({
       </div>
 
       <CommandSection
-        title="Services"
-        description="Long-running commands that Paperclip can supervise for this workspace."
+        title={t("workspaces:controls.sections.services")}
+        description={t("workspaces:controls.sections.servicesDesc")}
         items={resolvedSections.services}
         emptyMessage={resolvedServiceEmptyMessage}
         disabledHint={visibleDisabledHint}
@@ -414,10 +419,10 @@ export function WorkspaceRuntimeControls({
       />
 
       <CommandSection
-        title="Jobs"
-        description="One-shot commands that run now and exit when they finish."
+        title={t("workspaces:controls.sections.jobs")}
+        description={t("workspaces:controls.sections.jobsDesc")}
         items={resolvedSections.jobs}
-        emptyMessage={jobEmptyMessage}
+        emptyMessage={resolvedJobEmptyMessage}
         isPending={isPending}
         pendingRequest={pendingRequest}
         onAction={onAction}
@@ -425,8 +430,8 @@ export function WorkspaceRuntimeControls({
 
       {resolvedSections.otherServices.length > 0 ? (
         <CommandSection
-          title="Untracked services"
-          description="Running services that no longer match the current workspace command config."
+          title={t("workspaces:controls.sections.untracked")}
+          description={t("workspaces:controls.sections.untrackedDesc")}
           items={resolvedSections.otherServices}
           emptyMessage=""
           isPending={isPending}
