@@ -1,4 +1,45 @@
 {
+  "newGoalDialog": {
+    "header": {
+      "newGoal": "Новая цель",
+      "newSubGoal": "Новая подцель"
+    },
+    "fields": {
+      "titlePlaceholder": "Название цели",
+      "descriptionPlaceholder": "Добавить описание..."
+    },
+    "level": {
+      "company": "Компания",
+      "team": "Команда",
+      "agent": "Агент",
+      "task": "Задача"
+    },
+    "parentGoal": {
+      "trigger": "Родительская цель",
+      "noParent": "Без родителя"
+    },
+    "buttons": {
+      "createGoal": "Создать цель",
+      "createSubGoal": "Создать подцель",
+      "creating": "Создание…"
+    }
+  },
+  "properties": {
+    "rowLabel": {
+      "status": "Статус",
+      "level": "Уровень",
+      "owner": "Владелец",
+      "parentGoal": "Родительская цель",
+      "created": "Создано",
+      "updated": "Обновлено"
+    },
+    "placeholders": {
+      "none": "Нет"
+    }
+  },
+  "tree": {
+    "empty": "Целей нет."
+  },
   "list": {
     "selectCompany": "Выберите компанию для просмотра целей.",
     "noGoals": "Целей пока нет.",

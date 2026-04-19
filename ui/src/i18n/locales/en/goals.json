@@ -1,4 +1,45 @@
 {
+  "newGoalDialog": {
+    "header": {
+      "newGoal": "New goal",
+      "newSubGoal": "New sub-goal"
+    },
+    "fields": {
+      "titlePlaceholder": "Goal title",
+      "descriptionPlaceholder": "Add description..."
+    },
+    "level": {
+      "company": "Company",
+      "team": "Team",
+      "agent": "Agent",
+      "task": "Task"
+    },
+    "parentGoal": {
+      "trigger": "Parent goal",
+      "noParent": "No parent"
+    },
+    "buttons": {
+      "createGoal": "Create goal",
+      "createSubGoal": "Create sub-goal",
+      "creating": "Creating…"
+    }
+  },
+  "properties": {
+    "rowLabel": {
+      "status": "Status",
+      "level": "Level",
+      "owner": "Owner",
+      "parentGoal": "Parent Goal",
+      "created": "Created",
+      "updated": "Updated"
+    },
+    "placeholders": {
+      "none": "None"
+    }
+  },
+  "tree": {
+    "empty": "No goals."
+  },
   "list": {
     "selectCompany": "Select a company to view goals.",
     "noGoals": "No goals yet.",
