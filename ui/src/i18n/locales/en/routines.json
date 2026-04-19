@@ -185,5 +185,73 @@
       "copied": "{{label}} copied",
       "copyFailed": "Failed to copy {{label}}"
     }
+  },
+  "runDialog": {
+    "title": "Run routine",
+    "description": "Choose the agent and optional project for this one run. Routine defaults are prefilled and won't be changed.",
+    "agentLabel": "Agent *",
+    "agentNone": "Select an agent",
+    "agentSearch": "Search agents...",
+    "agentEmpty": "No agents found.",
+    "projectLabel": "Project",
+    "projectNone": "No project",
+    "projectSearch": "Search projects...",
+    "projectEmpty": "No projects found.",
+    "warnNoAgent": "Default agent required for this run.",
+    "warnMissing": "Missing: {{fields}}",
+    "warnWorkspace": "Choose an existing workspace before running.",
+    "cancel": "Cancel",
+    "running": "Running...",
+    "run": "Run routine",
+    "noValue": "No value",
+    "true": "True",
+    "false": "False",
+    "chooseValue": "Choose a value"
+  },
+  "variablesEditor": {
+    "title": "Variables",
+    "description": "Detected from {{code}} placeholders in the routine title and instructions.",
+    "promptHint": "Prompt the user for this value before each manual run.",
+    "labelField": "Label",
+    "typeField": "Type",
+    "defaultValueField": "Default value",
+    "required": "Required",
+    "noDefault": "No default",
+    "hint": "Use {{code}} placeholders in the instructions to prompt for inputs when the routine runs."
+  },
+  "schedule": {
+    "chooseFq": "Choose frequency...",
+    "presets": {
+      "every_minute": "Every minute",
+      "every_hour": "Every hour",
+      "every_day": "Every day",
+      "weekdays": "Weekdays",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "custom": "Custom (cron)"
+    },
+    "days": {
+      "0": "Sun",
+      "1": "Mon",
+      "2": "Tue",
+      "3": "Wed",
+      "4": "Thu",
+      "5": "Fri",
+      "6": "Sat"
+    },
+    "at": "at",
+    "atMinute": "at minute",
+    "on": "on",
+    "onDay": "on day",
+    "cronHint": "Five fields: minute hour day-of-month month day-of-week",
+    "noSchedule": "No schedule set",
+    "describe": {
+      "everyMinute": "Every minute",
+      "everyHour": "Every hour at :{{minute}}",
+      "everyDay": "Every day at {{time}}",
+      "weekdays": "Weekdays at {{time}}",
+      "weekly": "Every {{day}} at {{time}}",
+      "monthly": "Monthly on the {{day}}{{ord}} at {{time}}"
+    }
   }
 }
