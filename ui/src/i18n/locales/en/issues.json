@@ -402,6 +402,83 @@
   "linkQuicklook": {
     "unableToLoad": "Unable to load issue preview."
   },
+  "issueWorkspaceCard": {
+    "actions": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "edit": "Edit",
+      "viewDetails": "View workspace details →"
+    },
+    "copy": {
+      "copied": "Copied!",
+      "copy": "Copy"
+    },
+    "modeLabel": {
+      "isolated_workspace": "Isolated workspace",
+      "operator_branch": "Operator branch",
+      "cloud_sandbox": "Cloud sandbox",
+      "adapter_managed": "Adapter managed",
+      "default": "Workspace"
+    },
+    "configuredLabel": {
+      "shared_workspace": "Project default",
+      "isolated_workspace": "New isolated workspace",
+      "existingIsolated": "Existing isolated workspace",
+      "reuse_existing": "Reuse existing workspace",
+      "default": "Project default"
+    },
+    "info": {
+      "repo": "Repo:",
+      "reusing": "Reusing:",
+      "current": "Current:"
+    },
+    "empty": {
+      "isolated_workspace": "A fresh isolated workspace will be created when this issue runs.",
+      "reuse_existing": "This issue will reuse an existing workspace when it runs.",
+      "default": "This issue will use the project default workspace configuration when it runs."
+    },
+    "select": {
+      "chooseWorkspace": "Choose an existing workspace"
+    }
+  },
+  "commentThread": {
+    "labels": {
+      "you": "You",
+      "queued": "Queued",
+      "timeline": "Timeline ({{count}})",
+      "queuedComments": "Queued Comments ({{count}})",
+      "status": "Status",
+      "assignee": "Assignee",
+      "updatedTask": "updated this task"
+    },
+    "composer": {
+      "placeholder": "Leave a comment...",
+      "attachImage": "Attach image",
+      "assigneePlaceholder": "Assignee",
+      "noAssignee": "No assignee",
+      "searchAssignees": "Search assignees...",
+      "noAssigneesFound": "No assignees found.",
+      "posting": "Posting...",
+      "comment": "Comment"
+    },
+    "actions": {
+      "interrupt": "Interrupt",
+      "interrupting": "Interrupting...",
+      "copyMarkdown": "Copy comment as markdown"
+    },
+    "copy": {
+      "copy": "Copy",
+      "copied": "Copied",
+      "copyFailed": "Copy failed"
+    },
+    "empty": {
+      "noTimeline": "No timeline entries yet."
+    },
+    "pending": {
+      "queueing": "Queueing...",
+      "sending": "Sending..."
+    }
+  },
   "issuesList": {
     "search": {
       "placeholder": "Search issues...",
@@ -464,5 +541,77 @@
     "subTasksCount_one": "{{count}} sub-task",
     "subTasksCount_other": "{{count}} sub-tasks",
     "renderingCounter": "Rendering {{rendered}} of {{total}} issues"
+  },
+  "issueDocuments": {
+    "header": {
+      "title": "Documents"
+    },
+    "actions": {
+      "newDocument": "New document",
+      "newDocumentShort": "New",
+      "editDocument": "Edit document",
+      "downloadDocument": "Download document",
+      "viewDiff": "View diff",
+      "deleteDocument": "Delete document",
+      "documentActions": "Document actions",
+      "copyDocument": "Copy document",
+      "copied": "Copied"
+    },
+    "upload": {
+      "keyPlaceholder": "Document key",
+      "titlePlaceholder": "Optional title",
+      "bodyPlaceholder": "Markdown body",
+      "cancel": "Cancel",
+      "create": "Create document",
+      "saving": "Saving..."
+    },
+    "revisions": {
+      "history": "Revision history",
+      "loading": "Loading revisions...",
+      "noRevisions": "No revisions yet",
+      "current": "Current",
+      "updated": "updated {{time}}",
+      "viewingRevision": "Viewing revision {{number}}",
+      "viewingHistorical": "Viewing historical revision",
+      "historicalHint": "This is a historical preview. Restoring it creates a new latest revision and keeps history append-only.",
+      "returnToLatest": "Return to latest",
+      "restore": "Restore this revision",
+      "restoring": "Restoring..."
+    },
+    "conflict": {
+      "title": "Out of date",
+      "description": "This document changed while you were editing. Your local draft is preserved and autosave is paused.",
+      "hideRemote": "Hide remote",
+      "reviewRemote": "Review remote",
+      "keepDraft": "Keep my draft",
+      "reloadRemote": "Reload remote",
+      "overwriteRemote": "Overwrite remote",
+      "remoteRevision": "Remote revision {{number}}",
+      "remoteUpdated": "updated {{time}}",
+      "outOfDate": "Out of date"
+    },
+    "autosave": {
+      "autosaving": "Autosaving...",
+      "saved": "Saved",
+      "error": "Could not save"
+    },
+    "dialogs": {
+      "deleteConfirmText": "Delete this document? This cannot be undone.",
+      "deleteCancel": "Cancel",
+      "deleteConfirm": "Delete",
+      "deleting": "Deleting..."
+    },
+    "errors": {
+      "keyAndBodyRequired": "Document key and body are required",
+      "bodyRequired": "Document body cannot be empty",
+      "invalidKey": "Document key must start with a letter or number and use only lowercase letters, numbers, -, or _.",
+      "invalidKeyInline": "Use lowercase letters, numbers, -, or _, and start with a letter or number.",
+      "saveFailed": "Failed to save document",
+      "deleteFailed": "Failed to delete document",
+      "restoreFailed": "Failed to restore document revision",
+      "remoteLoadFailed": "Document changed remotely and the latest version could not be loaded",
+      "copyFailed": "Could not copy document",
+      "saveConflictBlocked": "Save or cancel your local changes before viewing an older revision."
+    }
   }
 }

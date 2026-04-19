@@ -408,6 +408,83 @@
   "linkQuicklook": {
     "unableToLoad": "Не удалось загрузить превью задачи."
   },
+  "issueWorkspaceCard": {
+    "actions": {
+      "cancel": "Отменить",
+      "save": "Сохранить",
+      "edit": "Изменить",
+      "viewDetails": "Открыть воркспейс →"
+    },
+    "copy": {
+      "copied": "Скопировано!",
+      "copy": "Копировать"
+    },
+    "modeLabel": {
+      "isolated_workspace": "Изолированный воркспейс",
+      "operator_branch": "Ветка оператора",
+      "cloud_sandbox": "Облачная песочница",
+      "adapter_managed": "Управляется адаптером",
+      "default": "Воркспейс"
+    },
+    "configuredLabel": {
+      "shared_workspace": "По умолчанию проекта",
+      "isolated_workspace": "Новый изолированный воркспейс",
+      "existingIsolated": "Существующий изолированный воркспейс",
+      "reuse_existing": "Использовать существующий воркспейс",
+      "default": "По умолчанию проекта"
+    },
+    "info": {
+      "repo": "Репо:",
+      "reusing": "Повторное использование:",
+      "current": "Текущий:"
+    },
+    "empty": {
+      "isolated_workspace": "При запуске задачи будет создан новый изолированный воркспейс.",
+      "reuse_existing": "Задача будет использовать существующий воркспейс при запуске.",
+      "default": "Задача будет использовать воркспейс по умолчанию для проекта при запуске."
+    },
+    "select": {
+      "chooseWorkspace": "Выбрать существующий воркспейс"
+    }
+  },
+  "commentThread": {
+    "labels": {
+      "you": "Вы",
+      "queued": "В очереди",
+      "timeline": "Хронология ({{count}})",
+      "queuedComments": "Комментарии в очереди ({{count}})",
+      "status": "Статус",
+      "assignee": "Исполнитель",
+      "updatedTask": "обновил(а) эту задачу"
+    },
+    "composer": {
+      "placeholder": "Оставить комментарий...",
+      "attachImage": "Прикрепить изображение",
+      "assigneePlaceholder": "Исполнитель",
+      "noAssignee": "Не назначено",
+      "searchAssignees": "Поиск исполнителей...",
+      "noAssigneesFound": "Исполнители не найдены.",
+      "posting": "Отправка...",
+      "comment": "Комментарий"
+    },
+    "actions": {
+      "interrupt": "Прервать",
+      "interrupting": "Прерывание...",
+      "copyMarkdown": "Копировать комментарий как markdown"
+    },
+    "copy": {
+      "copy": "Копировать",
+      "copied": "Скопировано",
+      "copyFailed": "Ошибка копирования"
+    },
+    "empty": {
+      "noTimeline": "Записей в хронологии пока нет."
+    },
+    "pending": {
+      "queueing": "Постановка в очередь...",
+      "sending": "Отправка..."
+    }
+  },
   "issuesList": {
     "search": {
       "placeholder": "Поиск задач...",
@@ -472,5 +549,77 @@
     "subTasksCount_many": "{{count}} подзадач",
     "subTasksCount_other": "{{count}} подзадач",
     "renderingCounter": "Показано {{rendered}} из {{total}} задач"
+  },
+  "issueDocuments": {
+    "header": {
+      "title": "Документы"
+    },
+    "actions": {
+      "newDocument": "Новый документ",
+      "newDocumentShort": "Новый",
+      "editDocument": "Редактировать документ",
+      "downloadDocument": "Скачать документ",
+      "viewDiff": "Просмотр diff",
+      "deleteDocument": "Удалить документ",
+      "documentActions": "Действия с документом",
+      "copyDocument": "Копировать документ",
+      "copied": "Скопировано"
+    },
+    "upload": {
+      "keyPlaceholder": "Ключ документа",
+      "titlePlaceholder": "Заголовок (необязательно)",
+      "bodyPlaceholder": "Содержимое в Markdown",
+      "cancel": "Отмена",
+      "create": "Создать документ",
+      "saving": "Сохранение..."
+    },
+    "revisions": {
+      "history": "История ревизий",
+      "loading": "Загрузка ревизий...",
+      "noRevisions": "Ревизий пока нет",
+      "current": "Текущая",
+      "updated": "обновлено {{time}}",
+      "viewingRevision": "Просмотр ревизии {{number}}",
+      "viewingHistorical": "Просмотр архивной ревизии",
+      "historicalHint": "Это архивный просмотр. Восстановление создаёт новую ревизию, история не перезаписывается.",
+      "returnToLatest": "Вернуться к последней",
+      "restore": "Восстановить эту ревизию",
+      "restoring": "Восстановление..."
+    },
+    "conflict": {
+      "title": "Устаревшая версия",
+      "description": "Документ изменился, пока вы редактировали. Ваш локальный черновик сохранён, автосохранение приостановлено.",
+      "hideRemote": "Скрыть удалённую",
+      "reviewRemote": "Просмотреть удалённую",
+      "keepDraft": "Оставить мой черновик",
+      "reloadRemote": "Загрузить удалённую",
+      "overwriteRemote": "Перезаписать удалённую",
+      "remoteRevision": "Удалённая ревизия {{number}}",
+      "remoteUpdated": "обновлено {{time}}",
+      "outOfDate": "Устаревшая версия"
+    },
+    "autosave": {
+      "autosaving": "Автосохранение...",
+      "saved": "Сохранено",
+      "error": "Не удалось сохранить"
+    },
+    "dialogs": {
+      "deleteConfirmText": "Удалить этот документ? Это действие нельзя отменить.",
+      "deleteCancel": "Отмена",
+      "deleteConfirm": "Удалить",
+      "deleting": "Удаление..."
+    },
+    "errors": {
+      "keyAndBodyRequired": "Ключ и содержимое документа обязательны",
+      "bodyRequired": "Содержимое документа не может быть пустым",
+      "invalidKey": "Ключ документа должен начинаться с буквы или цифры и содержать только строчные буквы, цифры, - или _.",
+      "invalidKeyInline": "Используйте строчные буквы, цифры, - или _, начинайте с буквы или цифры.",
+      "saveFailed": "Не удалось сохранить документ",
+      "deleteFailed": "Не удалось удалить документ",
+      "restoreFailed": "Не удалось восстановить ревизию документа",
+      "remoteLoadFailed": "Документ изменился удалённо, загрузить последнюю версию не удалось",
+      "copyFailed": "Не удалось скопировать документ",
+      "saveConflictBlocked": "Сохраните или отмените локальные изменения перед просмотром старой ревизии."
+    }
   }
 }
