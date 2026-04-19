@@ -190,7 +190,7 @@ export function AuthPage() {
               <PopoverTrigger asChild>
                 <button
                   type="button"
-                  className="flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 text-xs text-muted-foreground hover:bg-accent hover:text-foreground"
+                  className="flex items-center gap-2 rounded-md border border-border bg-background px-3 py-1.5 text-xs text-muted-foreground hover:bg-accent hover:text-foreground"
                   aria-label="Change language"
                 >
                   <Languages className="size-3.5" />
@@ -203,7 +203,7 @@ export function AuthPage() {
                     key={lng}
                     type="button"
                     className={cn(
-                      "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-accent",
+                      "flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors hover:bg-accent",
                       lng === (i18n.resolvedLanguage ?? "en") && "font-medium text-foreground",
                       lng !== (i18n.resolvedLanguage ?? "en") && "text-muted-foreground",
                     )}
