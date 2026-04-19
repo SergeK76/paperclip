@@ -18,7 +18,7 @@
       "done": "Erledigt",
       "blocked": "Blockiert",
       "cancelled": "Abgebrochen",
-      "backlog": "Rückstand"
+      "backlog": "Backlog"
     },
     "priorityLabels": {
       "critical": "Kritisch",

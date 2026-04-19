@@ -20,7 +20,8 @@
   "language": {
     "label": "Sprache",
     "en": "English",
-    "ru": "Русский"
+    "ru": "Русский",
+    "de": "Deutsch"
   },
   "empty": {
     "noResults": "Keine Ergebnisse",
@@ -29,7 +30,7 @@
   "nav": {
     "dashboard": "Dashboard",
     "inbox": "Posteingang",
-    "issues": "Aufgaben",
+    "issues": "Issues",
     "routines": "Routinen",
     "goals": "Ziele",
     "projects": "Projekte",
@@ -43,7 +44,7 @@
     "company": "Unternehmen",
     "home": "Startseite",
     "create": "Erstellen",
-    "newIssue": "Neue Aufgabe",
+    "newIssue": "Neues Issue",
     "liveCount": "{{count}} live"
   },
   "sidebar": {
@@ -61,7 +62,7 @@
   "account": {
     "openMenu": "Kontomenü öffnen",
     "displayNameFallback": "Board",
-    "localWorkspace": "Lokaler Workspace-Board",
+    "localWorkspace": "Lokaler Board",
     "signedIn": "Angemeldet",
     "accountBadge": "Konto",
     "localBadge": "Lokal",
@@ -112,8 +113,8 @@
     "awaitingReview": "Wartet auf Board-Prüfung",
     "charts": {
       "runActivity": "Ausführungsaktivität",
-      "issuesByPriority": "Aufgaben nach Priorität",
-      "issuesByStatus": "Aufgaben nach Status",
+      "issuesByPriority": "Issues nach Priorität",
+      "issuesByStatus": "Issues nach Status",
       "successRate": "Erfolgsrate",
       "last14Days": "Letzte 14 Tage"
     },
@@ -129,8 +130,8 @@
     "deleteCompany": "Unternehmen löschen",
     "agentCount_one": "{{count}} Agent",
     "agentCount_other": "{{count}} Agenten",
-    "issueCount_one": "{{count}} Aufgabe",
-    "issueCount_other": "{{count}} Aufgaben",
+    "issueCount_one": "{{count}} Issue",
+    "issueCount_other": "{{count}} Issues",
     "unlimitedBudget": "Unbegrenztes Budget",
     "created": "Erstellt {{time}}",
     "deleteConfirm": "Dieses Unternehmen und alle zugehörigen Daten löschen? Dies kann nicht rückgängig gemacht werden.",
@@ -138,14 +139,14 @@
     "delete": "Löschen"
   },
   "commandPalette": {
-    "placeholder": "Aufgaben, Agenten, Projekte suchen...",
+    "placeholder": "Issues, Agenten, Projekte suchen...",
     "noResults": "Keine Ergebnisse gefunden.",
     "actionsGroup": "Aktionen",
-    "createIssue": "Neue Aufgabe erstellen",
+    "createIssue": "Neues Issue erstellen",
     "createAgent": "Neuen Agenten erstellen",
     "createProject": "Neues Projekt erstellen",
     "pagesGroup": "Seiten",
-    "issuesGroup": "Aufgaben",
+    "issuesGroup": "Issues",
     "agentsGroup": "Agenten",
     "projectsGroup": "Projekte"
   },
@@ -164,7 +165,7 @@
       "markUnread": "Als ungelesen markieren"
     },
     "issueDetail": {
-      "title": "Aufgabendetail",
+      "title": "Issue-Detail",
       "quickArchive": "Schnell zum Posteingang archivieren",
       "goToInbox": "Zum Posteingang gehen",
       "focusComment": "Kommentarfeld fokussieren"
@@ -172,7 +173,7 @@
     "global": {
       "title": "Global",
       "search": "Aktuelle Seite oder Schnellsuche",
-      "newIssue": "Neue Aufgabe",
+      "newIssue": "Neues Issue",
       "toggleSidebar": "Seitenleiste umschalten",
       "togglePanel": "Panel umschalten",
       "showShortcuts": "Tastaturkürzel anzeigen"
@@ -232,7 +233,7 @@
     },
     "categories": {
       "allCategories": "Alle Kategorien",
-      "myRecentIssues": "Meine aktuellen Aufgaben",
+      "myRecentIssues": "Meine aktuellen Issues",
       "joinRequests": "Beitrittsanfragen",
       "approvals": "Genehmigungen",
       "failedRuns": "Fehlgeschlagene Ausführungen",
@@ -270,7 +271,7 @@
       "failedToReject": "Ablehnung fehlgeschlagen",
       "failedToApproveJoin": "Genehmigung der Beitrittsanfrage fehlgeschlagen",
       "failedToRejectJoin": "Ablehnung der Beitrittsanfrage fehlgeschlagen",
-      "failedToArchive": "Aufgabe archivieren fehlgeschlagen",
+      "failedToArchive": "Archivierung fehlgeschlagen",
       "failedToUndoArchive": "Rückgängigmachen der Posteingangs-Archivierung fehlgeschlagen"
     }
   },

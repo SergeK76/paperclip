@@ -20,7 +20,7 @@
       "project": "Projekt",
       "workspace": "Workspace",
       "parent": "Übergeordnete Aufgabe",
-      "labels": "Tags",
+      "labels": "Labels",
       "updated": "Zuletzt aktualisiert"
     },
     "descriptions": {
@@ -30,7 +30,7 @@
       "project": "Verknüpfte Projekt-Pille mit ihrer Farbe.",
       "workspace": "Ausführungs- oder Projekt-Workspace für die Aufgabe.",
       "parent": "Übergeordnete Aufgabenkennung und -titel.",
-      "labels": "Aufgaben-Labels und Tags.",
+      "labels": "Issue-Labels.",
       "updated": "Neueste sichtbare Aktivitätszeit."
     }
   },
@@ -57,21 +57,21 @@
     "presets": {
       "All": "Alle",
       "Active": "Aktiv",
-      "Backlog": "Rückstand",
+      "Backlog": "Backlog",
       "Done": "Erledigt"
     }
   },
   "list": {
-    "selectCompany": "Wählen Sie ein Unternehmen aus, um Aufgaben anzuzeigen."
+    "selectCompany": "Wählen Sie ein Unternehmen aus, um Issues anzuzeigen."
   },
   "myIssues": {
-    "breadcrumb": "Meine Aufgaben",
-    "selectCompany": "Wählen Sie ein Unternehmen aus, um Ihre Aufgaben anzuzeigen.",
-    "noIssues": "Keine Ihnen zugewiesenen Aufgaben."
+    "breadcrumb": "Meine Issues",
+    "selectCompany": "Wählen Sie ein Unternehmen aus, um Ihre Issues anzuzeigen.",
+    "noIssues": "Keine Ihnen zugewiesenen Issues."
   },
   "detail": {
-    "breadcrumbFallback": "Aufgabe",
-    "breadcrumbSource": "Aufgaben",
+    "breadcrumbFallback": "Issue",
+    "breadcrumbSource": "Issues",
     "noProject": "Kein Projekt",
     "hiddenBanner": "Diese Aufgabe ist ausgeblendet",
     "liveBadge": "Live",
@@ -281,7 +281,7 @@
     "codexOptions": "Codex-Optionen",
     "openCodeOptions": "OpenCode-Optionen",
     "status": {
-      "backlog": "Rückstand",
+      "backlog": "Backlog",
       "todo": "Zu erledigen",
       "in_progress": "In Bearbeitung",
       "in_review": "In Prüfung",
@@ -481,13 +481,13 @@
   },
   "issuesList": {
     "search": {
-      "placeholder": "Aufgaben suchen...",
-      "ariaLabel": "Aufgaben suchen",
+      "placeholder": "Issues suchen...",
+      "ariaLabel": "Issues suchen",
       "limitHint": "Es werden bis zu {{limit}} Treffer angezeigt. Verfeinern Sie die Suche für weitere Einschränkungen."
     },
     "actions": {
-      "createIssue": "Aufgabe erstellen",
-      "newIssue": "Neue Aufgabe",
+      "createIssue": "Issue erstellen",
+      "newIssue": "Neues Issue",
       "createWithLabel": "{{label}} erstellen",
       "newWithLabel": "Neu {{label}}"
     },
@@ -500,7 +500,7 @@
       "disable": "Eltern-Kind-Verschachtelung deaktivieren"
     },
     "columns": {
-      "pickerTitle": "Wählen Sie, welche Aufgabenspalten sichtbar bleiben"
+      "pickerTitle": "Wählen Sie, welche Issue-Spalten sichtbar bleiben"
     },
     "sort": {
       "title": "Sortieren",
@@ -616,7 +616,7 @@
   },
   "kanban": {
     "status": {
-      "backlog": "Rückstand",
+      "backlog": "Backlog",
       "todo": "Zu erledigen",
       "in_progress": "In Bearbeitung",
       "in_review": "In Prüfung",
