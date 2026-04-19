@@ -6,12 +6,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { SUPPORTED_LANGUAGES, LANGUAGE_STORAGE_KEY } from "@/i18n";
-
-const LABELS: Record<string, string> = {
-  en: "English",
-  ru: "Русский",
-};
+import { SUPPORTED_LANGUAGES, LANGUAGE_LABELS, LANGUAGE_STORAGE_KEY } from "@/i18n";
 
 export function LanguageSwitcher() {
   const { i18n, t } = useTranslation("common");
@@ -31,7 +26,7 @@ export function LanguageSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="sm" aria-label={t("language.label")}>
-          {LABELS[current] ?? current.toUpperCase()}
+          {LANGUAGE_LABELS[current] ?? current.toUpperCase()}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
@@ -41,7 +36,7 @@ export function LanguageSwitcher() {
             onClick={() => handleChange(lng)}
             data-active={current === lng}
           >
-            {LABELS[lng] ?? lng.toUpperCase()}
+            {LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

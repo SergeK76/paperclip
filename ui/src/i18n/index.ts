@@ -44,6 +44,11 @@ export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 export const DEFAULT_LANGUAGE: SupportedLanguage = "en";
 export const LANGUAGE_STORAGE_KEY = "paperclip-lang";
 
+export const LANGUAGE_LABELS: Record<string, string> = {
+  en: "English",
+  ru: "Русский",
+};
+
 export const resources = {
   en: {
     common: enCommon,

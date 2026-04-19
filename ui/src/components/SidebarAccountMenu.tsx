@@ -12,6 +12,7 @@ import {
   UserRoundPen,
 } from "lucide-react";
 import type { DeploymentMode } from "@paperclipai/shared";
+import { SUPPORTED_LANGUAGES, LANGUAGE_LABELS, LANGUAGE_STORAGE_KEY } from "@/i18n";
 import { Link } from "@/lib/router";
 import { authApi } from "@/api/auth";
 import { queryKeys } from "@/lib/queryKeys";
@@ -189,17 +190,19 @@ export function SidebarAccountMenu({
                 external
                 onClick={() => setOpen(false)}
               />
-              <MenuAction
-                label={i18n.resolvedLanguage === "ru" ? "Switch to English" : "Переключить на русский"}
-                description={i18n.resolvedLanguage === "ru" ? "Switch interface to English" : "Переключить интерфейс на русский"}
-                icon={Languages}
-                onClick={() => {
-                  const next = i18n.resolvedLanguage === "ru" ? "en" : "ru";
-                  void i18n.changeLanguage(next);
-                  try { window.localStorage.setItem("paperclip-lang", next); } catch { /* ignore */ }
-                  setOpen(false);
-                }}
-              />
+              {SUPPORTED_LANGUAGES.filter(lng => lng !== (i18n.resolvedLanguage ?? "en").slice(0, 2)).map(lng => (
+                <MenuAction
+                  key={lng}
+                  label={LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
+                  description={LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
+                  icon={Languages}
+                  onClick={() => {
+                    void i18n.changeLanguage(lng);
+                    try { window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lng); } catch { /* ignore */ }
+                    setOpen(false);
+                  }}
+                />
+              ))}
               <MenuAction
                 label={t(theme === "dark" ? "common:account.switchToLight" : "common:account.switchToDark")}
                 description={t("common:account.toggleThemeDesc")}
