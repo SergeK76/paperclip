@@ -80,5 +80,41 @@
     "submitted": "Подана {{date}}",
     "sourceIp": "Источник IP {{ip}}",
     "inviteMetaUnavailable": "Метаданные приглашения недоступны"
+  },
+  "card": {
+    "requestedBy": "Запросил",
+    "createdAt": "Запрос на согласование создан {{timeAgo}}",
+    "decisionNote": "Примечание к решению.",
+    "approve": "Одобрить",
+    "approving": "Одобрение...",
+    "reject": "Отклонить",
+    "rejecting": "Отклонение...",
+    "viewDetails": "Подробнее"
+  },
+  "typeLabel": {
+    "hire_agent": "Найм агента",
+    "approve_ceo_strategy": "Стратегия CEO",
+    "budget_override_required": "Превышение бюджета",
+    "request_board_approval": "Согласование с советом"
+  },
+  "payload": {
+    "fields": {
+      "name": "Имя",
+      "role": "Роль",
+      "title": "Название",
+      "icon": "Иконка",
+      "capabilities": "Возможности",
+      "adapter": "Адаптер",
+      "skills": "Навыки",
+      "scope": "Область",
+      "window": "Окно",
+      "metric": "Метрика",
+      "summary": "Сводка",
+      "recommendedAction": "Рекомендуемое действие",
+      "onApproval": "После одобрения",
+      "risks": "Риски",
+      "proposedComment": "Предлагаемый комментарий"
+    },
+    "budget": "Лимит {{limit}} · Факт {{observed}}"
   }
 }

@@ -80,5 +80,41 @@
     "submitted": "Submitted {{date}}",
     "sourceIp": "Source IP {{ip}}",
     "inviteMetaUnavailable": "Invite metadata unavailable"
+  },
+  "card": {
+    "requestedBy": "Requested by",
+    "createdAt": "Approval request created {{timeAgo}}",
+    "decisionNote": "Decision note.",
+    "approve": "Approve",
+    "approving": "Approving...",
+    "reject": "Reject",
+    "rejecting": "Rejecting...",
+    "viewDetails": "View details"
+  },
+  "typeLabel": {
+    "hire_agent": "Hire Agent",
+    "approve_ceo_strategy": "CEO Strategy",
+    "budget_override_required": "Budget Override",
+    "request_board_approval": "Board Approval"
+  },
+  "payload": {
+    "fields": {
+      "name": "Name",
+      "role": "Role",
+      "title": "Title",
+      "icon": "Icon",
+      "capabilities": "Capabilities",
+      "adapter": "Adapter",
+      "skills": "Skills",
+      "scope": "Scope",
+      "window": "Window",
+      "metric": "Metric",
+      "summary": "Summary",
+      "recommendedAction": "Recommended action",
+      "onApproval": "On approval",
+      "risks": "Risks",
+      "proposedComment": "Proposed comment"
+    },
+    "budget": "Limit {{limit}} · Observed {{observed}}"
   }
 }
