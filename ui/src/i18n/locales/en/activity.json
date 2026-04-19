@@ -2,5 +2,29 @@
   "selectCompany": "Select a company to view activity.",
   "filterPlaceholder": "Filter by type",
   "allTypes": "All types",
-  "noActivity": "No activity yet."
+  "noActivity": "No activity yet.",
+  "actor": {
+    "system": "System",
+    "board": "Board",
+    "unknown": "Unknown"
+  },
+  "charts": {
+    "noRuns": "No runs yet",
+    "noIssues": "No issues",
+    "statusLabels": {
+      "todo": "To Do",
+      "in_progress": "In Progress",
+      "in_review": "In Review",
+      "done": "Done",
+      "blocked": "Blocked",
+      "cancelled": "Cancelled",
+      "backlog": "Backlog"
+    },
+    "priorityLabels": {
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    }
+  }
 }

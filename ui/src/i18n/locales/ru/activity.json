@@ -2,5 +2,29 @@
   "selectCompany": "Выберите компанию для просмотра активности.",
   "filterPlaceholder": "Фильтр по типу",
   "allTypes": "Все типы",
-  "noActivity": "Активности пока нет."
+  "noActivity": "Активности пока нет.",
+  "actor": {
+    "system": "Система",
+    "board": "Совет",
+    "unknown": "Неизвестно"
+  },
+  "charts": {
+    "noRuns": "Запусков пока нет",
+    "noIssues": "Задач нет",
+    "statusLabels": {
+      "todo": "К выполнению",
+      "in_progress": "В работе",
+      "in_review": "На проверке",
+      "done": "Готово",
+      "blocked": "Заблокировано",
+      "cancelled": "Отменено",
+      "backlog": "Бэклог"
+    },
+    "priorityLabels": {
+      "critical": "Критический",
+      "high": "Высокий",
+      "medium": "Средний",
+      "low": "Низкий"
+    }
+  }
 }
