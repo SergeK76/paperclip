@@ -125,6 +125,29 @@ export function OnboardingWizard() {
     DEFAULT_TASK_DESCRIPTION
   );
 
+  // Пересинхронизировать дефолтные промпты при смене языка,
+  // но только если пользователь их не редактировал вручную.
+  const prevDefaultsRef = useRef({
+    title: DEFAULT_TASK_TITLE,
+    description: DEFAULT_TASK_DESCRIPTION,
+  });
+  useEffect(() => {
+    const prev = prevDefaultsRef.current;
+    if (prev.title !== DEFAULT_TASK_TITLE && taskTitle === prev.title) {
+      setTaskTitle(DEFAULT_TASK_TITLE);
+    }
+    if (
+      prev.description !== DEFAULT_TASK_DESCRIPTION &&
+      taskDescription === prev.description
+    ) {
+      setTaskDescription(DEFAULT_TASK_DESCRIPTION);
+    }
+    prevDefaultsRef.current = {
+      title: DEFAULT_TASK_TITLE,
+      description: DEFAULT_TASK_DESCRIPTION,
+    };
+  }, [DEFAULT_TASK_TITLE, DEFAULT_TASK_DESCRIPTION, taskTitle, taskDescription]);
+
   // Auto-grow textarea for task description
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const autoResizeTextarea = useCallback(() => {
