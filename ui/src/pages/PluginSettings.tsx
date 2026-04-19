@@ -565,7 +565,7 @@ interface PluginConfigFormProps {
  * re-renders on field changes, not the entire page.
  */
 function PluginConfigForm({ pluginId, schema, initialValues, isLoading, pluginStatus, supportsConfigTest }: PluginConfigFormProps) {
-  const { t } = useTranslation(["plugins"]);
+  const { t } = useTranslation(["plugins", "common"]);
   const queryClient = useQueryClient();
 
   // Form values: start with saved values, fall back to schema defaults
@@ -639,7 +639,7 @@ function PluginConfigForm({ pluginId, schema, initialValues, isLoading, pluginSt
 
   const handleSave = useCallback(() => {
     // Validate before saving
-    const validationErrors = validateJsonSchemaForm(schema, values);
+    const validationErrors = validateJsonSchemaForm(schema, values, t);
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
@@ -650,7 +650,7 @@ function PluginConfigForm({ pluginId, schema, initialValues, isLoading, pluginSt
 
   const handleTestConnection = useCallback(() => {
     // Validate before testing
-    const validationErrors = validateJsonSchemaForm(schema, values);
+    const validationErrors = validateJsonSchemaForm(schema, values, t);
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;

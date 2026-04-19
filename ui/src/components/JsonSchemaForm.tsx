@@ -1,4 +1,6 @@
 import React, { useCallback, useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
+import type { TFunction } from "i18next";
 import {
   ChevronDown,
   ChevronRight,
@@ -155,12 +157,13 @@ export function validateField(
   value: unknown,
   schema: JsonSchemaNode,
   isRequired: boolean,
+  t: TFunction,
 ): string | null {
   const type = resolveType(schema);
 
   // Required check
   if (isRequired && (value === undefined || value === null || value === "")) {
-    return "This field is required";
+    return t("common:jsonSchemaForm.required");
   }
 
   // Skip further validation if empty and not required
@@ -169,10 +172,10 @@ export function validateField(
   if (type === "string" || type === "secret-ref") {
     const str = String(value);
     if (schema.minLength != null && str.length < schema.minLength) {
-      return `Must be at least ${schema.minLength} characters`;
+      return t("common:jsonSchemaForm.mustBeAtLeastChars", { count: schema.minLength });
     }
     if (schema.maxLength != null && str.length > schema.maxLength) {
-      return `Must be at most ${schema.maxLength} characters`;
+      return t("common:jsonSchemaForm.mustBeAtMostChars", { count: schema.maxLength });
     }
     if (schema.pattern) {
       // Guard against ReDoS: reject overly complex patterns from plugin JSON Schemas.
@@ -182,7 +185,7 @@ export function validateField(
         try {
           const re = new RegExp(schema.pattern);
           if (!re.test(str)) {
-            return `Must match pattern: ${schema.pattern}`;
+            return t("common:jsonSchemaForm.mustMatchPattern", { pattern: schema.pattern });
           }
         } catch {
           // Invalid regex in schema — skip
@@ -193,34 +196,34 @@ export function validateField(
 
   if (type === "number" || type === "integer") {
     const num = Number(value);
-    if (isNaN(num)) return "Must be a valid number";
+    if (isNaN(num)) return t("common:jsonSchemaForm.mustBeNumber");
     if (schema.minimum != null && num < schema.minimum) {
-      return `Must be at least ${schema.minimum}`;
+      return t("common:jsonSchemaForm.mustBeAtLeast", { count: schema.minimum });
     }
     if (schema.maximum != null && num > schema.maximum) {
-      return `Must be at most ${schema.maximum}`;
+      return t("common:jsonSchemaForm.mustBeAtMost", { count: schema.maximum });
     }
     if (schema.exclusiveMinimum != null && num <= schema.exclusiveMinimum) {
-      return `Must be greater than ${schema.exclusiveMinimum}`;
+      return t("common:jsonSchemaForm.mustBeGreaterThan", { count: schema.exclusiveMinimum });
     }
     if (schema.exclusiveMaximum != null && num >= schema.exclusiveMaximum) {
-      return `Must be less than ${schema.exclusiveMaximum}`;
+      return t("common:jsonSchemaForm.mustBeLessThan", { count: schema.exclusiveMaximum });
     }
     if (type === "integer" && !Number.isInteger(num)) {
-      return "Must be a whole number";
+      return t("common:jsonSchemaForm.mustBeInteger");
     }
     if (schema.multipleOf != null && num % schema.multipleOf !== 0) {
-      return `Must be a multiple of ${schema.multipleOf}`;
+      return t("common:jsonSchemaForm.mustBeMultipleOf", { count: schema.multipleOf });
     }
   }
 
   if (type === "array") {
     const arr = value as unknown[];
     if (schema.minItems != null && arr.length < schema.minItems) {
-      return `Must have at least ${schema.minItems} items`;
+      return t("common:jsonSchemaForm.mustHaveAtLeastItems", { count: schema.minItems });
     }
     if (schema.maxItems != null && arr.length > schema.maxItems) {
-      return `Must have at most ${schema.maxItems} items`;
+      return t("common:jsonSchemaForm.mustHaveAtMostItems", { count: schema.maxItems });
     }
   }
 
@@ -231,6 +234,7 @@ export function validateField(
 export function validateJsonSchemaForm(
   schema: JsonSchemaNode,
   values: Record<string, unknown>,
+  t: TFunction,
   path: string[] = [],
 ): Record<string, string> {
   const errors: Record<string, string> = {};
@@ -245,7 +249,7 @@ export function validateJsonSchemaForm(
     const type = resolveType(propSchema);
 
     // Per-field validation
-    const fieldErr = validateField(value, propSchema, isRequired);
+    const fieldErr = validateField(value, propSchema, isRequired, t);
     if (fieldErr) {
       errors[errorKey] = fieldErr;
     }
@@ -254,7 +258,7 @@ export function validateJsonSchemaForm(
     if (type === "object" && propSchema.properties && typeof value === "object" && value !== null) {
       Object.assign(
         errors,
-        validateJsonSchemaForm(propSchema, value as Record<string, unknown>, fieldPath),
+        validateJsonSchemaForm(propSchema, value as Record<string, unknown>, t, fieldPath),
       );
     }
 
@@ -273,11 +277,12 @@ export function validateJsonSchemaForm(
             validateJsonSchemaForm(
               itemSchema,
               item as Record<string, unknown>,
+              t,
               itemPath,
             ),
           );
         } else {
-          const itemErr = validateField(item, itemSchema, false);
+          const itemErr = validateField(item, itemSchema, false, t);
           if (itemErr) {
             errors[itemErrorKey] = itemErr;
           }
@@ -437,32 +442,35 @@ const EnumField = React.memo(({
   description?: string;
   error?: string;
   options: unknown[];
-}) => (
-  <FieldWrapper
-    label={label}
-    description={description}
-    required={isRequired}
-    error={error}
-    disabled={disabled}
-  >
-    <Select
-      value={String(value ?? "")}
-      onValueChange={onChange}
+}) => {
+  const { t } = useTranslation(["common"]);
+  return (
+    <FieldWrapper
+      label={label}
+      description={description}
+      required={isRequired}
+      error={error}
       disabled={disabled}
     >
-      <SelectTrigger className="w-full">
-        <SelectValue placeholder="Select an option" />
-      </SelectTrigger>
-      <SelectContent>
-        {options.map((option) => (
-          <SelectItem key={String(option)} value={String(option)}>
-            {String(option)}
-          </SelectItem>
-        ))}
-      </SelectContent>
-    </Select>
-  </FieldWrapper>
-));
+      <Select
+        value={String(value ?? "")}
+        onValueChange={onChange}
+        disabled={disabled}
+      >
+        <SelectTrigger className="w-full">
+          <SelectValue placeholder={t("common:jsonSchemaForm.selectOption")} />
+        </SelectTrigger>
+        <SelectContent>
+          {options.map((option) => (
+            <SelectItem key={String(option)} value={String(option)}>
+              {String(option)}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </FieldWrapper>
+  );
+});
 
 EnumField.displayName = "EnumField";
 
@@ -488,13 +496,14 @@ const SecretField = React.memo(({
   error?: string;
   defaultValue?: unknown;
 }) => {
+  const { t } = useTranslation(["common"]);
   const [isVisible, setIsVisible] = useState(false);
   return (
     <FieldWrapper
       label={label}
       description={
         description ||
-        "This secret is stored securely via the Paperclip secret provider."
+        t("common:jsonSchemaForm.secretStored")
       }
       required={isRequired}
       error={error}
@@ -524,7 +533,7 @@ const SecretField = React.memo(({
             <Eye className="h-4 w-4 text-muted-foreground" />
           )}
           <span className="sr-only">
-            {isVisible ? "Hide secret" : "Show secret"}
+            {isVisible ? t("common:jsonSchemaForm.hideSecret") : t("common:jsonSchemaForm.showSecret")}
           </span>
         </Button>
       </div>
@@ -664,6 +673,7 @@ const ArrayField = React.memo(({
   errors: Record<string, string>;
   path: string;
 }) => {
+  const { t } = useTranslation(["common"]);
   const items = Array.isArray(value) ? value : [];
   const itemSchema = propSchema.items as JsonSchemaNode;
   const isComplex = resolveType(itemSchema) === "object";
@@ -694,7 +704,7 @@ const ArrayField = React.memo(({
           }}
         >
           <Plus className="mr-2 h-4 w-4" />
-          {isComplex ? "Add item" : "Add"}
+          {isComplex ? t("common:jsonSchemaForm.addItem") : t("common:jsonSchemaForm.add")}
         </Button>
       </div>
 
@@ -706,7 +716,7 @@ const ArrayField = React.memo(({
           >
             <div className="flex-1">
               <div className="mb-2 text-xs font-medium text-muted-foreground">
-                Item {index + 1}
+                {t("common:jsonSchemaForm.itemIndex", { index: index + 1 })}
               </div>
               <FormField
                 propSchema={itemSchema}
@@ -739,13 +749,13 @@ const ArrayField = React.memo(({
               }}
             >
               <Trash2 className="h-4 w-4" />
-              <span className="sr-only">Remove item</span>
+              <span className="sr-only">{t("common:jsonSchemaForm.removeItem")}</span>
             </Button>
           </div>
         ))}
         {items.length === 0 && (
           <div className="rounded-lg border border-dashed p-4 text-center text-xs text-muted-foreground">
-            No items added yet.
+            {t("common:jsonSchemaForm.noItemsAdded")}
           </div>
         )}
       </div>

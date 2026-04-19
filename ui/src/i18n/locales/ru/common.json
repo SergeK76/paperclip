@@ -338,5 +338,100 @@
     "project": "Проект",
     "recurring": "Повторяющийся",
     "targetDate": "Целевая дата"
+  },
+  "imageGallery": {
+    "imageFallback": "Изображение",
+    "attachment": "вложение",
+    "download": "Скачать",
+    "close": "Закрыть",
+    "previous": "Предыдущее",
+    "next": "Следующее"
+  },
+  "documentDiff": {
+    "old": "Старая",
+    "new": "Новая",
+    "selectRevision": "Выбрать ревизию",
+    "loadingRevisions": "Загрузка ревизий...",
+    "selectTwoRevisions": "Выберите две ревизии для сравнения.",
+    "sameRevision": "Обе стороны — одна и та же ревизия.",
+    "content": "Содержимое"
+  },
+  "pathInstructions": {
+    "title": "Как получить полный путь",
+    "description": "Вставьте абсолютный путь (например, /Users/you/project) в поле ввода.",
+    "choose": "Выбрать",
+    "mac": {
+      "step1": "Откройте Finder и перейдите к папке.",
+      "step2": "Щёлкните правой кнопкой (или Control-click) по папке.",
+      "step3": "Удерживайте клавишу Option (⌥) — «Копировать» изменится на «Скопировать как путь».",
+      "step4": "Нажмите «Скопировать как путь», затем вставьте здесь.",
+      "tip": "Можно также открыть Терминал, ввести cd, перетащить папку в окно терминала и нажать Enter. Затем введите pwd, чтобы увидеть полный путь."
+    },
+    "windows": {
+      "step1": "Откройте Проводник и перейдите к папке.",
+      "step2": "Щёлкните в адресную строку вверху — отобразится полный путь.",
+      "step3": "Скопируйте путь и вставьте здесь.",
+      "tip": "Также можно удержать Shift и щёлкнуть правой кнопкой по папке, затем выбрать «Копировать как путь»."
+    },
+    "linux": {
+      "step1": "Откройте терминал и перейдите в каталог с помощью cd.",
+      "step2": "Выполните команду pwd для вывода полного пути.",
+      "step3": "Скопируйте вывод и вставьте здесь.",
+      "tip": "В большинстве файловых менеджеров Ctrl+L показывает полный путь в адресной строке."
+    }
+  },
+  "envVarEditor": {
+    "plain": "Открытый",
+    "secret": "Секрет",
+    "selectSecret": "Выбрать секрет...",
+    "secretNamePrompt": "Название секрета",
+    "failedToCreateSecret": "Не удалось создать секрет",
+    "autoInjected": "Переменные PAPERCLIP_* вставляются автоматически во время выполнения."
+  },
+  "jsonSchemaForm": {
+    "required": "Это поле обязательно",
+    "mustBeNumber": "Должно быть числом",
+    "mustBeInteger": "Должно быть целым числом",
+    "mustBeAtLeastChars": "Не менее {{count}} символов",
+    "mustBeAtMostChars": "Не более {{count}} символов",
+    "mustMatchPattern": "Должно соответствовать шаблону: {{pattern}}",
+    "mustBeAtLeast": "Не менее {{count}}",
+    "mustBeAtMost": "Не более {{count}}",
+    "mustBeGreaterThan": "Должно быть больше {{count}}",
+    "mustBeLessThan": "Должно быть меньше {{count}}",
+    "mustBeMultipleOf": "Должно быть кратно {{count}}",
+    "mustHaveAtLeastItems": "Не менее {{count}} элементов",
+    "mustHaveAtMostItems": "Не более {{count}} элементов",
+    "selectOption": "Выбрать вариант",
+    "secretStored": "Этот секрет надёжно хранится через провайдер секретов Paperclip.",
+    "hideSecret": "Скрыть секрет",
+    "showSecret": "Показать секрет",
+    "addItem": "Добавить элемент",
+    "add": "Добавить",
+    "removeItem": "Удалить элемент",
+    "itemIndex": "Элемент {{index}}",
+    "noItemsAdded": "Элементы ещё не добавлены."
+  },
+  "inlineEditor": {
+    "placeholder": "Нажмите для редактирования...",
+    "autosaving": "Сохранение...",
+    "saved": "Сохранено",
+    "couldNotSave": "Не удалось сохранить",
+    "idle": "Ожидание"
+  },
+  "propertiesPanel": {
+    "title": "Свойства"
+  },
+  "markdownEditor": {
+    "richEditorUnavailable": "Расширенный редактор недоступен для этого Markdown. Отображается исходный текст.",
+    "retryRichEditor": "Повторить загрузку редактора",
+    "imageUploadFailed": "Ошибка загрузки изображения",
+    "dropFileToUpload": "Перетащите файл для загрузки",
+    "dropImageToUpload": "Перетащите изображение для загрузки"
+  },
+  "mermaid": {
+    "failedToRender": "Не удалось отрендерить диаграмму Mermaid.",
+    "unableToRender": "Не удалось отрендерить диаграмму Mermaid: {{error}}",
+    "rendering": "Рендеринг диаграммы Mermaid..."
   }
 }

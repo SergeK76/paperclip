@@ -328,5 +328,100 @@
     "project": "Project",
     "recurring": "Recurring",
     "targetDate": "Target date"
+  },
+  "imageGallery": {
+    "imageFallback": "Image",
+    "attachment": "attachment",
+    "download": "Download",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "documentDiff": {
+    "old": "Old",
+    "new": "New",
+    "selectRevision": "Select revision",
+    "loadingRevisions": "Loading revisions...",
+    "selectTwoRevisions": "Select two revisions to compare.",
+    "sameRevision": "Both sides are the same revision.",
+    "content": "Content"
+  },
+  "pathInstructions": {
+    "title": "How to get a full path",
+    "description": "Paste the absolute path (e.g. /Users/you/project) into the input field.",
+    "choose": "Choose",
+    "mac": {
+      "step1": "Open Finder and navigate to the folder.",
+      "step2": "Right-click (or Control-click) the folder.",
+      "step3": "Hold the Option (⌥) key — \"Copy\" changes to \"Copy as Pathname\".",
+      "step4": "Click \"Copy as Pathname\", then paste here.",
+      "tip": "You can also open Terminal, type cd, drag the folder into the terminal window, and press Enter. Then type pwd to see the full path."
+    },
+    "windows": {
+      "step1": "Open File Explorer and navigate to the folder.",
+      "step2": "Click in the address bar at the top — the full path will appear.",
+      "step3": "Copy the path, then paste here.",
+      "tip": "Alternatively, hold Shift and right-click the folder, then select \"Copy as path\"."
+    },
+    "linux": {
+      "step1": "Open a terminal and navigate to the directory with cd.",
+      "step2": "Run pwd to print the full path.",
+      "step3": "Copy the output and paste here.",
+      "tip": "In most file managers, Ctrl+L reveals the full path in the address bar."
+    }
+  },
+  "envVarEditor": {
+    "plain": "Plain",
+    "secret": "Secret",
+    "selectSecret": "Select secret...",
+    "secretNamePrompt": "Secret name",
+    "failedToCreateSecret": "Failed to create secret",
+    "autoInjected": "PAPERCLIP_* variables are injected automatically at runtime."
+  },
+  "jsonSchemaForm": {
+    "required": "This field is required",
+    "mustBeNumber": "Must be a valid number",
+    "mustBeInteger": "Must be a whole number",
+    "mustBeAtLeastChars": "Must be at least {{count}} characters",
+    "mustBeAtMostChars": "Must be at most {{count}} characters",
+    "mustMatchPattern": "Must match pattern: {{pattern}}",
+    "mustBeAtLeast": "Must be at least {{count}}",
+    "mustBeAtMost": "Must be at most {{count}}",
+    "mustBeGreaterThan": "Must be greater than {{count}}",
+    "mustBeLessThan": "Must be less than {{count}}",
+    "mustBeMultipleOf": "Must be a multiple of {{count}}",
+    "mustHaveAtLeastItems": "Must have at least {{count}} items",
+    "mustHaveAtMostItems": "Must have at most {{count}} items",
+    "selectOption": "Select an option",
+    "secretStored": "This secret is stored securely via the Paperclip secret provider.",
+    "hideSecret": "Hide secret",
+    "showSecret": "Show secret",
+    "addItem": "Add item",
+    "add": "Add",
+    "removeItem": "Remove item",
+    "itemIndex": "Item {{index}}",
+    "noItemsAdded": "No items added yet."
+  },
+  "inlineEditor": {
+    "placeholder": "Click to edit...",
+    "autosaving": "Autosaving...",
+    "saved": "Saved",
+    "couldNotSave": "Could not save",
+    "idle": "Idle"
+  },
+  "propertiesPanel": {
+    "title": "Properties"
+  },
+  "markdownEditor": {
+    "richEditorUnavailable": "Rich editor unavailable for this markdown. Showing raw source instead.",
+    "retryRichEditor": "Retry rich editor",
+    "imageUploadFailed": "Image upload failed",
+    "dropFileToUpload": "Drop file to upload",
+    "dropImageToUpload": "Drop image to upload"
+  },
+  "mermaid": {
+    "failedToRender": "Failed to render Mermaid diagram.",
+    "unableToRender": "Unable to render Mermaid diagram: {{error}}",
+    "rendering": "Rendering Mermaid diagram..."
   }
 }
