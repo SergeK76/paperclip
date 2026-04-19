@@ -189,27 +189,56 @@ export function SidebarAccountMenu({
                 external
                 onClick={() => setOpen(false)}
               />
-              {SUPPORTED_LANGUAGES.filter(lng => lng !== (i18n.resolvedLanguage ?? "en")).map(lng => (
-                <MenuAction
-                  key={lng}
-                  label={LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
-                  icon={Languages}
-                  onClick={() => {
-                    void i18n.changeLanguage(lng);
-                    try { window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lng); } catch { /* ignore */ }
-                    setOpen(false);
-                  }}
-                />
-              ))}
-              <MenuAction
-                label={t(theme === "dark" ? "common:account.switchToLight" : "common:account.switchToDark")}
-                description={t("common:account.toggleThemeDesc")}
-                icon={theme === "dark" ? Sun : Moon}
-                onClick={() => {
-                  toggleTheme();
-                  setOpen(false);
-                }}
-              />
+              <div className="flex items-center rounded-xl transition-colors hover:bg-accent/60">
+                <button
+                  type="button"
+                  className="flex flex-1 items-start gap-3 px-3 py-3 text-left"
+                  onClick={() => { toggleTheme(); setOpen(false); }}
+                >
+                  <span className="mt-0.5 rounded-lg border border-border bg-background/70 p-2 text-muted-foreground">
+                    {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-sm font-medium text-foreground">
+                      {t(theme === "dark" ? "common:account.switchToLight" : "common:account.switchToDark")}
+                    </span>
+                    <span className="block text-xs text-muted-foreground">{t("common:account.toggleThemeDesc")}</span>
+                  </span>
+                </button>
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <button
+                      type="button"
+                      className="mr-2 rounded-lg border border-border bg-background/70 p-2 text-muted-foreground hover:text-foreground transition-colors"
+                      title={LANGUAGE_LABELS[i18n.resolvedLanguage ?? "en"] ?? "Language"}
+                    >
+                      <Languages className="size-4" />
+                    </button>
+                  </PopoverTrigger>
+                  <PopoverContent side="left" align="end" className="w-40 p-1">
+                    {SUPPORTED_LANGUAGES.map(lng => (
+                      <button
+                        key={lng}
+                        type="button"
+                        className={cn(
+                          "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-accent",
+                          lng === (i18n.resolvedLanguage ?? "en") && "font-medium text-foreground",
+                          lng !== (i18n.resolvedLanguage ?? "en") && "text-muted-foreground",
+                        )}
+                        onClick={() => {
+                          void i18n.changeLanguage(lng);
+                          try { window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lng); } catch { /* ignore */ }
+                          setOpen(false);
+                        }}
+                      >
+                        {lng === (i18n.resolvedLanguage ?? "en") && <span className="h-1.5 w-1.5 rounded-full bg-primary" />}
+                        {lng !== (i18n.resolvedLanguage ?? "en") && <span className="h-1.5 w-1.5" />}
+                        {LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
+                      </button>
+                    ))}
+                  </PopoverContent>
+                </Popover>
+              </div>
               {deploymentMode === "authenticated" ? (
                 <button
                   type="button"
