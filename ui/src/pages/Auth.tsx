@@ -6,13 +6,16 @@ import { authApi } from "../api/auth";
 import { queryKeys } from "../lib/queryKeys";
 import { getRememberedInvitePath } from "../lib/invite-memory";
 import { Button } from "@/components/ui/button";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { AsciiArtAnimation } from "@/components/AsciiArtAnimation";
-import { Sparkles } from "lucide-react";
+import { Languages, Sparkles } from "lucide-react";
+import { SUPPORTED_LANGUAGES, LANGUAGE_LABELS, LANGUAGE_STORAGE_KEY } from "@/i18n";
+import { cn } from "../lib/utils";
 
 type AuthMode = "sign_in" | "sign_up";
 
 export function AuthPage() {
-  const { t } = useTranslation(["onboarding", "errors"]);
+  const { t, i18n } = useTranslation(["onboarding", "errors"]);
   const queryClient = useQueryClient();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
@@ -186,6 +189,44 @@ export function AuthPage() {
       {/* Right half — ASCII art animation (hidden on mobile) */}
       <div className="hidden md:block w-1/2 overflow-hidden">
         <AsciiArtAnimation />
+      </div>
+
+      {/* Переключатель языка в правом нижнем углу */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <Popover>
+          <PopoverTrigger asChild>
+            <button
+              type="button"
+              className="flex items-center gap-2 rounded-full border border-border bg-background/80 px-3 py-1.5 text-xs text-muted-foreground backdrop-blur hover:bg-accent hover:text-foreground"
+              aria-label="Change language"
+            >
+              <Languages className="size-3.5" />
+              {LANGUAGE_LABELS[i18n.resolvedLanguage ?? "en"] ?? (i18n.resolvedLanguage ?? "en").toUpperCase()}
+            </button>
+          </PopoverTrigger>
+          <PopoverContent side="top" align="end" className="w-40 p-1">
+            {SUPPORTED_LANGUAGES.map((lng) => (
+              <button
+                key={lng}
+                type="button"
+                className={cn(
+                  "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-accent",
+                  lng === (i18n.resolvedLanguage ?? "en") && "font-medium text-foreground",
+                  lng !== (i18n.resolvedLanguage ?? "en") && "text-muted-foreground",
+                )}
+                onClick={() => {
+                  void i18n.changeLanguage(lng);
+                  try { window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lng); } catch { /* ignore */ }
+                }}
+              >
+                {lng === (i18n.resolvedLanguage ?? "en")
+                  ? <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                  : <span className="h-1.5 w-1.5" />}
+                {LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
+              </button>
+            ))}
+          </PopoverContent>
+        </Popover>
       </div>
     </div>
   );

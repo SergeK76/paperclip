@@ -38,6 +38,24 @@ import ruAdapters from "./locales/ru/adapters.json";
 import ruPlugins from "./locales/ru/plugins.json";
 import ruWorkspaces from "./locales/ru/workspaces.json";
 
+import deCommon from "./locales/de/common.json";
+import deAgents from "./locales/de/agents.json";
+import deChat from "./locales/de/chat.json";
+import deSettings from "./locales/de/settings.json";
+import deErrors from "./locales/de/errors.json";
+import deOnboarding from "./locales/de/onboarding.json";
+import deIssues from "./locales/de/issues.json";
+import deGoals from "./locales/de/goals.json";
+import deProjects from "./locales/de/projects.json";
+import deOrg from "./locales/de/org.json";
+import deApprovals from "./locales/de/approvals.json";
+import deActivity from "./locales/de/activity.json";
+import deRoutines from "./locales/de/routines.json";
+import deCosts from "./locales/de/costs.json";
+import deAdapters from "./locales/de/adapters.json";
+import dePlugins from "./locales/de/plugins.json";
+import deWorkspaces from "./locales/de/workspaces.json";
+
 export const SUPPORTED_LANGUAGES = ["en", "ru", "de"] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
@@ -88,6 +106,25 @@ export const resources = {
     adapters: ruAdapters,
     plugins: ruPlugins,
     workspaces: ruWorkspaces,
+  },
+  de: {
+    common: deCommon,
+    agents: deAgents,
+    chat: deChat,
+    settings: deSettings,
+    errors: deErrors,
+    onboarding: deOnboarding,
+    issues: deIssues,
+    goals: deGoals,
+    projects: deProjects,
+    org: deOrg,
+    approvals: deApprovals,
+    activity: deActivity,
+    routines: deRoutines,
+    costs: deCosts,
+    adapters: deAdapters,
+    plugins: dePlugins,
+    workspaces: deWorkspaces,
   },
 } as const;
 
