@@ -85,5 +85,132 @@
     "byBiller": "По биллерам",
     "byBillerDesc": "Финансовые события уровня аккаунта, сгруппированные по биллеру.",
     "noFinanceEvents": "Финансовых событий пока нет."
+  },
+  "billerSpend": {
+    "periodSpend": "Расход за период",
+    "ofAllocation": "{{pct}}% от лимита",
+    "tokensIn": "вх.",
+    "tokensOut": "исх.",
+    "providers_one": "{{count}} провайдер",
+    "providers_few": "{{count}} провайдера",
+    "providers_many": "{{count}} провайдеров",
+    "providers_other": "{{count}} провайдера",
+    "models_one": "{{count}} модель",
+    "models_few": "{{count}} модели",
+    "models_many": "{{count}} моделей",
+    "models_other": "{{count}} модели",
+    "meteredRuns_one": "{{count}} запуск API",
+    "meteredRuns_few": "{{count}} запуска API",
+    "meteredRuns_many": "{{count}} запусков API",
+    "meteredRuns_other": "{{count}} запуска API",
+    "subscriptionRuns_one": "{{count}} запуск по подписке",
+    "subscriptionRuns_few": "{{count}} запуска по подписке",
+    "subscriptionRuns_many": "{{count}} запусков по подписке",
+    "subscriptionRuns_other": "{{count}} запуска по подписке",
+    "thisWeek": "{{amount}} на этой неделе",
+    "billingTypes": "Типы тарификации",
+    "upstreamProviders": "Провайдеры"
+  },
+  "budgetSidebar": {
+    "pausedByBudget": "Приостановлено из-за бюджета"
+  },
+  "budgetPolicy": {
+    "lifetimeBudget": "Бессрочный бюджет",
+    "monthlyUtcBudget": "Ежемесячный бюджет (UTC)",
+    "observed": "Израсходовано",
+    "noCap": "Лимит не задан",
+    "percentOfLimit": "{{pct}}% от лимита",
+    "budget": "Бюджет",
+    "disabled": "Отключено",
+    "softAlert": "Мягкий порог {{warnPercent}}%",
+    "softAlertWithPause": "Мягкий порог {{warnPercent}}% · пауза {{reason}}",
+    "remaining": "Остаток",
+    "unlimited": "Без лимита",
+    "pausedProject": "Выполнение проекта приостановлено. Новые задачи не начнутся, пока вы не повысите бюджет или не закроете инцидент.",
+    "pausedScope": "Эта область приостановлена. Новые хартбиты не начнутся, пока вы не повысите бюджет или не закроете инцидент.",
+    "budgetLabel": "Бюджет (USD)",
+    "saving": "Сохранение...",
+    "updateBudget": "Обновить бюджет",
+    "setBudget": "Задать бюджет",
+    "statusPaused": "Пауза",
+    "statusWarning": "Предупреждение",
+    "statusHardStop": "Жёсткая остановка",
+    "statusHealthy": "В норме",
+    "invalidAmount": "Введите корректную неотрицательную сумму в долларах."
+  },
+  "budgetIncident": {
+    "hardStop": "жёсткая остановка",
+    "spendingReached": "Израсходовано {{amount}} при лимите {{limit}}.",
+    "pausedProject": "Выполнение проекта приостановлено. Новые задачи не начнутся, пока вы не разрешите бюджетный инцидент.",
+    "pausedScope": "Эта область приостановлена. Новые хартбиты не начнутся, пока вы не разрешите бюджетный инцидент.",
+    "newBudget": "Новый бюджет (USD)",
+    "applying": "Применение...",
+    "raiseAndResume": "Поднять бюджет и возобновить",
+    "mustExceedSpend": "Новый бюджет должен превышать текущий фактический расход.",
+    "keepPaused": "Оставить на паузе"
+  },
+  "financeTimeline": {
+    "title": "Последние финансовые события",
+    "description": "Пополнения, сборы, кредиты, обязательства и другие нереквестные расходы.",
+    "empty": "Финансовых событий за этот период нет.",
+    "estimated": "оценка",
+    "invoice": "счёт {{id}}",
+    "region": "регион {{region}}",
+    "tier": "тариф {{tier}}"
+  },
+  "financeBiller": {
+    "net": "итог",
+    "debits": "дебеты",
+    "credits": "кредиты",
+    "estimated": "оценка",
+    "eventsAcrossKinds": "{{eventsStr}}, видов: {{kindsStr}}",
+    "events_one": "{{count}} событие",
+    "events_few": "{{count}} события",
+    "events_many": "{{count}} событий",
+    "events_other": "{{count}} события",
+    "kinds_one": "{{count}} вид",
+    "kinds_few": "{{count}} вида",
+    "kinds_many": "{{count}} видов",
+    "kinds_other": "{{count}} вида"
+  },
+  "financeKind": {
+    "title": "Структура событий",
+    "description": "Расходы уровня аккаунта, сгруппированные по виду события.",
+    "empty": "Финансовых событий за этот период нет.",
+    "debits": "дебеты",
+    "eventsAndBillers": "{{eventsStr}} · {{billersStr}}",
+    "events_one": "{{count}} событие",
+    "events_few": "{{count}} события",
+    "events_many": "{{count}} событий",
+    "events_other": "{{count}} события",
+    "billers_one": "{{count}} биллер",
+    "billers_few": "{{count}} биллера",
+    "billers_many": "{{count}} биллеров",
+    "billers_other": "{{count}} биллера"
+  },
+  "accountingModel": {
+    "title": "Модель учёта",
+    "description": "Paperclip теперь разделяет инференс-использование на уровне запросов и финансовые события уровня аккаунта. Это обеспечивает честную отчётность по провайдерам, даже когда биллером выступает OpenRouter, Cloudflare, Bedrock или другой посредник.",
+    "inference": {
+      "title": "Журнал инференса",
+      "description": "Использование на уровне запросов и тарифицируемые запуски из cost_events.",
+      "point0": "токены + стоимость",
+      "point1": "провайдер, биллер, модель",
+      "point2": "учёт подписки и превышений"
+    },
+    "finance": {
+      "title": "Финансовый журнал",
+      "description": "Расходы уровня аккаунта, не привязанные к одной паре запрос–ответ.",
+      "point0": "пополнения, возвраты, сборы",
+      "point1": "Bedrock: выделенные или обучающие расходы",
+      "point2": "истечение кредитов и корректировки"
+    },
+    "quotas": {
+      "title": "Текущие квоты",
+      "description": "Окна квот провайдеров или биллеров, способные остановить трафик в реальном времени.",
+      "point0": "окна квот провайдеров",
+      "point1": "кредитные системы биллеров",
+      "point2": "ошибки передаются напрямую"
+    }
   }
 }

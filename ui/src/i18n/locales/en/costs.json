@@ -83,5 +83,116 @@
     "byBiller": "By biller",
     "byBillerDesc": "Account-level financial events grouped by who charged or credited them.",
     "noFinanceEvents": "No finance events yet."
+  },
+  "billerSpend": {
+    "periodSpend": "Period spend",
+    "ofAllocation": "{{pct}}% of allocation",
+    "tokensIn": "in",
+    "tokensOut": "out",
+    "providers_one": "{{count}} provider",
+    "providers_other": "{{count}} providers",
+    "models_one": "{{count}} model",
+    "models_other": "{{count}} models",
+    "meteredRuns_one": "{{count}} metered run",
+    "meteredRuns_other": "{{count}} metered runs",
+    "subscriptionRuns_one": "{{count}} subscription run",
+    "subscriptionRuns_other": "{{count}} subscription runs",
+    "thisWeek": "{{amount}} this week",
+    "billingTypes": "Billing types",
+    "upstreamProviders": "Upstream providers"
+  },
+  "budgetSidebar": {
+    "pausedByBudget": "Paused by budget"
+  },
+  "budgetPolicy": {
+    "lifetimeBudget": "Lifetime budget",
+    "monthlyUtcBudget": "Monthly UTC budget",
+    "observed": "Observed",
+    "noCap": "No cap configured",
+    "percentOfLimit": "{{pct}}% of limit",
+    "budget": "Budget",
+    "disabled": "Disabled",
+    "softAlert": "Soft alert at {{warnPercent}}%",
+    "softAlertWithPause": "Soft alert at {{warnPercent}}% · {{reason}} pause",
+    "remaining": "Remaining",
+    "unlimited": "Unlimited",
+    "pausedProject": "Execution is paused for this project until the budget is raised or the incident is dismissed.",
+    "pausedScope": "Heartbeats are paused for this scope until the budget is raised or the incident is dismissed.",
+    "budgetLabel": "Budget (USD)",
+    "saving": "Saving...",
+    "updateBudget": "Update budget",
+    "setBudget": "Set budget",
+    "statusPaused": "Paused",
+    "statusWarning": "Warning",
+    "statusHardStop": "Hard stop",
+    "statusHealthy": "Healthy",
+    "invalidAmount": "Enter a valid non-negative dollar amount."
+  },
+  "budgetIncident": {
+    "hardStop": "hard stop",
+    "spendingReached": "Spending reached {{amount}} against a limit of {{limit}}.",
+    "pausedProject": "Project execution is paused. New work in this project will not start until you resolve the budget incident.",
+    "pausedScope": "This scope is paused. New heartbeats will not start until you resolve the budget incident.",
+    "newBudget": "New budget (USD)",
+    "applying": "Applying...",
+    "raiseAndResume": "Raise budget & resume",
+    "mustExceedSpend": "The new budget must exceed current observed spend.",
+    "keepPaused": "Keep paused"
+  },
+  "financeTimeline": {
+    "title": "Recent financial events",
+    "description": "Top-ups, fees, credits, commitments, and other non-request charges.",
+    "empty": "No financial events in this period.",
+    "estimated": "estimated",
+    "invoice": "invoice {{id}}",
+    "region": "region {{region}}",
+    "tier": "tier {{tier}}"
+  },
+  "financeBiller": {
+    "net": "net",
+    "debits": "debits",
+    "credits": "credits",
+    "estimated": "estimated",
+    "eventsAcrossKinds": "{{eventsStr}} across {{kindsStr}}",
+    "events_one": "{{count}} event",
+    "events_other": "{{count}} events",
+    "kinds_one": "{{count}} kind",
+    "kinds_other": "{{count}} kinds"
+  },
+  "financeKind": {
+    "title": "Financial event mix",
+    "description": "Account-level charges grouped by event kind.",
+    "empty": "No finance events in this period.",
+    "debits": "debits",
+    "eventsAndBillers": "{{eventsStr}} · {{billersStr}}",
+    "events_one": "{{count}} event",
+    "events_other": "{{count}} events",
+    "billers_one": "{{count}} biller",
+    "billers_other": "{{count}} billers"
+  },
+  "accountingModel": {
+    "title": "Accounting model",
+    "description": "Paperclip now separates request-level inference usage from account-level finance events. That keeps provider reporting honest when the biller is OpenRouter, Cloudflare, Bedrock, or another intermediary.",
+    "inference": {
+      "title": "Inference ledger",
+      "description": "Request-scoped usage and billed runs from cost_events.",
+      "point0": "tokens + billed dollars",
+      "point1": "provider, biller, model",
+      "point2": "subscription and overage aware"
+    },
+    "finance": {
+      "title": "Finance ledger",
+      "description": "Account-level charges that are not one prompt-response pair.",
+      "point0": "top-ups, refunds, fees",
+      "point1": "Bedrock provisioned or training charges",
+      "point2": "credit expiries and adjustments"
+    },
+    "quotas": {
+      "title": "Live quotas",
+      "description": "Provider or biller windows that can stop traffic in real time.",
+      "point0": "provider quota windows",
+      "point1": "biller credit systems",
+      "point2": "errors surfaced directly"
+    }
   }
 }
