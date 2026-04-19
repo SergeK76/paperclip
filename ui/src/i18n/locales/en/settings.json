@@ -614,6 +614,37 @@
       }
     }
   },
+  "codexPanel": {
+    "title": "Codex subscription",
+    "subtitle": "Live Codex quota windows.",
+    "accountWindows": "Account windows",
+    "modelWindows": "Model windows"
+  },
+  "claudePanel": {
+    "title": "Anthropic subscription",
+    "subtitle": "Live Claude quota windows."
+  },
+  "subscriptionPanel": {
+    "percentUsed": "{{pct}}% used",
+    "resetsAt": "Resets {{date}}",
+    "resetsShort": "resets {{date}}"
+  },
+  "providerQuota": {
+    "tokensIn": "in",
+    "tokensOut": "out",
+    "runs": "runs",
+    "total": "total",
+    "periodSpend": "Period spend",
+    "ofAllocation": "{{pct}}% of allocation",
+    "thisWeek": "This week",
+    "perWeek": "~{{amount}} / wk",
+    "rollingWindows": "Rolling windows",
+    "subscription": "Subscription",
+    "percentOfSubscription": "{{pct}}% of token usage via subscription",
+    "providerTokenPct": "{{pct}}% of provider tokens",
+    "providerCostPct": "{{pct}}% of provider cost",
+    "subscriptionQuota": "Subscription quota"
+  },
   "profile": {
     "breadcrumb": "Profile",
     "loading": "Loading profile...",

@@ -650,6 +650,37 @@
       }
     }
   },
+  "codexPanel": {
+    "title": "Подписка Codex",
+    "subtitle": "Живые квоты Codex.",
+    "accountWindows": "Окна аккаунта",
+    "modelWindows": "Окна моделей"
+  },
+  "claudePanel": {
+    "title": "Подписка Anthropic",
+    "subtitle": "Живые квоты Claude."
+  },
+  "subscriptionPanel": {
+    "percentUsed": "{{pct}}% использовано",
+    "resetsAt": "Сбросится {{date}}",
+    "resetsShort": "сбросится {{date}}"
+  },
+  "providerQuota": {
+    "tokensIn": "вх",
+    "tokensOut": "исх",
+    "runs": "запусков",
+    "total": "итого",
+    "periodSpend": "Расходы за период",
+    "ofAllocation": "{{pct}}% от бюджета",
+    "thisWeek": "Эта неделя",
+    "perWeek": "~{{amount}} / нед",
+    "rollingWindows": "Скользящие окна",
+    "subscription": "Подписка",
+    "percentOfSubscription": "{{pct}}% использования токенов через подписку",
+    "providerTokenPct": "{{pct}}% токенов провайдера",
+    "providerCostPct": "{{pct}}% стоимости провайдера",
+    "subscriptionQuota": "Квота подписки"
+  },
   "profile": {
     "breadcrumb": "Профиль",
     "loading": "Загрузка профиля...",
