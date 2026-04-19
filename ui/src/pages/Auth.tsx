@@ -166,6 +166,44 @@ export function AuthPage() {
             </Button>
           </form>
 
+          {/* Переключатель языка — под формой, выравнивание по правому краю */}
+          <div className="mt-3 flex justify-end">
+            <Popover>
+              <PopoverTrigger asChild>
+                <button
+                  type="button"
+                  className="flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 text-xs text-muted-foreground hover:bg-accent hover:text-foreground"
+                  aria-label="Change language"
+                >
+                  <Languages className="size-3.5" />
+                  {LANGUAGE_LABELS[i18n.resolvedLanguage ?? "en"] ?? (i18n.resolvedLanguage ?? "en").toUpperCase()}
+                </button>
+              </PopoverTrigger>
+              <PopoverContent side="top" align="end" className="w-40 p-1">
+                {SUPPORTED_LANGUAGES.map((lng) => (
+                  <button
+                    key={lng}
+                    type="button"
+                    className={cn(
+                      "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-accent",
+                      lng === (i18n.resolvedLanguage ?? "en") && "font-medium text-foreground",
+                      lng !== (i18n.resolvedLanguage ?? "en") && "text-muted-foreground",
+                    )}
+                    onClick={() => {
+                      void i18n.changeLanguage(lng);
+                      try { window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lng); } catch { /* ignore */ }
+                    }}
+                  >
+                    {lng === (i18n.resolvedLanguage ?? "en")
+                      ? <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                      : <span className="h-1.5 w-1.5" />}
+                    {LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
+                  </button>
+                ))}
+              </PopoverContent>
+            </Popover>
+          </div>
+
           <div className="mt-5 text-sm text-muted-foreground">
             {mode === "sign_in"
               ? t("onboarding:auth.toggle.needAccount")
@@ -189,44 +227,6 @@ export function AuthPage() {
       {/* Right half — ASCII art animation (hidden on mobile) */}
       <div className="hidden md:block w-1/2 overflow-hidden">
         <AsciiArtAnimation />
-      </div>
-
-      {/* Переключатель языка в правом нижнем углу */}
-      <div className="fixed bottom-4 right-4 z-50">
-        <Popover>
-          <PopoverTrigger asChild>
-            <button
-              type="button"
-              className="flex items-center gap-2 rounded-full border border-border bg-background/80 px-3 py-1.5 text-xs text-muted-foreground backdrop-blur hover:bg-accent hover:text-foreground"
-              aria-label="Change language"
-            >
-              <Languages className="size-3.5" />
-              {LANGUAGE_LABELS[i18n.resolvedLanguage ?? "en"] ?? (i18n.resolvedLanguage ?? "en").toUpperCase()}
-            </button>
-          </PopoverTrigger>
-          <PopoverContent side="top" align="end" className="w-40 p-1">
-            {SUPPORTED_LANGUAGES.map((lng) => (
-              <button
-                key={lng}
-                type="button"
-                className={cn(
-                  "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-accent",
-                  lng === (i18n.resolvedLanguage ?? "en") && "font-medium text-foreground",
-                  lng !== (i18n.resolvedLanguage ?? "en") && "text-muted-foreground",
-                )}
-                onClick={() => {
-                  void i18n.changeLanguage(lng);
-                  try { window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lng); } catch { /* ignore */ }
-                }}
-              >
-                {lng === (i18n.resolvedLanguage ?? "en")
-                  ? <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                  : <span className="h-1.5 w-1.5" />}
-                {LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
-              </button>
-            ))}
-          </PopoverContent>
-        </Popover>
       </div>
     </div>
   );
