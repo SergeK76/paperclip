@@ -20,6 +20,7 @@ export function AuthPage() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const [mode, setMode] = useState<AuthMode>("sign_in");
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -186,7 +187,7 @@ export function AuthPage() {
 
           {/* Переключатель языка — под строкой-переключателем режима, справа */}
           <div className="mt-6 flex justify-end">
-            <Popover>
+            <Popover open={langMenuOpen} onOpenChange={setLangMenuOpen}>
               <PopoverTrigger asChild>
                 <button
                   type="button"
@@ -210,6 +211,7 @@ export function AuthPage() {
                     onClick={() => {
                       void i18n.changeLanguage(lng);
                       try { window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lng); } catch { /* ignore */ }
+                      setLangMenuOpen(false);
                     }}
                   >
                     {lng === (i18n.resolvedLanguage ?? "en")
