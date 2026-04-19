@@ -112,6 +112,7 @@
     "sessionStrategyRun": "Pro Ausführung",
     "sessionKey": "Session-Schlüssel",
     "gatewayAuthToken": "Gateway-Auth-token (x-openclaw-token)",
+    "gatewayAuthTokenPlaceholder": "OpenClaw-Gateway-Token",
     "role": "Rolle",
     "scopes": "Bereiche (kommagetrennt)",
     "waitTimeout": "Wartezeit-Timeout (ms)",

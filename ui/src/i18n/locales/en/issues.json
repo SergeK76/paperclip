@@ -155,6 +155,9 @@
       "archived": "Issue archived from inbox",
       "archiveFailed": "Archive failed",
       "archiveFailedBody": "Unable to archive this issue from the inbox"
+    },
+    "actions": {
+      "copyAsMarkdown": "Copy issue as markdown"
     }
   },
   "properties": {
@@ -623,6 +626,12 @@
       "blocked": "Blocked",
       "done": "Done",
       "cancelled": "Cancelled"
+    }
+  },
+  "documents": {
+    "conflict": {
+      "title": "Out of date",
+      "description": "This document changed while you were editing. Your local draft is preserved and autosave is paused."
     }
   }
 }

@@ -15,7 +15,8 @@
     "copy": "Копировать",
     "refresh": "Обновить",
     "search": "Поиск",
-    "loading": "Загрузка…"
+    "loading": "Загрузка…",
+    "scrollToBottom": "Прокрутить вниз"
   },
   "language": {
     "label": "Язык",
@@ -56,7 +57,9 @@
     "invitePeopleDefault": "Пригласить людей",
     "companySettings": "Настройки компании",
     "signingOut": "Выхожу…",
-    "signOut": "Выйти"
+    "signOut": "Выйти",
+    "agentPausedByBudget": "Агент приостановлен бюджетом",
+    "projectPausedByBudget": "Проект приостановлен бюджетом"
   },
   "account": {
     "openMenu": "Открыть меню аккаунта",
@@ -158,7 +161,7 @@
   "shortcuts": {
     "title": "Горячие клавиши",
     "closePre": "Нажмите",
-    "closePost": "для закрытия · Шорткаты отключены в текстовых полях",
+    "closePost": "для закрытия · Горячие клавиши отключены в текстовых полях",
     "then": "затем",
     "inbox": {
       "title": "Входящие",
@@ -312,7 +315,7 @@
     "waitingForRuns_many": "Ожидание завершения {{count}} активных запусков",
     "waitingForRuns_other": "Ожидание завершения {{count}} активных запусков",
     "autoRestartIdle": "Авто-перезапуск сработает, когда экземпляр простаивает",
-    "manualRestart": "Перезапустите {{command}} когда активная работа безопасна для прерывания"
+    "manualRestart": "Перезапустите {{command}}, когда можно безопасно прервать активную работу"
   },
   "outputFeedback": {
     "helpful": "Полезно",
@@ -392,7 +395,12 @@
     "selectSecret": "Выбрать секрет…",
     "secretNamePrompt": "Название секрета",
     "failedToCreateSecret": "Не удалось создать секрет",
-    "autoInjected": "Переменные PAPERCLIP_* вставляются автоматически во время выполнения."
+    "autoInjected": "Переменные PAPERCLIP_* вставляются автоматически во время выполнения.",
+    "createSecretTitle": "Создать секрет из текущего открытого значения",
+    "sealSecretTitle": "Сохранить значение как секрет и заменить ссылкой",
+    "newButton": "Новый",
+    "sealButton": "В секрет",
+    "valuePlaceholder": "значение"
   },
   "jsonSchemaForm": {
     "required": "Это поле обязательно",
@@ -436,9 +444,9 @@
     "dropImageToUpload": "Перетащите изображение для загрузки"
   },
   "mermaid": {
-    "failedToRender": "Не удалось отрендерить диаграмму Mermaid.",
-    "unableToRender": "Не удалось отрендерить диаграмму Mermaid: {{error}}",
-    "rendering": "Рендеринг диаграммы Mermaid…"
+    "failedToRender": "Не удалось отобразить диаграмму Mermaid.",
+    "unableToRender": "Не удалось отобразить диаграмму Mermaid: {{error}}",
+    "rendering": "Отображение диаграммы Mermaid…"
   },
   "liveUpdates": {
     "actors": {
@@ -483,5 +491,17 @@
       "statusChanged": "статус → {{status}}",
       "priorityChanged": "приоритет → {{priority}}"
     }
+  },
+  "noCompanies": {
+    "title": "Создайте первую компанию",
+    "description": "Начните с создания компании.",
+    "action": "Новая компания"
+  },
+  "commandDialog": {
+    "title": "Командная палитра",
+    "description": "Найдите команду для запуска..."
+  },
+  "toast": {
+    "dismiss": "Закрыть уведомление"
   }
 }

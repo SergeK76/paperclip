@@ -20,7 +20,8 @@
       "noGoal": "No goal",
       "goal": "Goal",
       "goalAdd": "+ Goal",
-      "allGoalsSelected": "All goals already selected."
+      "allGoalsSelected": "All goals already selected.",
+      "targetDate": "Target date"
     },
     "buttons": {
       "create": "Create project",
@@ -171,6 +172,12 @@
       "unarchiveProject": "Unarchive project"
     },
     "dangerZone": "Danger Zone",
-    "allGoalsLinked": "All goals linked."
+    "allGoalsLinked": "All goals linked.",
+    "ariaLabels": {
+      "codebaseHelp": "Codebase help",
+      "clearRepo": "Clear repo",
+      "clearLocalFolder": "Clear local folder",
+      "executionWorkspacesHelp": "Execution workspaces help"
+    }
   }
 }

@@ -82,7 +82,20 @@
     "macos": "macOS (Finder)",
     "windows": "Windows (File Explorer)",
     "terminal": "Terminal fallback (macOS/Linux)",
-    "ok": "OK"
+    "ok": "OK",
+    "steps": {
+      "macosStep1": "Find the folder in Finder.",
+      "macosStep2": "Hold <kbd>Option</kbd> and right-click the folder.",
+      "macosStep3": "Click \"Copy &lt;folder name&gt; as Pathname\".",
+      "macosStep4": "Paste the result into the path input.",
+      "windowsStep1": "Find the folder in File Explorer.",
+      "windowsStep2": "Hold <kbd>Shift</kbd> and right-click the folder.",
+      "windowsStep3": "Click \"Copy as path\".",
+      "windowsStep4": "Paste the result into the path input.",
+      "terminalStep1": "Run <code>cd /path/to/folder</code>.",
+      "terminalStep2": "Run <code>pwd</code>.",
+      "terminalStep3": "Copy the output and paste it into the path input."
+    }
   },
   "reportsToPicker": {
     "unknownManager": "Unknown manager (stale ID)",
@@ -131,6 +144,18 @@
       "heartbeatOnInterval": "Heartbeat on interval",
       "runHeartbeatEvery": "Run heartbeat every",
       "wakeOnDemand": "Wake on demand"
+    },
+    "placeholders": {
+      "agentName": "Agent name",
+      "titleExample": "e.g. VP of Engineering",
+      "chooseManager": "Choose manager…",
+      "capabilities": "Describe what this agent can do...",
+      "promptTemplate": "You are agent {{ agent.name }}. Your role is {{ agent.role }}...",
+      "bootstrapPrompt": "Optional initial setup prompt for the first run",
+      "extraArgs": "e.g. --verbose, --foo=bar"
+    },
+    "hints": {
+      "bootstrapLegacy": "Bootstrap prompt is legacy and will be removed in a future release. Consider moving this content into the agent's prompt template or instructions file instead."
     }
   },
   "detail": {
@@ -149,7 +174,13 @@
       "onDemand": "On-demand",
       "automation": "Automation"
     },
-    "liveRun": "Live Run",
+    "liveRun": {
+      "title": "Live Runs",
+      "devNote": "Uses the shared chat-style run surface from issue activity.",
+      "stopping": "Stopping…",
+      "stop": "Stop",
+      "openRun": "Open run"
+    },
     "latestRun": "Latest Run",
     "viewDetails": "View details →",
     "charts": {
@@ -198,7 +229,10 @@
       "create": "Create",
       "delete": "Delete",
       "deprecated": "Deprecated virtual file",
-      "newFile": "New file in this bundle"
+      "newFile": "New file in this bundle",
+      "newFilePlaceholder": "TOOLS.md",
+      "agentInstructionsPlaceholder": "# Agent instructions",
+      "fileContentsPlaceholder": "File contents"
     },
     "skills": {
       "viewLibrary": "View company skills library",
@@ -247,13 +281,6 @@
       "stderr": "stderr excerpt",
       "stdout": "stdout excerpt"
     },
-    "liveRun": {
-      "title": "Live Runs",
-      "devNote": "Uses the shared chat-style run surface from issue activity.",
-      "stopping": "Stopping…",
-      "stop": "Stop",
-      "openRun": "Open run"
-    },
     "runs": {
       "noRuns": "No runs yet.",
       "backToRuns": "Back to runs",
@@ -270,6 +297,33 @@
       "loginClaude": "Login to Claude Code",
       "loggingIn": "Running claude login...",
       "loginUrl": "Login URL:"
+    },
+    "failure": {
+      "failureTitle": "Failure details",
+      "errorLabel": "Error:",
+      "stderrExcerpt": "stderr excerpt",
+      "stdoutExcerpt": "stdout excerpt",
+      "adapterResultJson": "adapter result JSON",
+      "eventsHeader": "Events ({{count}})"
+    },
+    "apiKeysSection": {
+      "newKeyBanner": "API key created — copy it now, it will not be shown again.",
+      "hide": "Hide",
+      "show": "Show",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "dismiss": "Dismiss",
+      "createTitle": "Create API Key",
+      "createDescription": "API keys allow this agent to authenticate calls to the Paperclip server.",
+      "keyNamePlaceholder": "Key name (e.g. production)",
+      "create": "Create",
+      "loadingKeys": "Loading keys...",
+      "noActiveKeys": "No active API keys.",
+      "activeKeysHeader": "Active Keys",
+      "revokedKeysHeader": "Revoked Keys",
+      "created": "Created {{date}}",
+      "revoked": "Revoked {{date}}",
+      "revoke": "Revoke"
     }
   }
 }

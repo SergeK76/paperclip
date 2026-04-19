@@ -190,7 +190,7 @@ export function OpenClawGatewayConfigFields({
             label={t("adapters:configFields.gatewayAuthToken")}
             value={effectiveGatewayToken}
             onCommit={commitGatewayToken}
-            placeholder="OpenClaw gateway token"
+            placeholder={t("adapters:configFields.gatewayAuthTokenPlaceholder")}
           />
 
           <Field label={t("adapters:configFields.role")}>

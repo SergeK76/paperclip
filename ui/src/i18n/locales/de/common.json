@@ -15,11 +15,12 @@
     "copy": "Kopieren",
     "refresh": "Aktualisieren",
     "search": "Suchen",
-    "loading": "Wird geladen..."
+    "loading": "Wird geladen...",
+    "scrollToBottom": "Nach unten scrollen"
   },
   "language": {
     "label": "Sprache",
-    "en": "English",
+    "en": "Englisch",
     "ru": "Русский",
     "de": "Deutsch"
   },
@@ -45,7 +46,7 @@
     "home": "Startseite",
     "create": "Erstellen",
     "newIssue": "Neues Issue",
-    "liveCount": "{{count}} live"
+    "liveCount": "{{count}} aktiv"
   },
   "sidebar": {
     "newAgent": "Neuer Agent",
@@ -57,7 +58,9 @@
     "invitePeopleDefault": "Personen einladen",
     "companySettings": "Unternehmenseinstellungen",
     "signingOut": "Wird abgemeldet...",
-    "signOut": "Abmelden"
+    "signOut": "Abmelden",
+    "agentPausedByBudget": "Agent durch Budget pausiert",
+    "projectPausedByBudget": "Projekt durch Budget pausiert"
   },
   "account": {
     "openMenu": "Kontomenü öffnen",
@@ -383,7 +386,12 @@
     "selectSecret": "Secret auswählen...",
     "secretNamePrompt": "Secret-Name",
     "failedToCreateSecret": "Secret konnte nicht erstellt werden",
-    "autoInjected": "PAPERCLIP_*-Variablen werden zur Laufzeit automatisch eingefügt."
+    "autoInjected": "PAPERCLIP_*-Variablen werden zur Laufzeit automatisch eingefügt.",
+    "createSecretTitle": "Secret aus dem aktuellen Klartextwert erstellen",
+    "sealSecretTitle": "Wert als Secret speichern und durch Referenz ersetzen",
+    "newButton": "Neu",
+    "sealButton": "Versiegeln",
+    "valuePlaceholder": "Wert"
   },
   "jsonSchemaForm": {
     "required": "Dieses Feld ist erforderlich",
@@ -474,5 +482,17 @@
       "statusChanged": "Status → {{status}}",
       "priorityChanged": "Priorität → {{priority}}"
     }
+  },
+  "noCompanies": {
+    "title": "Erste Firma anlegen",
+    "description": "Legen Sie zum Start eine Firma an.",
+    "action": "Neue Firma"
+  },
+  "commandDialog": {
+    "title": "Befehlspalette",
+    "description": "Suchen Sie nach einem Befehl..."
+  },
+  "toast": {
+    "dismiss": "Benachrichtigung schließen"
   }
 }

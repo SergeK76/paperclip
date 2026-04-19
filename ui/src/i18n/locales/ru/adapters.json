@@ -41,7 +41,7 @@
   "installDialog": {
     "title": "Установить внешний адаптер",
     "description": "Добавьте адаптер из npm или локального пути. Пакет адаптера должен экспортировать createServerAdapter().",
-    "npmPackage": "npm package",
+    "npmPackage": "npm-пакет",
     "localPath": "Локальный путь",
     "localPathLabel": "Путь к пакету адаптера",
     "localPathHint": "Принимает Linux, WSL и Windows пути. Windows-пути конвертируются автоматически.",
@@ -112,6 +112,7 @@
     "sessionStrategyRun": "По запуску",
     "sessionKey": "Ключ сессии",
     "gatewayAuthToken": "Токен авторизации шлюза (x-openclaw-token)",
+    "gatewayAuthTokenPlaceholder": "Токен шлюза OpenClaw",
     "role": "Роль",
     "scopes": "Права доступа (через запятую)",
     "waitTimeout": "Тайм-аут ожидания (мс)",

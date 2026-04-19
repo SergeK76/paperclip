@@ -112,6 +112,7 @@
     "sessionStrategyRun": "Per run",
     "sessionKey": "Session key",
     "gatewayAuthToken": "Gateway auth token (x-openclaw-token)",
+    "gatewayAuthTokenPlaceholder": "OpenClaw gateway token",
     "role": "Role",
     "scopes": "Scopes (comma-separated)",
     "waitTimeout": "Wait timeout (ms)",

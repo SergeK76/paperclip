@@ -17,8 +17,8 @@
     "emptyFirst": "Erstellen Sie Ihren ersten Agenten, um loszulegen.",
     "noMatch": "Keine Agenten entsprechen dem ausgewählten Filter.",
     "noHierarchy": "Keine Organisationshierarchie definiert.",
-    "liveNow": "Live",
-    "liveCount": "Live ({{count}})"
+    "liveNow": "Aktiv",
+    "liveCount": "Aktiv ({{count}})"
   },
   "new": {
     "title": "Neuer Agent",
@@ -82,7 +82,20 @@
     "macos": "macOS (Finder)",
     "windows": "Windows (Datei-Explorer)",
     "terminal": "Terminal-Fallback (macOS/Linux)",
-    "ok": "OK"
+    "ok": "OK",
+    "steps": {
+      "macosStep1": "Ordner im Finder suchen.",
+      "macosStep2": "<kbd>Option</kbd> gedrückt halten und mit rechts auf den Ordner klicken.",
+      "macosStep3": "\"Copy &lt;Ordnername&gt; as Pathname\" wählen.",
+      "macosStep4": "Ergebnis in das Pfad-Eingabefeld einfügen.",
+      "windowsStep1": "Ordner im Datei-Explorer suchen.",
+      "windowsStep2": "<kbd>Shift</kbd> gedrückt halten und mit rechts auf den Ordner klicken.",
+      "windowsStep3": "\"Copy as path\" wählen.",
+      "windowsStep4": "Ergebnis in das Pfad-Eingabefeld einfügen.",
+      "terminalStep1": "<code>cd /pfad/zum/ordner</code> ausführen.",
+      "terminalStep2": "<code>pwd</code> ausführen.",
+      "terminalStep3": "Ausgabe kopieren und in das Pfad-Eingabefeld einfügen."
+    }
   },
   "reportsToPicker": {
     "unknownManager": "Unbekannter Manager (veraltete ID)",
@@ -131,6 +144,18 @@
       "heartbeatOnInterval": "Heartbeat im Intervall",
       "runHeartbeatEvery": "Heartbeat ausführen alle",
       "wakeOnDemand": "Bei Bedarf aufwecken"
+    },
+    "placeholders": {
+      "agentName": "Agentenname",
+      "titleExample": "z. B. VP of Engineering",
+      "chooseManager": "Vorgesetzten wählen…",
+      "capabilities": "Beschreiben Sie, was dieser Agent kann...",
+      "promptTemplate": "Sie sind Agent {{ agent.name }}. Ihre Rolle ist {{ agent.role }}...",
+      "bootstrapPrompt": "Optionaler Setup-Prompt für den ersten Lauf",
+      "extraArgs": "z. B. --verbose, --foo=bar"
+    },
+    "hints": {
+      "bootstrapLegacy": "Bootstrap-Prompt ist veraltet und wird in einem zukünftigen Release entfernt. Verschieben Sie den Inhalt in das Prompt-Template des Agenten oder in die Anweisungsdatei."
     }
   },
   "detail": {
@@ -149,7 +174,13 @@
       "onDemand": "Auf Anfrage",
       "automation": "Automatisierung"
     },
-    "liveRun": "Live-Ausführung",
+    "liveRun": {
+      "title": "Live-Ausführungen",
+      "devNote": "Verwendet die gemeinsame chat-ähnliche Ausführungsoberfläche aus der Issue-Aktivität.",
+      "stopping": "Wird gestoppt…",
+      "stop": "Stoppen",
+      "openRun": "Ausführung öffnen"
+    },
     "latestRun": "Letzte Ausführung",
     "viewDetails": "Details anzeigen →",
     "charts": {
@@ -198,7 +229,10 @@
       "create": "Erstellen",
       "delete": "Löschen",
       "deprecated": "Veraltete virtuelle Datei",
-      "newFile": "Neue Datei in diesem Paket"
+      "newFile": "Neue Datei in diesem Paket",
+      "newFilePlaceholder": "TOOLS.md",
+      "agentInstructionsPlaceholder": "# Agent-Anweisungen",
+      "fileContentsPlaceholder": "Dateiinhalt"
     },
     "skills": {
       "viewLibrary": "Unternehmens-Skills-Bibliothek anzeigen",
@@ -247,13 +281,6 @@
       "stderr": "stderr-Auszug",
       "stdout": "stdout-Auszug"
     },
-    "liveRun": {
-      "title": "Live-Ausführungen",
-      "devNote": "Verwendet die gemeinsame chat-ähnliche Ausführungsoberfläche aus der Issue-Aktivität.",
-      "stopping": "Wird gestoppt…",
-      "stop": "Stoppen",
-      "openRun": "Ausführung öffnen"
-    },
     "runs": {
       "noRuns": "Noch keine Ausführungen.",
       "backToRuns": "Zurück zu den Ausführungen",
@@ -270,6 +297,33 @@
       "loginClaude": "Bei Claude Code anmelden",
       "loggingIn": "Claude-Login wird ausgeführt...",
       "loginUrl": "Anmelde-URL:"
+    },
+    "failure": {
+      "failureTitle": "Fehlerdetails",
+      "errorLabel": "Fehler:",
+      "stderrExcerpt": "stderr-Auszug",
+      "stdoutExcerpt": "stdout-Auszug",
+      "adapterResultJson": "Adapter-Ergebnis-JSON",
+      "eventsHeader": "Ereignisse ({{count}})"
+    },
+    "apiKeysSection": {
+      "newKeyBanner": "API-Schlüssel erstellt — jetzt kopieren, er wird nicht erneut angezeigt.",
+      "hide": "Ausblenden",
+      "show": "Anzeigen",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "dismiss": "Schließen",
+      "createTitle": "API-Schlüssel erstellen",
+      "createDescription": "API-Schlüssel erlauben diesem Agenten die Authentifizierung gegenüber dem Paperclip-Server.",
+      "keyNamePlaceholder": "Schlüsselname (z. B. production)",
+      "create": "Erstellen",
+      "loadingKeys": "Lade Schlüssel...",
+      "noActiveKeys": "Keine aktiven API-Schlüssel.",
+      "activeKeysHeader": "Aktive Schlüssel",
+      "revokedKeysHeader": "Widerrufene Schlüssel",
+      "created": "Erstellt {{date}}",
+      "revoked": "Widerrufen {{date}}",
+      "revoke": "Widerrufen"
     }
   }
 }

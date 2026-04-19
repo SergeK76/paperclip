@@ -24,7 +24,8 @@
     "title": "Available Plugins",
     "loading": "Loading bundled examples...",
     "loadError": "Failed to load bundled examples.",
-    "empty": "No bundled example plugins were found in this checkout."
+    "empty": "No bundled example plugins were found in this checkout.",
+    "badge": "Examples"
   },
   "badge": {
     "example": "Example",
@@ -78,7 +79,7 @@
   },
   "page": {
     "selectCompany": "Select a company to view this page.",
-    "loading": "Loading\u2026",
+    "loading": "Loading…",
     "routeConflictPre": "Multiple plugins declare the route",
     "routeConflictPost": ". Use the plugin-id route until the conflict is resolved.",
     "back": "Back"
@@ -146,7 +147,8 @@
     "permissions": {
       "title": "Permissions",
       "none": "No special permissions requested."
-    }
+    },
+    "lifecycle": "Lifecycle"
   },
   "configForm": {
     "loading": "Loading configuration...",

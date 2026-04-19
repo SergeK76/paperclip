@@ -19,8 +19,8 @@
     "emptyFirst": "Создайте первого агента, чтобы начать работу.",
     "noMatch": "Нет агентов, соответствующих выбранному фильтру.",
     "noHierarchy": "Организационная иерархия не определена.",
-    "liveNow": "Live",
-    "liveCount": "Live ({{count}})"
+    "liveNow": "Активен",
+    "liveCount": "Активно ({{count}})"
   },
   "new": {
     "title": "Новый агент",
@@ -84,7 +84,20 @@
     "macos": "macOS (Finder)",
     "windows": "Windows (Проводник)",
     "terminal": "Терминал (macOS/Linux)",
-    "ok": "OK"
+    "ok": "OK",
+    "steps": {
+      "macosStep1": "Найдите папку в Finder.",
+      "macosStep2": "Зажмите <kbd>Option</kbd> и кликните по папке правой кнопкой.",
+      "macosStep3": "Выберите «Скопировать «&lt;имя папки&gt;» как путь».",
+      "macosStep4": "Вставьте результат в поле пути.",
+      "windowsStep1": "Найдите папку в Проводнике.",
+      "windowsStep2": "Зажмите <kbd>Shift</kbd> и кликните по папке правой кнопкой.",
+      "windowsStep3": "Выберите «Copy as path».",
+      "windowsStep4": "Вставьте результат в поле пути.",
+      "terminalStep1": "Выполните <code>cd /path/to/folder</code>.",
+      "terminalStep2": "Выполните <code>pwd</code>.",
+      "terminalStep3": "Скопируйте вывод и вставьте его в поле пути."
+    }
   },
   "reportsToPicker": {
     "unknownManager": "Неизвестный менеджер (устаревший ID)",
@@ -102,7 +115,7 @@
     "envWarnings": "Предупреждения",
     "envFailed": "Ошибка",
     "sections": {
-      "identity": "Личность",
+      "identity": "Профиль",
       "adapter": "Адаптер",
       "permissions": "Разрешения и конфигурация",
       "runPolicy": "Политика запуска",
@@ -133,6 +146,18 @@
       "heartbeatOnInterval": "Хартбит по расписанию",
       "runHeartbeatEvery": "Запускать хартбит каждые",
       "wakeOnDemand": "Пробуждение по запросу"
+    },
+    "placeholders": {
+      "agentName": "Имя агента",
+      "titleExample": "например, Технический директор",
+      "chooseManager": "Выберите руководителя…",
+      "capabilities": "Опишите, что умеет этот агент...",
+      "promptTemplate": "Вы — агент {{ agent.name }}. Ваша роль — {{ agent.role }}...",
+      "bootstrapPrompt": "Необязательный стартовый промпт для первого запуска",
+      "extraArgs": "например, --verbose, --foo=bar"
+    },
+    "hints": {
+      "bootstrapLegacy": "Стартовый промпт устарел и будет удалён в будущем релизе. Перенесите это содержимое в шаблон промпта агента или в файл инструкций."
     }
   },
   "detail": {
@@ -151,7 +176,13 @@
       "onDemand": "По запросу",
       "automation": "Автоматически"
     },
-    "liveRun": "Активный запуск",
+    "liveRun": {
+      "title": "Активные запуски",
+      "devNote": "Использует общий чат-интерфейс запусков из активности задачи.",
+      "stopping": "Остановка…",
+      "stop": "Стоп",
+      "openRun": "Открыть запуск"
+    },
     "latestRun": "Последний запуск",
     "viewDetails": "Подробнее →",
     "charts": {
@@ -167,8 +198,8 @@
     "moreIssues": "+{{count}} ещё",
     "costs": {
       "title": "Расходы",
-      "inputTokens": "Входящие токены",
-      "outputTokens": "Исходящие токены",
+      "inputTokens": "Входные токены",
+      "outputTokens": "Выходные токены",
       "cachedTokens": "Кешированные токены",
       "totalCost": "Итоговая стоимость",
       "date": "Дата",
@@ -200,7 +231,10 @@
       "create": "Создать",
       "delete": "Удалить",
       "deprecated": "Устаревший виртуальный файл",
-      "newFile": "Новый файл в пакете"
+      "newFile": "Новый файл в пакете",
+      "newFilePlaceholder": "TOOLS.md",
+      "agentInstructionsPlaceholder": "# Инструкции агента",
+      "fileContentsPlaceholder": "Содержимое файла"
     },
     "skills": {
       "viewLibrary": "Просмотр библиотеки навыков компании",
@@ -249,13 +283,6 @@
       "stderr": "фрагмент stderr",
       "stdout": "фрагмент stdout"
     },
-    "liveRun": {
-      "title": "Активные запуски",
-      "devNote": "Использует общий чат-интерфейс запусков из активности задачи.",
-      "stopping": "Остановка…",
-      "stop": "Стоп",
-      "openRun": "Открыть запуск"
-    },
     "runs": {
       "noRuns": "Запусков пока нет.",
       "backToRuns": "Назад к запускам",
@@ -272,6 +299,33 @@
       "loginClaude": "Войти в Claude Code",
       "loggingIn": "Выполняется claude login…",
       "loginUrl": "URL для входа:"
+    },
+    "failure": {
+      "failureTitle": "Детали сбоя",
+      "errorLabel": "Ошибка:",
+      "stderrExcerpt": "Фрагмент stderr",
+      "stdoutExcerpt": "Фрагмент stdout",
+      "adapterResultJson": "JSON-результат адаптера",
+      "eventsHeader": "События ({{count}})"
+    },
+    "apiKeysSection": {
+      "newKeyBanner": "API-ключ создан — скопируйте его сейчас, повторно он не будет показан.",
+      "hide": "Скрыть",
+      "show": "Показать",
+      "copy": "Скопировать",
+      "copied": "Скопировано!",
+      "dismiss": "Закрыть",
+      "createTitle": "Создать API-ключ",
+      "createDescription": "API-ключи позволяют агенту аутентифицировать вызовы к серверу Paperclip.",
+      "keyNamePlaceholder": "Имя ключа (например, production)",
+      "create": "Создать",
+      "loadingKeys": "Загрузка ключей...",
+      "noActiveKeys": "Нет активных API-ключей.",
+      "activeKeysHeader": "Активные ключи",
+      "revokedKeysHeader": "Отозванные ключи",
+      "created": "Создан {{date}}",
+      "revoked": "Отозван {{date}}",
+      "revoke": "Отозвать"
     }
   }
 }

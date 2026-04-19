@@ -124,7 +124,7 @@ export function SidebarAgents() {
                 {(agent.pauseReason === "budget" || runCount > 0) && (
                   <span className="ml-auto flex items-center gap-1.5 shrink-0">
                     {agent.pauseReason === "budget" ? (
-                      <BudgetSidebarMarker title="Agent paused by budget" />
+                      <BudgetSidebarMarker title={t("common:sidebar.agentPausedByBudget")} />
                     ) : null}
                     {runCount > 0 ? (
                       <span className="relative flex h-2 w-2">

@@ -162,14 +162,14 @@ export function RoutineVariablesEditor({
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="__unset__">{t("routines:variablesEditor.noDefault")}</SelectItem>
-                      <SelectItem value="true">True</SelectItem>
-                      <SelectItem value="false">False</SelectItem>
+                      <SelectItem value="true">{t("routines:variablesEditor.boolTrue")}</SelectItem>
+                      <SelectItem value="false">{t("routines:variablesEditor.boolFalse")}</SelectItem>
                     </SelectContent>
                   </Select>
                 ) : variable.type === "select" ? (
                   <div className="grid gap-3 md:grid-cols-2">
                     <div className="space-y-1.5">
-                      <Label className="text-xs">Options</Label>
+                      <Label className="text-xs">{t("routines:variablesEditor.optionsLabel")}</Label>
                       <Input
                         value={variable.options.join(", ")}
                         onChange={(event) => {
@@ -183,11 +183,11 @@ export function RoutineVariablesEditor({
                                 : null,
                           })));
                         }}
-                        placeholder="high, medium, low"
+                        placeholder={t("routines:variablesEditor.optionsPlaceholder")}
                       />
                     </div>
                     <div className="space-y-1.5">
-                      <Label className="text-xs">Default option</Label>
+                      <Label className="text-xs">{t("routines:variablesEditor.defaultOption")}</Label>
                       <Select
                         value={typeof variable.defaultValue === "string" ? variable.defaultValue : "__unset__"}
                         onValueChange={(next) => onChange(updateVariableList(syncedVariables, variable.name, (current) => ({

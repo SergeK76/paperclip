@@ -423,7 +423,7 @@ export function NewProjectDialog() {
               className="bg-transparent outline-none text-xs w-24"
               value={targetDate}
               onChange={(e) => setTargetDate(e.target.value)}
-              placeholder="Target date"
+              placeholder={t("projects:newProjectDialog.fields.targetDate")}
             />
           </div>
         </div>

@@ -12,7 +12,7 @@
     "unassigned": "Nicht zugewiesen",
     "noProject": "Kein Projekt",
     "subIssue": "Teilaufgabe",
-    "live": "Live",
+    "live": "Aktiv",
     "labels": {
       "status": "Status",
       "id": "ID",
@@ -74,7 +74,7 @@
     "breadcrumbSource": "Issues",
     "noProject": "Kein Projekt",
     "hiddenBanner": "Dieses Issue ist ausgeblendet",
-    "liveBadge": "Live",
+    "liveBadge": "Aktiv",
     "routineBadge": "Routine",
     "copyMarkdown": "Issue als Markdown kopieren",
     "propertiesTitle": "Eigenschaften",
@@ -155,6 +155,9 @@
       "archived": "Issue aus Posteingang archiviert",
       "archiveFailed": "Archivieren fehlgeschlagen",
       "archiveFailedBody": "Dieses Issue konnte nicht aus dem Posteingang archiviert werden"
+    },
+    "actions": {
+      "copyAsMarkdown": "Issue als Markdown kopieren"
     }
   },
   "properties": {
@@ -623,6 +626,12 @@
       "blocked": "Blockiert",
       "done": "Erledigt",
       "cancelled": "Abgebrochen"
+    }
+  },
+  "documents": {
+    "conflict": {
+      "title": "Veraltet",
+      "description": "Das Dokument wurde während Ihrer Bearbeitung geändert. Der lokale Entwurf bleibt erhalten, die automatische Speicherung ist pausiert."
     }
   }
 }

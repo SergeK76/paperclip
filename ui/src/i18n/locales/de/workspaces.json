@@ -55,7 +55,9 @@
       "runtimeJson": "Legacy-`services`-Arrays funktionieren noch, aber `commands` unterstützt sowohl Services als auch Jobs."
     },
     "placeholders": {
-      "name": "Ausführungs-Workspace-Name"
+      "name": "Ausführungs-Workspace-Name",
+      "branchName": "PAP-946-workspace",
+      "cwd": "/absolute/path/to/workspace"
     },
     "runtimeSource": {
       "label": "Laufzeitkonfigurations-Quelle",
@@ -130,7 +132,8 @@
       "remoteRef": "Remote-Workspace-Ref",
       "setupCmd": "Einrichtungsbefehl",
       "cleanupCmd": "Bereinigungsbefehl",
-      "runtimeJson": "Workspace-Befehle-JSON"
+      "runtimeJson": "Workspace-Befehle-JSON",
+      "namePlaceholder": "Workspace-Name"
     },
     "hints": {
       "setupCmd": "Wird ausgeführt, wenn dieser Workspace benutzerdefinierten Bootstrap benötigt",

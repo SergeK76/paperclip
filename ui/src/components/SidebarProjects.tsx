@@ -58,6 +58,7 @@ function SortableProjectItem({
     transition,
     isDragging,
   } = useSortable({ id: project.id });
+  const { t } = useTranslation(["common"]);
 
   const routeRef = projectRouteRef(project);
 
@@ -96,7 +97,7 @@ function SortableProjectItem({
             style={{ backgroundColor: project.color ?? "#6366f1" }}
           />
           <span className="flex-1 truncate">{project.name}</span>
-          {project.pauseReason === "budget" ? <BudgetSidebarMarker title="Project paused by budget" /> : null}
+          {project.pauseReason === "budget" ? <BudgetSidebarMarker title={t("common:sidebar.projectPausedByBudget")} /> : null}
         </NavLink>
         {projectSidebarSlots.length > 0 && (
           <div className="ml-5 flex flex-col gap-0.5">

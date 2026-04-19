@@ -55,7 +55,9 @@
       "runtimeJson": "Устаревшие массивы `services` всё ещё работают, но `commands` поддерживает и сервисы, и задачи."
     },
     "placeholders": {
-      "name": "Название воркспейса выполнения"
+      "name": "Название воркспейса выполнения",
+      "branchName": "PAP-946-workspace",
+      "cwd": "/absolute/path/to/workspace"
     },
     "runtimeSource": {
       "label": "Источник конфигурации среды",
@@ -130,7 +132,8 @@
       "remoteRef": "Ref удалённого воркспейса",
       "setupCmd": "Команда настройки",
       "cleanupCmd": "Команда очистки",
-      "runtimeJson": "JSON команд воркспейса"
+      "runtimeJson": "JSON команд воркспейса",
+      "namePlaceholder": "Имя воркспейса"
     },
     "hints": {
       "setupCmd": "Запускается при необходимости настройки воркспейса",

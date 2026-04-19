@@ -12,7 +12,7 @@
     "unassigned": "Не назначено",
     "noProject": "Нет проекта",
     "subIssue": "Подзадача",
-    "live": "Live",
+    "live": "Активен",
     "labels": {
       "status": "Статус",
       "id": "ID",
@@ -74,7 +74,7 @@
     "breadcrumbSource": "Задачи",
     "noProject": "Без проекта",
     "hiddenBanner": "Эта задача скрыта",
-    "liveBadge": "Live",
+    "liveBadge": "Активен",
     "routineBadge": "Рутина",
     "copyMarkdown": "Копировать как markdown",
     "propertiesTitle": "Свойства",
@@ -155,6 +155,9 @@
       "archived": "Задача архивирована из входящих",
       "archiveFailed": "Ошибка архивирования",
       "archiveFailedBody": "Не удалось архивировать задачу из входящих"
+    },
+    "actions": {
+      "copyAsMarkdown": "Скопировать задачу как markdown"
     }
   },
   "properties": {
@@ -312,8 +315,8 @@
   },
   "issueChatThread": {
     "fallback": {
-      "rendererError": "Рендерер чата столкнулся с внутренней ошибкой.",
-      "rendererErrorHint": "Показываем безопасный запасной режим, чтобы не падать на странице задач.",
+      "rendererError": "Компонент чата столкнулся с внутренней ошибкой.",
+      "rendererErrorHint": "Показываем резервный режим, чтобы не падать на странице задач.",
       "noContent": "Нет содержимого сообщения."
     },
     "author": {
@@ -631,6 +634,12 @@
       "blocked": "Заблокировано",
       "done": "Готово",
       "cancelled": "Отменено"
+    }
+  },
+  "documents": {
+    "conflict": {
+      "title": "Устарело",
+      "description": "Документ изменился, пока вы редактировали. Локальный черновик сохранён, автосохранение приостановлено."
     }
   }
 }

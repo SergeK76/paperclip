@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import {
   Tooltip,
   TooltipTrigger,
@@ -407,10 +407,10 @@ export function ChoosePathButton() {
             <section className="space-y-1.5">
               <p className="font-medium">{t("agents:choosePath.macos")}</p>
               <ol className="list-decimal space-y-1 pl-5 text-muted-foreground">
-                <li>Find the folder in Finder.</li>
-                <li>Hold <kbd>Option</kbd> and right-click the folder.</li>
-                <li>Click "Copy &lt;folder name&gt; as Pathname".</li>
-                <li>Paste the result into the path input.</li>
+                <li>{t("agents:choosePath.steps.macosStep1")}</li>
+                <li><Trans i18nKey="agents:choosePath.steps.macosStep2" components={{ kbd: <kbd /> }} /></li>
+                <li>{t("agents:choosePath.steps.macosStep3")}</li>
+                <li>{t("agents:choosePath.steps.macosStep4")}</li>
               </ol>
               <p className="rounded-md bg-muted px-2 py-1 font-mono text-xs">
                 /Users/yourname/Documents/project
@@ -419,10 +419,10 @@ export function ChoosePathButton() {
             <section className="space-y-1.5">
               <p className="font-medium">{t("agents:choosePath.windows")}</p>
               <ol className="list-decimal space-y-1 pl-5 text-muted-foreground">
-                <li>Find the folder in File Explorer.</li>
-                <li>Hold <kbd>Shift</kbd> and right-click the folder.</li>
-                <li>Click "Copy as path".</li>
-                <li>Paste the result into the path input.</li>
+                <li>{t("agents:choosePath.steps.windowsStep1")}</li>
+                <li><Trans i18nKey="agents:choosePath.steps.windowsStep2" components={{ kbd: <kbd /> }} /></li>
+                <li>{t("agents:choosePath.steps.windowsStep3")}</li>
+                <li>{t("agents:choosePath.steps.windowsStep4")}</li>
               </ol>
               <p className="rounded-md bg-muted px-2 py-1 font-mono text-xs">
                 C:\Users\yourname\Documents\project
@@ -431,9 +431,9 @@ export function ChoosePathButton() {
             <section className="space-y-1.5">
               <p className="font-medium">{t("agents:choosePath.terminal")}</p>
               <ol className="list-decimal space-y-1 pl-5 text-muted-foreground">
-                <li>Run <code>cd /path/to/folder</code>.</li>
-                <li>Run <code>pwd</code>.</li>
-                <li>Copy the output and paste it into the path input.</li>
+                <li><Trans i18nKey="agents:choosePath.steps.terminalStep1" components={{ code: <code /> }} /></li>
+                <li><Trans i18nKey="agents:choosePath.steps.terminalStep2" components={{ code: <code /> }} /></li>
+                <li>{t("agents:choosePath.steps.terminalStep3")}</li>
               </ol>
             </section>
           </div>

@@ -217,7 +217,12 @@
     "defaultValueField": "Default value",
     "required": "Required",
     "noDefault": "No default",
-    "hint": "Use {{code}} placeholders in the instructions to prompt for inputs when the routine runs."
+    "hint": "Use {{code}} placeholders in the instructions to prompt for inputs when the routine runs.",
+    "boolTrue": "True",
+    "boolFalse": "False",
+    "defaultOption": "Default option",
+    "optionsLabel": "Options",
+    "optionsPlaceholder": "high, medium, low"
   },
   "schedule": {
     "chooseFq": "Choose frequency...",

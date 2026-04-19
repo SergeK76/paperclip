@@ -20,7 +20,8 @@
       "noGoal": "Без цели",
       "goal": "Цель",
       "goalAdd": "+ Цель",
-      "allGoalsSelected": "Все цели уже выбраны."
+      "allGoalsSelected": "Все цели уже выбраны.",
+      "targetDate": "Целевая дата"
     },
     "buttons": {
       "create": "Создать проект",
@@ -171,6 +172,12 @@
       "unarchiveProject": "Разархивировать проект"
     },
     "dangerZone": "Опасная зона",
-    "allGoalsLinked": "Все цели привязаны."
+    "allGoalsLinked": "Все цели привязаны.",
+    "ariaLabels": {
+      "codebaseHelp": "Справка о кодовой базе",
+      "clearRepo": "Очистить репозиторий",
+      "clearLocalFolder": "Очистить локальную папку",
+      "executionWorkspacesHelp": "Справка о рабочих воркспейсах"
+    }
   }
 }

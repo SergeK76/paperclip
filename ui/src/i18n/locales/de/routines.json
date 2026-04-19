@@ -217,7 +217,12 @@
     "defaultValueField": "Standardwert",
     "required": "Erforderlich",
     "noDefault": "Kein Standard",
-    "hint": "Verwenden Sie {{code}}-Platzhalter in den Anweisungen, um bei der Ausführung der Routine nach Eingaben zu fragen."
+    "hint": "Verwenden Sie {{code}}-Platzhalter in den Anweisungen, um bei der Ausführung der Routine nach Eingaben zu fragen.",
+    "boolTrue": "Wahr",
+    "boolFalse": "Falsch",
+    "defaultOption": "Standardwert",
+    "optionsLabel": "Optionen",
+    "optionsPlaceholder": "high, medium, low"
   },
   "schedule": {
     "chooseFq": "Häufigkeit auswählen...",

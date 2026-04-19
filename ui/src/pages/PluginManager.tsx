@@ -222,7 +222,7 @@ export function PluginManager() {
         <div className="flex items-center gap-2">
           <FlaskConical className="h-5 w-5 text-muted-foreground" />
           <h2 className="text-base font-semibold">{t("plugins:availableSection.title")}</h2>
-          <Badge variant="outline">Examples</Badge>
+          <Badge variant="outline">{t("plugins:availableSection.badge")}</Badge>
         </div>
 
         {examplesQuery.isLoading ? (

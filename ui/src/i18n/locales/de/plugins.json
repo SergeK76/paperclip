@@ -24,7 +24,8 @@
     "title": "Verfügbare Plugins",
     "loading": "Integrierte Beispiele werden geladen...",
     "loadError": "Integrierte Beispiele konnten nicht geladen werden.",
-    "empty": "In diesem Checkout wurden keine integrierten Beispiel-Plugins gefunden."
+    "empty": "In diesem Checkout wurden keine integrierten Beispiel-Plugins gefunden.",
+    "badge": "Beispiele"
   },
   "badge": {
     "example": "Beispiel",
@@ -146,7 +147,8 @@
     "permissions": {
       "title": "Berechtigungen",
       "none": "Keine speziellen Berechtigungen angefordert."
-    }
+    },
+    "lifecycle": "Lebenszyklus"
   },
   "configForm": {
     "loading": "Konfiguration wird geladen...",

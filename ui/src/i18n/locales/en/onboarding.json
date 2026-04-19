@@ -249,6 +249,7 @@
     },
     "validation": {
       "required": "Please fill in all required fields."
-    }
+    },
+    "changeLanguage": "Change language"
   }
 }

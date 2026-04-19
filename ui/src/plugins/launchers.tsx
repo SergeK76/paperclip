@@ -16,6 +16,7 @@ import {
   type ReactNode,
 } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
 import { PLUGIN_LAUNCHER_BOUNDS } from "@paperclipai/shared";
 import type {
   PluginLauncherBounds,
@@ -472,6 +473,7 @@ function LauncherModalShell({
 }) {
   const contentRef = useRef<HTMLDivElement | null>(null);
   const titleId = useId();
+  const { t } = useTranslation(["common"]);
 
   useEffect(() => {
     if (!isTopmost) return;
@@ -570,7 +572,7 @@ function LauncherModalShell({
             className="ml-auto"
             onClick={() => void closeLauncher(instance.key, { reason: "programmatic" })}
           >
-            Close
+            {t("common:actions.close")}
           </Button>
         </div>
         <div

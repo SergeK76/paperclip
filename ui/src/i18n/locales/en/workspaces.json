@@ -55,7 +55,9 @@
       "runtimeJson": "Legacy `services` arrays still work, but `commands` supports both services and jobs."
     },
     "placeholders": {
-      "name": "Execution workspace name"
+      "name": "Execution workspace name",
+      "branchName": "PAP-946-workspace",
+      "cwd": "/absolute/path/to/workspace"
     },
     "runtimeSource": {
       "label": "Runtime config source",
@@ -130,7 +132,8 @@
       "remoteRef": "Remote workspace ref",
       "setupCmd": "Setup command",
       "cleanupCmd": "Cleanup command",
-      "runtimeJson": "Workspace commands JSON"
+      "runtimeJson": "Workspace commands JSON",
+      "namePlaceholder": "Workspace name"
     },
     "hints": {
       "setupCmd": "Runs when this workspace needs custom bootstrap",

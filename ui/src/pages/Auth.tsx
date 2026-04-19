@@ -192,7 +192,7 @@ export function AuthPage() {
                 <button
                   type="button"
                   className="flex items-center gap-2 rounded-md border border-border bg-background px-3 py-1.5 text-xs text-muted-foreground hover:bg-accent hover:text-foreground"
-                  aria-label="Change language"
+                  aria-label={t("onboarding:auth.changeLanguage")}
                 >
                   <Languages className="size-3.5" />
                   {LANGUAGE_LABELS[i18n.resolvedLanguage ?? "en"] ?? (i18n.resolvedLanguage ?? "en").toUpperCase()}
