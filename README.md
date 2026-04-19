@@ -15,6 +15,11 @@
   <a href="https://discord.gg/m4HZY7xNG3"><img src="https://img.shields.io/discord/000000000?label=discord" alt="Discord" /></a>
 </p>
 
+<p align="center">
+  <strong>English</strong> &middot;
+  <a href="README.ru.md">Русский</a>
+</p>
+
 <br/>
 
 <div align="center">
