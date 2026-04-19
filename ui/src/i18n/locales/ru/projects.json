@@ -5,6 +5,55 @@
     "addProject": "Добавить проект",
     "fallback": "Проект"
   },
+  "newProjectDialog": {
+    "header": {
+      "title": "Новый проект"
+    },
+    "fields": {
+      "namePlaceholder": "Название проекта",
+      "descriptionPlaceholder": "Добавить описание...",
+      "repoUrl": "URL репозитория",
+      "optional": "необязательно",
+      "repoUrlTooltip": "Привяжите GitHub-репозиторий, чтобы агенты могли клонировать, читать и пушить код для этого проекта.",
+      "localFolder": "Локальная папка",
+      "localFolderTooltip": "Укажите абсолютный путь на этом компьютере, где локальные агенты будут читать и записывать файлы проекта.",
+      "noGoal": "Без цели",
+      "goal": "Цель",
+      "goalAdd": "+ Цель",
+      "allGoalsSelected": "Все цели уже выбраны."
+    },
+    "buttons": {
+      "create": "Создать проект",
+      "creating": "Создание…"
+    },
+    "errors": {
+      "createFailed": "Не удалось создать проект.",
+      "localPathInvalid": "Локальная папка должна быть указана как полный абсолютный путь.",
+      "repoUrlInvalid": "Укажите корректный URL репозитория GitHub или GitHub Enterprise."
+    }
+  },
+  "workspaceSummary": {
+    "kinds": {
+      "executionWorkspace": "Воркспейс выполнения",
+      "projectWorkspace": "Воркспейс проекта"
+    },
+    "labels": {
+      "updated": "Обновлено {{time}}",
+      "services": "{{running}}/{{total}} сервисов",
+      "branch": "Ветка",
+      "path": "Путь",
+      "pathCopied": "Путь скопирован",
+      "service": "Сервис",
+      "linkedIssues": "Связанные задачи",
+      "moreIssues": "+{{count}} ещё"
+    },
+    "buttons": {
+      "startServices": "Запустить сервисы",
+      "stopServices": "Остановить сервисы",
+      "closeWorkspace": "Закрыть воркспейс",
+      "retryClose": "Повторить закрытие"
+    }
+  },
   "detail": {
     "descriptionPlaceholder": "Добавить описание...",
     "overview": {
@@ -30,5 +79,98 @@
     "unarchived": "«{{name}}» разархивирован",
     "failedToArchive": "Не удалось заархивировать проект",
     "failedToUnarchive": "Не удалось разархивировать проект"
+  },
+  "properties": {
+    "saveState": {
+      "saving": "Сохранение",
+      "saved": "Сохранено",
+      "failed": "Ошибка"
+    },
+    "statuses": {
+      "backlog": "Бэклог",
+      "planned": "Запланировано",
+      "in_progress": "В работе",
+      "completed": "Завершено",
+      "cancelled": "Отменено"
+    },
+    "rowLabel": {
+      "name": "Название",
+      "description": "Описание",
+      "status": "Статус",
+      "lead": "Ведущий",
+      "goals": "Цели",
+      "env": "Env",
+      "created": "Создан",
+      "updated": "Обновлён",
+      "targetDate": "Целевая дата"
+    },
+    "placeholders": {
+      "projectName": "Название проекта",
+      "addDescription": "Добавить описание...",
+      "noDescription": "Нет описания",
+      "localPath": "/абсолютный/путь/к/папке",
+      "repoUrl": "https://github.com/org/repo"
+    },
+    "buttons": {
+      "save": "Сохранить",
+      "cancel": "Отмена",
+      "confirm": "Подтвердить",
+      "addGoal": "Цель",
+      "changeRepo": "Изменить репозиторий",
+      "setRepo": "Добавить репозиторий",
+      "changeLocalFolder": "Изменить папку",
+      "setLocalFolder": "Добавить папку"
+    },
+    "errors": {
+      "localPathNotAbsolute": "Локальная папка должна быть указана как полный абсолютный путь.",
+      "repoUrlInvalid": "Укажите корректный URL репозитория GitHub или GitHub Enterprise.",
+      "failedToSaveWorkspace": "Не удалось сохранить воркспейс.",
+      "failedToDeleteWorkspace": "Не удалось удалить воркспейс.",
+      "failedToUpdateWorkspace": "Не удалось обновить воркспейс."
+    },
+    "codebase": {
+      "title": "Кодовая база",
+      "helpTooltip": "Репозиторий — источник истины. Локальная папка — место по умолчанию, где агенты пишут код.",
+      "repoLabel": "Репозиторий",
+      "localFolderLabel": "Локальная папка",
+      "notSet": "Не задан.",
+      "managedFolder": "Папка управляется Paperclip.",
+      "legacyWorkspacesNote": "На проекте есть дополнительные устаревшие воркспейсы. Paperclip использует основной воркспейс как кодовую базу.",
+      "noUrl": "Нет URL",
+      "clearRepoWithFolder": "Удалить репозиторий из этого воркспейса?",
+      "deleteRepo": "Удалить репозиторий воркспейса?",
+      "clearLocalWithRepo": "Удалить локальную папку из этого воркспейса?",
+      "deleteLocalFolder": "Удалить локальную папку воркспейса?"
+    },
+    "executionWorkspace": {
+      "title": "Воркспейсы выполнения",
+      "helpTooltip": "Настройки проекта по умолчанию для изолированных чекаутов задач и воркспейсов выполнения.",
+      "enableTitle": "Включить изолированные чекауты задач",
+      "enableDescription": "Позволяет задачам выбирать между основным чекаутом проекта и изолированным воркспейсом выполнения.",
+      "enabled": "Включено",
+      "disabled": "Отключено",
+      "defaultIsolatedTitle": "Новые задачи по умолчанию используют изолированный чекаут",
+      "defaultIsolatedDescription": "Если отключено, новые задачи остаются на основном чекауте проекта, если пользователь не выбрал иное.",
+      "showAdvanced": "Показать расширенные настройки чекаута",
+      "hideAdvanced": "Скрыть расширенные настройки чекаута",
+      "implementation": "Реализация на хосте: Git worktree",
+      "baseRef": "Базовый ref",
+      "branchTemplate": "Шаблон ветки",
+      "worktreeParentDir": "Родительская папка worktree",
+      "provisionCommand": "Команда подготовки",
+      "teardownCommand": "Команда очистки",
+      "provisionNote": "Подготовка выполняется внутри созданного worktree перед запуском агента. Команда очистки сохранена для будущих процессов удаления."
+    },
+    "archive": {
+      "archiveDescription": "Заархивируйте проект, чтобы скрыть его из боковой панели и списков выбора проекта.",
+      "unarchiveDescription": "Разархивируйте проект, чтобы восстановить его в боковой панели и списках выбора.",
+      "archiving": "Архивирование...",
+      "unarchiving": "Разархивирование...",
+      "confirmPrompt": "{{action}} «{{name}}»?",
+      "archiveProject": "Архивировать проект",
+      "unarchiveProject": "Разархивировать проект"
+    },
+    "dangerZone": "Опасная зона",
+    "allGoalsLinked": "Все цели привязаны."
   }
 }
