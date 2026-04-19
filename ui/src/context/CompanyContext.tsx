@@ -13,6 +13,7 @@ import { companiesApi } from "../api/companies";
 import { ApiError } from "../api/client";
 import { queryKeys } from "../lib/queryKeys";
 import type { CompanySelectionSource } from "../lib/company-selection";
+import { useApiAccessGate } from "../hooks/useApiAccessGate";
 type CompanySelectionOptions = { source?: CompanySelectionSource };
 
 interface CompanyContextValue {
@@ -37,8 +38,20 @@ const CompanyContext = createContext<CompanyContextValue | null>(null);
 
 export function CompanyProvider({ children }: { children: ReactNode }) {
   const queryClient = useQueryClient();
+  const apiReady = useApiAccessGate();
   const [selectionSource, setSelectionSource] = useState<CompanySelectionSource>("bootstrap");
-  const [selectedCompanyId, setSelectedCompanyIdState] = useState<string | null>(() => localStorage.getItem(STORAGE_KEY));
+  // Не читаем selectedCompanyId из localStorage до тех пор, пока auth не подтверждён —
+  // иначе «зомби-UUID» провоцирует запросы /api/companies/:id/... без сессии.
+  const [selectedCompanyId, setSelectedCompanyIdState] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!apiReady) {
+      setSelectedCompanyIdState(null);
+      return;
+    }
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) setSelectedCompanyIdState(stored);
+  }, [apiReady]);
 
   const { data: companies = [], isLoading, error } = useQuery({
     queryKey: queryKeys.companies.all,
@@ -53,6 +66,7 @@ export function CompanyProvider({ children }: { children: ReactNode }) {
       }
     },
     retry: false,
+    enabled: apiReady,
   });
   const sidebarCompanies = useMemo(
     () => companies.filter((company) => company.status !== "archived"),
