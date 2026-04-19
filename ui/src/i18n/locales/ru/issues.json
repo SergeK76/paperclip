@@ -309,5 +309,168 @@
       "xhigh": "Очень высокая",
       "max": "Максимальная"
     }
+  },
+  "issueChatThread": {
+    "fallback": {
+      "rendererError": "Рендерер чата столкнулся с внутренней ошибкой.",
+      "rendererErrorHint": "Показываем безопасный запасной режим, чтобы не падать на странице задач.",
+      "noContent": "Нет содержимого сообщения."
+    },
+    "author": {
+      "agent": "Агент",
+      "you": "Вы",
+      "system": "Система",
+      "board": "Борд",
+      "user": "Пользователь"
+    },
+    "value": {
+      "none": "Нет",
+      "unassigned": "Не назначено",
+      "board": "Борд"
+    },
+    "cot": {
+      "working": "Работает",
+      "worked": "Отработал",
+      "forDuration": "за {{duration}}",
+      "commands_one": "выполнил {{count}} команду",
+      "commands_few": "выполнил {{count}} команды",
+      "commands_many": "выполнил {{count}} команд",
+      "commands_other": "выполнил {{count}} команд",
+      "tools_one": "вызвал {{count}} инструмент",
+      "tools_few": "вызвал {{count}} инструмента",
+      "tools_many": "вызвал {{count}} инструментов",
+      "tools_other": "вызвал {{count}} инструментов"
+    },
+    "tool": {
+      "copy": "Копировать",
+      "input": "Вход",
+      "result": "Результат"
+    },
+    "userMessage": {
+      "queued": "В очереди",
+      "interrupting": "Прерывание...",
+      "interrupt": "Прервать",
+      "cancel": "Отмена",
+      "sending": "Отправка...",
+      "copyMessage": "Копировать сообщение"
+    },
+    "assistantMessage": {
+      "running": "Выполняется",
+      "copyMessage": "Копировать сообщение",
+      "moreActions": "Ещё действия",
+      "stopping": "Остановка…",
+      "stopRun": "Остановить запуск",
+      "viewRun": "Открыть запуск"
+    },
+    "feedback": {
+      "helpful": "Полезно",
+      "needsWork": "Нужно доработать",
+      "betterPrompt": "Что можно было сделать лучше?",
+      "notePlaceholder": "Добавьте короткую заметку",
+      "dismiss": "Закрыть",
+      "saving": "Сохранение...",
+      "saveNote": "Сохранить заметку",
+      "sharingDialogTitle": "Сохранить настройку передачи отзывов",
+      "sharingDialogDesc": "Выберите, можно ли передавать результаты ИИ, за которые вы голосуете, в Paperclip Labs. Этот выбор станет значением по умолчанию для будущих голосов.",
+      "alwaysLocal": "Этот голос всегда сохраняется локально.",
+      "choosePromptPrefix": "Выберите ",
+      "choosePromptAlwaysAllow": "Всегда разрешать",
+      "choosePromptMiddle": ", чтобы передавать этот голос и будущие результаты ИИ. Выберите ",
+      "choosePromptDontAllow": "Не разрешать",
+      "choosePromptSuffix": ", чтобы оставить этот голос и будущие голоса локальными.",
+      "changeLaterHint": "Это можно изменить позже: Настройки инстанса > Общие.",
+      "readTerms": "Читать условия использования",
+      "dontAllow": "Не разрешать",
+      "alwaysAllow": "Всегда разрешать"
+    },
+    "systemMessage": {
+      "updatedTask": "обновил(а) эту задачу",
+      "statusLabel": "Статус",
+      "assigneeLabel": "Исполнитель",
+      "run": "запуск"
+    },
+    "composer": {
+      "reply": "Ответить",
+      "attachImage": "Прикрепить изображение",
+      "assignee": "Исполнитель",
+      "noAssignee": "Не назначено",
+      "searchAssignees": "Поиск исполнителей...",
+      "noAssigneesFound": "Исполнители не найдены.",
+      "posting": "Отправка...",
+      "send": "Отправить"
+    },
+    "thread": {
+      "jumpToLatest": "К последнему",
+      "emptyEmbedded": "Пока нет вывода запуска.",
+      "emptyFull": "Это обсуждение задачи пустое. Начните с сообщения ниже."
+    }
+  },
+  "linkQuicklook": {
+    "unableToLoad": "Не удалось загрузить превью задачи."
+  },
+  "issuesList": {
+    "search": {
+      "placeholder": "Поиск задач...",
+      "ariaLabel": "Поиск задач",
+      "limitHint": "Показано до {{limit}} совпадений. Уточните запрос, чтобы сузить список."
+    },
+    "actions": {
+      "createIssue": "Создать задачу",
+      "newIssue": "Новая задача",
+      "createWithLabel": "Создать {{label}}",
+      "newWithLabel": "Новая {{label}}"
+    },
+    "viewMode": {
+      "list": "Список",
+      "board": "Доска"
+    },
+    "nesting": {
+      "enable": "Включить вложенность родитель-потомок",
+      "disable": "Выключить вложенность родитель-потомок"
+    },
+    "columns": {
+      "pickerTitle": "Выберите, какие колонки задач показывать"
+    },
+    "sort": {
+      "title": "Сортировка",
+      "status": "Статус",
+      "priority": "Приоритет",
+      "titleField": "Заголовок",
+      "created": "Создано",
+      "updated": "Обновлено"
+    },
+    "group": {
+      "title": "Группировка",
+      "status": "Статус",
+      "priority": "Приоритет",
+      "assignee": "Исполнитель",
+      "workspace": "Воркспейс",
+      "parentIssue": "Родительская задача",
+      "none": "Без группировки"
+    },
+    "groups": {
+      "noWorkspace": "Без воркспейса",
+      "noParent": "Без родителя",
+      "unassigned": "Не назначено",
+      "userFallback": "Пользователь"
+    },
+    "creators": {
+      "board": "Борд",
+      "me": "Я"
+    },
+    "empty": {
+      "noMatches": "Нет задач под текущие фильтры или поиск."
+    },
+    "assignee": {
+      "placeholder": "Исполнитель",
+      "searchPlaceholder": "Поиск исполнителей...",
+      "none": "Без исполнителя",
+      "me": "Я"
+    },
+    "subTasksCount_one": "{{count}} подзадача",
+    "subTasksCount_few": "{{count}} подзадачи",
+    "subTasksCount_many": "{{count}} подзадач",
+    "subTasksCount_other": "{{count}} подзадач",
+    "renderingCounter": "Показано {{rendered}} из {{total}} задач"
   }
 }

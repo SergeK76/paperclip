@@ -307,5 +307,162 @@
       "xhigh": "X-High",
       "max": "Max"
     }
+  },
+  "issueChatThread": {
+    "fallback": {
+      "rendererError": "Chat renderer hit an internal state error.",
+      "rendererErrorHint": "Showing a safe fallback transcript instead of crashing the issues page.",
+      "noContent": "No message content."
+    },
+    "author": {
+      "agent": "Agent",
+      "you": "You",
+      "system": "System",
+      "board": "Board",
+      "user": "User"
+    },
+    "value": {
+      "none": "None",
+      "unassigned": "Unassigned",
+      "board": "Board"
+    },
+    "cot": {
+      "working": "Working",
+      "worked": "Worked",
+      "forDuration": "for {{duration}}",
+      "commands_one": "ran {{count}} command",
+      "commands_other": "ran {{count}} commands",
+      "tools_one": "called {{count}} tool",
+      "tools_other": "called {{count}} tools"
+    },
+    "tool": {
+      "copy": "Copy",
+      "input": "Input",
+      "result": "Result"
+    },
+    "userMessage": {
+      "queued": "Queued",
+      "interrupting": "Interrupting...",
+      "interrupt": "Interrupt",
+      "cancel": "Cancel",
+      "sending": "Sending...",
+      "copyMessage": "Copy message"
+    },
+    "assistantMessage": {
+      "running": "Running",
+      "copyMessage": "Copy message",
+      "moreActions": "More actions",
+      "stopping": "Stopping…",
+      "stopRun": "Stop run",
+      "viewRun": "View run"
+    },
+    "feedback": {
+      "helpful": "Helpful",
+      "needsWork": "Needs work",
+      "betterPrompt": "What could have been better?",
+      "notePlaceholder": "Add a short note",
+      "dismiss": "Dismiss",
+      "saving": "Saving...",
+      "saveNote": "Save note",
+      "sharingDialogTitle": "Save your feedback sharing preference",
+      "sharingDialogDesc": "Choose whether voted AI outputs can be shared with Paperclip Labs. This answer becomes the default for future thumbs up and thumbs down votes.",
+      "alwaysLocal": "This vote is always saved locally.",
+      "choosePromptPrefix": "Choose ",
+      "choosePromptAlwaysAllow": "Always allow",
+      "choosePromptMiddle": " to share this vote and future voted AI outputs. Choose ",
+      "choosePromptDontAllow": "Don't allow",
+      "choosePromptSuffix": " to keep this vote and future votes local.",
+      "changeLaterHint": "You can change this later in Instance Settings > General.",
+      "readTerms": "Read our terms of service",
+      "dontAllow": "Don't allow",
+      "alwaysAllow": "Always allow"
+    },
+    "systemMessage": {
+      "updatedTask": "updated this task",
+      "statusLabel": "Status",
+      "assigneeLabel": "Assignee",
+      "run": "run"
+    },
+    "composer": {
+      "reply": "Reply",
+      "attachImage": "Attach image",
+      "assignee": "Assignee",
+      "noAssignee": "No assignee",
+      "searchAssignees": "Search assignees...",
+      "noAssigneesFound": "No assignees found.",
+      "posting": "Posting...",
+      "send": "Send"
+    },
+    "thread": {
+      "jumpToLatest": "Jump to latest",
+      "emptyEmbedded": "No run output yet.",
+      "emptyFull": "This issue conversation is empty. Start with a message below."
+    }
+  },
+  "linkQuicklook": {
+    "unableToLoad": "Unable to load issue preview."
+  },
+  "issuesList": {
+    "search": {
+      "placeholder": "Search issues...",
+      "ariaLabel": "Search issues",
+      "limitHint": "Showing up to {{limit}} matches. Refine the search to narrow further."
+    },
+    "actions": {
+      "createIssue": "Create Issue",
+      "newIssue": "New Issue",
+      "createWithLabel": "Create {{label}}",
+      "newWithLabel": "New {{label}}"
+    },
+    "viewMode": {
+      "list": "List view",
+      "board": "Board view"
+    },
+    "nesting": {
+      "enable": "Enable parent-child nesting",
+      "disable": "Disable parent-child nesting"
+    },
+    "columns": {
+      "pickerTitle": "Choose which issue columns stay visible"
+    },
+    "sort": {
+      "title": "Sort",
+      "status": "Status",
+      "priority": "Priority",
+      "titleField": "Title",
+      "created": "Created",
+      "updated": "Updated"
+    },
+    "group": {
+      "title": "Group",
+      "status": "Status",
+      "priority": "Priority",
+      "assignee": "Assignee",
+      "workspace": "Workspace",
+      "parentIssue": "Parent Issue",
+      "none": "None"
+    },
+    "groups": {
+      "noWorkspace": "No Workspace",
+      "noParent": "No Parent",
+      "unassigned": "Unassigned",
+      "userFallback": "User"
+    },
+    "creators": {
+      "board": "Board",
+      "me": "Me"
+    },
+    "empty": {
+      "noMatches": "No issues match the current filters or search."
+    },
+    "assignee": {
+      "placeholder": "Assignee",
+      "searchPlaceholder": "Search assignees...",
+      "none": "No assignee",
+      "me": "Me"
+    },
+    "subTasksCount_one": "{{count}} sub-task",
+    "subTasksCount_other": "{{count}} sub-tasks",
+    "renderingCounter": "Rendering {{rendered}} of {{total}} issues"
   }
 }
