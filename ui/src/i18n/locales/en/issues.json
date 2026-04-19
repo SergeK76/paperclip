@@ -6,5 +6,93 @@
     "breadcrumb": "My Issues",
     "selectCompany": "Select a company to view your issues.",
     "noIssues": "No issues assigned to you."
+  },
+  "detail": {
+    "breadcrumbFallback": "Issue",
+    "breadcrumbSource": "Issues",
+    "noProject": "No project",
+    "hiddenBanner": "This issue is hidden",
+    "liveBadge": "Live",
+    "routineBadge": "Routine",
+    "copyMarkdown": "Copy issue as markdown",
+    "propertiesTitle": "Properties",
+    "showProperties": "Show properties",
+    "hideIssue": "Hide this issue",
+    "descriptionPlaceholder": "Add a description...",
+    "subIssues": "Sub-issues",
+    "newSubIssue": "New Sub-issue",
+    "subIssueLabel": "Sub-issue",
+    "uploading": "Uploading...",
+    "uploadAttachment": "Upload attachment",
+    "uploadShort": "Upload",
+    "attachments": "Attachments",
+    "attachmentAlt": "attachment",
+    "deleteConfirm": "Delete?",
+    "deleteYes": "Yes",
+    "deleteNo": "No",
+    "deleteAttachment": "Delete attachment",
+    "copiedToClipboard": "Copied to clipboard",
+    "actor": {
+      "system": "System",
+      "board": "Board",
+      "unknown": "Unknown"
+    },
+    "toolbar": {
+      "backToInbox": "Back to inbox",
+      "archiveFromInbox": "Archive from inbox",
+      "moreActions": "More actions",
+      "copyMarkdown": "Copy as markdown",
+      "properties": "Properties",
+      "hideIssue": "Hide this issue"
+    },
+    "tabs": {
+      "chat": "Chat",
+      "activity": "Activity"
+    },
+    "chat": {
+      "loadEarlier": "Load earlier comments",
+      "loadingEarlier": "Loading earlier comments..."
+    },
+    "activity": {
+      "costSummary": "Cost Summary",
+      "noCostData": "No cost data yet.",
+      "tokens": "Tokens",
+      "tokenIn": "in",
+      "tokenOut": "out",
+      "tokenCached": "cached",
+      "noActivity": "No activity yet."
+    },
+    "toasts": {
+      "updateFailed": "Issue update failed",
+      "updateFailedBody": "Unable to save issue changes",
+      "subUpdateFailedBody": "Unable to save sub-issue changes",
+      "approvalApproved": "Approval approved",
+      "approvalRejected": "Approval rejected",
+      "approvalFailed": "Approval failed",
+      "rejectionFailed": "Rejection failed",
+      "approvalFailedBody": "Unable to update approval",
+      "cancelFailed": "Cancel failed",
+      "cancelFailedBody": "Unable to cancel the queued comment",
+      "commentFailed": "Comment failed",
+      "commentFailedBody": "Unable to post comment",
+      "interruptRequested": "Interrupt requested",
+      "interruptRequestedBody": "The active run is stopping so queued comments can continue next.",
+      "interruptFailed": "Interrupt failed",
+      "interruptFailedBody": "Unable to interrupt the active run",
+      "queueCanceled": "Queued comment canceled",
+      "queueCanceledBody": "The queued message was restored to the composer.",
+      "feedbackSavedShare": "Feedback saved. Future votes will share",
+      "feedbackSavedLocal": "Feedback saved. Future votes will stay local",
+      "feedbackSavedSharing": "Feedback saved and sharing enabled",
+      "feedbackSaved": "Feedback saved",
+      "feedbackFailed": "Failed to save feedback",
+      "feedbackFailedBody": "Unknown error",
+      "uploadFailed": "Upload failed",
+      "importFailed": "Document import failed",
+      "deleteFailed": "Delete failed",
+      "archived": "Issue archived from inbox",
+      "archiveFailed": "Archive failed",
+      "archiveFailedBody": "Unable to archive this issue from the inbox"
+    }
   }
 }

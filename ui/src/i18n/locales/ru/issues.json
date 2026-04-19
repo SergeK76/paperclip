@@ -6,5 +6,93 @@
     "breadcrumb": "Мои задачи",
     "selectCompany": "Выберите компанию для просмотра ваших задач.",
     "noIssues": "Нет задач, назначенных вам."
+  },
+  "detail": {
+    "breadcrumbFallback": "Задача",
+    "breadcrumbSource": "Задачи",
+    "noProject": "Без проекта",
+    "hiddenBanner": "Эта задача скрыта",
+    "liveBadge": "Live",
+    "routineBadge": "Рутина",
+    "copyMarkdown": "Копировать как markdown",
+    "propertiesTitle": "Свойства",
+    "showProperties": "Показать свойства",
+    "hideIssue": "Скрыть задачу",
+    "descriptionPlaceholder": "Добавьте описание...",
+    "subIssues": "Подзадачи",
+    "newSubIssue": "Новая подзадача",
+    "subIssueLabel": "Подзадача",
+    "uploading": "Загрузка...",
+    "uploadAttachment": "Загрузить файл",
+    "uploadShort": "Загрузить",
+    "attachments": "Вложения",
+    "attachmentAlt": "вложение",
+    "deleteConfirm": "Удалить?",
+    "deleteYes": "Да",
+    "deleteNo": "Нет",
+    "deleteAttachment": "Удалить вложение",
+    "copiedToClipboard": "Скопировано в буфер обмена",
+    "actor": {
+      "system": "Система",
+      "board": "Борд",
+      "unknown": "Неизвестно"
+    },
+    "toolbar": {
+      "backToInbox": "Назад в inbox",
+      "archiveFromInbox": "Архивировать из inbox",
+      "moreActions": "Ещё действия",
+      "copyMarkdown": "Копировать как markdown",
+      "properties": "Свойства",
+      "hideIssue": "Скрыть задачу"
+    },
+    "tabs": {
+      "chat": "Чат",
+      "activity": "Активность"
+    },
+    "chat": {
+      "loadEarlier": "Загрузить ранние комментарии",
+      "loadingEarlier": "Загрузка ранних комментариев..."
+    },
+    "activity": {
+      "costSummary": "Сводка расходов",
+      "noCostData": "Данных о расходах пока нет.",
+      "tokens": "Токены",
+      "tokenIn": "вх.",
+      "tokenOut": "вых.",
+      "tokenCached": "кэш",
+      "noActivity": "Активности пока нет."
+    },
+    "toasts": {
+      "updateFailed": "Ошибка обновления задачи",
+      "updateFailedBody": "Не удалось сохранить изменения задачи",
+      "subUpdateFailedBody": "Не удалось сохранить изменения подзадачи",
+      "approvalApproved": "Одобрение подтверждено",
+      "approvalRejected": "Одобрение отклонено",
+      "approvalFailed": "Ошибка одобрения",
+      "rejectionFailed": "Ошибка отклонения",
+      "approvalFailedBody": "Не удалось обновить одобрение",
+      "cancelFailed": "Ошибка отмены",
+      "cancelFailedBody": "Не удалось отменить комментарий в очереди",
+      "commentFailed": "Ошибка комментария",
+      "commentFailedBody": "Не удалось опубликовать комментарий",
+      "interruptRequested": "Прерывание запрошено",
+      "interruptRequestedBody": "Активный запуск останавливается, чтобы продолжить очередные комментарии.",
+      "interruptFailed": "Ошибка прерывания",
+      "interruptFailedBody": "Не удалось прервать активный запуск",
+      "queueCanceled": "Комментарий из очереди отменён",
+      "queueCanceledBody": "Сообщение восстановлено в композере.",
+      "feedbackSavedShare": "Отзыв сохранён. Будущие голоса будут передаваться",
+      "feedbackSavedLocal": "Отзыв сохранён. Будущие голоса остаются локальными",
+      "feedbackSavedSharing": "Отзыв сохранён, передача включена",
+      "feedbackSaved": "Отзыв сохранён",
+      "feedbackFailed": "Не удалось сохранить отзыв",
+      "feedbackFailedBody": "Неизвестная ошибка",
+      "uploadFailed": "Ошибка загрузки",
+      "importFailed": "Ошибка импорта документа",
+      "deleteFailed": "Ошибка удаления",
+      "archived": "Задача архивирована из inbox",
+      "archiveFailed": "Ошибка архивирования",
+      "archiveFailedBody": "Не удалось архивировать задачу из inbox"
+    }
   }
 }
