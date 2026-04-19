@@ -111,7 +111,29 @@
     "comingSoon": "Скоро",
     "modelDefault": "По умолчанию",
     "modelManual": "Указать модель вручную",
-    "saving": "Сохранение..."
+    "saving": "Сохранение...",
+    "fields": {
+      "name": "Имя",
+      "title": "Должность",
+      "reportsTo": "Подчиняется",
+      "capabilities": "Возможности",
+      "promptTemplate": "Шаблон промпта",
+      "adapterType": "Тип адаптера",
+      "workingDirDeprecated": "Рабочая директория (устарело)",
+      "command": "Команда",
+      "bootstrapPrompt": "Загрузочный промпт (устарело)",
+      "extraArgs": "Доп. аргументы (через запятую)",
+      "envVars": "Переменные окружения",
+      "timeoutSec": "Таймаут (сек)",
+      "graceSec": "Период ожидания прерывания (сек)",
+      "cooldownSec": "Задержка (сек)",
+      "maxConcurrentRuns": "Макс. одновременных запусков",
+      "model": "Модель",
+      "thinkingEffort": "Глубина размышления",
+      "heartbeatOnInterval": "Хартбит по расписанию",
+      "runHeartbeatEvery": "Запускать хартбит каждые",
+      "wakeOnDemand": "Пробуждение по запросу"
+    }
   },
   "detail": {
     "tabs": {

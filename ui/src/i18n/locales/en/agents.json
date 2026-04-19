@@ -109,7 +109,29 @@
     "comingSoon": "Coming soon",
     "modelDefault": "Default",
     "modelManual": "Use manual model",
-    "saving": "Saving..."
+    "saving": "Saving...",
+    "fields": {
+      "name": "Name",
+      "title": "Title",
+      "reportsTo": "Reports to",
+      "capabilities": "Capabilities",
+      "promptTemplate": "Prompt Template",
+      "adapterType": "Adapter type",
+      "workingDirDeprecated": "Working directory (deprecated)",
+      "command": "Command",
+      "bootstrapPrompt": "Bootstrap prompt (legacy)",
+      "extraArgs": "Extra args (comma-separated)",
+      "envVars": "Environment variables",
+      "timeoutSec": "Timeout (sec)",
+      "graceSec": "Interrupt grace period (sec)",
+      "cooldownSec": "Cooldown (sec)",
+      "maxConcurrentRuns": "Max concurrent runs",
+      "model": "Model",
+      "thinkingEffort": "Thinking effort",
+      "heartbeatOnInterval": "Heartbeat on interval",
+      "runHeartbeatEvery": "Run heartbeat every",
+      "wakeOnDemand": "Wake on demand"
+    }
   },
   "detail": {
     "tabs": {
