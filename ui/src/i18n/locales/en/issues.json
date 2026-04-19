@@ -1,4 +1,66 @@
 {
+  "row": {
+    "markAsRead": "Mark as read",
+    "dismissFromInbox": "Dismiss from inbox"
+  },
+  "columns": {
+    "buttonLabel": "Columns",
+    "desktopRows": "Desktop issue rows",
+    "resetDefaults": "Reset defaults",
+    "resetHint": "status, id, updated",
+    "filterByWorkspace": "Filter by workspace",
+    "unassigned": "Unassigned",
+    "noProject": "No project",
+    "subIssue": "Sub-issue",
+    "live": "Live",
+    "labels": {
+      "status": "Status",
+      "id": "ID",
+      "assignee": "Assignee",
+      "project": "Project",
+      "workspace": "Workspace",
+      "parent": "Parent issue",
+      "labels": "Tags",
+      "updated": "Last updated"
+    },
+    "descriptions": {
+      "status": "Issue state chip on the left edge.",
+      "id": "Ticket identifier like PAP-1009.",
+      "assignee": "Assigned agent or board user.",
+      "project": "Linked project pill with its color.",
+      "workspace": "Execution or project workspace used for the issue.",
+      "parent": "Parent issue identifier and title.",
+      "labels": "Issue labels and tags.",
+      "updated": "Latest visible activity time."
+    }
+  },
+  "filters": {
+    "title": "Filters",
+    "clear": "Clear",
+    "filter": "Filter",
+    "activeCount": "Filters: {{count}}",
+    "removeCreator": "Remove creator {{name}}",
+    "quickFilters": "Quick filters",
+    "status": "Status",
+    "priority": "Priority",
+    "assignee": "Assignee",
+    "noAssignee": "No assignee",
+    "me": "Me",
+    "creator": "Creator",
+    "searchCreators": "Search creators...",
+    "noCreatorsMatch": "No creators match.",
+    "project": "Project",
+    "labels": "Labels",
+    "workspace": "Workspace",
+    "visibility": "Visibility",
+    "hideRoutineRuns": "Hide routine runs",
+    "presets": {
+      "All": "All",
+      "Active": "Active",
+      "Backlog": "Backlog",
+      "Done": "Done"
+    }
+  },
   "list": {
     "selectCompany": "Select a company to view issues."
   },

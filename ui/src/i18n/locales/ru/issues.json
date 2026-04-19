@@ -1,4 +1,66 @@
 {
+  "row": {
+    "markAsRead": "Отметить как прочитанное",
+    "dismissFromInbox": "Убрать из inbox"
+  },
+  "columns": {
+    "buttonLabel": "Колонки",
+    "desktopRows": "Строки задач (desktop)",
+    "resetDefaults": "Сбросить по умолчанию",
+    "resetHint": "статус, id, обновлено",
+    "filterByWorkspace": "Фильтр по воркспейсу",
+    "unassigned": "Не назначено",
+    "noProject": "Нет проекта",
+    "subIssue": "Подзадача",
+    "live": "Live",
+    "labels": {
+      "status": "Статус",
+      "id": "ID",
+      "assignee": "Исполнитель",
+      "project": "Проект",
+      "workspace": "Воркспейс",
+      "parent": "Родительская задача",
+      "labels": "Теги",
+      "updated": "Последнее обновление"
+    },
+    "descriptions": {
+      "status": "Чип статуса задачи слева.",
+      "id": "Идентификатор тикета, например PAP-1009.",
+      "assignee": "Назначенный агент или пользователь.",
+      "project": "Связанный проект с цветом.",
+      "workspace": "Воркспейс выполнения или проекта.",
+      "parent": "Идентификатор и заголовок родительской задачи.",
+      "labels": "Метки и теги задачи.",
+      "updated": "Время последней видимой активности."
+    }
+  },
+  "filters": {
+    "title": "Фильтры",
+    "clear": "Очистить",
+    "filter": "Фильтр",
+    "activeCount": "Фильтры: {{count}}",
+    "removeCreator": "Удалить создателя {{name}}",
+    "quickFilters": "Быстрые фильтры",
+    "status": "Статус",
+    "priority": "Приоритет",
+    "assignee": "Исполнитель",
+    "noAssignee": "Не назначено",
+    "me": "Я",
+    "creator": "Создатель",
+    "searchCreators": "Найти создателей...",
+    "noCreatorsMatch": "Создатели не найдены.",
+    "project": "Проект",
+    "labels": "Метки",
+    "workspace": "Воркспейс",
+    "visibility": "Видимость",
+    "hideRoutineRuns": "Скрыть запуски рутин",
+    "presets": {
+      "All": "Все",
+      "Active": "Активные",
+      "Backlog": "Бэклог",
+      "Done": "Завершённые"
+    }
+  },
   "list": {
     "selectCompany": "Выберите компанию для просмотра задач."
   },
