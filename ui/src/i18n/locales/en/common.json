@@ -259,6 +259,12 @@
       "archived": "Archived",
       "otherResults": "Other results"
     },
+    "approve": "Approve",
+    "reject": "Reject",
+    "requestedBy": "requested by {{name}}",
+    "updatedAgo": "updated {{time}}",
+    "requestedFromIp": "requested {{time}} from IP {{ip}}",
+    "adapterType": "adapter: {{type}}",
     "errors": {
       "failedToApprove": "Failed to approve",
       "failedToReject": "Failed to reject",

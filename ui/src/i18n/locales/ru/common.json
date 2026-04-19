@@ -267,6 +267,12 @@
       "archived": "Архив",
       "otherResults": "Другие результаты"
     },
+    "approve": "Одобрить",
+    "reject": "Отклонить",
+    "requestedBy": "запрошено пользователем {{name}}",
+    "updatedAgo": "обновлено {{time}}",
+    "requestedFromIp": "запрошено {{time}} с IP {{ip}}",
+    "adapterType": "адаптер: {{type}}",
     "errors": {
       "failedToApprove": "Не удалось одобрить",
       "failedToReject": "Не удалось отклонить",
