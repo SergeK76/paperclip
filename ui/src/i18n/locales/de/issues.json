@@ -5,7 +5,7 @@
   },
   "columns": {
     "buttonLabel": "Spalten",
-    "desktopRows": "Desktop-Aufgabenzeilen",
+    "desktopRows": "Desktop-Issue-Zeilen",
     "resetDefaults": "Standard zurücksetzen",
     "resetHint": "Status, ID, aktualisiert",
     "filterByWorkspace": "Nach Workspace filtern",
@@ -19,17 +19,17 @@
       "assignee": "Bearbeiter",
       "project": "Projekt",
       "workspace": "Workspace",
-      "parent": "Übergeordnete Aufgabe",
+      "parent": "Übergeordnetes Issue",
       "labels": "Labels",
       "updated": "Zuletzt aktualisiert"
     },
     "descriptions": {
-      "status": "Aufgabenstatus-Chip am linken Rand.",
+      "status": "Issue-Status-Chip am linken Rand.",
       "id": "Ticket-Kennung wie PAP-1009.",
       "assignee": "Zugewiesener Agent oder Board-Benutzer.",
       "project": "Verknüpfte Projekt-Pille mit ihrer Farbe.",
-      "workspace": "Ausführungs- oder Projekt-Workspace für die Aufgabe.",
-      "parent": "Übergeordnete Aufgabenkennung und -titel.",
+      "workspace": "Ausführungs- oder Projekt-Workspace für das Issue.",
+      "parent": "Kennung und Titel des übergeordneten Issues.",
       "labels": "Issue-Labels.",
       "updated": "Neueste sichtbare Aktivitätszeit."
     }
@@ -73,13 +73,13 @@
     "breadcrumbFallback": "Issue",
     "breadcrumbSource": "Issues",
     "noProject": "Kein Projekt",
-    "hiddenBanner": "Diese Aufgabe ist ausgeblendet",
+    "hiddenBanner": "Dieses Issue ist ausgeblendet",
     "liveBadge": "Live",
     "routineBadge": "Routine",
-    "copyMarkdown": "Aufgabe als Markdown kopieren",
+    "copyMarkdown": "Issue als Markdown kopieren",
     "propertiesTitle": "Eigenschaften",
     "showProperties": "Eigenschaften anzeigen",
-    "hideIssue": "Diese Aufgabe ausblenden",
+    "hideIssue": "Dieses Issue ausblenden",
     "descriptionPlaceholder": "Beschreibung hinzufügen...",
     "subIssues": "Teilaufgaben",
     "newSubIssue": "Neue Teilaufgabe",
@@ -105,7 +105,7 @@
       "moreActions": "Weitere Aktionen",
       "copyMarkdown": "Als Markdown kopieren",
       "properties": "Eigenschaften",
-      "hideIssue": "Diese Aufgabe ausblenden"
+      "hideIssue": "Dieses Issue ausblenden"
     },
     "tabs": {
       "chat": "Chat",
@@ -125,8 +125,8 @@
       "noActivity": "Noch keine Aktivität."
     },
     "toasts": {
-      "updateFailed": "Aufgabe aktualisieren fehlgeschlagen",
-      "updateFailedBody": "Aufgabenänderungen konnten nicht gespeichert werden",
+      "updateFailed": "Issue-Aktualisierung fehlgeschlagen",
+      "updateFailedBody": "Issue-Änderungen konnten nicht gespeichert werden",
       "subUpdateFailedBody": "Teilaufgaben-Änderungen konnten nicht gespeichert werden",
       "approvalApproved": "Genehmigung erteilt",
       "approvalRejected": "Genehmigung abgelehnt",
@@ -152,9 +152,9 @@
       "uploadFailed": "Upload fehlgeschlagen",
       "importFailed": "Dokument-Import fehlgeschlagen",
       "deleteFailed": "Löschen fehlgeschlagen",
-      "archived": "Aufgabe aus Posteingang archiviert",
+      "archived": "Issue aus Posteingang archiviert",
       "archiveFailed": "Archivieren fehlgeschlagen",
-      "archiveFailedBody": "Diese Aufgabe konnte nicht aus dem Posteingang archiviert werden"
+      "archiveFailedBody": "Dieses Issue konnte nicht aus dem Posteingang archiviert werden"
     }
   },
   "properties": {
@@ -179,7 +179,7 @@
     "requester": "Antragsteller",
     "noProject": "Kein Projekt",
     "searchProjects": "Projekte suchen...",
-    "searchIssues": "Aufgaben suchen...",
+    "searchIssues": "Issues suchen...",
     "noParent": "Kein übergeordnetes Element",
     "noBlockers": "Keine Blocker",
     "runReviewNow": "Prüfung jetzt ausführen",
@@ -222,7 +222,7 @@
     }
   },
   "newIssue": {
-    "titlePlaceholder": "Aufgabentitel",
+    "titlePlaceholder": "Issue-Titel",
     "for": "Für",
     "assigneePlaceholder": "Bearbeiter",
     "noAssignee": "Kein Bearbeiter",
@@ -244,14 +244,14 @@
     "noApproversFound": "Keine Genehmiger gefunden.",
     "subIssueOf": "Teilaufgabe von",
     "newSubIssue": "Neue Teilaufgabe",
-    "newIssue": "Neue Aufgabe",
+    "newIssue": "Neues Issue",
     "executionWorkspaceTitle": "Ausführungs-Workspace",
-    "executionWorkspaceDesc": "Steuern Sie, ob diese Aufgabe im gemeinsamen Workspace, einem neuen isolierten Workspace oder einem bestehenden ausgeführt wird.",
+    "executionWorkspaceDesc": "Steuern Sie, ob dieses Issue im gemeinsamen Workspace, einem neuen isolierten Workspace oder einem bestehenden ausgeführt wird.",
     "chooseWorkspace": "Bestehenden Workspace auswählen",
     "reusingWorkspace": "{{name}} von {{location}} wird wiederverwendet.",
     "existingWorkspace": "bestehender Ausführungs-Workspace",
-    "parentWorkspaceWarning": "Warnung: Diese Teilaufgabe verwendet nicht mehr den übergeordneten Aufgaben-Workspace.",
-    "parentWorkspaceWarningWithLabel": "Warnung: Diese Teilaufgabe verwendet nicht mehr den übergeordneten Aufgaben-Workspace ({{label}}).",
+    "parentWorkspaceWarning": "Warnung: Diese Teilaufgabe verwendet nicht mehr den übergeordneten Issue-Workspace.",
+    "parentWorkspaceWarningWithLabel": "Warnung: Diese Teilaufgabe verwendet nicht mehr den übergeordneten Issue-Workspace ({{label}}).",
     "model": "Modell",
     "defaultModel": "Standardmodell",
     "searchModels": "Modelle suchen...",
@@ -266,11 +266,11 @@
     "startDate": "Startdatum",
     "dueDate": "Fälligkeitsdatum",
     "discardDraft": "Entwurf verwerfen",
-    "creatingIssue": "Aufgabe wird erstellt...",
+    "creatingIssue": "Issue wird erstellt...",
     "creating": "Wird erstellt...",
     "createSubIssue": "Teilaufgabe erstellen",
-    "createIssueBtn": "Aufgabe erstellen",
-    "createErrorFallback": "Aufgabe konnte nicht erstellt werden. Erneut versuchen.",
+    "createIssueBtn": "Issue erstellen",
+    "createErrorFallback": "Issue konnte nicht erstellt werden. Erneut versuchen.",
     "uploadWarningTitle": "{{ref}} mit Upload-Warnungen erstellt",
     "uploadWarningBody_one": "{{count}} bereitgestellte Datei konnte nicht hinzugefügt werden.",
     "uploadWarningBody_other": "{{count}} bereitgestellte Dateien konnten nicht hinzugefügt werden.",
@@ -311,7 +311,7 @@
   "issueChatThread": {
     "fallback": {
       "rendererError": "Chat-Renderer hat einen internen Statusfehler getroffen.",
-      "rendererErrorHint": "Es wird ein sicheres Fallback-Transkript anstelle eines Absturzes der Aufgabenseite angezeigt.",
+      "rendererErrorHint": "Es wird ein sicheres Fallback-Transkript anstelle eines Absturzes der Issue-Seite angezeigt.",
       "noContent": "Kein Nachrichteninhalt."
     },
     "author": {
@@ -396,11 +396,11 @@
     "thread": {
       "jumpToLatest": "Zum Neuesten springen",
       "emptyEmbedded": "Noch keine Ausführungsausgabe.",
-      "emptyFull": "Diese Aufgabenkonversation ist leer. Beginnen Sie mit einer Nachricht unten."
+      "emptyFull": "Dieses Issue-Gespräch ist leer. Beginnen Sie mit einer Nachricht unten."
     }
   },
   "linkQuicklook": {
-    "unableToLoad": "Aufgabenvorschau konnte nicht geladen werden."
+    "unableToLoad": "Issue-Vorschau konnte nicht geladen werden."
   },
   "issueWorkspaceCard": {
     "actions": {
@@ -433,9 +433,9 @@
       "current": "Aktuell:"
     },
     "empty": {
-      "isolated_workspace": "Ein neuer isolierter Workspace wird erstellt, wenn diese Aufgabe ausgeführt wird.",
-      "reuse_existing": "Diese Aufgabe verwendet einen bestehenden Workspace, wenn sie ausgeführt wird.",
-      "default": "Diese Aufgabe verwendet die Standard-Workspace-Konfiguration des Projekts, wenn sie ausgeführt wird."
+      "isolated_workspace": "Ein neuer isolierter Workspace wird erstellt, wenn dieses Issue ausgeführt wird.",
+      "reuse_existing": "Dieses Issue verwendet einen bestehenden Workspace, wenn es ausgeführt wird.",
+      "default": "Dieses Issue verwendet die Standard-Workspace-Konfiguration des Projekts, wenn es ausgeführt wird."
     },
     "select": {
       "chooseWorkspace": "Bestehenden Workspace auswählen"
@@ -516,7 +516,7 @@
       "priority": "Priorität",
       "assignee": "Bearbeiter",
       "workspace": "Workspace",
-      "parentIssue": "Übergeordnete Aufgabe",
+      "parentIssue": "Übergeordnetes Issue",
       "none": "Keine"
     },
     "groups": {
@@ -530,7 +530,7 @@
       "me": "Ich"
     },
     "empty": {
-      "noMatches": "Keine Aufgaben entsprechen den aktuellen Filtern oder der Suche."
+      "noMatches": "Keine Issues entsprechen den aktuellen Filtern oder der Suche."
     },
     "assignee": {
       "placeholder": "Bearbeiter",
@@ -540,7 +540,7 @@
     },
     "subTasksCount_one": "{{count}} Teilaufgabe",
     "subTasksCount_other": "{{count}} Teilaufgaben",
-    "renderingCounter": "{{rendered}} von {{total}} Aufgaben werden gerendert"
+    "renderingCounter": "{{rendered}} von {{total}} Issues werden gerendert"
   },
   "issueDocuments": {
     "header": {

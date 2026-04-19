@@ -10,7 +10,7 @@
   },
   "charts": {
     "noRuns": "Noch keine Ausführungen",
-    "noIssues": "Keine Aufgaben",
+    "noIssues": "Keine Issues",
     "statusLabels": {
       "todo": "Zu erledigen",
       "in_progress": "In Bearbeitung",

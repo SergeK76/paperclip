@@ -54,7 +54,7 @@
     "noAgentEvents": "Noch keine Kostenereignisse.",
     "financeTimelineEmpty": "Noch keine Finanzereignisse. Kontoebene-Gebühren hinzufügen, sobald Abrechner-Rechnungen oder Gutschriften eingehen.",
     "byProject": "Nach Projekt",
-    "byProjectDesc": "Ausführungskosten, die über projektgebundene Aufgaben zugeordnet werden.",
+    "byProjectDesc": "Ausführungskosten, die über projektgebundene Issues zugeordnet werden.",
     "noProjectEvents": "Noch keine projektzugeordneten Ausführungskosten.",
     "unattributed": "Nicht zugeordnet"
   },

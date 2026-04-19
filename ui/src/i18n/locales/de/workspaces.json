@@ -9,7 +9,7 @@
   "exec": {
     "backBtn": "Zurück zu allen Workspaces",
     "sectionLabel": "Ausführungs-Workspace",
-    "description": "Konfigurieren Sie den konkreten Laufzeit-Workspace, den Paperclip für diesen Aufgabenablauf wiederverwendet.",
+    "description": "Konfigurieren Sie den konkreten Laufzeit-Workspace, den Paperclip für diesen Issue-Flow wiederverwendet.",
     "descriptionExtra": " Diese Einstellungen bleiben dem Ausführungs-Workspace angehängt, damit zukünftige Ausführungen lokale Pfade, Repo-Refs, Bereitstellung, Abbau und Laufzeit-Service-Verhalten mit dem tatsächlich wiederverwendeten Workspace synchron halten können.",
     "commandsLabel": "Workspace-Befehle",
     "commandsTitle": "Services und Jobs",
@@ -26,7 +26,7 @@
     "tabs": {
       "configuration": "Konfiguration",
       "runtimeLogs": "Laufzeitprotokolle",
-      "issues": "Aufgaben"
+      "issues": "Issues"
     },
     "config": {
       "sectionLabel": "Konfiguration",
@@ -216,7 +216,7 @@
       "closeFailed": "Workspace konnte nicht geschlossen werden",
       "unknownError": "Unbekannter Fehler"
     },
-    "description": "{{name}} archivieren und alle eigenen Workspace-Artefakte bereinigen. Paperclip behält den Workspace-Eintrag und die Aufgabenhistorie, entfernt ihn aber aus aktiven Workspace-Ansichten.",
+    "description": "{{name}} archivieren und alle eigenen Workspace-Artefakte bereinigen. Paperclip behält den Workspace-Eintrag und die Issue-Historie, entfernt ihn aber aus aktiven Workspace-Ansichten.",
     "checkingReadiness": "Wird geprüft, ob dieser Workspace sicher geschlossen werden kann...",
     "readinessError": "Workspace-Schließ-Bereitschaft konnte nicht überprüft werden.",
     "state": {
@@ -231,11 +231,11 @@
       "disposable": "Dieser Workspace ist verfügbar und kann archiviert werden."
     },
     "sections": {
-      "blockingIssues": "Blockierende Aufgaben",
+      "blockingIssues": "Blockierende Issues",
       "blockingReasons": "Blockierende Gründe",
       "warnings": "Warnungen",
       "gitStatus": "Git-Status",
-      "otherIssues": "Andere verknüpfte Aufgaben",
+      "otherIssues": "Andere verknüpfte Issues",
       "runtimeServices": "Angehängte Laufzeit-Services",
       "cleanupActions": "Bereinigungsaktionen"
     },

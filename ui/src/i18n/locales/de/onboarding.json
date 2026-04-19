@@ -148,7 +148,7 @@
     },
     "step4": {
       "title": "Bereit zum Starten",
-      "description": "Alles ist eingerichtet. Das Starten jetzt erstellt die Starteraufgabe, weckt den Agenten und öffnet die Aufgabe.",
+      "description": "Alles ist eingerichtet. Das Starten jetzt erstellt die Starteraufgabe, weckt den Agenten und öffnet das Issue.",
       "labelCompany": "Unternehmen",
       "labelTask": "Aufgabe"
     },
@@ -156,7 +156,7 @@
       "back": "Zurück",
       "next": "Weiter",
       "creating": "Wird erstellt...",
-      "createAndOpenIssue": "Erstellen & Aufgabe öffnen"
+      "createAndOpenIssue": "Erstellen & Issue öffnen"
     },
     "envResult": {
       "passed": "Bestanden",

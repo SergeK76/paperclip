@@ -15,20 +15,20 @@
     "fallback": "Genehmigung",
     "notFound": "Genehmigung nicht gefunden.",
     "cta": {
-      "reviewLinkedIssues": "Verknüpfte Aufgaben prüfen",
-      "reviewLinkedIssue": "Verknüpfte Aufgabe prüfen",
+      "reviewLinkedIssues": "Verknüpfte Issues prüfen",
+      "reviewLinkedIssue": "Verknüpftes Issue prüfen",
       "openHiredAgent": "Eingestellten Agenten öffnen",
       "backToApprovals": "Zurück zu den Genehmigungen"
     },
     "approvedBanner": {
       "title": "Genehmigung bestätigt",
-      "description": "Der anfragende Agent wurde benachrichtigt, diese Genehmigung und verknüpfte Aufgaben zu prüfen."
+      "description": "Der anfragende Agent wurde benachrichtigt, diese Genehmigung und verknüpfte Issues zu prüfen."
     },
     "requestedBy": "Angefragt von",
     "seeFullRequest": "Vollständige Anfrage anzeigen",
     "decisionNote": "Entscheidungsnotiz: {{note}}",
-    "linkedIssues": "Verknüpfte Aufgaben",
-    "linkedIssuesNote": "Verknüpfte Aufgaben bleiben offen, bis der anfragende Agent nachfasst und sie schließt.",
+    "linkedIssues": "Verknüpfte Issues",
+    "linkedIssuesNote": "Verknüpfte Issues bleiben offen, bis der anfragende Agent nachfasst und sie schließt.",
     "approve": "Genehmigen",
     "reject": "Ablehnen",
     "budgetStop": "Lösen Sie diesen Budget-Stopp über die Budgetkontrollen auf",

@@ -44,7 +44,7 @@
       "path": "Pfad",
       "pathCopied": "Pfad kopiert",
       "service": "Service",
-      "linkedIssues": "Verknüpfte Aufgaben",
+      "linkedIssues": "Verknüpfte Issues",
       "moreIssues": "+{{count}} mehr"
     },
     "buttons": {
@@ -65,7 +65,7 @@
       "selectColor": "Farbe {{color}} auswählen"
     },
     "tabs": {
-      "issues": "Aufgaben",
+      "issues": "Issues",
       "overview": "Übersicht",
       "workspaces": "Workspaces",
       "configuration": "Konfiguration",
@@ -144,13 +144,13 @@
     },
     "executionWorkspace": {
       "title": "Ausführungs-Workspaces",
-      "helpTooltip": "Projektweite Standards für isolierte Aufgaben-Checkouts und Ausführungs-Workspace-Verhalten.",
-      "enableTitle": "Isolierte Aufgaben-Checkouts aktivieren",
-      "enableDescription": "Erlauben Sie Aufgaben, zwischen dem primären Checkout des Projekts und einem isolierten Ausführungs-Workspace zu wählen.",
+      "helpTooltip": "Projektweite Standards für isolierte Issue-Checkouts und Ausführungs-Workspace-Verhalten.",
+      "enableTitle": "Isolierte Issue-Checkouts aktivieren",
+      "enableDescription": "Erlauben Sie Issues, zwischen dem primären Checkout des Projekts und einem isolierten Ausführungs-Workspace zu wählen.",
       "enabled": "Aktiviert",
       "disabled": "Deaktiviert",
-      "defaultIsolatedTitle": "Neue Aufgaben standardmäßig als isolierter Checkout",
-      "defaultIsolatedDescription": "Wenn deaktiviert, bleiben neue Aufgaben beim primären Checkout des Projekts, sofern sich niemand manuell entscheidet.",
+      "defaultIsolatedTitle": "Neue Issues standardmäßig als isolierter Checkout",
+      "defaultIsolatedDescription": "Wenn deaktiviert, bleiben neue Issues beim primären Checkout des Projekts, sofern sich niemand manuell entscheidet.",
       "showAdvanced": "Erweiterte Checkout-Einstellungen anzeigen",
       "hideAdvanced": "Erweiterte Checkout-Einstellungen ausblenden",
       "implementation": "Host-verwaltete Implementierung: Git-Worktree",

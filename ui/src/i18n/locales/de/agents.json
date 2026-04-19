@@ -154,15 +154,15 @@
     "viewDetails": "Details anzeigen →",
     "charts": {
       "runActivity": "Ausführungsaktivität",
-      "issuesByPriority": "Aufgaben nach Priorität",
-      "issuesByStatus": "Aufgaben nach Status",
+      "issuesByPriority": "Issues nach Priorität",
+      "issuesByStatus": "Issues nach Status",
       "successRate": "Erfolgsrate",
       "last14Days": "Letzte 14 Tage"
     },
-    "recentIssues": "Aktuelle Aufgaben",
+    "recentIssues": "Aktuelle Issues",
     "seeAll": "Alle anzeigen →",
-    "noRecentIssues": "Keine aktuellen Aufgaben.",
-    "moreIssues": "+{{count}} weitere Aufgaben",
+    "noRecentIssues": "Keine aktuellen Issues.",
+    "moreIssues": "+{{count}} weitere Issues",
     "costs": {
       "title": "Kosten",
       "inputTokens": "Eingabe-token",
@@ -249,7 +249,7 @@
     },
     "liveRun": {
       "title": "Live-Ausführungen",
-      "devNote": "Verwendet die gemeinsame chat-ähnliche Ausführungsoberfläche aus der Aufgabenaktivität.",
+      "devNote": "Verwendet die gemeinsame chat-ähnliche Ausführungsoberfläche aus der Issue-Aktivität.",
       "stopping": "Wird gestoppt…",
       "stop": "Stoppen",
       "openRun": "Ausführung öffnen"

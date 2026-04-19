@@ -108,7 +108,7 @@
     "claimedApiKeyPath": "Beanspruchter API-Schlüssel-Pfad",
     "sessionStrategy": "Session-Strategie",
     "sessionStrategyFixed": "Fest",
-    "sessionStrategyIssue": "Pro Aufgabe",
+    "sessionStrategyIssue": "Pro Issue",
     "sessionStrategyRun": "Pro Ausführung",
     "sessionKey": "Session-Schlüssel",
     "gatewayAuthToken": "Gateway-Auth-token (x-openclaw-token)",

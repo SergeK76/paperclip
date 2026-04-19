@@ -63,7 +63,7 @@
       },
       "keyboardShortcuts": {
         "title": "Tastaturkürzel",
-        "description": "App-Tastaturkürzel aktivieren, einschließlich Posteingangsnavigation und globale Kürzel wie das Erstellen von Aufgaben oder das Umschalten von Panels. Dies ist standardmäßig deaktiviert.",
+        "description": "App-Tastaturkürzel aktivieren, einschließlich Posteingangsnavigation und globale Kürzel wie das Erstellen von Issues oder das Umschalten von Panels. Dies ist standardmäßig deaktiviert.",
         "ariaLabel": "Tastaturkürzel umschalten"
       },
       "backupRetention": {
@@ -144,7 +144,7 @@
       "description": "Opt-in für Funktionen, die noch evaluiert werden, bevor sie zum Standardverhalten werden.",
       "isolatedWorkspaces": {
         "title": "Isolierte Workspaces aktivieren",
-        "description": "Ausführungs-Workspace-Kontrollen in der Projektkonfiguration anzeigen und isoliertes Workspace-Verhalten für neue und bestehende Aufgabenausführungen erlauben.",
+        "description": "Ausführungs-Workspace-Kontrollen in der Projektkonfiguration anzeigen und isoliertes Workspace-Verhalten für neue und bestehende Issue-Ausführungen erlauben.",
         "ariaLabel": "Experimentelle Einstellung für isolierte Workspaces umschalten"
       },
       "autoRestart": {
@@ -522,7 +522,7 @@
       "button_other": "{{count}} Dateien exportieren",
       "packageFiles": "Paketdateien",
       "searchFiles": "Dateien suchen...",
-      "showMoreIssues": "Weitere Aufgaben anzeigen ({{visible}} von {{total}})",
+      "showMoreIssues": "Weitere Issues anzeigen ({{visible}} von {{total}})",
       "previewEmpty": "Wählen Sie eine Datei aus, um ihren Inhalt zu sehen.",
       "binaryPreview": "Binäre Asset-Vorschau ist für diesen Dateityp nicht verfügbar.",
       "toasts": {
