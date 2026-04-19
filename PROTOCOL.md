@@ -18,3 +18,8 @@
 - Изменения в `IssueRow.tsx`: добавлен `useTranslation("issues")`, 2 aria-label заменены на `t()`
 - Изменения в `IssueColumns.tsx`: добавлен `useTranslation("issues")`, объекты `issueColumnLabels`/`issueColumnDescriptions` заменены на `t()`, все статические строки извлечены
 - Изменения в `IssueFiltersPopover.tsx`: добавлен `useTranslation("issues")`, все видимые строки и aria-labels заменены на `t()`
+- Обновлён `ui/src/i18n/locales/en/issues.json` — добавлены те же ключи на английском
+- JSON валидация: OK (python3 -m json.tool)
+- Коммит: `b4b9f08c` — feat(ui/i18n): extract Batch A — IssueRow, IssueColumns, IssueFiltersPopover
+- Push: origin feature/i18n-russian
+- Деплой: git pull + pnpm build (52с) + systemctl restart → 200 OK
