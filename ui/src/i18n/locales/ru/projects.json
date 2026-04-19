@@ -11,7 +11,7 @@
     },
     "fields": {
       "namePlaceholder": "Название проекта",
-      "descriptionPlaceholder": "Добавить описание...",
+      "descriptionPlaceholder": "Добавить описание…",
       "repoUrl": "URL репозитория",
       "optional": "необязательно",
       "repoUrlTooltip": "Привяжите GitHub-репозиторий, чтобы агенты могли клонировать, читать и пушить код для этого проекта.",
@@ -55,7 +55,7 @@
     }
   },
   "detail": {
-    "descriptionPlaceholder": "Добавить описание...",
+    "descriptionPlaceholder": "Добавить описание…",
     "overview": {
       "status": "Статус",
       "targetDate": "Целевая дата"
@@ -72,7 +72,7 @@
       "budget": "Бюджет"
     },
     "pausedByBudget": "Остановлен бюджетным лимитом",
-    "loadingWorkspaces": "Загрузка воркспейсов...",
+    "loadingWorkspaces": "Загрузка воркспейсов…",
     "noWorkspaceActivity": "Активности воркспейсов пока нет.",
     "cleanupNeeded": "Требуется очистка",
     "archived": "«{{name}}» заархивирован",
@@ -106,7 +106,7 @@
     },
     "placeholders": {
       "projectName": "Название проекта",
-      "addDescription": "Добавить описание...",
+      "addDescription": "Добавить описание…",
       "noDescription": "Нет описания",
       "localPath": "/абсолютный/путь/к/папке",
       "repoUrl": "https://github.com/org/repo"
@@ -164,8 +164,8 @@
     "archive": {
       "archiveDescription": "Заархивируйте проект, чтобы скрыть его из боковой панели и списков выбора проекта.",
       "unarchiveDescription": "Разархивируйте проект, чтобы восстановить его в боковой панели и списках выбора.",
-      "archiving": "Архивирование...",
-      "unarchiving": "Разархивирование...",
+      "archiving": "Архивирование…",
+      "unarchiving": "Разархивирование…",
       "confirmPrompt": "{{action}} «{{name}}»?",
       "archiveProject": "Архивировать проект",
       "unarchiveProject": "Разархивировать проект"

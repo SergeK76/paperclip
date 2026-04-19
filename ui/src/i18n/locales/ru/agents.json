@@ -58,7 +58,7 @@
     "created": "Создан"
   },
   "iconPicker": {
-    "searchPlaceholder": "Поиск иконок...",
+    "searchPlaceholder": "Поиск иконок…",
     "noMatch": "Иконки не найдены"
   },
   "dialog": {
@@ -96,7 +96,7 @@
   },
   "config": {
     "unsavedChanges": "Несохранённые изменения",
-    "testing": "Тестирование...",
+    "testing": "Тестирование…",
     "testEnvironment": "Тест окружения",
     "envPassed": "Пройдено",
     "envWarnings": "Предупреждения",
@@ -111,7 +111,7 @@
     "comingSoon": "Скоро",
     "modelDefault": "По умолчанию",
     "modelManual": "Указать модель вручную",
-    "saving": "Сохранение...",
+    "saving": "Сохранение…",
     "fields": {
       "name": "Имя",
       "title": "Должность",
@@ -204,8 +204,8 @@
     },
     "skills": {
       "viewLibrary": "Просмотр библиотеки навыков компании",
-      "saving": "Сохранение изменений...",
-      "savingSoon": "Скоро сохранится...",
+      "saving": "Сохранение изменений…",
+      "savingSoon": "Скоро сохранится…",
       "skillLocation": "Расположение: {{location}}",
       "importFirst": "Сначала импортируйте навыки в библиотеку компании, затем прикрепите их здесь.",
       "requiredByPaperclip": "Обязательные навыки Paperclip",
@@ -227,7 +227,7 @@
       "environment": "Окружение",
       "showLog": "Показать полный лог",
       "hideLog": "Скрыть полный лог",
-      "loadingLog": "Загрузка лога...",
+      "loadingLog": "Загрузка лога…",
       "noLog": "Нет сохранённых строк лога.",
       "failedToLoad": "Не удалось загрузить лог операции воркспейса"
     },
@@ -270,7 +270,7 @@
       "duration": "Длительность:",
       "exitCode": "Код выхода {{code}}",
       "loginClaude": "Войти в Claude Code",
-      "loggingIn": "Выполняется claude login...",
+      "loggingIn": "Выполняется claude login…",
       "loginUrl": "URL для входа:"
     }
   }

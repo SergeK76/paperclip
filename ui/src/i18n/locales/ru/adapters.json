@@ -24,18 +24,18 @@
     "packageLabel": "Пакет",
     "currentLabel": "Текущая",
     "latestLabel": "Последняя в npm",
-    "checking": "проверяем...",
+    "checking": "проверяем…",
     "unavailable": "недоступно",
     "upToDate": "Уже последняя версия.",
     "cancel": "Отмена",
-    "reinstalling": "Переустановка...",
+    "reinstalling": "Переустановка…",
     "reinstall": "Переустановить"
   },
   "breadcrumb": {
     "settings": "Настройки",
     "adapters": "Адаптеры"
   },
-  "loading": "Загрузка адаптеров...",
+  "loading": "Загрузка адаптеров…",
   "title": "Адаптеры",
   "installBtn": "Установить адаптер",
   "installDialog": {
@@ -48,7 +48,7 @@
     "packageNameLabel": "Имя пакета",
     "versionLabel": "Версия (необязательно)",
     "cancel": "Отмена",
-    "installing": "Установка...",
+    "installing": "Установка…",
     "install": "Установить"
   },
   "alpha": {
@@ -71,7 +71,7 @@
     "npmCleanup": " npm-пакеты будут удалены с диска.",
     "cannotUndo": "Это действие необратимо.",
     "cancel": "Отмена",
-    "removing": "Удаление...",
+    "removing": "Удаление…",
     "remove": "Удалить"
   },
   "toasts": {

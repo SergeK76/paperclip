@@ -1,7 +1,7 @@
 {
   "row": {
     "markAsRead": "Отметить как прочитанное",
-    "dismissFromInbox": "Убрать из inbox"
+    "dismissFromInbox": "Убрать из входящих"
   },
   "columns": {
     "buttonLabel": "Колонки",
@@ -47,7 +47,7 @@
     "noAssignee": "Не назначено",
     "me": "Я",
     "creator": "Создатель",
-    "searchCreators": "Найти создателей...",
+    "searchCreators": "Найти создателей…",
     "noCreatorsMatch": "Создатели не найдены.",
     "project": "Проект",
     "labels": "Метки",
@@ -80,11 +80,11 @@
     "propertiesTitle": "Свойства",
     "showProperties": "Показать свойства",
     "hideIssue": "Скрыть задачу",
-    "descriptionPlaceholder": "Добавьте описание...",
+    "descriptionPlaceholder": "Добавьте описание…",
     "subIssues": "Подзадачи",
     "newSubIssue": "Новая подзадача",
     "subIssueLabel": "Подзадача",
-    "uploading": "Загрузка...",
+    "uploading": "Загрузка…",
     "uploadAttachment": "Загрузить файл",
     "uploadShort": "Загрузить",
     "attachments": "Вложения",
@@ -100,8 +100,8 @@
       "unknown": "Неизвестно"
     },
     "toolbar": {
-      "backToInbox": "Назад в inbox",
-      "archiveFromInbox": "Архивировать из inbox",
+      "backToInbox": "Назад во входящие",
+      "archiveFromInbox": "Архивировать из входящих",
       "moreActions": "Ещё действия",
       "copyMarkdown": "Копировать как markdown",
       "properties": "Свойства",
@@ -113,7 +113,7 @@
     },
     "chat": {
       "loadEarlier": "Загрузить ранние комментарии",
-      "loadingEarlier": "Загрузка ранних комментариев..."
+      "loadingEarlier": "Загрузка ранних комментариев…"
     },
     "activity": {
       "costSummary": "Сводка расходов",
@@ -152,9 +152,9 @@
       "uploadFailed": "Ошибка загрузки",
       "importFailed": "Ошибка импорта документа",
       "deleteFailed": "Ошибка удаления",
-      "archived": "Задача архивирована из inbox",
+      "archived": "Задача архивирована из входящих",
       "archiveFailed": "Ошибка архивирования",
-      "archiveFailedBody": "Не удалось архивировать задачу из inbox"
+      "archiveFailedBody": "Не удалось архивировать задачу из входящих"
     }
   },
   "properties": {
@@ -162,24 +162,24 @@
     "clickToCopy": "Нажмите, чтобы скопировать",
     "noLabels": "Нет меток",
     "addLabel": "Добавить метку",
-    "searchLabels": "Поиск меток...",
+    "searchLabels": "Поиск меток…",
     "newLabelPlaceholder": "Новая метка",
     "creatingLabel": "Создание…",
     "createLabel": "Создать метку",
     "unassigned": "Не назначено",
-    "searchAssignees": "Поиск исполнителей...",
+    "searchAssignees": "Поиск исполнителей…",
     "noAssignee": "Не назначено",
     "assignToMe": "Назначить себе",
     "assignTo": "Назначить {{name}}",
     "assignToRequester": "Назначить заявителю",
-    "searchReviewers": "Поиск рецензентов...",
-    "searchApprovers": "Поиск утверждающих...",
+    "searchReviewers": "Поиск рецензентов…",
+    "searchApprovers": "Поиск утверждающих…",
     "noReviewers": "Нет рецензентов",
     "noApprovers": "Нет утверждающих",
     "requester": "Заявитель",
     "noProject": "Нет проекта",
-    "searchProjects": "Поиск проектов...",
-    "searchIssues": "Поиск задач...",
+    "searchProjects": "Поиск проектов…",
+    "searchIssues": "Поиск задач…",
     "noParent": "Нет родителя",
     "noBlockers": "Нет блокеров",
     "runReviewNow": "Запустить ревью сейчас",
@@ -226,21 +226,21 @@
     "for": "Для",
     "assigneePlaceholder": "Исполнитель",
     "noAssignee": "Не назначено",
-    "searchAssignees": "Поиск исполнителей...",
+    "searchAssignees": "Поиск исполнителей…",
     "noAssigneesFound": "Исполнители не найдены.",
     "in": "в",
     "projectPlaceholder": "Проект",
     "noProject": "Нет проекта",
-    "searchProjects": "Поиск проектов...",
+    "searchProjects": "Поиск проектов…",
     "noProjectsFound": "Проекты не найдены.",
     "addParticipantTitle": "Добавить рецензента или утверждающего",
     "reviewer": "Рецензент",
     "approver": "Утверждающий",
     "noReviewer": "Нет рецензента",
-    "searchReviewers": "Поиск рецензентов...",
+    "searchReviewers": "Поиск рецензентов…",
     "noReviewersFound": "Рецензенты не найдены.",
     "noApprover": "Нет утверждающего",
-    "searchApprovers": "Поиск утверждающих...",
+    "searchApprovers": "Поиск утверждающих…",
     "noApproversFound": "Утверждающие не найдены.",
     "subIssueOf": "Подзадача",
     "newSubIssue": "Новая подзадача",
@@ -254,7 +254,7 @@
     "parentWorkspaceWarningWithLabel": "Внимание: подзадача больше не будет использовать воркспейс родительской задачи ({{label}}).",
     "model": "Модель",
     "defaultModel": "Модель по умолчанию",
-    "searchModels": "Поиск моделей...",
+    "searchModels": "Поиск моделей…",
     "noModelsFound": "Модели не найдены.",
     "thinkingEffort": "Интенсивность мышления",
     "enableChrome": "Включить Chrome (--chrome)",
@@ -266,8 +266,8 @@
     "startDate": "Дата начала",
     "dueDate": "Срок выполнения",
     "discardDraft": "Удалить черновик",
-    "creatingIssue": "Создание задачи...",
-    "creating": "Создание...",
+    "creatingIssue": "Создание задачи…",
+    "creating": "Создание…",
     "createSubIssue": "Создать подзадачу",
     "createIssueBtn": "Создать задачу",
     "createErrorFallback": "Не удалось создать задачу. Попробуйте снова.",
@@ -277,7 +277,7 @@
     "uploadWarningBody_many": "{{count}} файлов не удалось добавить.",
     "uploadWarningBody_other": "{{count}} файлов не удалось добавить.",
     "openIssue": "Открыть {{ref}}",
-    "descriptionPlaceholder": "Добавьте описание...",
+    "descriptionPlaceholder": "Добавьте описание…",
     "agentOptions": "Параметры агента",
     "claudeOptions": "Параметры Claude",
     "codexOptions": "Параметры Codex",
@@ -348,10 +348,10 @@
     },
     "userMessage": {
       "queued": "В очереди",
-      "interrupting": "Прерывание...",
+      "interrupting": "Прерывание…",
       "interrupt": "Прервать",
       "cancel": "Отмена",
-      "sending": "Отправка...",
+      "sending": "Отправка…",
       "copyMessage": "Копировать сообщение"
     },
     "assistantMessage": {
@@ -368,7 +368,7 @@
       "betterPrompt": "Что можно было сделать лучше?",
       "notePlaceholder": "Добавьте короткую заметку",
       "dismiss": "Закрыть",
-      "saving": "Сохранение...",
+      "saving": "Сохранение…",
       "saveNote": "Сохранить заметку",
       "sharingDialogTitle": "Сохранить настройку передачи отзывов",
       "sharingDialogDesc": "Выберите, можно ли передавать результаты ИИ, за которые вы голосуете, в Paperclip Labs. Этот выбор станет значением по умолчанию для будущих голосов.",
@@ -384,7 +384,7 @@
       "alwaysAllow": "Всегда разрешать"
     },
     "systemMessage": {
-      "updatedTask": "обновил(а) эту задачу",
+      "updatedTask": "обновил эту задачу",
       "statusLabel": "Статус",
       "assigneeLabel": "Исполнитель",
       "run": "запуск"
@@ -394,9 +394,9 @@
       "attachImage": "Прикрепить изображение",
       "assignee": "Исполнитель",
       "noAssignee": "Не назначено",
-      "searchAssignees": "Поиск исполнителей...",
+      "searchAssignees": "Поиск исполнителей…",
       "noAssigneesFound": "Исполнители не найдены.",
-      "posting": "Отправка...",
+      "posting": "Отправка…",
       "send": "Отправить"
     },
     "thread": {
@@ -455,21 +455,21 @@
       "queuedComments": "Комментарии в очереди ({{count}})",
       "status": "Статус",
       "assignee": "Исполнитель",
-      "updatedTask": "обновил(а) эту задачу"
+      "updatedTask": "обновил эту задачу"
     },
     "composer": {
-      "placeholder": "Оставить комментарий...",
+      "placeholder": "Оставить комментарий…",
       "attachImage": "Прикрепить изображение",
       "assigneePlaceholder": "Исполнитель",
       "noAssignee": "Не назначено",
-      "searchAssignees": "Поиск исполнителей...",
+      "searchAssignees": "Поиск исполнителей…",
       "noAssigneesFound": "Исполнители не найдены.",
-      "posting": "Отправка...",
+      "posting": "Отправка…",
       "comment": "Комментарий"
     },
     "actions": {
       "interrupt": "Прервать",
-      "interrupting": "Прерывание...",
+      "interrupting": "Прерывание…",
       "copyMarkdown": "Копировать комментарий как markdown"
     },
     "copy": {
@@ -481,13 +481,13 @@
       "noTimeline": "Записей в хронологии пока нет."
     },
     "pending": {
-      "queueing": "Постановка в очередь...",
-      "sending": "Отправка..."
+      "queueing": "Постановка в очередь…",
+      "sending": "Отправка…"
     }
   },
   "issuesList": {
     "search": {
-      "placeholder": "Поиск задач...",
+      "placeholder": "Поиск задач…",
       "ariaLabel": "Поиск задач",
       "limitHint": "Показано до {{limit}} совпадений. Уточните запрос, чтобы сузить список."
     },
@@ -540,7 +540,7 @@
     },
     "assignee": {
       "placeholder": "Исполнитель",
-      "searchPlaceholder": "Поиск исполнителей...",
+      "searchPlaceholder": "Поиск исполнителей…",
       "none": "Без исполнителя",
       "me": "Я"
     },
@@ -571,11 +571,11 @@
       "bodyPlaceholder": "Содержимое в Markdown",
       "cancel": "Отмена",
       "create": "Создать документ",
-      "saving": "Сохранение..."
+      "saving": "Сохранение…"
     },
     "revisions": {
       "history": "История ревизий",
-      "loading": "Загрузка ревизий...",
+      "loading": "Загрузка ревизий…",
       "noRevisions": "Ревизий пока нет",
       "current": "Текущая",
       "updated": "обновлено {{time}}",
@@ -584,7 +584,7 @@
       "historicalHint": "Это архивный просмотр. Восстановление создаёт новую ревизию, история не перезаписывается.",
       "returnToLatest": "Вернуться к последней",
       "restore": "Восстановить эту ревизию",
-      "restoring": "Восстановление..."
+      "restoring": "Восстановление…"
     },
     "conflict": {
       "title": "Устаревшая версия",
@@ -599,7 +599,7 @@
       "outOfDate": "Устаревшая версия"
     },
     "autosave": {
-      "autosaving": "Автосохранение...",
+      "autosaving": "Автосохранение…",
       "saved": "Сохранено",
       "error": "Не удалось сохранить"
     },
@@ -607,7 +607,7 @@
       "deleteConfirmText": "Удалить этот документ? Это действие нельзя отменить.",
       "deleteCancel": "Отмена",
       "deleteConfirm": "Удалить",
-      "deleting": "Удаление..."
+      "deleting": "Удаление…"
     },
     "errors": {
       "keyAndBodyRequired": "Ключ и содержимое документа обязательны",

@@ -1,6 +1,6 @@
 {
   "runChat": {
-    "waitingOutput": "Ожидание вывода запуска...",
+    "waitingOutput": "Ожидание вывода запуска…",
     "noOutput": "Вывод запуска не записан."
   },
   "transcript": {
@@ -13,7 +13,7 @@
     "input": "Ввод",
     "result": "Результат",
     "waitingForResult": "Ожидание результата",
-    "waitingForResultEllipsis": "Ожидание результата...",
+    "waitingForResultEllipsis": "Ожидание результата…",
     "toolFailed": "Инструмент не сработал",
     "failed": "Ошибка",
     "failedWithExitCode": "Завершилось с кодом {{code}}",

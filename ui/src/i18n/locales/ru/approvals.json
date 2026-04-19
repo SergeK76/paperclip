@@ -46,7 +46,7 @@
     },
     "comments": "Комментарии ({{count}})",
     "commentBoard": "Совет директоров",
-    "commentPlaceholder": "Добавить комментарий...",
+    "commentPlaceholder": "Добавить комментарий…",
     "posting": "Публикация…",
     "postComment": "Опубликовать"
   },
@@ -86,9 +86,9 @@
     "createdAt": "Запрос на согласование создан {{timeAgo}}",
     "decisionNote": "Примечание к решению.",
     "approve": "Одобрить",
-    "approving": "Одобрение...",
+    "approving": "Одобрение…",
     "reject": "Отклонить",
-    "rejecting": "Отклонение...",
+    "rejecting": "Отклонение…",
     "viewDetails": "Подробнее"
   },
   "typeLabel": {

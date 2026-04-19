@@ -9,13 +9,13 @@
     "confirm": "Подтвердить",
     "back": "Назад",
     "next": "Далее",
-    "previous": "Предыдущий",
+    "previous": "Предыдущее",
     "submit": "Отправить",
     "retry": "Повторить",
     "copy": "Копировать",
     "refresh": "Обновить",
     "search": "Поиск",
-    "loading": "Загрузка..."
+    "loading": "Загрузка…"
   },
   "language": {
     "label": "Язык",
@@ -49,25 +49,25 @@
   "sidebar": {
     "newAgent": "Новый агент",
     "newProject": "Новый проект",
-    "selectCompany": "Выбери компанию",
+    "selectCompany": "Выберите компанию",
     "openCompanyMenu": "Открыть меню {{name}}",
     "openCompanyMenuDefault": "Открыть меню компании",
     "invitePeople": "Пригласить в {{name}}",
     "invitePeopleDefault": "Пригласить людей",
     "companySettings": "Настройки компании",
-    "signingOut": "Выхожу...",
+    "signingOut": "Выхожу…",
     "signOut": "Выйти"
   },
   "account": {
     "openMenu": "Открыть меню аккаунта",
     "displayNameFallback": "Борд",
-    "localWorkspace": "Локальный воркспейс борда",
+    "localWorkspace": "Локальный борд",
     "signedIn": "Авторизован",
     "accountBadge": "Аккаунт",
     "localBadge": "Локально",
     "version": "Paperclip v{{version}}",
     "editProfile": "Изменить профиль",
-    "editProfileDesc": "Обнови отображаемое имя и аватар.",
+    "editProfileDesc": "Обновите отображаемое имя и аватар.",
     "instanceSettings": "Настройки инстанса",
     "instanceSettingsDesc": "Перейти к последней открытой странице настроек.",
     "documentation": "Документация",
@@ -75,7 +75,7 @@
     "switchToLight": "Светлая тема",
     "switchToDark": "Тёмная тема",
     "toggleThemeDesc": "Переключить оформление приложения.",
-    "signingOut": "Выхожу...",
+    "signingOut": "Выхожу…",
     "signOut": "Выйти",
     "signOutDesc": "Завершить эту сессию браузера."
   },
@@ -83,7 +83,7 @@
     "addCompany": "Добавить компанию"
   },
   "companySwitcher": {
-    "selectCompany": "Выбери компанию",
+    "selectCompany": "Выберите компанию",
     "companies": "Компании",
     "noCompanies": "Нет компаний",
     "companySettings": "Настройки компании",
@@ -91,11 +91,11 @@
   },
   "dashboard": {
     "breadcrumb": "Дашборд",
-    "welcomeMessage": "Добро пожаловать в Paperclip. Создай первую компанию и агента, чтобы начать.",
+    "welcomeMessage": "Добро пожаловать в Paperclip. Создайте первую компанию и агента, чтобы начать.",
     "welcomeAction": "Начать",
-    "selectCompany": "Создай или выбери компанию для просмотра дашборда.",
-    "noAgents": "У тебя нет агентов.",
-    "createAgent": "Создай здесь",
+    "selectCompany": "Создайте или выберите компанию для просмотра дашборда.",
+    "noAgents": "У вас нет агентов.",
+    "createAgent": "Создайте здесь",
     "budgetIncidents_one": "{{count}} активный бюджетный инцидент",
     "budgetIncidents_few": "{{count}} активных бюджетных инцидента",
     "budgetIncidents_many": "{{count}} активных бюджетных инцидентов",
@@ -110,8 +110,8 @@
     "budgetUsed": "{{pct}}% от {{budget}} бюджета",
     "unlimitedBudget": "Без ограничений",
     "pendingApprovals": "Ожидают одобрения",
-    "budgetOverrides": "{{count}} превышений бюджета ожидают одобрения борда",
-    "awaitingReview": "Ожидают проверки борда",
+    "budgetOverrides": "{{count}} превышений бюджета ожидают одобрения совета",
+    "awaitingReview": "Ожидают проверки советом",
     "charts": {
       "runActivity": "Активность запусков",
       "issuesByPriority": "Задачи по приоритету",
@@ -126,7 +126,7 @@
   "companies": {
     "breadcrumb": "Компании",
     "newCompany": "Новая компания",
-    "loading": "Загрузка компаний...",
+    "loading": "Загрузка компаний…",
     "rename": "Переименовать",
     "deleteCompany": "Удалить компанию",
     "agentCount_one": "{{count}} агент",
@@ -144,7 +144,7 @@
     "delete": "Удалить"
   },
   "commandPalette": {
-    "placeholder": "Поиск задач, агентов, проектов...",
+    "placeholder": "Поиск задач, агентов, проектов…",
     "noResults": "Ничего не найдено.",
     "actionsGroup": "Действия",
     "createIssue": "Создать задачу",
@@ -157,7 +157,7 @@
   },
   "shortcuts": {
     "title": "Горячие клавиши",
-    "closePre": "Нажми",
+    "closePre": "Нажмите",
     "closePost": "для закрытия · Шорткаты отключены в текстовых полях",
     "then": "затем",
     "inbox": {
@@ -215,7 +215,7 @@
     "nestingEnable": "Включить вложенность",
     "nestingDisable": "Отключить вложенность",
     "group": "Группировка",
-    "columnPickerTitle": "Выбери видимые колонки входящих",
+    "columnPickerTitle": "Выберите видимые колонки входящих",
     "searchPlaceholder": "Поиск во входящих…",
     "categoryPlaceholder": "Категория",
     "approvalStatusPlaceholder": "Статус одобрения",
@@ -320,7 +320,7 @@
     "whatCouldBeBetter": "Что можно было сделать лучше?",
     "addNote": "Добавьте краткую заметку",
     "dismiss": "Закрыть",
-    "saving": "Сохранение...",
+    "saving": "Сохранение…",
     "saveNote": "Сохранить заметку",
     "dialogTitle": "Сохранить настройку обмена отзывами",
     "dialogDesc": "Выберите, можно ли делиться проголосованными ответами ИИ с Paperclip Labs. Этот ответ станет настройкой по умолчанию для будущих голосований.",
@@ -357,7 +357,7 @@
     "old": "Старая",
     "new": "Новая",
     "selectRevision": "Выбрать ревизию",
-    "loadingRevisions": "Загрузка ревизий...",
+    "loadingRevisions": "Загрузка ревизий…",
     "selectTwoRevisions": "Выберите две ревизии для сравнения.",
     "sameRevision": "Обе стороны — одна и та же ревизия.",
     "content": "Содержимое"
@@ -389,7 +389,7 @@
   "envVarEditor": {
     "plain": "Открытый",
     "secret": "Секрет",
-    "selectSecret": "Выбрать секрет...",
+    "selectSecret": "Выбрать секрет…",
     "secretNamePrompt": "Название секрета",
     "failedToCreateSecret": "Не удалось создать секрет",
     "autoInjected": "Переменные PAPERCLIP_* вставляются автоматически во время выполнения."
@@ -419,8 +419,8 @@
     "noItemsAdded": "Элементы ещё не добавлены."
   },
   "inlineEditor": {
-    "placeholder": "Нажмите для редактирования...",
-    "autosaving": "Сохранение...",
+    "placeholder": "Нажмите для редактирования…",
+    "autosaving": "Сохранение…",
     "saved": "Сохранено",
     "couldNotSave": "Не удалось сохранить",
     "idle": "Ожидание"
@@ -438,7 +438,7 @@
   "mermaid": {
     "failedToRender": "Не удалось отрендерить диаграмму Mermaid.",
     "unableToRender": "Не удалось отрендерить диаграмму Mermaid: {{error}}",
-    "rendering": "Рендеринг диаграммы Mermaid..."
+    "rendering": "Рендеринг диаграммы Mermaid…"
   },
   "liveUpdates": {
     "actors": {
