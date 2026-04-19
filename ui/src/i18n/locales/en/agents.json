@@ -225,6 +225,13 @@
       "stderr": "stderr excerpt",
       "stdout": "stdout excerpt"
     },
+    "liveRun": {
+      "title": "Live Runs",
+      "devNote": "Uses the shared chat-style run surface from issue activity.",
+      "stopping": "Stopping…",
+      "stop": "Stop",
+      "openRun": "Open run"
+    },
     "runs": {
       "noRuns": "No runs yet.",
       "backToRuns": "Back to runs",

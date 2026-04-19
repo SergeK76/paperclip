@@ -1,10 +1,13 @@
 // @vitest-environment node
 
 import { describe, expect, it } from "vitest";
+import type { TFunction } from "i18next";
 import { renderToStaticMarkup } from "react-dom/server";
 import type { TranscriptEntry } from "../../adapters";
 import { ThemeProvider } from "../../context/ThemeContext";
 import { RunTranscriptView, normalizeTranscript } from "./RunTranscriptView";
+
+const mockT = ((key: string) => key) as unknown as TFunction;
 
 describe("RunTranscriptView", () => {
   it("keeps running command stdout inside the command fold instead of a standalone stdout block", () => {
@@ -23,7 +26,7 @@ describe("RunTranscriptView", () => {
       },
     ];
 
-    const blocks = normalizeTranscript(entries, false);
+    const blocks = normalizeTranscript(entries, false, mockT);
 
     expect(blocks).toHaveLength(1);
     expect(blocks[0]).toMatchObject({
@@ -72,7 +75,7 @@ describe("RunTranscriptView", () => {
       },
     ];
 
-    const blocks = normalizeTranscript(entries, false);
+    const blocks = normalizeTranscript(entries, false, mockT);
 
     expect(blocks).toHaveLength(1);
     expect(blocks[0]).toMatchObject({

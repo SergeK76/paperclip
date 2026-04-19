@@ -1,1 +1,46 @@
-{}
+{
+  "runChat": {
+    "waitingOutput": "Waiting for run output...",
+    "noOutput": "No run output captured."
+  },
+  "transcript": {
+    "user": "User",
+    "streaming": "Streaming",
+    "running": "Running",
+    "errored": "Errored",
+    "completed": "Completed",
+    "runFailed": "Run failed",
+    "input": "Input",
+    "result": "Result",
+    "waitingForResult": "Waiting for result",
+    "waitingForResultEllipsis": "Waiting for result...",
+    "toolFailed": "Tool failed",
+    "failed": "Failed",
+    "failedWithExitCode": "Failed with exit code {{code}}",
+    "executingCommand": "Executing command",
+    "executedCommand": "Executed command",
+    "executedCommands_one": "Executed {{count}} command",
+    "executedCommands_other": "Executed {{count}} commands",
+    "commandFailed": "Command failed",
+    "usingTool": "Using {{tool}}",
+    "usedTool": "Used {{tool}}",
+    "usedToolCalls": "Used {{tool}} ({{count}} calls)",
+    "noTranscript": "No transcript yet.",
+    "logLines_one": "{{count}} log line",
+    "logLines_other": "{{count}} log lines",
+    "systemMessages_one": "{{count}} system message",
+    "systemMessages_other": "{{count}} system messages",
+    "stdout": "stdout",
+    "inspectInput": "Inspect {{name}} input",
+    "pathsStartingWith": "{{count}} paths, starting with {{first}}",
+    "noInput": "No {{name}} input",
+    "keyPayload": "{{key}} payload",
+    "fields": "{{count}} fields: {{fields}}",
+    "collapseToolDetails": "Collapse tool details",
+    "expandToolDetails": "Expand tool details",
+    "collapseCommandDetails": "Collapse command details",
+    "expandCommandDetails": "Expand command details",
+    "collapseStdout": "Collapse stdout",
+    "expandStdout": "Expand stdout"
+  }
+}
