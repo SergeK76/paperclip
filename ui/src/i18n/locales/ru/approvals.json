@@ -45,7 +45,7 @@
       "deleteFailed": "Ошибка при удалении"
     },
     "comments": "Комментарии ({{count}})",
-    "commentBoard": "Совет директоров",
+    "commentBoard": "Борд",
     "commentPlaceholder": "Добавить комментарий…",
     "posting": "Публикация…",
     "postComment": "Опубликовать"

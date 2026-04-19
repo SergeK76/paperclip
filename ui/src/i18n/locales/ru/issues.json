@@ -286,7 +286,7 @@
       "backlog": "Бэклог",
       "todo": "К выполнению",
       "in_progress": "В работе",
-      "in_review": "На ревью",
+      "in_review": "На проверке",
       "done": "Готово"
     },
     "priority": {
