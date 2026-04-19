@@ -24,7 +24,6 @@ export function useDisabledAdaptersSync(): Set<string> {
     queryFn: () => adaptersApi.list(),
     staleTime: 5 * 60 * 1000,
     enabled: apiReady,
-    retry: false,
   });
 
   // Eagerly register external adapter types in the UI registry so that

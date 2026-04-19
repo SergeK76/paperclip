@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { adaptersApi, type AdapterCapabilities } from "@/api/adapters";
 import { queryKeys } from "@/lib/queryKeys";
-import { useApiAccessGate } from "@/hooks/useApiAccessGate";
 
 const ALL_FALSE: AdapterCapabilities = {
   supportsInstructionsBundle: false,
@@ -34,13 +33,10 @@ const KNOWN_DEFAULTS: Record<string, AdapterCapabilities> = {
  * return correct synchronous defaults to avoid cold-load regressions.
  */
 export function useAdapterCapabilities(): (type: string) => AdapterCapabilities {
-  const apiReady = useApiAccessGate();
   const { data: adapters } = useQuery({
     queryKey: queryKeys.adapters.all,
     queryFn: () => adaptersApi.list(),
     staleTime: 5 * 60 * 1000,
-    enabled: apiReady,
-    retry: false,
   });
 
   const capMap = useMemo(() => {
