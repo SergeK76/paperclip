@@ -4,7 +4,6 @@ import { adaptersApi } from "@/api/adapters";
 import { setDisabledAdapterTypes } from "@/adapters/disabled-store";
 import { syncExternalAdapters } from "@/adapters/registry";
 import { queryKeys } from "@/lib/queryKeys";
-import { useApiAccessGate } from "@/hooks/useApiAccessGate";
 
 /**
  * Fetch adapters and keep the disabled-adapter store + UI adapter registry
@@ -18,12 +17,10 @@ import { useApiAccessGate } from "@/hooks/useApiAccessGate";
  * Call this at the top of any component that renders adapter menus.
  */
 export function useDisabledAdaptersSync(): Set<string> {
-  const apiReady = useApiAccessGate();
   const { data: adapters } = useQuery({
     queryKey: queryKeys.adapters.all,
     queryFn: () => adaptersApi.list(),
     staleTime: 5 * 60 * 1000,
-    enabled: apiReady,
   });
 
   // Eagerly register external adapter types in the UI registry so that

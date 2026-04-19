@@ -107,8 +107,6 @@ export function SidebarAccountMenu({
     mutationFn: () => authApi.signOut(),
     onSuccess: async () => {
       setOpen(false);
-      try { window.localStorage.removeItem("paperclip.selectedCompanyId"); } catch { /* ignore */ }
-      queryClient.clear();
       await queryClient.invalidateQueries({ queryKey: queryKeys.auth.session });
     },
   });
