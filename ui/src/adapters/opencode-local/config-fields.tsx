@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import type { AdapterConfigFieldsProps } from "../types";
 import {
   Field,
@@ -9,8 +10,6 @@ import { ChoosePathButton } from "../../components/PathInstructionsModal";
 
 const inputClass =
   "w-full rounded-md border border-border px-2.5 py-1.5 bg-transparent outline-none text-sm font-mono placeholder:text-muted-foreground/40";
-const instructionsFileHint =
-  "Absolute path to a markdown file (e.g. AGENTS.md) that defines this agent's behavior. Injected into the system prompt at runtime.";
 
 export function OpenCodeLocalConfigFields({
   isCreate,
@@ -21,10 +20,11 @@ export function OpenCodeLocalConfigFields({
   mark,
   hideInstructionsFile,
 }: AdapterConfigFieldsProps) {
+  const { t } = useTranslation(["adapters"]);
   return (
     <>
       {!hideInstructionsFile && (
-        <Field label="Agent instructions file" hint={instructionsFileHint}>
+        <Field label={t("adapters:configFields.instructionsFile.label")} hint={t("adapters:configFields.instructionsFile.hintDefault")}>
           <div className="flex items-center gap-2">
             <DraftInput
               value={
@@ -50,7 +50,7 @@ export function OpenCodeLocalConfigFields({
         </Field>
       )}
       <ToggleField
-        label="Skip permissions"
+        label={t("adapters:configFields.skipPermissions")}
         hint={help.dangerouslySkipPermissions}
         checked={
           isCreate

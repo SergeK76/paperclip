@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import type { AdapterConfigFieldsProps } from "../types";
 import {
   Field,
@@ -90,6 +91,7 @@ export function OpenClawGatewayConfigFields({
     mark("adapterConfig", "headers", Object.keys(nextHeaders).length > 0 ? nextHeaders : undefined);
   };
 
+  const { t } = useTranslation(["adapters"]);
   const sessionStrategy = eff(
     "adapterConfig",
     "sessionKeyStrategy",
@@ -98,7 +100,7 @@ export function OpenClawGatewayConfigFields({
 
   return (
     <>
-      <Field label="Gateway URL" hint={help.webhookUrl}>
+      <Field label={t("adapters:configFields.gatewayUrl")} hint={help.webhookUrl}>
         <DraftInput
           value={
             isCreate
@@ -134,7 +136,7 @@ export function OpenClawGatewayConfigFields({
 
       {!isCreate && (
         <>
-          <Field label="Paperclip API URL override">
+          <Field label={t("adapters:configFields.paperclipApiUrl")}>
             <DraftInput
               value={
                 eff(
@@ -150,7 +152,7 @@ export function OpenClawGatewayConfigFields({
             />
           </Field>
 
-          <Field label="Claimed API key path">
+          <Field label={t("adapters:configFields.claimedApiKeyPath")}>
             <DraftInput
               value={eff("adapterConfig", "claimedApiKeyPath", String(config.claimedApiKeyPath ?? ""))}
               onCommit={(v) => mark("adapterConfig", "claimedApiKeyPath", v || undefined)}
@@ -160,20 +162,20 @@ export function OpenClawGatewayConfigFields({
             />
           </Field>
 
-          <Field label="Session strategy">
+          <Field label={t("adapters:configFields.sessionStrategy")}>
             <select
               value={sessionStrategy}
               onChange={(e) => mark("adapterConfig", "sessionKeyStrategy", e.target.value)}
               className={inputClass}
             >
-              <option value="fixed">Fixed</option>
-              <option value="issue">Per issue</option>
-              <option value="run">Per run</option>
+              <option value="fixed">{t("adapters:configFields.sessionStrategyFixed")}</option>
+              <option value="issue">{t("adapters:configFields.sessionStrategyIssue")}</option>
+              <option value="run">{t("adapters:configFields.sessionStrategyRun")}</option>
             </select>
           </Field>
 
           {sessionStrategy === "fixed" && (
-            <Field label="Session key">
+            <Field label={t("adapters:configFields.sessionKey")}>
               <DraftInput
                 value={eff("adapterConfig", "sessionKey", String(config.sessionKey ?? "paperclip"))}
                 onCommit={(v) => mark("adapterConfig", "sessionKey", v || undefined)}
@@ -185,13 +187,13 @@ export function OpenClawGatewayConfigFields({
           )}
 
           <SecretField
-            label="Gateway auth token (x-openclaw-token)"
+            label={t("adapters:configFields.gatewayAuthToken")}
             value={effectiveGatewayToken}
             onCommit={commitGatewayToken}
             placeholder="OpenClaw gateway token"
           />
 
-          <Field label="Role">
+          <Field label={t("adapters:configFields.role")}>
             <DraftInput
               value={eff("adapterConfig", "role", String(config.role ?? "operator"))}
               onCommit={(v) => mark("adapterConfig", "role", v || undefined)}
@@ -201,7 +203,7 @@ export function OpenClawGatewayConfigFields({
             />
           </Field>
 
-          <Field label="Scopes (comma-separated)">
+          <Field label={t("adapters:configFields.scopes")}>
             <DraftInput
               value={eff("adapterConfig", "scopes", parseScopes(config.scopes ?? ["operator.admin"]))}
               onCommit={(v) => {
@@ -217,7 +219,7 @@ export function OpenClawGatewayConfigFields({
             />
           </Field>
 
-          <Field label="Wait timeout (ms)">
+          <Field label={t("adapters:configFields.waitTimeout")}>
             <DraftInput
               value={eff("adapterConfig", "waitTimeoutMs", String(config.waitTimeoutMs ?? "120000"))}
               onCommit={(v) => {
@@ -234,10 +236,9 @@ export function OpenClawGatewayConfigFields({
             />
           </Field>
 
-          <Field label="Device auth">
+          <Field label={t("adapters:configFields.deviceAuth")}>
             <div className="text-xs text-muted-foreground leading-relaxed">
-              Always enabled for gateway agents. Paperclip persists a device key during onboarding so pairing approvals
-              remain stable across runs.
+              {t("adapters:configFields.deviceAuthHint")}
             </div>
           </Field>
         </>

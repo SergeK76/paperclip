@@ -85,5 +85,41 @@
     "reloadFailed": "Ошибка перезагрузки",
     "reinstalled": "Адаптер переустановлен",
     "reinstallFailed": "Ошибка переустановки"
+  },
+  "configFields": {
+    "instructionsFile": {
+      "label": "Файл инструкций агента",
+      "hintDefault": "Абсолютный путь к markdown-файлу (например, AGENTS.md), определяющему поведение агента. Добавляется в системный промпт во время выполнения.",
+      "hintCursor": "Абсолютный путь к markdown-файлу (например, AGENTS.md), определяющему поведение агента. Добавляется в промпт во время выполнения.",
+      "hintGemini": "Абсолютный путь к markdown-файлу (например, AGENTS.md), определяющему поведение агента. Добавляется в начало промпта Gemini во время выполнения.",
+      "hintCodex": "Абсолютный путь к markdown-файлу (например, AGENTS.md), определяющему поведение агента. Добавляется в системный промпт во время выполнения. Примечание: Codex может применять AGENTS.md из репозитория самостоятельно."
+    },
+    "enableChrome": "Включить Chrome",
+    "skipPermissions": "Пропускать разрешения",
+    "maxTurnsPerRun": "Макс. шагов за запуск",
+    "bypassSandbox": "Отключить sandbox",
+    "enableSearch": "Включить поиск",
+    "fastMode": "Быстрый режим",
+    "fastModeWarnActive": "Быстрый режим потребляет кредиты/токены значительно быстрее обычного.",
+    "fastModeWarnUnsupported": "Быстрый режим поддерживается только на {{models}}. Paperclip проигнорирует этот переключатель до смены модели.",
+    "webhookUrl": "URL вебхука",
+    "gatewayUrl": "URL шлюза",
+    "paperclipApiUrl": "Переопределение URL API Paperclip",
+    "claimedApiKeyPath": "Путь к файлу API-ключа",
+    "sessionStrategy": "Стратегия сессий",
+    "sessionStrategyFixed": "Фиксированная",
+    "sessionStrategyIssue": "По задаче",
+    "sessionStrategyRun": "По запуску",
+    "sessionKey": "Ключ сессии",
+    "gatewayAuthToken": "Токен авторизации шлюза (x-openclaw-token)",
+    "role": "Роль",
+    "scopes": "Права доступа (через запятую)",
+    "waitTimeout": "Тайм-аут ожидания (мс)",
+    "deviceAuth": "Авторизация устройства",
+    "deviceAuthHint": "Всегда включена для шлюзовых агентов. Paperclip сохраняет ключ устройства при начальной настройке для стабильных одобрений.",
+    "runtimeServicesJson": "JSON сервисов среды выполнения",
+    "payloadTemplateJson": "JSON шаблона полезной нагрузки",
+    "command": "Команда",
+    "args": "Аргументы (через запятую)"
   }
 }
