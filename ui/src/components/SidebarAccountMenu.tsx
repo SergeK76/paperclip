@@ -189,7 +189,7 @@ export function SidebarAccountMenu({
                 external
                 onClick={() => setOpen(false)}
               />
-              {SUPPORTED_LANGUAGES.filter(lng => lng !== (i18n.resolvedLanguage ?? "en").slice(0, 2)).map(lng => (
+              {SUPPORTED_LANGUAGES.filter(lng => lng !== (i18n.resolvedLanguage ?? "en")).map(lng => (
                 <MenuAction
                   key={lng}
                   label={LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
