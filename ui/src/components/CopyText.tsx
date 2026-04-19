@@ -1,4 +1,5 @@
 import { useCallback, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 interface CopyTextProps {
@@ -11,6 +12,7 @@ interface CopyTextProps {
 }
 
 export function CopyText({ text, children, className, copiedLabel = "Copied!" }: CopyTextProps) {
+  const { t } = useTranslation(["common"]);
   const [visible, setVisible] = useState(false);
   const [label, setLabel] = useState(copiedLabel);
   const timerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
@@ -37,12 +39,12 @@ export function CopyText({ text, children, className, copiedLabel = "Copied!" }:
       }
       setLabel(copiedLabel);
     } catch {
-      setLabel("Copy failed");
+      setLabel(t("common:copyText.copyFailed"));
     }
     clearTimeout(timerRef.current);
     setVisible(true);
     timerRef.current = setTimeout(() => setVisible(false), 1500);
-  }, [copiedLabel, text]);
+  }, [copiedLabel, t, text]);
 
   return (
     <span className="relative inline-flex">

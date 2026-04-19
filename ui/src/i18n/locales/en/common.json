@@ -267,5 +267,66 @@
       "failedToArchive": "Failed to archive issue",
       "failedToUndoArchive": "Failed to undo inbox archive"
     }
+  },
+  "copyText": {
+    "copyFailed": "Copy failed"
+  },
+  "worktreeBanner": {
+    "label": "Worktree",
+    "copyTitle": "Click to copy worktree name",
+    "copied": "Copied!"
+  },
+  "devRestartBanner": {
+    "title": "Restart Required",
+    "autoRestartOn": "Auto-Restart On",
+    "justNow": "just now",
+    "minutesAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "daysAgo": "{{count}}d ago",
+    "reason": {
+      "backendAndMigrations": "backend files changed and migrations are pending",
+      "pendingMigrations": "pending migrations need a fresh boot",
+      "backendChanged": "backend files changed since this server booted"
+    },
+    "updatedAt": "· updated {{time}}",
+    "changed": "Changed: {{paths}}",
+    "changedMore": "+{{count}} more",
+    "pendingMigrations": "Pending migrations: {{paths}}",
+    "pendingMigrationsMore": "+{{count}} more",
+    "waitingForRuns_one": "Waiting for {{count}} live run to finish",
+    "waitingForRuns_other": "Waiting for {{count}} live runs to finish",
+    "autoRestartIdle": "Auto-restart will trigger when the instance is idle",
+    "manualRestart": "Restart {{command}} after the active work is safe to interrupt"
+  },
+  "outputFeedback": {
+    "helpful": "Helpful",
+    "needsWork": "Needs work",
+    "whatCouldBeBetter": "What could have been better?",
+    "addNote": "Add a short note",
+    "dismiss": "Dismiss",
+    "saving": "Saving...",
+    "saveNote": "Save note",
+    "dialogTitle": "Save your feedback sharing preference",
+    "dialogDesc": "Choose whether voted AI outputs can be shared with Paperclip Labs. This answer becomes the default for future thumbs up and thumbs down votes.",
+    "alwaysSavedLocally": "This vote is always saved locally.",
+    "alwaysAllowDesc": "Choose Always allow to share this vote and future voted AI outputs. Choose Don't allow to keep this vote and future votes local.",
+    "changeInSettings": "You can change this later in Instance Settings > General.",
+    "readTerms": "Read our terms of service",
+    "dontAllow": "Don't allow",
+    "alwaysAllow": "Always allow"
+  },
+  "frontmatterFields": {
+    "name": "Name",
+    "title": "Title",
+    "kind": "Kind",
+    "reportsTo": "Reports to",
+    "skills": "Skills",
+    "status": "Status",
+    "description": "Description",
+    "priority": "Priority",
+    "assignee": "Assignee",
+    "project": "Project",
+    "recurring": "Recurring",
+    "targetDate": "Target date"
   }
 }
