@@ -9,6 +9,10 @@ const BARE_ISSUE_IDENTIFIER_RE = /^[A-Z][A-Z0-9]+-\d+$/i;
 const ISSUE_SCHEME_RE = /^issue:\/\/:?([^?#\s]+)(?:[?#].*)?$/i;
 const ISSUE_REFERENCE_TOKEN_RE = /issue:\/\/:?[^\s<>()]+|https?:\/\/[^\s<>()]+|\b[A-Z][A-Z0-9]+-\d+\b/gi;
 
+function isValidIssueIdentifier(value: string): boolean {
+  return BARE_ISSUE_IDENTIFIER_RE.test(value);
+}
+
 export function parseIssuePathIdFromPath(pathOrUrl: string | null | undefined): string | null {
   if (!pathOrUrl) return null;
   let pathname = pathOrUrl.trim();
@@ -27,6 +31,7 @@ export function parseIssuePathIdFromPath(pathOrUrl: string | null | undefined): 
   if (issueIndex === -1 || issueIndex === segments.length - 1) return null;
   const issuePathId = decodeURIComponent(segments[issueIndex + 1] ?? "");
   if (!issuePathId || issuePathId.startsWith(":")) return null;
+  if (!isValidIssueIdentifier(issuePathId)) return null;
   return issuePathId;
 }
 
@@ -36,10 +41,13 @@ export function parseIssueReferenceFromHref(href: string | null | undefined) {
   const issueSchemeMatch = trimmed.match(ISSUE_SCHEME_RE);
   if (issueSchemeMatch?.[1]) {
     const issuePathId = decodeURIComponent(issueSchemeMatch[1]);
-    return {
-      issuePathId,
-      href: `/issues/${encodeURIComponent(issuePathId)}`,
-    };
+    if (isValidIssueIdentifier(issuePathId)) {
+      return {
+        issuePathId,
+        href: `/issues/${encodeURIComponent(issuePathId)}`,
+      };
+    }
+    return null;
   }
 
   const pathId = parseIssuePathIdFromPath(href);

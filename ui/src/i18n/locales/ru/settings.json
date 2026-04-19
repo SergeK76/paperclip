@@ -674,7 +674,7 @@
     "ofAllocation": "{{pct}}% от бюджета",
     "thisWeek": "Эта неделя",
     "perWeek": "~{{amount}} / нед",
-    "rollingWindows": "Скользящие окна",
+    "rollingWindows": "Скользящие периоды",
     "subscription": "Подписка",
     "percentOfSubscription": "{{pct}}% использования токенов через подписку",
     "providerTokenPct": "{{pct}}% токенов провайдера",

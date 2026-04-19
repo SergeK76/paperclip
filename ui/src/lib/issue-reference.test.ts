@@ -48,4 +48,19 @@ describe("issue-reference", () => {
     expect(parseIssueReferenceFromHref("/issues/:id")).toBeNull();
     expect(parseIssueReferenceFromHref("http://localhost:3100/api/issues/:id")).toBeNull();
   });
+
+  it("ignores template/docs placeholders that would otherwise trigger 404s", () => {
+    expect(parseIssuePathIdFromPath("/api/issues/{issueId}")).toBeNull();
+    expect(parseIssuePathIdFromPath("/issues/<issue-identifier>")).toBeNull();
+    expect(parseIssueReferenceFromHref("/api/issues/{issueId}")).toBeNull();
+    expect(parseIssueReferenceFromHref("/issues/<issue-identifier>")).toBeNull();
+    expect(parseIssueReferenceFromHref("issue://<issue-identifier>")).toBeNull();
+    expect(parseIssueReferenceFromHref("issue://{issueId}")).toBeNull();
+  });
+
+  it("rejects trailing punctuation captured by segment-based parsing", () => {
+    expect(parseIssuePathIdFromPath("/issues/PAP-224)")).toBeNull();
+    expect(parseIssueReferenceFromHref("/issues/PAP-224)")).toBeNull();
+    expect(parseIssueReferenceFromHref("issue://PAP-224)")).toBeNull();
+  });
 });

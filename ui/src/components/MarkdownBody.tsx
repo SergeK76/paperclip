@@ -6,6 +6,7 @@ import { cn } from "../lib/utils";
 import { useTheme } from "../context/ThemeContext";
 import { mentionChipInlineStyle, parseMentionChipHref } from "../lib/mention-chips";
 import { issuesApi } from "../api/issues";
+import { ApiError } from "../api/client";
 import { queryKeys } from "../lib/queryKeys";
 import { Link } from "@/lib/router";
 import { parseIssueReferenceFromHref, remarkLinkIssueReferences } from "../lib/issue-reference";
@@ -39,6 +40,11 @@ function MarkdownIssueLink({
     queryKey: queryKeys.issues.detail(issuePathId),
     queryFn: () => issuesApi.get(issuePathId),
     staleTime: 60_000,
+    retry: (failureCount, error) => {
+      if (error instanceof ApiError && error.status === 404) return false;
+      return failureCount < 3;
+    },
+    refetchOnWindowFocus: false,
   });
 
   return (
