@@ -33,7 +33,7 @@ interface SidebarAccountMenuProps {
 
 interface MenuActionProps {
   label: string;
-  description: string;
+  description?: string;
   icon: LucideIcon;
   onClick?: () => void;
   href?: string;
@@ -59,7 +59,7 @@ function MenuAction({ label, description, icon: Icon, onClick, href, external = 
       </span>
       <span className="min-w-0 flex-1">
         <span className="block text-sm font-medium text-foreground">{label}</span>
-        <span className="block text-xs text-muted-foreground">{description}</span>
+        {description ? <span className="block text-xs text-muted-foreground">{description}</span> : null}
       </span>
     </>
   );
@@ -193,7 +193,6 @@ export function SidebarAccountMenu({
                 <MenuAction
                   key={lng}
                   label={LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
-                  description={LANGUAGE_LABELS[lng] ?? lng.toUpperCase()}
                   icon={Languages}
                   onClick={() => {
                     void i18n.changeLanguage(lng);
