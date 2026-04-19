@@ -613,5 +613,16 @@
       "copyFailed": "Could not copy document",
       "saveConflictBlocked": "Save or cancel your local changes before viewing an older revision."
     }
+  },
+  "kanban": {
+    "status": {
+      "backlog": "Backlog",
+      "todo": "To Do",
+      "in_progress": "In Progress",
+      "in_review": "In Review",
+      "blocked": "Blocked",
+      "done": "Done",
+      "cancelled": "Cancelled"
+    }
   }
 }
