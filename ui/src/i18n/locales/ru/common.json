@@ -433,5 +433,49 @@
     "failedToRender": "Не удалось отрендерить диаграмму Mermaid.",
     "unableToRender": "Не удалось отрендерить диаграмму Mermaid: {{error}}",
     "rendering": "Рендеринг диаграммы Mermaid..."
+  },
+  "liveUpdates": {
+    "actors": {
+      "agentFallback": "Агент {{id}}",
+      "system": "Система",
+      "board": "Доска",
+      "someone": "Кто-то",
+      "agentType": "Агент"
+    },
+    "viewRef": "Открыть {{ref}}",
+    "viewInbox": "Входящие",
+    "viewAgent": "Открыть агента",
+    "viewRun": "Открыть запуск",
+    "joinRequest": {
+      "wantsToJoin": "{{label}} хочет присоединиться",
+      "body": "Новый запрос на вступление ожидает одобрения."
+    },
+    "agentStatus": {
+      "started": "{{name}} запущен",
+      "errored": "{{name}} завершился с ошибкой"
+    },
+    "runStatus": {
+      "succeeded": "успешно",
+      "failed": "ошибка",
+      "timedOut": "истекло время",
+      "cancelled": "отменён",
+      "title": "Запуск {{name}}: {{statusLabel}}",
+      "trigger": "Триггер: {{detail}}"
+    },
+    "issue": {
+      "created": "{{actor}} создал {{ref}}",
+      "updated": "{{actor}} обновил {{ref}}",
+      "commented": "{{actor}} прокомментировал {{ref}}",
+      "reopenedAndCommented": "{{actor}} переоткрыл и прокомментировал {{ref}}",
+      "commentedAndUpdated": "{{actor}} прокомментировал и обновил {{ref}}",
+      "reassigned": "переназначена",
+      "unassigned": "снят исполнитель",
+      "reopened": "переоткрыта",
+      "reopenedFrom": "переоткрыта из {{from}}",
+      "titleChanged": "заголовок изменён",
+      "descriptionChanged": "описание изменено",
+      "statusChanged": "статус → {{status}}",
+      "priorityChanged": "приоритет → {{priority}}"
+    }
   }
 }

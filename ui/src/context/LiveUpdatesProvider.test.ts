@@ -11,8 +11,33 @@ vi.mock("../api/issues", () => ({
 }));
 
 import { describe, expect, it, vi } from "vitest";
+import type { TFunction } from "i18next";
 import { __liveUpdatesTestUtils } from "./LiveUpdatesProvider";
 import { queryKeys } from "../lib/queryKeys";
+
+const MOCK_EN: Record<string, string> = {
+  "common:liveUpdates.agentStatus.started": "{{name}} started",
+  "common:liveUpdates.agentStatus.errored": "{{name}} errored",
+  "common:liveUpdates.runStatus.succeeded": "succeeded",
+  "common:liveUpdates.runStatus.failed": "failed",
+  "common:liveUpdates.runStatus.timedOut": "timed out",
+  "common:liveUpdates.runStatus.cancelled": "cancelled",
+  "common:liveUpdates.runStatus.title": "{{name}} run {{statusLabel}}",
+  "common:liveUpdates.runStatus.trigger": "Trigger: {{detail}}",
+  "common:liveUpdates.viewAgent": "View agent",
+  "common:liveUpdates.viewRun": "View run",
+  "common:liveUpdates.actors.agentFallback": "Agent {{id}}",
+};
+
+const mockT = ((key: string, opts?: Record<string, unknown>) => {
+  let template = MOCK_EN[key] ?? key;
+  if (opts) {
+    for (const [k, v] of Object.entries(opts)) {
+      template = template.replace(`{{${k}}}`, String(v ?? ""));
+    }
+  }
+  return template;
+}) as unknown as TFunction;
 
 describe("LiveUpdatesProvider issue invalidation", () => {
   it("refreshes touched inbox queries and only the changed issue data for issue updates", () => {
@@ -612,6 +637,7 @@ describe("LiveUpdatesProvider run lifecycle toasts", () => {
         () => "CodexCoder",
         queryClient as never,
         "company-1",
+        mockT,
       ),
     ).toBeNull();
 
@@ -623,6 +649,7 @@ describe("LiveUpdatesProvider run lifecycle toasts", () => {
           status: "succeeded",
         },
         () => "CodexCoder",
+        mockT,
       ),
     ).toBeNull();
   });
@@ -646,6 +673,7 @@ describe("LiveUpdatesProvider run lifecycle toasts", () => {
         () => "CodexCoder",
         queryClient as never,
         "company-1",
+        mockT,
       ),
     ).toMatchObject({
       title: "CodexCoder errored",
@@ -662,6 +690,7 @@ describe("LiveUpdatesProvider run lifecycle toasts", () => {
           error: "boom",
         },
         () => "CodexCoder",
+        mockT,
       ),
     ).toMatchObject({
       title: "CodexCoder run failed",

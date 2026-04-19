@@ -423,5 +423,49 @@
     "failedToRender": "Failed to render Mermaid diagram.",
     "unableToRender": "Unable to render Mermaid diagram: {{error}}",
     "rendering": "Rendering Mermaid diagram..."
+  },
+  "liveUpdates": {
+    "actors": {
+      "agentFallback": "Agent {{id}}",
+      "system": "System",
+      "board": "Board",
+      "someone": "Someone",
+      "agentType": "Agent"
+    },
+    "viewRef": "View {{ref}}",
+    "viewInbox": "View inbox",
+    "viewAgent": "View agent",
+    "viewRun": "View run",
+    "joinRequest": {
+      "wantsToJoin": "{{label}} wants to join",
+      "body": "A new join request is waiting for approval."
+    },
+    "agentStatus": {
+      "started": "{{name}} started",
+      "errored": "{{name}} errored"
+    },
+    "runStatus": {
+      "succeeded": "succeeded",
+      "failed": "failed",
+      "timedOut": "timed out",
+      "cancelled": "cancelled",
+      "title": "{{name}} run {{statusLabel}}",
+      "trigger": "Trigger: {{detail}}"
+    },
+    "issue": {
+      "created": "{{actor}} created {{ref}}",
+      "updated": "{{actor}} updated {{ref}}",
+      "commented": "{{actor}} commented on {{ref}}",
+      "reopenedAndCommented": "{{actor}} reopened and commented on {{ref}}",
+      "commentedAndUpdated": "{{actor}} commented and updated {{ref}}",
+      "reassigned": "reassigned",
+      "unassigned": "unassigned",
+      "reopened": "reopened",
+      "reopenedFrom": "reopened from {{from}}",
+      "titleChanged": "title changed",
+      "descriptionChanged": "description changed",
+      "statusChanged": "status → {{status}}",
+      "priorityChanged": "priority → {{priority}}"
+    }
   }
 }
