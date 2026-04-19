@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   BookOpen,
+  Languages,
   LogOut,
   type LucideIcon,
   Moon,
@@ -90,7 +91,7 @@ export function SidebarAccountMenu({
   instanceSettingsTarget,
   version,
 }: SidebarAccountMenuProps) {
-  const { t } = useTranslation(["common"]);
+  const { t, i18n } = useTranslation(["common"]);
   const [open, setOpen] = useState(false);
   const queryClient = useQueryClient();
   const { isMobile, setSidebarOpen } = useSidebar();
@@ -187,6 +188,17 @@ export function SidebarAccountMenu({
                 href={DOCS_URL}
                 external
                 onClick={() => setOpen(false)}
+              />
+              <MenuAction
+                label={i18n.resolvedLanguage === "ru" ? "Switch to English" : "Переключить на русский"}
+                description={i18n.resolvedLanguage === "ru" ? "Switch interface to English" : "Переключить интерфейс на русский"}
+                icon={Languages}
+                onClick={() => {
+                  const next = i18n.resolvedLanguage === "ru" ? "en" : "ru";
+                  void i18n.changeLanguage(next);
+                  try { window.localStorage.setItem("paperclip-lang", next); } catch { /* ignore */ }
+                  setOpen(false);
+                }}
               />
               <MenuAction
                 label={t(theme === "dark" ? "common:account.switchToLight" : "common:account.switchToDark")}

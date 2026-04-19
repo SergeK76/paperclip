@@ -12,7 +12,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+
 
 function deriveInitials(name: string) {
   const parts = name.trim().split(/\s+/).filter(Boolean);
@@ -146,9 +146,7 @@ export function ProfileSettings() {
         <div className="flex items-center gap-2">
           <UserRoundPen className="h-5 w-5 text-muted-foreground" />
           <h1 className="text-lg font-semibold">{t("settings:profile.title")}</h1>
-          <div className="ml-auto">
-            <LanguageSwitcher />
-          </div>
+
         </div>
         <p className="text-sm text-muted-foreground">
           {t("settings:profile.description")}
