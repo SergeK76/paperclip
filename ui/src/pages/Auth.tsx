@@ -166,8 +166,26 @@ export function AuthPage() {
             </Button>
           </form>
 
-          {/* Переключатель языка — под формой, выравнивание по правому краю */}
-          <div className="mt-3 flex justify-end">
+          <div className="mt-5 text-sm text-muted-foreground">
+            {mode === "sign_in"
+              ? t("onboarding:auth.toggle.needAccount")
+              : t("onboarding:auth.toggle.haveAccount")}{" "}
+            <button
+              type="button"
+              className="font-medium text-foreground underline underline-offset-2"
+              onClick={() => {
+                setError(null);
+                setMode(mode === "sign_in" ? "sign_up" : "sign_in");
+              }}
+            >
+              {mode === "sign_in"
+                ? t("onboarding:auth.toggle.createOne")
+                : t("onboarding:auth.toggle.signIn")}
+            </button>
+          </div>
+
+          {/* Переключатель языка — под строкой-переключателем режима, справа */}
+          <div className="mt-6 flex justify-end">
             <Popover>
               <PopoverTrigger asChild>
                 <button
@@ -202,24 +220,6 @@ export function AuthPage() {
                 ))}
               </PopoverContent>
             </Popover>
-          </div>
-
-          <div className="mt-5 text-sm text-muted-foreground">
-            {mode === "sign_in"
-              ? t("onboarding:auth.toggle.needAccount")
-              : t("onboarding:auth.toggle.haveAccount")}{" "}
-            <button
-              type="button"
-              className="font-medium text-foreground underline underline-offset-2"
-              onClick={() => {
-                setError(null);
-                setMode(mode === "sign_in" ? "sign_up" : "sign_in");
-              }}
-            >
-              {mode === "sign_in"
-                ? t("onboarding:auth.toggle.createOne")
-                : t("onboarding:auth.toggle.signIn")}
-            </button>
           </div>
         </div>
       </div>
