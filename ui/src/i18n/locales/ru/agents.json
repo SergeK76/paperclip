@@ -40,7 +40,7 @@
     "resume": "Возобновить",
     "pause": "Пауза",
     "assignTask": "Назначить задачу",
-    "runHeartbeat": "Запустить хартбит",
+    "runHeartbeat": "Запустить проверку связи",
     "copyId": "Скопировать ID агента",
     "resetSessions": "Сбросить сессии",
     "terminate": "Завершить",
@@ -53,8 +53,8 @@
     "adapter": "Адаптер",
     "session": "Сессия",
     "lastError": "Последняя ошибка",
-    "lastHeartbeat": "Последний хартбит",
-    "reportsTo": "Подчиняется",
+    "lastHeartbeat": "Последняя проверка связи",
+    "reportsTo": "Руководитель",
     "created": "Создан"
   },
   "iconPicker": {
@@ -101,8 +101,8 @@
   },
   "reportsToPicker": {
     "unknownManager": "Неизвестный менеджер (устаревший ID)",
-    "reportTo": "Подчиняется {{name}}",
-    "reportToTerminated": "Подчиняется {{name}} (завершён)",
+    "reportTo": "Подчинён: {{name}}",
+    "reportToTerminated": "Подчинён: {{name}} (завершён)",
     "noManager": "Без менеджера",
     "currentTerminated": "Текущий: {{name}} (завершён)",
     "missingManager": "Сохранённый менеджер не найден в компании. Выберите нового или очистите."
@@ -128,7 +128,7 @@
     "fields": {
       "name": "Имя",
       "title": "Должность",
-      "reportsTo": "Подчиняется",
+      "reportsTo": "Руководитель",
       "capabilities": "Возможности",
       "promptTemplate": "Шаблон промпта",
       "adapterType": "Тип адаптера",
@@ -138,13 +138,13 @@
       "extraArgs": "Доп. аргументы (через запятую)",
       "envVars": "Переменные окружения",
       "timeoutSec": "Таймаут (сек)",
-      "graceSec": "Период ожидания прерывания (сек)",
+      "graceSec": "Таймаут завершения (сек)",
       "cooldownSec": "Задержка (сек)",
       "maxConcurrentRuns": "Макс. одновременных запусков",
       "model": "Модель",
       "thinkingEffort": "Глубина размышления",
-      "heartbeatOnInterval": "Хартбит по расписанию",
-      "runHeartbeatEvery": "Запускать хартбит каждые",
+      "heartbeatOnInterval": "Проверка связи по расписанию",
+      "runHeartbeatEvery": "Запускать проверку связи каждые",
       "wakeOnDemand": "Пробуждение по запросу"
     },
     "placeholders": {
@@ -263,10 +263,10 @@
       "hideLog": "Скрыть полный лог",
       "loadingLog": "Загрузка лога…",
       "noLog": "Нет сохранённых строк лога.",
-      "failedToLoad": "Не удалось загрузить лог операции воркспейса"
+      "failedToLoad": "Не удалось загрузить лог операции рабочей области"
     },
     "workspace": {
-      "title": "Воркспейс ({{count}})",
+      "title": "Рабочая область ({{count}})",
       "phases": {
         "worktreePrepare": "Настройка воркдерева",
         "workspaceProvision": "Подготовка",
@@ -279,7 +279,7 @@
       "repoRoot": "Корень репозитория:",
       "cleanup": "Очистка:",
       "createdByRun": "Создан этим запуском",
-      "reusedWorkspace": "Переиспользован существующий воркспейс",
+      "reusedWorkspace": "Рабочая область использована повторно",
       "stderr": "фрагмент stderr",
       "stdout": "фрагмент stdout"
     },

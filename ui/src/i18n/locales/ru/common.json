@@ -200,7 +200,7 @@
     "profile": "Профиль",
     "general": "Общие",
     "access": "Доступ",
-    "heartbeats": "Хартбиты",
+    "heartbeats": "Проверки связи",
     "experimental": "Экспериментальные",
     "plugins": "Плагины",
     "adapters": "Адаптеры"
@@ -257,7 +257,7 @@
     "groupBy": {
       "none": "Без группировки",
       "type": "По типу",
-      "workspace": "По воркспейсу"
+      "workspace": "По рабочей области"
     },
     "empty": {
       "noSearchResults": "Ничего не найдено во входящих.",
@@ -338,7 +338,7 @@
     "name": "Название",
     "title": "Заголовок",
     "kind": "Тип",
-    "reportsTo": "Подчиняется",
+    "reportsTo": "Руководитель",
     "skills": "Навыки",
     "status": "Статус",
     "description": "Описание",
